@@ -74,7 +74,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Pitampura - Luxury Body Massage Centre | Luxury Russian Spa",
+  title: "Russian Spa in Pitampura - Luxury Body Massage Centre",
   description:
     "Best spa in Pitampura for full body & body massage near NSP. Luxury spa Pitampura with certified therapists, hygienic private rooms. Book from ₹1999!",
   keywords: [

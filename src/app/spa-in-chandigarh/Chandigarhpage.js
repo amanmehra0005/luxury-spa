@@ -62,6 +62,11 @@ export const faqs = [
       "Our therapists from Russia and Uzbekistan do take bookings in Chandigarh, along with our Thai and Indian therapists. Let us know who you'd prefer and we'll check who's free on your date.",
   },
   {
+    question: "How do I book a Russian therapist in Chandigarh?",
+    answer:
+      "Send us a WhatsApp on +91 87997 16197 with your sector or hotel, the time you'd like and \"Russian therapist\". We'll check who's free that day and confirm the therapist, time and price on the same chat. Booking a day ahead gives you the best chance.",
+  },
+  {
     question: "Can we book a couple massage at home?",
     answer:
       "Yes. Two therapists come together so you can both have your massage at the same time. A living room or a hotel suite usually has enough space for it.",

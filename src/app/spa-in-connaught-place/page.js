@@ -46,9 +46,9 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Connaught Place - Best Russian Spa in CP | From ₹1999",
+  title: "Russian Spa in Connaught Place - Best Spa in CP | ₹1999",
   description:
-    "Best spa in Connaught Place, inside The Park hotel. Russian & Indian therapists, private rooms, open 24/7. Full body, B2B & couple massage in CP from ₹1999.",
+    "Russian spa in Connaught Place inside The Park hotel. Russian & Indian therapists, private rooms, open 24/7. Full body, B2B & couple massage in CP from ₹1999.",
   keywords: [
     "spa in connaught place",
     "russian spa in connaught place",

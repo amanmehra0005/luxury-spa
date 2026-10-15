@@ -41,6 +41,11 @@ export const faqs = [
       "A full body massage at our outlets costs ₹1,999 for 60 minutes. If you'd like it at home, a 90-minute full body massage at home in Delhi is ₹14,999.",
   },
   {
+    question: "How much does a 1-hour body massage cost in Delhi?",
+    answer:
+      "A 1-hour body massage at any of our outlets costs ₹1,999, whichever massage you pick. If you want longer, a 90-minute session at home or in your hotel is ₹14,999.",
+  },
+  {
     question: "Is the price different in Mahipalpur, Lajpat Nagar or Uttam Nagar?",
     answer:
       "No. We keep the same rates at every outlet, whether you're in Mahipalpur, Lajpat Nagar, Uttam Nagar, Paharganj or anywhere else in Delhi NCR. The only things that change the price are the length of the session and where it happens.",

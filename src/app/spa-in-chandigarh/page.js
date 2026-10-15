@@ -52,9 +52,9 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Chandigarh - Body Massage at Home & Hotel | Luxury Russian Spa",
+  title: "Russian Spa in Chandigarh - Body Massage at Home & Hotel",
   description:
-    "Luxury spa in Chandigarh that comes to you. Full body, Thai & couple massage at your home or hotel in Sector 8, 17, 35, Mohali & Zirakpur. See prices & book.",
+    "Russian spa in Chandigarh that comes to you. Russian, Thai & Indian therapists for full body massage at your home or hotel in Sector 8, 17, 35, Mohali & Zirakpur.",
   keywords: [
     "spa in chandigarh",
     "spa in chd",

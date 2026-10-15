@@ -83,9 +83,9 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Laxmi Nagar Delhi - Full Body Massage | Luxury Russian Spa",
+  title: "Russian Spa in Laxmi Nagar - Spa & Full Body Massage | ₹1999",
   description:
-    "Best spa in Laxmi Nagar for full body & body spa near Vikas Marg Metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+    "Russian spa in Laxmi Nagar, East Delhi, easy to reach from Laxmi Nagar metro. Russian & Indian therapists, private rooms, full body massage from ₹1999.",
   keywords: [
     "spa in laxmi nagar",
     "spa in laxminagar",

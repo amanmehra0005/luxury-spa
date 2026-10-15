@@ -98,9 +98,9 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Dwarka - Luxury Body Massage Near IGI Airport | Luxury Russian Spa",
+  title: "Russian Spa in Dwarka - Best Spa & Body Massage | ₹1999",
   description:
-    "Best spa in Dwarka for luxury body massage & body spa near IGI Airport. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+    "Russian spa in Dwarka with Russian, Uzbek, Thai & Indian therapists. Body massage & body spa near IGI Airport, private rooms, home & hotel visits. From ₹1999.",
   keywords: [
     "spa in dwarka",
     "best spa in dwarka",

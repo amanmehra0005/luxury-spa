@@ -83,7 +83,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Faridabad - Body Massage Near NIT | Luxury Russian Spa",
+  title: "Russian Spa in Faridabad - Body Massage Near NIT",
   description:
     "Best spa in Faridabad for body massage & body spa near NIT. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

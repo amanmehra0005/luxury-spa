@@ -47,7 +47,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Noida - Body Massage Near Sector 18 & at Home | From ₹1999",
+  title: "Russian Spa in Noida - Spa Near Sector 18 & Home Massage",
   description:
     "Luxury spa in Noida near Sector 18, plus massage at home across Noida, Noida Extension & Greater Noida. Russian & Thai therapists, private rooms. From ₹1999.",
   keywords: [

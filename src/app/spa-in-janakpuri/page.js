@@ -82,7 +82,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Janakpuri - Full Body Massage Near Metro | Luxury Russian Spa",
+  title: "Russian Spa in Janakpuri - Full Body Massage Near Metro",
   description:
     "Spa in Janakpuri for full body, deep tissue & couple massage near Janakpuri West Metro. Certified therapists, hygienic private rooms. Book today!",
   keywords: [

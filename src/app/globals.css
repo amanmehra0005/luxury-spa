@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* The rupee sign (U+20B9) sits in the latin-ext range, so every "₹" on a page made the browser download the
+   latin-ext files of Montserrat and Playfair (~88 KB) on top of the latin ones. This face draws only "₹", using a
+   font the phone or computer already has, so those extra files are never fetched. */
+@font-face {
+  font-family: "Rupee Local";
+  src: local("Roboto"), local("Noto Sans"), local("Arial"), local("Helvetica Neue"), local("Segoe UI");
+  unicode-range: U+20B9;
+}
+
 /* =====================================================================
    AVATAAR THEME
    Design language adapted from avataarskin.com: warm white and peach-cream
@@ -46,10 +55,10 @@
   --color-yellow-700: #9c5232;
 
   /* Typography */
-  --font-sans: var(--font-montserrat), "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-title: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Rupee Local", var(--font-montserrat), "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Rupee Local", var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-title: "Rupee Local", var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-display: "Rupee Local", var(--font-playfair), "Playfair Display", Georgia, serif;
 
   /* Animations (calm, Avataar-style) */
   --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;

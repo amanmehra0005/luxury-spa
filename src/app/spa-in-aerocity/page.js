@@ -46,7 +46,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Aerocity - Russian Spa Near Airport | Luxury Russian Spa",
+  title: "Russian Spa in Aerocity - Spa Near IGI Airport, Open 24/7",
   description:
     "Russian spa in Aerocity near Lemon Tree and IGI Airport, open 24/7. Massage at our outlet or in your room at JW Marriott, Novotel or Pullman. From ₹1999.",
   alternates: {

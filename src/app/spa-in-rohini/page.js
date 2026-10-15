@@ -74,7 +74,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Rohini - All Sectors & City Centre Mall | Luxury Russian Spa",
+  title: "Russian Spa in Rohini - Spa in All Sectors | From ₹1999",
   description:
     "Best spa in Rohini covering Sector 3 to 24 & City Centre Mall. Full body, deep tissue & couple massage near Rohini Metro. Certified therapists. Book from ₹1999!",
   keywords: [

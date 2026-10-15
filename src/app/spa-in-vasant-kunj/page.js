@@ -82,7 +82,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Vasant Kunj - Luxury Full Body Massage | Luxury Russian Spa",
+  title: "Russian Spa in Vasant Kunj - Luxury Full Body Massage",
   description:
     "Spa in Vasant Kunj for full body, deep tissue & couple massage near Ambience Mall. Certified therapists, hygienic rooms. Book from ₹1999 today!",
   keywords: [

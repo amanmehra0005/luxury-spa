@@ -12,7 +12,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Gurgaon - Genuine Full Body Massage Service | Luxury Russian Spa",
+  title: "Russian Spa in Gurgaon - Full Body Massage | From ₹1999",
   description: "Spa in Gurgaon offering genuine full body massage by top-rated certified therapists. Claim our first-visit offer for a relaxing session. Book your slot today!",
   keywords: ["spa in gurgaon", "massage in gurgaon", "full body massage gurgaon", "body spa gurgaon"],
   openGraph: {

@@ -74,9 +74,9 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Uttam Nagar - Body Massage & Thai Spa | Luxury Russian Spa",
+  title: "Russian Spa in Uttam Nagar - Spa With Price | From ₹1999",
   description:
-    "Best spa in Uttam Nagar for body massage, body spa & Thai massage near the metro. Certified therapists, hygienic private rooms, home service. Book from ₹1999!",
+    "Russian spa in Uttam Nagar near the metro. Body massage, body spa & Thai massage with clear prices from ₹1999. Private rooms, late slots, home service.",
   keywords: [
     "spa in uttam nagar",
     "uttam nagar spa",

@@ -83,7 +83,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Paschim Vihar - Full Body Massage | Luxury Russian Spa",
+  title: "Russian Spa in Paschim Vihar - Full Body Massage | ₹1999",
   description:
     "Best spa in Paschim Vihar for full body & body massage near the metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

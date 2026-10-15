@@ -4,6 +4,8 @@ import { WHATSAPP_URL as WHATSAPP, PHONE_LINK, PHONE_LABEL } from "./siteContact
 
 // Pure-CSS crossfade (no slider JS): the first image sits underneath and is visible on the very
 // first paint, so it is the LCP image; the other two fade in on top of it in turn (hero-slide-* in globals.css).
+// On mobile the hero is a single still image: no slow zoom and no extra slides (they are display:none, so the
+// lazy images never download), which keeps Speed Index and LCP low on slow phones.
 // Slides are pre-resized static files in /images/hero (640/828/1252px) rather than next/image: the on-demand
 // optimizer made the LCP image wait seconds whenever its cache was cold, which swung the mobile score red/yellow.
 const slides = [
@@ -28,7 +30,7 @@ export default function HomeBanner() {
         className="relative w-full overflow-hidden bg-dark min-h-[640px] md:min-h-[700px] lg:h-screen lg:min-h-[720px] lg:max-h-[900px]"
       >
         {slides.map((slide, i) => (
-          <div key={slide.name} className={`absolute inset-0 overflow-hidden ${slide.className ?? ""}`}>
+          <div key={slide.name} className={`absolute inset-0 overflow-hidden ${i > 0 ? "hidden md:block" : ""} ${slide.className ?? ""}`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={`/images/hero/${slide.name}-828.webp`}
@@ -40,7 +42,7 @@ export default function HomeBanner() {
               loading={i === 0 ? "eager" : "lazy"}
               fetchPriority={i === 0 ? "high" : "low"}
               decoding={i === 0 ? "sync" : "async"}
-              className={`absolute inset-0 h-full w-full object-cover ${i === 0 ? "animate-zoom-slow" : ""}`}
+              className={`absolute inset-0 h-full w-full object-cover ${i === 0 ? "md:animate-zoom-slow" : ""}`}
             />
           </div>
         ))}

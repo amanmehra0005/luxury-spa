@@ -1,4 +1,4 @@
-import { Montserrat, Playfair_Display, Cormorant_Garamond } from 'next/font/google'
+import { Montserrat, Playfair_Display } from 'next/font/google'
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -6,7 +6,7 @@ import TopBar from "./components/TopBar";
 import Analytics from "./components/Analytics";
 import ThemeEffects from "./components/ThemeEffects";
 
-// Avataar theme typography: Montserrat (body), Playfair Display (headings), Cormorant Garamond italic (accents)
+// Typography: Montserrat (body) and Playfair Display (headings; its italic doubles as the accent face)
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
@@ -19,17 +19,6 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
   display: 'swap',
 })
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['500', '600'],
-  style: ['italic'],
-  variable: '--font-cormorant',
-  display: 'swap',
-  // Only used for the small italic "Luxury" accent; not worth competing with the hero image on mobile
-  preload: false,
-})
-
 
 export const metadata = {
   metadataBase: new URL("https://www.luxuryrussianspa.com"),
@@ -54,7 +43,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${playfair.variable} ${cormorant.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${playfair.variable}`}>
       <body className="font-sans">
          <Analytics />
         {/* <TopBar /> */}

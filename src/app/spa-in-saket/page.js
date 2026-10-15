@@ -83,7 +83,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Saket - Best Body Massage Near Select Citywalk | Luxury Russian Spa",
+  title: "Russian Spa in Saket - Body Massage Near Select Citywalk",
   description:
     "Best spa in Saket for full body & body massage near Select Citywalk. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

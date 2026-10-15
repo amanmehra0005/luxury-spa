@@ -91,7 +91,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Preet Vihar - Full Body Massage Near Vikas Marg | Luxury Russian Spa",
+  title: "Russian Spa in Preet Vihar - Body Massage Near Vikas Marg",
   description:
     "Best spa in Preet Vihar for full body & body massage near Vikas Marg Metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

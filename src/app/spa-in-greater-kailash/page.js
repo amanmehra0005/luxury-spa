@@ -74,9 +74,9 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Greater Kailash - GK-1 & GK-2 Body Spa | Luxury Russian Spa",
+  title: "Russian Spa in Greater Kailash - Spa in GK 1 & GK 2 | ₹1999",
   description:
-    "Best spa in Greater Kailash (spa GK 1 & GK 2) for body massage & body spa near M Block Market. Certified therapists, hygienic private rooms. Book from ₹1999!",
+    "Russian spa in Greater Kailash for GK 1 & GK 2, near M Block Market. Russian & Indian therapists, private rooms, body massage from ₹1999. Book on WhatsApp.",
   keywords: [
     "spa in greater kailash",
     "spa gk",

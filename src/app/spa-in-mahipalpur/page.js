@@ -74,7 +74,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Mahipalpur - Massage Near IGI Airport | Luxury Russian Spa",
+  title: "Russian Spa in Mahipalpur - Open 24/7 Near IGI Airport",
   description:
     "Best spa in Mahipalpur for massage, body massage & russian spa near IGI Airport. Certified therapists, hygienic private rooms, hotel & home spa. Book from ₹1999!",
   keywords: [

@@ -91,7 +91,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Hauz Khas Village - Body Massage | Luxury Russian Spa",
+  title: "Russian Spa in Hauz Khas - Spa Near Hauz Khas Village",
   description:
     "Best spa in Hauz Khas Village for full body & body massage near the market. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

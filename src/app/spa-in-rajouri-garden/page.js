@@ -74,9 +74,9 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Rajouri Garden - Near City Square Mall | Luxury Russian Spa",
+  title: "Russian Spa in Rajouri Garden - Spa Near City Square Mall",
   description:
-    "Best spa in Rajouri Garden for body massage near the mall & metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+    "Russian spa in Rajouri Garden, near City Square Mall and the metro. Russian & Indian therapists, private rooms, body massage from ₹1999. Book on WhatsApp.",
   keywords: [
     "spa in rajouri garden",
     "best spa in rajouri garden",

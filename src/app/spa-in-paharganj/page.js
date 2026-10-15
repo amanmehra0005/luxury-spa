@@ -16,7 +16,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Best Spa in Paharganj - Near New Delhi Railway Station | Luxury Russian Spa",
+  title: "Russian Spa in Paharganj - Near New Delhi Railway Station",
   description:
     "Best spa in Paharganj near New Delhi Railway Station & Main Bazaar. 24 hours booking, certified therapists, home & hotel spa available. Book from ₹1999!",
   keywords: [
