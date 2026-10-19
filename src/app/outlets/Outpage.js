@@ -4,13 +4,11 @@ import React, { useState, useEffect } from 'react'
 import { Playfair_Display } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import WhatsappFloat from '../components/WhatsappFloat';
 //   import WhatsappFloat from '../../components/WhatsappFloat';
 import { FaHandSparkles, FaLeaf } from 'react-icons/fa';
   import { FaSpa, FaHotTub } from 'react-icons/fa';
   import { FaStar } from "react-icons/fa";
-  import { AnimatePresence } from "framer-motion";
   import { FaTelegram } from "react-icons/fa";
   import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
   import { FaWhatsapp } from "react-icons/fa";
@@ -366,10 +364,7 @@ export default function Outpage() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}
-        <motion.div
-          initial={false}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+        <div
           className="space-y-6"
         >
           <div className="flex items-center gap-2">
@@ -411,13 +406,10 @@ export default function Outpage() {
           >
             🌐 www.luxuryrussianspa.com
           </a>
-        </motion.div>
+        </div>
 
         {/* Right Image */}
-        <motion.div
-          initial={false}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+        <div
           className="relative"
         >
           <Image
@@ -428,43 +420,34 @@ export default function Outpage() {
             className="rounded-2xl shadow-lg object-cover"
           />
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
-        </motion.div>
+        </div>
       </div>
     </section>
     {/* ///// */}
     {/* Location */}
     <section className="py-12 bg-gray-50">
 <div className="max-w-7xl mx-auto px-6">
-   <motion.h2
+   <h2
       className="text-4xl md:text-5xl font-bold text-center text-amber-900 font-serif mb-6"
-      initial={false}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
     >
      Our Premium Hotel Spa Outlets in Delhi
-    </motion.h2>
+    </h2>
 
     {/* Description */}
-    <motion.p
+    <p
       className="text-center text-amber-800 max-w-3xl mx-auto mb-12 text-base md:text-lg font-medium"
-      initial={false}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
     >
       Enjoy the luxury of a premium massage at Luxury Russian Spa, offering high-quality hotel spa treatments and therapeutic massages at the finest spas in Delhi.
-    </motion.p>
+    </p>
   
 
 
 
 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
 {cities.map((c, i) => (
-<motion.a
+<a
 key={c.name}
 href={c.href}
-initial={{ opacity: 0, y: 8 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ delay: i * 0.04, duration: 0.35 }}
 className="group block rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
 >
 <div className="relative w-full h-44 sm:h-48 lg:h-52">
@@ -483,7 +466,7 @@ className="group-hover:scale-105 transition-transform duration-500"
 <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
 <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
 </div>
-</motion.a>
+</a>
 ))}
 </div>
 
@@ -507,34 +490,25 @@ View All Services
        <section className="w-full py-16 bg-gradient-to-b from-white to-amber-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* Title */}
-    <motion.h2
+    <h2
       className="text-4xl md:text-5xl font-bold text-center text-amber-900 font-serif mb-6"
-      initial={false}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
     >
       Our 5-Star Hotel Outlets for Massage Spa in Delhi
-    </motion.h2>
+    </h2>
 
     {/* Description */}
-    <motion.p
+    <p
       className="text-center text-amber-800 max-w-3xl mx-auto mb-12 text-base md:text-lg font-medium"
-      initial={false}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
     >
       Luxury Russian Spa offers the world standard of wellness to the highest 5-star hotels making sure that the customers experience a personalized massage in a luxurious and serene environment.
-    </motion.p>
+    </p>
 
     {/* Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {hotelOutlets.map((hotel, index) => (
-        <motion.div
+        <div
           key={index}
           className="bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-          initial={false}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: index * 0.1 }}
         >
           {/* Image */}
           <div className="relative h-48 w-full">
@@ -565,7 +539,7 @@ View All Services
               BOOK NOW
             </a>
           </div>
-        </motion.div>
+        </div>
       ))}
     </div>
   </div>
@@ -591,24 +565,18 @@ View All Services
             <div className="max-w-[95%] mx-auto">
               {/* Section header */}
               <div className="text-center mb-10 md:mb-12">
-                <motion.div
+                <div
                             className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                            initial={false}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.2, duration: 0.5 }}
                           >
                             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
                             <span className="text-amber-700 font-medium tracking-wider">PREMIUM EXPERIENCE</span>
-                          </motion.div>
+                          </div>
                           
-                          <motion.h2
+                          <h2
                             className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
-                            initial={false}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3, duration: 0.6 }}
                           >
                             Luxury Russian Spa: <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Best Massage Centre for Hotel Spa in Delhi</span>
-                          </motion.h2>
+                          </h2>
                 <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
               </div>
               
@@ -616,10 +584,7 @@ View All Services
               <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                 {/* Left Image & Content */}
                 
-                <motion.div 
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7 }}
+                <div 
                   className="w-full lg:w-1/2 relative"
                 >
                   <div className="relative overflow-hidden rounded-2xl shadow-xl z-10">
@@ -679,13 +644,10 @@ View All Services
                   {/* Decorative elements */}
                   <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-100 rounded-full z-0"></div>
                   <div className="absolute -top-6 -right-6 w-16 h-16 bg-stone-200 rounded-full z-0"></div>
-                </motion.div>
+                </div>
       
                 {/* Right Text Content */}
-                <motion.div 
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7 }}
+                <div 
                   className="w-full lg:w-1/2"
                 >
                   <div className="max-w-lg">
@@ -738,7 +700,7 @@ View All Services
                     </div>
                   
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </section>
@@ -814,36 +776,24 @@ View All Services
             <div className="max-w-7xl mx-auto">
               {/* Section Title */}
               <div className="text-center mb-12">
-                <motion.h2
+                <h2
                   className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                 >
                   Our Luxury Hotel <span className="text-amber-600">Spa Outlets in Delhi</span>
-                </motion.h2>
-                <motion.p
+                </h2>
+                <p
                   className="text-gray-600 max-w-2xl mx-auto text-lg"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 }}
-                  viewport={{ once: true }}
                 >
                   Luxury spa outlets of Luxury Russian Spa are the best way to treat yourself and they will provide professional massage treatments to the most preferred locations in the city.
-                </motion.p>
+                </p>
               </div>
       
               {/* Location Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {locations.map((location, index) => (
-                  <motion.div
+                  <div
                     key={index}
                     className="bg-white rounded-2xl shadow-lg relative overflow-hidden group"
-                    initial={false}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.05 }}
                   >
                     {/* Location Image */}
                     <div className="relative h-56 w-full">
@@ -880,7 +830,7 @@ View All Services
                               Book On Telegram
                             </a>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -899,12 +849,8 @@ View All Services
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((item) => (
-              <motion.div
+              <div
                 key={item}
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: item * 0.1 }}
-                viewport={{ once: true }}
                 className="bg-white p-8 rounded-xl shadow-md"
               >
                 <div className="flex items-center mb-6">
@@ -932,7 +878,7 @@ View All Services
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -966,10 +912,7 @@ View All Services
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
     {/* Left: Text and Icon */}
-    <motion.div
-      initial={false}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+    <div
       className="space-y-6"
     >
       {/* Icon */}
@@ -1002,13 +945,10 @@ View All Services
 Through luxury, hygiene, and competent nursing, Luxury Russian Spa is able to convert any room within a hotel to a haven of peace and pleasures. Customers leave rejuvenated, renewed and completely engrossed in an unmatched spa experience and Luxury Russian Spa is the recommended name when it comes to luxury hotel massage services in the city.
 
       </p>
-    </motion.div>
+    </div>
 
     {/* Right: Images */}
-    <motion.div
-      initial={false}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
+    <div
       className="grid grid-cols-2 gap-4"
     >
       <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -1025,7 +965,7 @@ Through luxury, hygiene, and competent nursing, Luxury Russian Spa is able to co
           className="w-full h-full object-cover"
         />
       </div>
-    </motion.div>
+    </div>
   </div>
 </section>
 
@@ -1033,28 +973,20 @@ Through luxury, hygiene, and competent nursing, Luxury Russian Spa is able to co
                                  <section className="bg-gradient-to-b from-[#fffaf5] to-[#f8f0eb] py-16 px-6 md:px-16">
                                     <div className="max-w-6xl mx-auto">
                                       {/* Section Header */}
-                                      <motion.div 
+                                      <div 
                                         className="text-center mb-10 md:mb-12"
-                                        initial={false}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.6 }}
                                       >
                                         <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
                                         <h2 className="text-4xl md:text-5xl font-bold text-[#1f1a17] mt-4 mb-6">What We Offer At Our Premium Spa Outlets in Delhi</h2>
                                         <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
-                                      </motion.div>
+                                      </div>
             
                                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                                         {/* Left Column */}
                                         <div>
                                           {/* Facial Treatments */}
-                                          <motion.div 
+                                          <div 
                                             className="bg-white bg-optage-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#f0dccb]"
-                                            initial={false}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.7 }}
                                           >
                                             <div className="flex items-center gap-4 mb-6">
                                               <div className="bg-amber-100 p-3 rounded-xl">
@@ -1087,16 +1019,12 @@ Through luxury, hygiene, and competent nursing, Luxury Russian Spa is able to co
                                             <div className="mt-6">
                                               <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-90 min | From ₹2,800</span>
                                             </div>
-                                          </motion.div>
+                                          </div>
                                           
             
                                           {/* Body Treatments */}
-                                          <motion.div 
+                                          <div 
                                             className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#f0dccb]"
-                                            initial={false}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.7, delay: 0.1 }}
                                           >
                                             <div className="flex items-center gap-4 mb-6">
                                               <div className="bg-amber-100 p-3 rounded-xl">
@@ -1131,7 +1059,7 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                             <div className="mt-6">
                                               <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">75-90 min | From ₹3,200</span>
                                             </div>
-                                          </motion.div>
+                                          </div>
                                         </div>
             
                                         {/* Right Column */}
@@ -1139,12 +1067,8 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                           
             
                                           {/* Massage Therapy */}
-                                          <motion.div 
+                                          <div 
                                             className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#f0dccb]"
-                                            initial={false}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.7 }}
                                           >
                                             <div className="flex items-center gap-4 mb-6">
                                               <div className="bg-amber-100 p-3 rounded-xl">
@@ -1182,14 +1106,10 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                             <div className="mt-6">
                                               <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-120 min | From ₹2,500</span>
                                             </div>
-                                          </motion.div>
+                                          </div>
                                           {/* Wellness Packages */}
-                                          <motion.div 
+                                          <div 
                                             className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#f0dccb]"
-                                            initial={false}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            viewport={{ once: true }}
-                                            transition={{ duration: 0.7, delay: 0.1 }}
                                           >
                                             <div className="flex items-center gap-4 mb-6">
                                               <div className="bg-amber-100 p-3 rounded-xl">
@@ -1223,17 +1143,13 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                             <div className="mt-6">
                                               <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">3-6 hours | From ₹8,500</span>
                                             </div>
-                                          </motion.div>
+                                          </div>
                                         </div>
                                       </div>
             
                                       {/* Additional Information */}
-                                      <motion.div 
+                                      <div 
                                         className="mt-16 bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-8 text-white shadow-xl"
-                                        initial={false}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.7 }}
                                       >
                                         <div className="grid md:grid-cols-2 gap-8 items-center">
                                           <div>
@@ -1257,7 +1173,7 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                               </a>
                                           </div>
                                         </div>
-                                      </motion.div>
+                                      </div>
                                     </div>
                                   </section>
                                 {/* end */}
@@ -1266,40 +1182,28 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-10 md:mb-12">
-          <motion.p
+          <p
             className="text-amber-300 uppercase font-semibold tracking-wider mb-4"
-            initial={false}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
           >
             Experts Therapy
-          </motion.p>
+          </p>
           
-          <motion.h2
+          <h2
             className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-            initial={false}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
           >
             Foreign therapists available <span className="text-amber-600"> at our Spa Outlets in Aerocity</span>
-          </motion.h2>
+          </h2>
           
-          <motion.p
+          <p
             className="text-gray-600 max-w-2xl mx-auto text-lg"
-            initial={false}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            viewport={{ once: true }}
           >
              Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
-          </motion.p>
+          </p>
         </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, idx) => (
-              <motion.div
+              <div
                 key={idx}
-                whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-2xl shadow-md overflow-hidden text-center relative group"
               >
                 <div className="relative h-96 overflow-hidden">
@@ -1323,7 +1227,7 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                   <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaInstagram /></a>
                                   {/* <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaTwitter /></a> */}
                                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -1334,22 +1238,15 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
 {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">
-                              <motion.div
-                                initial={false}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
-                                viewport={{ once: true }}
+                              <div
                                 className="text-center mb-14"
                               >
-                                <motion.div
+                                <div
                                   className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
-                                  initial={false}
-                                  whileInView={{ opacity: 1, y: 0 }}
-                                  viewport={{ once: true }}
                                 >
                                   <FaStar className="text-amber-500" />
                                   Questions? We’re here to help
-                                </motion.div>
+                                </div>
                                 <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
                                   Frequently Asked <span className="text-amber-600">Questions</span>
                                 </h2>
@@ -1359,17 +1256,13 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                 <div className="flex justify-center mt-6">
                                   <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
                                 </div>
-                              </motion.div>
+                              </div>
                     
                               {/* FAQ Accordion */}
                               <div className="space-y-5">
                                 {faqs.map((faq, index) => (
-                                  <motion.div
+                                  <div
                                     key={index}
-                                    initial={false}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                                    viewport={{ once: true }}
                                     className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
                                   >
                                     <button
@@ -1401,13 +1294,8 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                       </div>
                                     </button>
                     
-                                    <AnimatePresence>
                                       {activeIndex === index && (
-                                        <motion.div
-                                          initial={{ height: 0, opacity: 0 }}
-                                          animate={{ height: 'auto', opacity: 1 }}
-                                          exit={{ height: 0, opacity: 0 }}
-                                          transition={{ duration: 0.3 }}
+                                        <div
                                           className="overflow-hidden"
                                         >
                                           <div className="px-6 pb-6 pt-2 border-t border-amber-50">
@@ -1415,19 +1303,14 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                               {faq.answer}
                                             </p>
                                           </div>
-                                        </motion.div>
+                                        </div>
                                       )}
-                                    </AnimatePresence>
-                                  </motion.div>
+                                  </div>
                                 ))}
                               </div>
                     
                               {/* CTA Box */}
-                              {/* <motion.div
-                                initial={false}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: 0.4 }}
-                                viewport={{ once: true }}
+                              {/* <div
                                 className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
                               >
                                 <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
@@ -1442,7 +1325,7 @@ We have a team of 23 professional therapists, each with 500+ hours of certified 
                                     Book Appointment
                                   </button>
                                 </div>
-                              </motion.div> */}
+                              </div> */}
                             </div>
       </section>
  <WhatsappFloat />

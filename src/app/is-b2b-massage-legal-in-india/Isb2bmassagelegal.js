@@ -1,11 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaHandSparkles, FaLeaf } from 'react-icons/fa';
   import { FaSpa, FaHotTub } from 'react-icons/fa';
   import { FaStar } from "react-icons/fa";
-  import { AnimatePresence } from "framer-motion";
   import React, { useState, useEffect } from 'react'
   import WhatsappFloat from "../components/WhatsappFloat";
 
@@ -73,14 +71,11 @@ export default function Isb2bmassagelegal() {
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <motion.h1
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            <h1
               className="text-4xl md:text-5xl font-semibold tracking-wide"
             >
              Is B2B Massage Legal in India?
-            </motion.h1>
+            </h1>
             {/* <p className="mt-3 text-lg text-amber-100">
               Discover the art of relaxation and body healing
             </p> */}
@@ -359,22 +354,15 @@ Common spa services include:
       {/* F&Q Section */}
             <section className="py-12 bg-gradient-to-b from-amber-50 to-white">
                                   <div className="max-w-5xl mx-auto px-4">
-                                    <motion.div
-                                      initial={false}
-                                      whileInView={{ opacity: 1, y: 0 }}
-                                      transition={{ duration: 0.6 }}
-                                      viewport={{ once: true }}
+                                    <div
                                       className="text-center mb-14"
                                     >
-                                      <motion.div
+                                      <div
                                         className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
-                                        initial={false}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
                                       >
                                         <FaStar className="text-amber-500" />
                                         Questions? We are here to help
-                                      </motion.div>
+                                      </div>
                                       <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
                                         Frequently Asked <span className="text-amber-600">Questions</span>
                                       </h2>
@@ -384,17 +372,13 @@ Common spa services include:
                                       <div className="flex justify-center mt-6">
                                         <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
                                       </div>
-                                    </motion.div>
+                                    </div>
                           
                                     {/* FAQ Accordion */}
                                     <div className="space-y-5">
                                       {faqs.map((faq, index) => (
-                                        <motion.div
+                                        <div
                                           key={index}
-                                          initial={false}
-                                          whileInView={{ opacity: 1, y: 0 }}
-                                          transition={{ duration: 0.4, delay: index * 0.1 }}
-                                          viewport={{ once: true }}
                                           className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
                                         >
                                           <button
@@ -426,13 +410,8 @@ Common spa services include:
                                             </div>
                                           </button>
                           
-                                          <AnimatePresence>
                                             {activeIndex === index && (
-                                              <motion.div
-                                                initial={{ height: 0, opacity: 0 }}
-                                                animate={{ height: 'auto', opacity: 1 }}
-                                                exit={{ height: 0, opacity: 0 }}
-                                                transition={{ duration: 0.3 }}
+                                              <div
                                                 className="overflow-hidden"
                                               >
                                                 <div className="px-6 pb-6 pt-2 border-t border-amber-50">
@@ -440,10 +419,9 @@ Common spa services include:
                                                     {faq.answer}
                                                   </p>
                                                 </div>
-                                              </motion.div>
+                                              </div>
                                             )}
-                                          </AnimatePresence>
-                                        </motion.div>
+                                        </div>
                                       ))}
                                     </div>
                                   </div>

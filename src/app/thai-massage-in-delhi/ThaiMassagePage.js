@@ -2,12 +2,10 @@
 import React, { useState, useEffect } from 'react'
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaSpa, FaHotel, FaCrown } from 'react-icons/fa';
 import { FaStar, FaCheckCircle } from 'react-icons/fa';
 import { FaHandSparkles, FaLeaf, FaHotTub } from 'react-icons/fa';
-import { AnimatePresence } from 'framer-motion';
 import { FaTelegram } from 'react-icons/fa';
 import { FaClock, FaPhoneAlt, FaCreditCard } from 'react-icons/fa'
 
@@ -329,32 +327,23 @@ export default function ThaiMassagePage() {
 
           <div className="max-w-[95%] mx-auto">
             <div className="text-center mb-10 md:mb-12">
-              <motion.div
+              <div
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                initial={false}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
               >
                 <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
                 <span className="text-amber-700 font-medium tracking-wider">PREMIUM EXPERIENCE</span>
-              </motion.div>
+              </div>
 
-              <motion.h2
+              <h2
                 className="text-4xl md:text-5xl lg:text-4xl font-bold text-amber-900 mb-6 font-serif"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
               >
                 A Trusted Thai Massage Spa in Delhi <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">for Traditional & Full Body Treatments</span>
-              </motion.h2>
+              </h2>
               <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
             </div>
 
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7 }}
+              <div
                 className="w-full lg:w-1/2 relative"
               >
                 <div className="relative overflow-hidden rounded-2xl shadow-xl z-10">
@@ -418,12 +407,9 @@ export default function ThaiMassagePage() {
 
                 <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-100 rounded-full z-0"></div>
                 <div className="absolute -top-6 -right-6 w-16 h-16 bg-stone-200 rounded-full z-0"></div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7 }}
+              <div
                 className="w-full lg:w-1/2"
               >
                 <div className="max-w-lg">
@@ -471,7 +457,7 @@ export default function ThaiMassagePage() {
                     </a>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -480,34 +466,23 @@ export default function ThaiMassagePage() {
         {/* About Section */}
         <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            <div
               className="space-y-6"
             >
-              <motion.div
+              <div
                 className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full mb-6 font-medium"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                viewport={{ once: true }}
               >
                 <span className="mr-2">✦</span> About Our Thai Massage Therapists
-              </motion.div>
+              </div>
 
-              <motion.h2
+              <h2
                 className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                viewport={{ once: true }}
               >
                 Thai Massage in Delhi with <span className="relative">
                   <span className="text-amber-600 z-10 relative">Foreign Therapists</span>
                   <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                 </span>
-              </motion.h2>
+              </h2>
               <p className="text-gray-700 text-lg">
                 Looking for the best Thai massage in Delhi with experienced foreign therapists? Welcome to Luxury Russian Spa, where we offer authentic Thai techniques designed to help you relax, recharge, and enjoy a genuine wellness experience. Our team includes skilled Thai, Russian, and Uzbeki therapists trained in traditional stretching and pressure methods.
               </p>
@@ -517,12 +492,9 @@ export default function ThaiMassagePage() {
               <p className="text-gray-700 text-lg">
                 Based near Central Market? Our <Link href="/thai-massage-in-lajpat-nagar" className="text-amber-700 underline hover:text-amber-800">Thai massage in Lajpat Nagar</Link> outlet is a short walk from the metro, ideal after a long day of shopping.
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+            <div
               className="grid grid-cols-2 gap-4"
             >
               <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -531,72 +503,52 @@ export default function ThaiMassagePage() {
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img src="/images/staff2.jpg" alt="Thai Massage Session in Delhi" className="w-full h-full object-cover" />
               </div>
-            </motion.div>
+            </div>
           </div>
         </section>
 
         {/* Benefits Section */}
         <section className="w-full py-16 bg-gradient-to-b from-white to-amber-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
+            <div
               className="text-center mb-10 md:mb-12"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
             >
-              <motion.div
+              <div
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                initial={false}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
               >
                 <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
                 <span className="text-amber-700 font-medium tracking-wider">WHY THAI MASSAGE</span>
-              </motion.div>
+              </div>
 
-              <motion.h2
+              <h2
                 className="text-4xl md:text-5xl lg:text-5xl font-bold text-amber-900 mb-6 font-serif"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
               >
                 Benefits of <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Thai Massage</span>
-              </motion.h2>
+              </h2>
 
-              <motion.p
+              <p
                 className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.5 }}
               >
                 A traditional Thai massage in Delhi does more than relax you — here's what regular sessions can do for your body and mind.
-              </motion.p>
+              </p>
 
-              <motion.div
+              <div
                 className="flex justify-center mt-10"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
               >
                 <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
-                <motion.div
+                <div
                   key={index}
                   className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-50"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                 >
                   <div className="text-4xl mb-4">{benefit.icon}</div>
                   <h3 className="text-xl font-semibold text-amber-800 mb-3 font-serif">{benefit.title}</h3>
                   <p className="text-gray-600">{benefit.description}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -607,36 +559,23 @@ export default function ThaiMassagePage() {
         <section id="services" className="py-10 px-6 md:px-16 bg-gradient-to-b from-amber-50 to-white relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-10 md:mb-12">
-              <motion.p
+              <p
                 className="text-amber-500 uppercase font-semibold tracking-wider mb-4"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
               >
                 Explore More Services
-              </motion.p>
-              <motion.h2
+              </p>
+              <h2
                 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6 font-serif"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
               >
                 Other Massage <span className="text-amber-500">Services in Delhi</span>
-              </motion.h2>
+              </h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {relatedServices.map((service, index) => (
-                <motion.div
+                <div
                   key={index}
                   className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-50 relative overflow-hidden group"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -15 }}
                 >
                   <div className="absolute -top-4 -right-4 w-16 h-16 bg-amber-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
                   <div className="text-5xl mb-6 text-amber-500">{service.icon}</div>
@@ -660,7 +599,7 @@ export default function ThaiMassagePage() {
                       />
                     </svg>
                   </a>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -670,12 +609,8 @@ export default function ThaiMassagePage() {
         {/* content section */}
         <section className="bg-gradient-to-b from-[#fffaf5] to-[#f8f0eb] py-16 px-6 md:px-16">
           <div className="max-w-6xl mx-auto">
-            <motion.div
+            <div
               className="text-center mb-12"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
             >
               <span className="text-sm font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
               <h1 className="text-4xl md:text-5xl font-bold text-[#1f1a17] mt-4 mb-4 font-serif">Why Luxury Russian Spa Is the Best Thai Massage Spa in Delhi</h1>
@@ -683,18 +618,14 @@ export default function ThaiMassagePage() {
               <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
                 From traditional Thai stretching to hygienic outlets and 24/7 booking support, Luxury Russian Spa blends authenticity, comfort and personal care for every guest.
               </p>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="space-y-8">
                 {SERVICES_LEFT.map((s, idx) => (
-                  <motion.div
+                  <div
                     key={s.id}
                     className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-[#f0dccb] overflow-hidden"
-                    initial={false}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: idx * 0.08 }}
                   >
                     <div className="md:flex gap-6">
                       <div className="relative w-full md:w-48 h-40 rounded-xl overflow-hidden flex-shrink-0">
@@ -732,19 +663,15 @@ export default function ThaiMassagePage() {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
               <div className="space-y-8">
                 {SERVICES_RIGHT.map((s, idx) => (
-                  <motion.div
+                  <div
                     key={s.id}
                     className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-[#f0dccb] overflow-hidden"
-                    initial={false}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: idx * 0.08 }}
                   >
                     <div className="md:flex gap-6">
                       <div className="relative w-full md:w-48 h-40 rounded-xl overflow-hidden flex-shrink-0">
@@ -782,15 +709,11 @@ export default function ThaiMassagePage() {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
 
-                <motion.div
+                <div
                   className="bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-6 text-white shadow-xl"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.12 }}
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div>
@@ -810,16 +733,12 @@ export default function ThaiMassagePage() {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
 
-            <motion.div
+            <div
               className="mt-12 text-center"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.08 }}
             >
               <a
                 href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
@@ -827,7 +746,7 @@ export default function ThaiMassagePage() {
               >
                 Book a Personalized Journey
               </a>
-            </motion.div>
+            </div>
           </div>
         </section>
         {/* end */}
@@ -836,10 +755,7 @@ export default function ThaiMassagePage() {
         <section className="w-full py-16 bg-gradient-to-b from-white to-amber-50">
           <div className="max-w-6xl mx-auto px-6">
             <header className="text-center mb-14">
-              <motion.h2
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+              <h2
                 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-amber-900"
               >
                 <span className="block font-[Great_Vibes] text-4xl md:text-5xl text-amber-800">
@@ -848,7 +764,7 @@ export default function ThaiMassagePage() {
                 <span className="block font-[Great_Vibes] text-3xl md:text-4xl bg-gradient-to-r from-amber-600 to-amber-400 text-transparent bg-clip-text">
                   It's Simple
                 </span>
-              </motion.h2>
+              </h2>
 
               <p className="mt-4 text-gray-700 max-w-2xl mx-auto text-sm md:text-base">
                 The process of beginning to relax with Luxury Russian Spa is easy. <span className="font-semibold text-amber-700">Here is how you can do it:</span>
@@ -857,11 +773,8 @@ export default function ThaiMassagePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {topSteps.map((s, idx) => (
-                <motion.article
+                <article
                   key={idx}
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: idx * 0.1 }}
                   className="bg-white rounded-2xl shadow-lg p-6 border border-amber-100 text-center hover:shadow-xl hover:-translate-y-1 transition"
                 >
                   <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-amber-100 mb-4">
@@ -869,17 +782,14 @@ export default function ThaiMassagePage() {
                   </div>
                   <h3 className="text-lg md:text-xl font-semibold text-amber-800 mb-2">{s.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{s.text}</p>
-                </motion.article>
+                </article>
               ))}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {bottomSteps.map((s, idx) => (
-                <motion.article
+                <article
                   key={idx}
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: idx * 0.1 }}
                   className="bg-white rounded-2xl shadow-lg p-6 border border-amber-100 flex items-start gap-4 hover:shadow-xl transition"
                 >
                   <div className="w-14 h-14 flex items-center justify-center rounded-full bg-amber-100">
@@ -889,7 +799,7 @@ export default function ThaiMassagePage() {
                     <h4 className="text-lg font-semibold text-amber-800 mb-1">{s.title}</h4>
                     <p className="text-gray-600 text-sm leading-relaxed">{s.text}</p>
                   </div>
-                </motion.article>
+                </article>
               ))}
             </div>
 
@@ -914,53 +824,34 @@ export default function ThaiMassagePage() {
 
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center mb-10 md:mb-12">
-              <motion.div
+              <div
                 className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
               >
                 <FaStar className="text-amber-500" />
                 Affordable Luxury
-              </motion.div>
-              <motion.h2
+              </div>
+              <h2
                 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
               >
                 Thai Massage <span className="text-amber-600">Pricing Packages</span>
-              </motion.h2>
-              <motion.p
+              </h2>
+              <p
                 className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
               >
                 Authentic Thai massage experiences starting from just ₹1999. Choose the option that fits your schedule and setting.
-              </motion.p>
-              <motion.div
+              </p>
+              <div
                 className="flex justify-center mt-10"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
               >
                 <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-              </motion.div>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
               {pricingPlans.map((plan, index) => (
-                <motion.div
+                <div
                   key={index}
                   className={`relative rounded-3xl overflow-hidden ${plan.highlight ? "transform lg:-translate-y-4" : ""}`}
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -10 }}
                 >
                   {plan.highlight && (
                     <div className="absolute top-6 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-1 rounded-full text-sm font-bold z-20 rotate-12 shadow-lg">
@@ -1010,7 +901,7 @@ export default function ThaiMassagePage() {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -1020,51 +911,34 @@ export default function ThaiMassagePage() {
         {/* Our Process */}
         <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
+            <div
               className="text-center mb-10 md:mb-12"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
             >
-              <motion.div
+              <div
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                initial={false}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
               >
                 <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
                 <span className="text-amber-700 font-medium tracking-wider">Process</span>
-              </motion.div>
+              </div>
 
-              <motion.h2
+              <h2
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
               >
                 Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
-              </motion.h2>
+              </h2>
 
-              <motion.div
+              <div
                 className="flex justify-center mt-10"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
               >
                 <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {processSteps.map((step, index) => (
-                <motion.div
+                <div
                   key={index}
                   className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
                 >
                   <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
                     {step.number}
@@ -1084,7 +958,7 @@ export default function ThaiMassagePage() {
                   </h4>
 
                   <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -1094,22 +968,15 @@ export default function ThaiMassagePage() {
         {/* FAQ Section */}
         <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
           <div className="max-w-5xl mx-auto px-4">
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+            <div
               className="text-center mb-14"
             >
-              <motion.div
+              <div
                 className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
               >
                 <FaStar className="text-amber-500" />
                 Questions? We're here to help
-              </motion.div>
+              </div>
               <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
                 Frequently Asked <span className="text-amber-600">Questions</span>
               </h2>
@@ -1119,16 +986,12 @@ export default function ThaiMassagePage() {
               <div className="flex justify-center mt-6">
                 <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
               </div>
-            </motion.div>
+            </div>
 
             <div className="space-y-5">
               {faqs.map((faq, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
                 >
                   <button
@@ -1160,13 +1023,8 @@ export default function ThaiMassagePage() {
                     </div>
                   </button>
 
-                  <AnimatePresence>
                     {activeIndex === index && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+                      <div
                         className="overflow-hidden"
                       >
                         <div className="px-6 pb-6 pt-2 border-t border-amber-50">
@@ -1174,10 +1032,9 @@ export default function ThaiMassagePage() {
                             {faq.answer}
                           </p>
                         </div>
-                      </motion.div>
+                      </div>
                     )}
-                  </AnimatePresence>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>

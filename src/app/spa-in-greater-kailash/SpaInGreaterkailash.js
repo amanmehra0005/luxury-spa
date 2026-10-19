@@ -1,561 +1,779 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { preload } from "react-dom";
 import {
-  FaArrowRight,
-  FaCheckCircle,
-  FaClock,
-  FaCrown,
-  FaHandSparkles,
-  FaHeart,
-  FaHotel,
-  FaLeaf,
-  FaRupeeSign,
-  FaShoePrints,
-  FaSpa,
-  FaStar,
-  FaSwimmer,
-  FaTelegram,
-  FaTint,
-  FaWhatsapp,
-} from "react-icons/fa";
+  ArrowRight,
+  CalendarCheck,
+  Car,
+  Check,
+  Clock,
+  CreditCard,
+  Home,
+  Leaf,
+  MapPin,
+  Phone,
+  Plus,
+  ShieldCheck,
+  ShoppingBag,
+  Sparkles,
+  Star,
+  TrainFront,
+  Users,
+} from "lucide-react";
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import HomeHeading from "../components/HomeHeading";
+import MassagePicker from "../components/MassagePicker";
 import WhatsappFloat from "../components/WhatsappFloat";
+import { PHONE_LABEL, PHONE_LINK, TELEGRAM_URL, WHATSAPP_URL } from "../components/siteContact";
 
-const highlights = [
+// Also used for the FAQPage schema in ./page.js, so the page and schema never drift apart.
+export const faqs = [
   {
-    icon: <FaSpa className="text-2xl text-amber-600" />,
-    title: "Genuine Spa in Greater Kailash",
-    desc: "A real body spa in Greater Kailash — trained therapists, premium oils, and a private room for every session.",
+    question: "Where is your spa in Greater Kailash?",
+    answer:
+      "Our spa in Greater Kailash is a short drive from M Block Market and N Block Market in GK 1. We send the exact location on WhatsApp as soon as your slot is confirmed. If you'd rather stay in, we can also come to your home anywhere in GK 1 or GK 2.",
   },
   {
-    icon: <FaHandSparkles className="text-2xl text-emerald-600" />,
-    title: "Covers Both GK-1 & GK-2",
-    desc: "Whether you're near M Block Market GK-1 or on the GK-2 side, our outlet and home spa keep you covered.",
+    question: "Do you cover both GK 1 and GK 2?",
+    answer:
+      "Yes. Guests from GK 1, GK 2, Kailash Colony and East of Kailash all book with us, and our home service also covers Nehru Place, CR Park, Alaknanda and Chirag Delhi.",
   },
   {
-    icon: <FaHeart className="text-2xl text-rose-500" />,
-    title: "Outlet, Home & Hotel Spa Options",
-    desc: "Visit our Greater Kailash spa outlet, or book a home spa service anywhere across South Delhi.",
+    question: "How much does a body massage in Greater Kailash cost?",
+    answer:
+      "A 60-minute body massage at our outlet is ₹1,999. A 90-minute session at your home or hotel is ₹14,999, and our 120-minute 5-star package is ₹19,999. We confirm the price on WhatsApp before you book, and nothing gets added later.",
   },
+  {
+    question: "Do you have a Russian spa in Greater Kailash?",
+    answer:
+      "Yes. Our team includes therapists from Russia, Uzbekistan and Thailand along with experienced Indian therapists. Ask for a Russian therapist when you book and we'll confirm who's free.",
+  },
+  {
+    question: "Can I get a massage at home in GK?",
+    answer:
+      "Yes. The therapist comes to your home with fresh towels and oils. All you need is a quiet room with a little space around the bed.",
+  },
+  {
+    question: "Can we book a couple massage?",
+    answer:
+      "Yes. Two therapists work at the same time in one private room, at our outlet or at your home. It's a popular way to spend an anniversary or a quiet Sunday.",
+  },
+  {
+    question: "Can I choose a female therapist?",
+    answer:
+      "Yes. Male guests can ask for a female therapist, and female guests can choose a male or female therapist. Just mention it when you book.",
+  },
+  {
+    question: "How do I book?",
+    answer:
+      "WhatsApp or call +91 87997 16197 with the massage you'd like, a time, and whether you're coming to us or want us at home. We confirm the slot, therapist and price on the same chat.",
+  },
+];
+
+// Options for the "how are you feeling today?" picker
+const moods = [
+  {
+    id: "shopping",
+    label: "Tired after M Block Market",
+    emoji: "🛍️",
+    pick: "Thai Massage",
+    time: "60 min",
+    why: "An afternoon of walking round M Block and N Block is hard on the legs. Thai massage stretches you out on a mat, with no oil and no shower needed after.",
+    points: ["Good for legs, hips and lower back", "Done by our Thai therapists", "Finished in an hour"],
+    href: "/thai-massage-in-delhi",
+  },
+  {
+    id: "stressed",
+    label: "Stressed and worn out",
+    emoji: "😮‍💨",
+    pick: "Full Body Massage",
+    time: "60–90 min",
+    why: "Warm oil, head to toe, and an hour where nobody needs anything from you. This is what most of our GK guests book.",
+    points: ["Our most booked massage", "Quiet private room", "Most people sleep better that night"],
+    href: "/full-body-massage-in-delhi",
+  },
+  {
+    id: "desk",
+    label: "Stiff neck from Nehru Place",
+    emoji: "💻",
+    pick: "Deep Tissue Massage",
+    time: "60–90 min",
+    why: "Long days at a desk lock up your neck and shoulders. Deep tissue uses slow, firm pressure right where the knots are.",
+    points: ["Firm pressure on problem areas", "Tell us where it hurts", "You'll feel looser by morning"],
+    href: "/deep-tissue-massage-in-delhi",
+  },
+  {
+    id: "couple",
+    label: "Coming as a couple",
+    emoji: "💑",
+    pick: "Couple Massage",
+    time: "60–120 min",
+    why: "Two tables, two therapists, one private room. You can each choose a different massage if you like.",
+    points: ["Private room for two", "Same or different massages", "At our outlet or at home"],
+    href: "/couple-massage",
+  },
+  {
+    id: "calm",
+    label: "Want to feel calm",
+    emoji: "🌿",
+    pick: "Aromatherapy Massage",
+    time: "60–90 min",
+    why: "A gentler massage with essential oils chosen to settle you down. Book this one when your mind is more tired than your body.",
+    points: ["Pick your oil", "Light to medium pressure", "Very quiet and relaxing"],
+    href: "/aromatherapy-massage-in-delhi",
+  },
+];
+
+const linkClass = "font-semibold text-amber-700 underline decoration-amber-700/40 underline-offset-4 hover:decoration-amber-700";
+
+// Hero uses the pre-resized gallery files (no on-demand optimizer) so the mobile LCP is fast and stable.
+const HERO = { sm: "/images/gallery/g05-sm.webp", lg: "/images/gallery/g05-lg.webp" };
+const HERO_SRCSET = `${HERO.sm} 700w, ${HERO.lg} 1600w`;
+
+const heroChips = [
+  { icon: ShoppingBag, label: "Near M Block Market" },
+  { icon: Home, label: "Home Visits in GK 1 & 2" },
+  { icon: Users, label: "Russian & Indian Therapists" },
+  { icon: Clock, label: "Bookings 24/7" },
+];
+
+const quickFacts = [
+  { value: "₹1,999", label: "Starting Price", note: "60-minute massage" },
+  { value: "GK 1 & 2", label: "Covered", note: "Outlet or at home" },
+  { value: "60–120", label: "Minutes", note: "Pick your session" },
+  { value: "₹0", label: "Hidden Charges", note: "Price fixed before you come" },
 ];
 
 const services = [
-  { title: "Full Body Massage", desc: "A complete full body massage in Greater Kailash that eases muscle tension and leaves you feeling refreshed.", href: "/full-body-massage-in-delhi" },
-  { title: "Deep Tissue Massage", desc: "Firm, focused pressure that targets chronic knots in the back, neck, and shoulders.", href: "/deep-tissue-massage-in-delhi" },
-  { title: "B2B Massage", desc: "A specialised B2B therapy performed with premium oils for complete relaxation.", href: "/b2b-massage-in-delhi" },
-  { title: "Couples Massage", desc: "One private room, two therapists — a shared spa experience for two.", href: "/couple-massage" },
-  { title: "Sandwich Massage", desc: "A two-therapist session that delivers deeper relaxation and faster stress relief.", href: "/sandwich-massage" },
-  { title: "Aromatherapy Massage", desc: "Calming essential oils combined with gentle massage strokes to relax the mind and refresh the senses.", href: "/aromatherapy-massage-in-delhi" },
+  { title: "Full Body Massage", text: "Warm oil, head to toe. The one most people in GK book first.", time: "60–90 min", href: "/full-body-massage-in-delhi" },
+  { title: "Deep Tissue Massage", text: "Slow, firm pressure for a stiff neck, tight shoulders and a sore back.", time: "60–90 min", href: "/deep-tissue-massage-in-delhi" },
+  { title: "Thai Massage", text: "Stretching on a mat, no oil. Great after a day on your feet.", time: "60 min", href: "/thai-massage-in-delhi" },
+  { title: "Couple Massage", text: "Two therapists, one private room. At our outlet or at home.", time: "60–120 min", href: "/couple-massage" },
+  { title: "Sandwich Massage", text: "Two therapists working on you at once. It has to be tried to be believed.", time: "60–90 min", href: "/sandwich-massage" },
+  { title: "Aromatherapy Massage", text: "Gentle pressure and essential oils, for when your mind needs the break.", time: "60–90 min", href: "/aromatherapy-massage-in-delhi" },
+];
+
+const therapists = [
+  { name: "Russian", note: "Long, flowing strokes that help you switch off" },
+  { name: "Uzbek", note: "Firm and steady, good for tired muscles" },
+  { name: "Thai", note: "Stretching and pressure points, no oil" },
+  { name: "Indian", note: "Warm oil and deep, familiar techniques" },
 ];
 
 const pricingPlans = [
-  { title: "Spa Outlet", price: "₹1999", desc: "A private body spa in Greater Kailash session at our outlet, with premium oils and complete privacy.", features: ["Oil Massage", "Cream Massage", "Private Room", "60 min Session"], icon: <FaSpa className="text-amber-500" />, highlight: false, badge: "Starter" },
-  { title: "Home Spa", price: "₹14999", desc: "A premium at-home wellness session anywhere in GK-1, GK-2, or nearby South Delhi.", features: ["Therapist of Choice", "Private Setting", "Aromatherapy Add-on", "90 min Session"], icon: <FaCrown className="text-amber-500" />, highlight: false, badge: "Flexible" },
-  { title: "5 Star Hotel Spa", price: "₹19999", desc: "A longer, more indulgent hotel spa session delivered anywhere near Greater Kailash and South Delhi.", features: ["Foreign Therapist Option", "Private Suite", "Facial Add-on", "120 min Session"], icon: <FaHotel className="text-amber-500" />, highlight: true, badge: "Most Popular" },
+  {
+    title: "Spa Outlet",
+    price: "₹1,999",
+    period: "60 min",
+    description: "At our outlet near M Block Market",
+    features: ["Oil, Cream or Dry Massage", "Private Room", "Quick Consultation", "Hot Shower After"],
+    icon: Leaf,
+  },
+  {
+    title: "Home & Hotel Spa",
+    price: "₹14,999",
+    period: "90 min",
+    description: "At your home in GK or your hotel room",
+    features: ["Oil, Cream or Dry Massage", "Therapist brings towels & oils", "Complimentary Refreshments", "90 min Session"],
+    icon: Home,
+    popular: true,
+  },
+  {
+    title: "5 Star Hotel Spa",
+    price: "₹19,999",
+    period: "120 min",
+    description: "Two full hours with an international therapist",
+    features: ["International Therapists", "5-Star Property", "Aromatherapy Oils", "120 min Session"],
+    icon: Star,
+  },
 ];
 
-const faqs = [
-  { question: "Is there a good spa in Greater Kailash near M Block Market?", answer: "Yes, Luxury Russian Spa runs a genuine spa in Greater Kailash, a short drive from M Block Market and N Block Market GK-1, offering full body, deep tissue, and B2B massage in a private, hygienic setting." },
-  { question: "What makes Luxury Russian Spa the best spa in Greater Kailash?", answer: "Certified therapists, transparent pricing, hygienic private rooms, and flexible outlet, home, and hotel spa options make us the best spa in Greater Kailash for residents across GK-1 and GK-2." },
-  { question: "Do you cover both spa in Greater Kailash 1 and spa in Greater Kailash 2?", answer: "Yes, our outlet and home spa service cover both spa GK 1 and spa GK 2, along with nearby Nehru Place, Kalkaji, CR Park, and Alaknanda." },
-  { question: "Do you offer body massage in Greater Kailash for both men and women?", answer: "Yes, our body massage in Greater Kailash welcomes both men and women, with male and female therapist options — just mention your preference when booking your session." },
-  { question: "Is home service available for spa GK 2?", answer: "Yes, alongside our outlet, we offer home spa across spa in GK1 and spa in GK 2. Our therapist arrives with all the equipment needed for a relaxing, hygienic session at your residence." },
-  { question: "Do you have Russian or other foreign therapists in Greater Kailash?", answer: "Yes, our Russian spa in Greater Kailash packages include experienced Russian, Thai, and Uzbek therapists alongside our highly trained Indian staff." },
-  { question: "Can I book a couple massage in Greater Kailash?", answer: "Yes, our Greater Kailash outlet has private rooms designed for couple massage, including our popular couple massage with female therapists, so two people can relax together in comfort." },
-  { question: "How much does a body spa in Greater Kailash cost?", answer: "A body spa in Greater Kailash at our outlet starts from ₹1999 for the first visit. Home spa starts from ₹14,999 and hotel spa from ₹19,999, depending on duration and treatment." },
+const visitSteps = [
+  {
+    time: "Before you come",
+    title: "Send us a message",
+    text: "A WhatsApp text is plenty. Something like \"full body, 6 pm, outlet\" works fine. If you'd like a particular therapist, mention it in the same message.",
+  },
+  {
+    time: "When you arrive",
+    title: "Straight to your room",
+    text: "We send the exact location once your slot is confirmed. Someone meets you at the door and takes you to your own private room, so there's no waiting around.",
+  },
+  {
+    time: "First few minutes",
+    title: "A quick chat",
+    text: "Your therapist asks where you're sore and how firm you like it. \"Medium, and my shoulders are stiff\" is a perfectly good answer.",
+  },
+  {
+    time: "60 to 90 minutes",
+    title: "The massage",
+    text: "Low lights, warm oil, and nobody talking unless you want to. Plenty of guests drift off halfway through, and that's fine with us.",
+  },
+  {
+    time: "Afterwards",
+    title: "Take your time",
+    text: "There's a hot shower if you want one. Have some water, sit for a minute, and head back into GK feeling a lot lighter.",
+  },
 ];
+
+const areas = ["GK 1", "GK 2", "M Block Market", "N Block Market", "Kailash Colony", "East of Kailash", "Nehru Place", "CR Park", "Alaknanda", "Chirag Delhi", "Kalkaji", "Masjid Moth"];
+
+const gettingHere = [
+  {
+    icon: TrainFront,
+    title: "By Metro",
+    text: "Kailash Colony and Nehru Place stations on the Violet Line are the closest, and Greater Kailash station on the Magenta Line works too. From there it's a short auto ride.",
+  },
+  {
+    icon: Car,
+    title: "By Car",
+    text: "Parking around M Block fills up quickly in the evenings and on weekends. If you're driving, a weekday afternoon is much easier.",
+  },
+  {
+    icon: Clock,
+    title: "Best Time",
+    text: "Weekday afternoons are the quietest. Evenings and weekends get busy, so send us a message a few hours ahead.",
+  },
+];
+
+const promises = [
+  { icon: ShieldCheck, title: "Clean and private", text: "Fresh linen for every guest and a room cleaned after each session." },
+  { icon: Users, title: "Your choice of therapist", text: "Russian or Indian, male or female, soft or firm. You decide." },
+  { icon: CreditCard, title: "Price fixed in advance", text: "We confirm it on WhatsApp. That's exactly what you pay." },
+  { icon: CalendarCheck, title: "Pay after", text: "UPI, cash or card, once your massage is done." },
+];
+
+const nearby = [
+  { area: "Kalkaji", note: "Next door, near Nehru Place", href: "/spa-in-kalkaji" },
+  { area: "Lajpat Nagar", note: "Near Central Market", href: "/spa-in-lajpat-nagar" },
+  { area: "Saket", note: "Near Select Citywalk", href: "/spa-in-saket" },
+  { area: "Hauz Khas", note: "South Delhi", href: "/spa-in-hauz-khas" },
+];
+
+function WhatsAppButton({ children = "Book on WhatsApp", className = "" }) {
+  return (
+    <a
+      href={WHATSAPP_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center justify-center gap-2.5 rounded-full bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-800 ${className}`}
+    >
+      <FaWhatsapp className="size-5" /> {children}
+    </a>
+  );
+}
 
 export default function SpaInGreaterkailash() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // Starts the hero image download from <head>, before the CSS is parsed
+  preload(HERO.sm, { as: "image", imageSrcSet: HERO_SRCSET, imageSizes: "100vw", fetchPriority: "high" });
 
   return (
-    <main className="min-h-screen bg-[#fffaf5] text-[#1f1a17]">
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(245,158,11,0.18),_transparent_30%),linear-gradient(135deg,_#fef7ed_0%,_#fffaf5_45%,_#fef3f2_100%)]">
-        <div className="absolute left-8 top-8 h-24 w-24 rounded-full bg-amber-200/30 blur-3xl" />
-        <div className="absolute bottom-8 right-10 h-28 w-28 rounded-full bg-rose-200/30 blur-3xl" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="flex flex-col justify-center">
-            <div className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-white/90 px-4 py-2 text-sm font-semibold text-amber-700 shadow-sm">
-              <FaStar className="text-amber-500" /> GREATER KAILASH OUTLET
-            </div>
-            <h1 className="max-w-2xl text-4xl font-bold leading-tight text-[#1f1a17] md:text-5xl lg:text-5xl">
-              Best Spa in <span className="text-amber-700">Greater Kailash</span> — GK-1 &amp; GK-2
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-700">
-              Looking for a spa in Greater Kailash? Also searched as spa GK, spa GK 1, or spa GK 2, Luxury Russian Spa runs a trusted spa centre covering both Greater Kailash Part 1 and Part 2, a short walk from M Block Market. Certified therapists deliver full body, deep tissue, and B2B massage in a clean, private setting. First visit from ₹1999.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." className="inline-flex items-center gap-2 rounded-full bg-amber-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-amber-700">
-                <FaWhatsapp /> Book on WhatsApp
-              </a>
-              <a href="https://t.me/+yulqEcJa2dxhM2I9" className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white px-6 py-3 font-semibold text-amber-700 shadow-sm transition hover:bg-amber-50">
-                <FaTelegram /> Meet Our Team
-              </a>
-            </div>
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              {[["12+", "Years of spa expertise"], ["4.9/5", "Guest comfort rating"], ["24/7", "Booking support"]].map(([value, label], index) => (
-                <div key={index} className="rounded-2xl border border-amber-100 bg-white/90 p-4 shadow-sm">
-                  <p className="text-xl font-bold text-amber-700">{value}</p>
-                  <p className="mt-1 text-sm text-gray-600">{label}</p>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="relative flex items-center">
-            <div className="w-full rounded-[32px] border border-amber-100 bg-white p-3 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.25)]">
-              <div className="relative h-[410px] overflow-hidden rounded-[24px]">
-                <Image src="/images/fpkdl.com_960_1758962686_masseur-doing-massage-woman-s-back-spa-salon-with-many-candles_355000-245.jpg" alt="Therapist giving a massage at our spa in Greater Kailash" fill className="object-cover" />
-              </div>
-            </div>
-            <div className="absolute -bottom-5 -left-5 rounded-2xl border border-amber-200 bg-white/95 px-4 py-3 shadow-lg">
-              <p className="text-sm text-gray-600">Starting from</p>
-              <p className="font-semibold text-amber-700">₹1999 first visit</p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <main className="font-sans overflow-hidden">
+      {/* 1. Hero */}
+      <section aria-labelledby="gk-hero-title" className="relative bg-dark">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={HERO.sm}
+          srcSet={HERO_SRCSET}
+          sizes="100vw"
+          alt="Candle-lit massage room at our spa in Greater Kailash"
+          width={1600}
+          height={1067}
+          fetchPriority="high"
+          decoding="sync"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/70" aria-hidden="true" />
 
-      {/* Highlights */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Our Advantages</p>
-          <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">What Makes Our Greater Kailash Spa Different?</h2>
-        </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          {highlights.map((item) => (
-            <motion.div key={item.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-              <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50">{item.icon}</div>
-              <h3 className="text-lg font-semibold text-[#1f1a17]">{item.title}</h3>
-              <p className="mt-2 leading-relaxed text-gray-600">{item.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+        <div className="relative max-w-5xl mx-auto px-5 md:px-10 pt-14 pb-36 md:pt-20 md:pb-44 text-center">
+          <nav aria-label="Breadcrumb" className="mb-6 text-xs text-white/70">
+            <a href="/" className="hover:text-secondary">Home</a>
+            <span className="mx-2">/</span>
+            <a href="/outlets" className="hover:text-secondary">Outlets</a>
+            <span className="mx-2">/</span>
+            <span className="text-white">Spa in Greater Kailash</span>
+          </nav>
 
-      {/* GK-1 / GK-2 spotlight — image collage + signature treatments */}
-      <section className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="grid gap-10 overflow-hidden rounded-[32px] border border-amber-100 bg-white p-6 shadow-lg lg:grid-cols-2 lg:items-center lg:p-10">
-          <motion.div initial={false} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="relative min-h-[420px]">
-            <div className="absolute left-0 top-0 z-10 w-40">
-              <p className="font-serif text-lg text-[#1f1a17]">Genuine Spa with</p>
-              <p className="font-serif text-3xl italic text-amber-700">GK-1 &amp; GK-2</p>
-              <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-gray-500">Outlet, Home &amp; Hotel Spa in Greater Kailash</p>
-            </div>
-
-            <div className="absolute right-0 top-0 w-[55%] overflow-hidden rounded-2xl bg-gradient-to-br from-amber-600 to-amber-800 p-2 shadow-xl sm:w-[60%]">
-              <div className="relative h-32 w-full overflow-hidden rounded-xl sm:h-40">
-                <Image src="/images/fpkdl.com_750_1758981239_hotel-with-sunset-background_1000124-308478.jpg" alt="Luxury hotel spa in Greater Kailash" fill className="object-cover" />
-              </div>
-            </div>
-
-            <div className="absolute bottom-0 left-0 h-64 w-[65%] overflow-hidden rounded-[24px] border-4 border-white shadow-xl sm:h-72">
-              <Image src="/images/fpkdl.com_960_1758982156_side-view-young-woman-sitting-floor_1048944-13386882.jpg" alt="Body spa in Greater Kailash" fill className="object-cover" />
-            </div>
-
-            <div className="absolute bottom-4 right-0 text-5xl text-amber-200/70" aria-hidden="true">✿</div>
-          </motion.div>
-
-          <motion.div initial={false} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mt-6 lg:mt-0">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">1st Visit @ ₹1999</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Best Spa in Greater Kailash 1 &amp; 2</h2>
-            <p className="mt-4 leading-relaxed text-gray-700">
-              Looking for a spa in Greater Kailash 1 or spa in Greater Kailash 2? Our spa centre sits close to M Block Market and N Block Market, offering calm interiors, soothing music, and premium aromatic oils. Whether after a hectic workday or a weekend outing, our body massage in Greater Kailash ensures complete rejuvenation.
-            </p>
-            <p className="mt-4 leading-relaxed text-gray-700">
-              Our therapists are trained professionals from India and abroad, specialising in traditional and modern massage technique. Whether you prefer a gentle aromatherapy massage, an invigorating deep tissue massage, or a full body massage, every session at our spa GK outlet is personalised to your body's needs.
-            </p>
-            <h3 className="mt-6 font-semibold text-[#1f1a17]">Signature Treatments:</h3>
-            <ul className="mt-3 grid gap-2 text-gray-700 sm:grid-cols-2">
-              {["Full Body Massage", "Deep Tissue Massage", "B2B Massage", "Aromatherapy Massage", "Sandwich Massage", "Couples Massage"].map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <FaCheckCircle className="text-amber-600" /> {item}
-                </li>
-              ))}
-            </ul>
-            <a href="https://t.me/+yulqEcJa2dxhM2I9" className="mt-6 inline-flex items-center gap-2 rounded-full bg-amber-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-amber-700">
-              <FaTelegram /> Join Telegram Channel
-            </a>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Welcome section — intro + amenity icon row */}
-      <section className="bg-[#fff6ee] py-16">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="text-3xl font-bold text-[#1f1a17] md:text-4xl">Best Spa in Greater Kailash — Get Full Body Massage at Home &amp; Hotel</h2>
-          <p className="mx-auto mt-5 max-w-3xl leading-relaxed text-gray-600">
-            Welcome to Luxury Russian Spa — the best spa in GK. If you're tired, stressed, or need a refreshing break, our body spa in Greater Kailash is your perfect wellness destination. We offer a clean, luxury, and 100% hygienic ambience with a calm and secure environment for complete relaxation.
-          </p>
-          <p className="mx-auto mt-4 max-w-3xl leading-relaxed text-gray-600">
-            With 24+ spa outlets across Delhi NCR, we're right here for you near M Block Market, GK-1, and GK-2. Whether you want a quick stress-relief session or a deep muscle relaxation therapy, our certified and professional therapists at Luxury Russian Spa ensure a world-class spa experience every time.
-          </p>
-          <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
-            {[
-              { label: "Natural Mask", icon: <FaLeaf /> },
-              { label: "Foot Treatment", icon: <FaShoePrints /> },
-              { label: "Essential Oils", icon: <FaTint /> },
-              { label: "Body Scrub", icon: <FaHandSparkles /> },
-              { label: "Relaxation Spa", icon: <FaSpa /> },
-              { label: "Pool Session", icon: <FaSwimmer /> },
-            ].map((item) => (
-              <motion.div key={item.label} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="flex flex-col items-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-amber-200 bg-white text-2xl text-amber-700 shadow-sm">
-                  {item.icon}
-                </div>
-                <p className="mt-3 text-sm font-medium text-[#1f1a17]">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About section — scannable card layout */}
-      <section className="bg-[#fff3e8] py-16 lg:py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-12 text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">About Our Greater Kailash Outlet</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Spa in Greater Kailash — A Trusted Body Massage &amp; Wellness Centre</h2>
-          </div>
-
-          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="relative h-72 overflow-hidden rounded-[28px] shadow-lg lg:h-full lg:min-h-[380px]"
-            >
-              <Image src="/images/luxurySpaRoom.jpg" alt="Best spa in Greater Kailash treatment room" fill className="object-cover" />
-            </motion.div>
-
-            <div>
-              <p className="text-gray-700">
-                Luxury Russian Spa is the best spa in Greater Kailash for guests across both spa GK 1 and spa GK 2 — a real massage centre near M Block Market, not a generic neighbourhood parlour. Our body spa in Greater Kailash covers full body, deep tissue, B2B, and couple massage, with home and hotel spa available on request.
-              </p>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="rounded-2xl border border-amber-100 bg-white p-5 shadow-sm">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-lg text-amber-600"><FaSpa /></div>
-                  <h3 className="text-base font-semibold text-[#1f1a17]">Spa in Greater Kailash 1 &amp; 2</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">Whether you're closer to spa GK1 near M Block or spa in GK 2, our outlet and home spa team covers both.</p>
-                </motion.div>
-                <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.05 }} className="rounded-2xl border border-amber-100 bg-white p-5 shadow-sm">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-lg text-amber-600"><FaLeaf /></div>
-                  <h3 className="text-base font-semibold text-[#1f1a17]">Certified Therapists</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">Trained Indian, Russian, Thai, and Uzbek therapists deliver every body massage in Greater Kailash session.</p>
-                </motion.div>
-                <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 }} className="rounded-2xl border border-amber-100 bg-white p-5 shadow-sm">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-lg text-amber-600"><FaHotel /></div>
-                  <h3 className="text-base font-semibold text-[#1f1a17]">Home &amp; Hotel Spa</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">Prefer to stay in? Home spa and hotel spa in Greater Kailash are both available on request.</p>
-                </motion.div>
-                <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.15 }} className="rounded-2xl border border-amber-100 bg-white p-5 shadow-sm">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-lg text-amber-600"><FaCheckCircle /></div>
-                  <h3 className="text-base font-semibold text-[#1f1a17]">Transparent Pricing</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">No hidden charges — book the best spa in GK 2 or GK 1 on WhatsApp with pricing confirmed upfront.</p>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why choose us */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <motion.div initial={false} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Why Choose Us</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Why Choose Luxury Russian Spa in Greater Kailash?</h2>
-            <p className="mt-4 leading-relaxed text-gray-700">
-              Choosing a spa is about more than booking a massage. At our Greater Kailash outlet, we focus on creating a calm, comfortable experience where you can take a proper break from your day.
-            </p>
-            <p className="mt-4 leading-relaxed text-gray-700">
-              Whether you're coming from GK-1 near M Block, GK-2, Kalkaji, or Nehru Place, our spa experience is built around your comfort.
-            </p>
-            <h3 className="mt-6 font-semibold text-[#1f1a17]">Why guests choose us:</h3>
-            <ul className="mt-3 space-y-2 text-gray-700">
-              <li><span className="font-semibold text-[#1f1a17]">Experienced Therapists</span> — Professional care, including international therapists, with attention to your comfort and preferences.</li>
-              <li><span className="font-semibold text-[#1f1a17]">Range of Massage Therapies</span> — Full body, B2B, deep tissue, and more, suited to different relaxation needs.</li>
-              <li><span className="font-semibold text-[#1f1a17]">Clean &amp; Private Spaces</span> — Comfortable treatment rooms for a peaceful spa experience.</li>
-              <li><span className="font-semibold text-[#1f1a17]">GK-1 &amp; GK-2 Coverage</span> — The same certified team and standard across both parts of Greater Kailash.</li>
-              <li><span className="font-semibold text-[#1f1a17]">Home Spa in Greater Kailash</span> — Same quality treatment delivered to your residence across South Delhi.</li>
-              <li><span className="font-semibold text-[#1f1a17]">₹1999 First-Visit Offer</span> — Selected spa treatments available with our first-visit offer.</li>
-            </ul>
-            <a href="https://t.me/+yulqEcJa2dxhM2I9" className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#1f1a17] px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-[#1f1a17]">
-              <FaTelegram /> See Available Staff
-            </a>
-          </motion.div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="overflow-hidden rounded-2xl bg-gradient-to-br from-[#1f1a17] to-[#4b4541] p-6 text-center text-white shadow-lg">
-              <FaLeaf className="mx-auto text-3xl" />
-              <h4 className="mt-3 font-semibold">Experienced Therapists</h4>
-              <p className="mt-2 text-sm text-white/85">Skilled therapists deliver personalised massage with expert care for complete relaxation.</p>
-            </motion.div>
-            <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 }} className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-br from-[#1f1a17] to-[#4b4541] p-6 text-center text-white shadow-lg">
-              <FaRupeeSign className="mx-auto text-3xl" />
-              <h4 className="mt-3 font-semibold">₹1999 First Visit Offer</h4>
-              <p className="mt-2 text-sm text-white/85">Enjoy our first-visit offer with premium spa therapies and exceptional value.</p>
-            </motion.div>
-            <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.05 }} className="overflow-hidden rounded-2xl bg-gradient-to-br from-[#1f1a17] to-[#4b4541] p-6 text-center text-white shadow-lg">
-              <FaClock className="mx-auto text-3xl" />
-              <h4 className="mt-3 font-semibold">24x7 Booking</h4>
-              <p className="mt-2 text-sm text-white/85">Available 24x7 for outlet, home, and hotel spa bookings.</p>
-            </motion.div>
-            <motion.div initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.15 }} className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-br from-[#1f1a17] to-[#4b4541] p-6 text-center text-white shadow-lg">
-              <FaHeart className="mx-auto text-3xl" />
-              <h4 className="mt-3 font-semibold">Private &amp; Hygienic Rooms</h4>
-              <p className="mt-2 text-sm text-white/85">Every session ensures complete hygiene, comfort, and privacy for every guest.</p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Our Therapists */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Meet Our Therapists</p>
-          <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Meet Our Expert Massage Therapists in Greater Kailash</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-gray-600">A mix of skilled Indian and international therapists, so you get real variety in technique.</p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {[
-            { role: "Senior Massage Therapist", specialty: "Full Body & Deep Tissue", experience: "8+ yrs", image: "/images/staff2.jpg" },
-            { role: "International Therapist", specialty: "Russian & Aromatherapy", experience: "6+ yrs", image: "/images/staff6.jpg" },
-            { role: "B2B Massage Specialist", specialty: "Signature Technique", experience: "7+ yrs", image: "/images/staff8.jpg" },
-            { role: "Wellness Therapist", specialty: "Foot & Body Relief", experience: "5+ yrs", image: "/images/staff10.jpg" },
-          ].map((t, index) => (
-            <motion.div
-              key={t.role}
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: index * 0.08 }}
-              className="group relative h-80 overflow-hidden rounded-[24px] shadow-lg"
-            >
-              <Image src={t.image} alt={`${t.role} at Luxury Russian Spa Greater Kailash`} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1c0f09] via-[#1c0f09]/40 to-transparent" />
-              <div className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-amber-700 shadow-sm">
-                <FaStar className="text-amber-500" /> {t.experience}
-              </div>
-              <div className="absolute inset-x-0 bottom-0 p-5">
-                <h3 className="text-lg font-semibold text-white">{t.role}</h3>
-                <p className="mt-1 text-sm text-amber-300">{t.specialty}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="bg-[#fff6ee] py-16">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-10 text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Our Services</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Explore Our Massage Services in Greater Kailash</h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <motion.div key={service.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-[#1f1a17]">{service.title}</h3>
-                <p className="mt-2 text-gray-600">{service.desc}</p>
-                <Link href={service.href} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-700 hover:underline">
-                  Learn more <FaArrowRight className="text-xs" />
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Hygiene & Amenities */}
-      <section className="bg-[#fff3e8] py-16">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="text-3xl font-bold text-[#1f1a17] md:text-4xl">100% Hygienic &amp; Professional Spa in Greater Kailash — Your Safety First</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-            From a hot shower to a full steam bath, these are the small details that turn a massage into a complete spa visit.
-          </p>
-          <div className="mt-10 grid grid-cols-2 justify-items-center gap-x-6 gap-y-10 sm:grid-cols-5 sm:gap-x-10">
-            {[
-              { label: "Shower", image: "/images/icons8-shower-64.webp" },
-              { label: "Hammam", image: "/images/icons8-bathhouse-64.webp" },
-              { label: "Jacuzzi Bath", image: "/images/icons8-jacuzzi-64.webp" },
-              { label: "Steam Bath", image: "/images/icons8-spa-care-64.webp" },
-              { label: "Sauna", image: "/images/icons8-sauna-64.webp" },
-            ].map((item) => (
-              <motion.div key={item.label} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="flex flex-col items-center">
-                <div className="relative flex h-[100px] w-[100px] items-center justify-center rounded-full border border-amber-200 bg-white shadow-sm">
-                  <Image src={item.image} alt={item.label} fill className="object-contain p-5" />
-                </div>
-                <p className="mt-3 text-sm font-medium text-[#1f1a17]">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-          <Link href="/massage-in-delhi" className="mt-10 inline-flex items-center gap-2 rounded-full bg-amber-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-amber-700">
-            Explore All Services
-          </Link>
-        </div>
-      </section>
-
-      {/* Areas We Serve — dark overlay tile grid */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-10 text-center">
-          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-4 py-1 text-sm font-semibold text-emerald-700">
-            <FaStar className="text-emerald-500" /> Affordable Luxury
+          <span className="inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-black/30 px-5 py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-white">
+            <Sparkles className="size-3.5 text-secondary" /> Russian Spa in Greater Kailash <Sparkles className="size-3.5 text-secondary" />
           </span>
-          <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-bold text-[#1f1a17] md:text-4xl">
-            Find The Most Trusted <span className="text-amber-700">Spa in Greater Kailash</span> Near You
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-            Every spa in Greater Kailash outlet is designed to help you unwind the moment you walk in — clean, organised, and private, with each treatment room set up so you're never rushed or interrupted mid-session.
+
+          <h1
+            id="gk-hero-title"
+            className="mt-6 font-title font-bold text-[40px] leading-[1.1] sm:text-6xl lg:text-7xl bg-gradient-to-b from-[#fff3e8] via-[#f6d2b4] to-[#e8a57a] bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
+          >
+            Spa in Greater Kailash
+          </h1>
+
+          <p className="mt-5 font-title text-lg sm:text-2xl text-white">
+            For GK 1 &amp; GK 2 <span className="text-secondary" aria-hidden="true">·</span> Near M Block Market{" "}
+            <span className="text-secondary" aria-hidden="true">·</span> From ₹1,999
           </p>
-          <div className="mx-auto mt-6 h-0.5 w-16 bg-amber-300" />
-        </div>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {[
-            { title: "GK-1", image: "/images/fpkdl.com_960_1758982845_cute-woman-relaxing-massage-spa-salon_118454-10400.jpg" },
-            { title: "GK-2", image: "/images/fpkdl.com_960_1758982119_foot-massage-massage-parlor-female-hands-massage-female-feet-beauty-health_130265-8627.jpg" },
-            { title: "M Block Market", image: "/images/Reflexology.jpg" },
-            { title: "East of Kailash", image: "/images/fpkdl.com_960_1758982285_acupressure-reflexology-natural-medicine-reflexology-acupressure-foot-massager-oppresses-energy-flow-points_130265-7341.jpg" },
-            { title: "Kailash Colony", image: "/images/fpkdl.com_960_1758982563_side-view-woman-getting-massaged-spa_23-2149871287.jpg" },
-            { title: "Nehru Place", image: "/images/spaexpert1.webp" },
-            { title: "Kalkaji", image: "/images/spaexpert3.webp" },
-            { title: "CR Park", image: "/images/spaExpert4.webp" },
-            { title: "Alaknanda", image: "/images/SkincareTreatments.jpg" },
-            { title: "Chirag Delhi", image: "/images/fpkdl.com_960_1758982527_side-view-woman-getting-massaged-spa_23-2149871279.jpg" },
-          ].map((loc) => (
-            <motion.div
-              key={loc.title}
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45 }}
-              className="group relative block h-32 overflow-hidden rounded-2xl shadow-lg"
+
+          <p className="mt-5 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
+            Whether you've spent the afternoon at M Block Market or the whole week at a desk in Nehru Place, an hour
+            on the massage table helps. Come to our spa near M Block, or stay home in GK and we'll send a therapist to
+            you.
+          </p>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <WhatsAppButton />
+            <a
+              href={PHONE_LINK}
+              aria-label={`Call Luxury Russian Spa Greater Kailash at ${PHONE_LABEL}`}
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/90 px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-white hover:text-ink"
             >
-              <Image src={loc.image} alt={`Spa near ${loc.title}, Greater Kailash`} fill className="object-cover transition duration-500 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1c0f09] via-[#1c0f09]/30 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-3">
-                <p className="text-sm font-bold uppercase tracking-wide text-white">{loc.title}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Link href="/outlets" className="inline-flex items-center gap-2 rounded-full bg-amber-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-amber-700">
-            View All Outlets <FaArrowRight className="text-sm" />
-          </Link>
+              <Phone className="size-4 text-secondary" /> {PHONE_LABEL}
+            </a>
+          </div>
+
+          <ul className="mt-9 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-white/90">
+            {heroChips.map(({ icon: Icon, label }) => (
+              <li key={label} className="flex items-center gap-2">
+                <Icon className="size-4 text-secondary" /> {label}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="Pricing" className="bg-[#fff3e8] py-16">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-10 text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Pricing options</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Spa in Greater Kailash Pricing — Transparent &amp; Affordable</h2>
+      {/* Quick facts strip, overlapping the hero */}
+      <div className="relative z-10 -mt-20 md:-mt-24 px-4 md:px-8">
+        <dl className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-3xl bg-amber-100 shadow-[0_20px_50px_rgba(43,24,16,0.15)] ring-1 ring-amber-100">
+          {quickFacts.map((f) => (
+            <div key={f.label} className="bg-white p-5 md:p-7 text-center">
+              <dt className="sr-only">{f.label}</dt>
+              <dd>
+                <span className="block font-title text-3xl md:text-4xl font-bold text-primary">{f.value}</span>
+                <span className="mt-1 block text-sm font-semibold text-amber-900">{f.label}</span>
+                <span className="block text-xs text-bodycolor">{f.note}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
+      {/* 2. Intro + contact */}
+      <section aria-labelledby="gk-intro-title" className="bg-white py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto grid gap-14 lg:grid-cols-2 lg:items-center">
+          <div className="relative pb-16 pr-10 sm:pr-20">
+            <div className="relative aspect-square overflow-hidden rounded-[28px] shadow-[0_20px_50px_rgba(43,24,16,0.18)]">
+              <Image
+                src="/images/luxurySpaRoom.jpg"
+                alt="Private treatment room at our spa in Greater Kailash"
+                fill
+                sizes="(max-width:1024px) 90vw, 45vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute bottom-0 right-0 w-[48%] aspect-[4/5] overflow-hidden rounded-3xl border-[6px] border-white shadow-xl">
+              <Image
+                src="/images/spaexpert3.webp"
+                alt="Therapist at our Greater Kailash spa"
+                fill
+                sizes="(max-width:1024px) 45vw, 22vw"
+                className="object-cover"
+              />
+            </div>
+            <span className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-xs font-bold uppercase tracking-wider text-primary shadow">
+              GK 1 &amp; GK 2
+            </span>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
-            {pricingPlans.map((plan) => (
-              <motion.div key={plan.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className={`relative overflow-hidden rounded-[28px] border p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl ${plan.highlight ? "border-amber-400 bg-gradient-to-br from-[#fff3e8] to-[#fffaf5]" : "border-amber-100 bg-white"}`}>
-                <div className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${plan.highlight ? "bg-amber-600 text-white" : "bg-amber-100 text-amber-700"}`}>{plan.badge}</div>
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50">{plan.icon}</div>
-                <h3 className="text-2xl font-semibold text-[#1f1a17]">{plan.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{plan.desc}</p>
-                <div className="mt-6 flex items-end gap-2">
-                  <span className="text-4xl font-bold text-amber-700">{plan.price}</span>
-                  <span className="pb-1 text-sm font-medium text-gray-500">/ session</span>
-                </div>
-                <ul className="mt-6 space-y-3">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
-                      <FaCheckCircle className="text-amber-600" /> {feature}
+
+          <div>
+            <HomeHeading
+              id="gk-intro-title"
+              align="left"
+              eyebrow="Spa GK"
+              title="About Our Spa in"
+              highlight="Greater Kailash"
+              className="!mb-6"
+            />
+            <p className="leading-relaxed text-bodycolor">
+              Greater Kailash has no shortage of places offering a massage, and from the photos most of them look the
+              same. So here's simply how we work. You get a private room, you choose your therapist, and we tell you
+              the price on WhatsApp before you come. Nothing gets added at the end.
+            </p>
+            <p className="mt-4 leading-relaxed text-bodycolor">
+              Our outlet is a short drive from M Block Market, so it's easy to reach from both GK 1 and GK 2. A lot of
+              our guests also come over from Kailash Colony, CR Park and Nehru Place. And if going out is the hard
+              part, we'll bring the massage to your home instead.
+            </p>
+
+            <div className="mt-8 rounded-2xl bg-amber-50 p-5 ring-1 ring-amber-100">
+              <p className="flex items-center gap-2 font-title text-lg font-bold text-amber-900">
+                <Phone className="size-5 text-primary" /> GK Spa Booking Number
+              </p>
+              <a href={PHONE_LINK} className="mt-2 block font-title text-3xl font-bold text-primary hover:underline">
+                {PHONE_LABEL}
+              </a>
+              <p className="mt-2 text-sm text-bodycolor">
+                It's the same number for calls and WhatsApp. Most people just message &quot;free at 6 today?&quot; and
+                we take it from there. The exact address comes on WhatsApp after you book.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#15803d] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#166534]"
+                >
+                  <FaWhatsapp /> WhatsApp
+                </a>
+                <a
+                  href={PHONE_LINK}
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-primary ring-1 ring-amber-200 transition-colors hover:bg-primary hover:text-white"
+                >
+                  <Phone className="size-4" /> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Massage picker */}
+      <section aria-labelledby="gk-picker-title" className="bg-[#fffaf5] py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <HomeHeading
+            id="gk-picker-title"
+            eyebrow="Not Sure What to Book?"
+            title="Which Massage Should"
+            highlight="You Book?"
+            text="Tap whatever matches how you feel today. We've put our honest suggestion next to each one."
+          />
+          <MassagePicker moods={moods} defaultId="stressed" />
+        </div>
+      </section>
+
+      {/* 4. Services */}
+      <section aria-labelledby="gk-services-title" className="bg-white py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <HomeHeading
+            id="gk-services-title"
+            eyebrow="Body Spa in Greater Kailash"
+            title="Body Massage in GK:"
+            highlight="Our Menu"
+            text="Every massage happens in a private room at our outlet, or at your home. Tap one to read more."
+          />
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map(({ title, text, time, href }, i) => (
+              <li key={title}>
+                <a
+                  href={href}
+                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-amber-50 p-6 ring-1 ring-amber-100 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_20px_45px_rgba(43,24,16,0.12)] hover:ring-amber-300"
+                >
+                  {/* Decorative big number drawn by CSS so it is not read as low-contrast text */}
+                  <span
+                    data-n={String(i + 1).padStart(2, "0")}
+                    className="absolute -right-2 -top-4 font-title text-7xl font-bold text-amber-200/60 transition-colors before:content-[attr(data-n)] group-hover:text-amber-200"
+                    aria-hidden="true"
+                  />
+                  <span className="relative inline-flex w-max items-center gap-1.5 rounded-full bg-white px-3 py-1 text-[11px] font-semibold text-amber-700 ring-1 ring-amber-200">
+                    <Clock className="size-3" /> {time}
+                  </span>
+                  <span className="relative mt-4 block font-title text-xl font-bold text-amber-900 group-hover:text-primary">{title}</span>
+                  <span className="relative mt-2 flex-1 text-sm text-bodycolor">{text}</span>
+                  <span className="relative mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                    About {title} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-center text-sm text-bodycolor">
+            Want the full list? Have a look at all our <a href="/massage-in-delhi" className={linkClass}>massage services</a>.
+          </p>
+        </div>
+      </section>
+
+      {/* 5. Therapists */}
+      <section aria-labelledby="gk-russian-title" className="relative overflow-hidden bg-dark py-16 md:py-24 px-4 md:px-8">
+        <Image src="/images/hb3.webp" alt="" fill sizes="100vw" className="object-cover opacity-15" aria-hidden="true" />
+        <div className="relative max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+          <div>
+            <HomeHeading
+              light
+              id="gk-russian-title"
+              align="left"
+              eyebrow="Russian Spa in GK"
+              title="Russian, Thai or Indian?"
+              highlight="You Choose"
+              className="!mb-6"
+            />
+            <p className="leading-relaxed text-white/80">
+              Quite a few people message us looking for a Russian spa in Greater Kailash and then find out we've got
+              more than Russian therapists. Some of the team are from Uzbekistan or Thailand, and our Indian
+              therapists have years of practice. You don't have to know which is which. Tell us whether you like firm
+              or soft pressure, and whether you want oil, and we'll pick someone for you.
+            </p>
+            <WhatsAppButton className="mt-8 !bg-secondary !text-dark hover:!bg-white">Pick My Therapist</WhatsAppButton>
+          </div>
+
+          <ul className="grid grid-cols-2 gap-4">
+            {therapists.map((t) => (
+              <li
+                key={t.name}
+                className="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:ring-secondary/50"
+              >
+                <span className="flex size-11 items-center justify-center rounded-full bg-secondary/15 text-secondary">
+                  <Users className="size-5" />
+                </span>
+                <p className="mt-4 font-title text-xl font-bold text-white">{t.name}</p>
+                <p className="text-xs uppercase tracking-wider text-white/60">Therapist</p>
+                <p className="mt-3 text-sm text-white/80">{t.note}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* 6. Pricing */}
+      <section id="pricing" aria-labelledby="gk-pricing-title" className="bg-white py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <HomeHeading
+            id="gk-pricing-title"
+            eyebrow="Clear Prices"
+            title="Spa Price"
+            highlight="in Greater Kailash"
+            text={
+              <>
+                Three options, and nothing added at the end. What we quote on WhatsApp is what you pay. Every rate is
+                also on our <a href="/spa-price-in-delhi" className={linkClass}>spa price in Delhi</a> page.
+              </>
+            }
+          />
+          <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
+            {pricingPlans.map(({ title, price, period, description, features, icon: Icon, popular }) => (
+              <div
+                key={title}
+                className={`relative flex flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${
+                  popular
+                    ? "bg-dark text-white shadow-[0_25px_60px_rgba(43,24,16,0.35)] md:-my-4 md:py-12"
+                    : "bg-amber-50 ring-1 ring-amber-100"
+                }`}
+              >
+                {popular && (
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-secondary px-4 py-1 text-[11px] font-bold uppercase tracking-wider text-dark">
+                    Most Popular
+                  </span>
+                )}
+                <span className={`flex size-12 items-center justify-center rounded-xl ${popular ? "bg-white/10 text-secondary" : "bg-white text-primary"}`}>
+                  <Icon className="size-6" />
+                </span>
+                <h3 className={`mt-5 font-title text-2xl font-bold ${popular ? "text-white" : "text-amber-900"}`}>{title}</h3>
+                <p className={`mt-1 text-sm ${popular ? "text-white/70" : "text-bodycolor"}`}>{description}</p>
+                <p className="mt-6 flex items-end gap-2">
+                  <span className={`font-title text-4xl font-bold ${popular ? "text-secondary" : "text-primary"}`}>{price}</span>
+                  <span className={`pb-1 text-sm ${popular ? "text-white/60" : "text-bodycolor"}`}>/ {period}</span>
+                </p>
+                <ul className="mt-6 flex-1 space-y-3">
+                  {features.map((f) => (
+                    <li key={f} className="flex items-center gap-3 text-sm">
+                      <Check className={`size-4 shrink-0 ${popular ? "text-secondary" : "text-primary"}`} strokeWidth={3} />
+                      <span className={popular ? "text-white/90" : "text-amber-900"}>{f}</span>
                     </li>
                   ))}
                 </ul>
-                <a href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." className="mt-6 block rounded-full bg-amber-600 py-3 text-center font-semibold text-white transition hover:bg-amber-700">
-                  Book Now
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full py-3.5 text-sm font-semibold transition-colors duration-300 ${
+                    popular ? "bg-secondary text-dark hover:bg-white" : "bg-white text-primary ring-1 ring-amber-200 hover:bg-primary hover:text-white"
+                  }`}
+                >
+                  <FaWhatsapp className="size-4" /> Book Now
                 </a>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Frequently Asked Questions</p>
-          <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Your Spa in Greater Kailash Questions, Answered</h2>
-        </div>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <motion.div key={faq.question} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} className="rounded-2xl border border-amber-100 bg-white p-5">
-              <button onClick={() => setActiveIndex(activeIndex === index ? -1 : index)} className="flex w-full items-center justify-between text-left">
-                <span className="text-lg font-semibold text-[#1f1a17]">{faq.question}</span>
-                <FaArrowRight className={`text-amber-700 transition ${activeIndex === index ? "rotate-90" : ""}`} />
-              </button>
-              <AnimatePresence initial={false}>
-                {activeIndex === index && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.25 }} className="overflow-hidden">
-                    <p className="mt-3 text-gray-600">{faq.answer}</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
+      {/* 7. Your visit, step by step */}
+      <section aria-labelledby="gk-visit-title" className="bg-cream py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <HomeHeading
+            id="gk-visit-title"
+            eyebrow="First Time Here?"
+            title="What Your Visit"
+            highlight="Looks Like"
+            text="Plenty of our guests have never been to a spa before. This is roughly how it goes, from the first message to walking back out."
+          />
+          <ol className="relative space-y-6 border-l-2 border-dashed border-amber-300 pl-8 md:pl-10">
+            {visitSteps.map((s, i) => (
+              <li key={s.title} className="relative">
+                <span className="absolute -left-[49px] md:-left-[57px] top-1 flex size-8 items-center justify-center rounded-full bg-primary font-title text-sm font-bold text-white ring-4 ring-cream">
+                  {i + 1}
+                </span>
+                <div className="rounded-2xl bg-white p-5 md:p-6 shadow-[0_6px_20px_rgba(43,24,16,0.06)]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700">{s.time}</span>
+                  <h3 className="mt-1 font-title text-xl font-bold text-amber-900">{s.title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-bodycolor">{s.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
-      {/* Other Spa Locations */}
-      <section className="bg-[#fff6ee] py-16">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-10 text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Other Locations</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Spa Locations Across Delhi NCR</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-gray-600">Not based in Greater Kailash? We run 24+ outlets across Delhi NCR — find the one closest to you.</p>
+      {/* 8. Area + getting here */}
+      <section aria-labelledby="gk-area-title" className="bg-white py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <HomeHeading
+            id="gk-area-title"
+            eyebrow="Spa Near Me in GK"
+            title="Spa in GK 1, GK 2"
+            highlight="and Nearby"
+            text="Visit our outlet near M Block Market, or book a home massage in any of these areas. Not listed? Ask us anyway."
+          />
+          <ul className="flex flex-wrap justify-center gap-2.5">
+            {areas.map((a) => (
+              <li key={a} className="flex items-center gap-1.5 rounded-full bg-amber-50 px-4 py-2 text-sm font-medium text-amber-900 ring-1 ring-amber-100">
+                <MapPin className="size-3.5 text-primary" /> {a}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {gettingHere.map(({ icon: Icon, title, text }) => (
+              <div key={title} className="rounded-3xl bg-amber-50 p-7 ring-1 ring-amber-100">
+                <span className="flex size-12 items-center justify-center rounded-2xl bg-white text-primary shadow-sm">
+                  <Icon className="size-6" />
+                </span>
+                <h3 className="mt-5 font-title text-xl font-bold text-amber-900">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-bodycolor">{text}</p>
+              </div>
+            ))}
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {[
-              { title: "Spa in Kalkaji", href: "/spa-in-kalkaji" },
-              { title: "Spa in Lajpat Nagar", href: "/spa-in-lajpat-nagar" },
-              { title: "Spa in Vasant Kunj", href: "/spa-in-vasant-kunj" },
-              { title: "Spa in Saket", href: "/spa-in-saket" },
-              { title: "Spa in Connaught Place", href: "/spa-in-connaught-place" },
-              { title: "Spa in Karol Bagh", href: "/spa-in-karol-bagh" },
-              { title: "Spa in Rohini", href: "/spa-in-rohini" },
-              { title: "Spa in Paharganj", href: "/spa-in-paharganj" },
-              { title: "Spa in Noida", href: "/spa-in-noida" },
-              { title: "Spa in Gurgaon", href: "/spa-in-gurgaon" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-2xl border border-amber-100 bg-white p-5 text-center font-semibold text-amber-700 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        </div>
+      </section>
+
+      {/* 9. Promises */}
+      <section aria-labelledby="gk-promise-title" className="bg-[#fffaf5] py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <HomeHeading
+            id="gk-promise-title"
+            eyebrow="Why Guests Come Back"
+            title="Looking for the Best Spa"
+            highlight="in GK?"
+            text="We'll leave the verdict to you. Here's what we promise on every booking, though."
+          />
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {promises.map(({ icon: Icon, title, text }) => (
+              <div key={title} className="rounded-3xl bg-white p-7 text-center shadow-[0_10px_30px_rgba(43,24,16,0.06)] ring-1 ring-amber-100 transition-transform duration-300 hover:-translate-y-1">
+                <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/30">
+                  <Icon className="size-6" />
+                </span>
+                <h3 className="mt-5 font-title text-lg font-bold text-amber-900">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-bodycolor">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 10. Nearby outlets */}
+      <section aria-labelledby="gk-nearby-title" className="bg-white py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <HomeHeading
+            id="gk-nearby-title"
+            eyebrow="Spa Near Greater Kailash"
+            title="Not in GK Today?"
+            highlight="Try These"
+            text="If another part of South Delhi is closer, one of these outlets might suit you better."
+          />
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {nearby.map(({ area, note, href }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  className="group flex items-center gap-4 rounded-2xl bg-white p-5 ring-1 ring-amber-100 shadow-[0_4px_16px_rgba(43,24,16,0.05)] transition-all duration-300 hover:-translate-y-0.5 hover:ring-amber-300"
+                >
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-amber-100 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <MapPin className="size-5" />
+                  </span>
+                  <span className="flex-1">
+                    <span className="block font-title text-lg font-bold text-amber-900">Spa in {area}</span>
+                    <span className="text-xs text-bodycolor">{note}</span>
+                  </span>
+                  <ArrowRight className="size-4 text-primary transition-transform group-hover:translate-x-1" />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-center text-sm text-bodycolor">
+            <a href="/outlets" className={linkClass}>See all our outlets</a> or browse the <a href="/gallery" className={linkClass}>spa gallery</a>.
+          </p>
+        </div>
+      </section>
+
+      {/* 11. FAQ */}
+      <section aria-labelledby="gk-faq-title" className="bg-[#fffaf5] py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <HomeHeading
+            id="gk-faq-title"
+            eyebrow="Questions? We're Here To Help"
+            title="Spa in Greater Kailash"
+            highlight="FAQs"
+          />
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <details
+                key={faq.question}
+                open={i === 0}
+                className="group rounded-2xl bg-white ring-1 ring-amber-100 transition-shadow open:shadow-[0_10px_30px_rgba(43,24,16,0.08)]"
               >
-                {item.title}
-              </Link>
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 md:p-6 [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center gap-4">
+                    <span className="font-title text-lg font-bold text-amber-700">{String(i + 1).padStart(2, "0")}</span>
+                    <h3 className="font-sans text-base font-semibold text-amber-900">{faq.question}</h3>
+                  </span>
+                  <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-amber-50 text-primary ring-1 ring-amber-200 transition-transform duration-300 group-open:rotate-45 group-open:bg-primary group-open:text-white">
+                    <Plus className="size-4" />
+                  </span>
+                </summary>
+                <p className="px-5 pb-6 pl-[3.75rem] text-sm leading-relaxed text-bodycolor md:px-6 md:pl-[4.25rem]">{faq.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="rounded-[32px] bg-gradient-to-r from-[#1f1a17] to-[#4b4541] p-8 text-white shadow-2xl md:p-10">
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">Book your visit</p>
-              <h3 className="mt-2 text-3xl font-bold md:text-4xl">Book the Best Spa in Greater Kailash — Today</h3>
-              <p className="mt-3 leading-relaxed text-white/80">Walk in near M Block Market, or connect with us for a home or hotel spa booking anywhere in GK-1, GK-2, and South Delhi.</p>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <a href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." className="rounded-full bg-white px-6 py-3 font-semibold text-[#1f1a17] transition hover:bg-amber-50">WhatsApp Booking</a>
-              <a href="https://t.me/+yulqEcJa2dxhM2I9" className="rounded-full border border-white/30 px-6 py-3 font-semibold text-white transition hover:bg-white/10">Join Telegram</a>
-            </div>
+      {/* 12. Final CTA */}
+      <section aria-labelledby="gk-cta-title" className="relative overflow-hidden bg-dark py-16 md:py-20 px-4 md:px-8">
+        <Image src="/images/gallery/g02-lg.webp" alt="" fill sizes="100vw" className="object-cover opacity-20" aria-hidden="true" />
+        <div className="relative max-w-3xl mx-auto text-center">
+          <HomeHeading
+            light
+            id="gk-cta-title"
+            eyebrow="Book Today"
+            title="Free This Evening?"
+            highlight="Let's Book It"
+            text="Drop us a WhatsApp with a time and the massage you'd like, and tell us if it's the outlet or your place. We usually reply within a few minutes with your therapist and the price."
+            className="!mb-8"
+          />
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <WhatsAppButton className="!bg-[#15803d] hover:!bg-[#166534] !shadow-black/30" />
+            <a
+              href={TELEGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#1d6fa5] px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#185d8a]"
+            >
+              <FaTelegramPlane className="size-5" /> Chat on Telegram
+            </a>
+            <a
+              href={PHONE_LINK}
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-white/80 px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-white hover:text-ink"
+            >
+              <Phone className="size-4" /> Call Now
+            </a>
           </div>
+          <p className="mt-6 flex items-center justify-center gap-2 text-xs text-white/60">
+            <CalendarCheck className="size-4" /> No advance payment for outlet bookings
+          </p>
         </div>
       </section>
 

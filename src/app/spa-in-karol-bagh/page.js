@@ -1,15 +1,7 @@
-import KarolBaghPage from "./KarolBaghPage";
-// src/app/spa-in-karol-bagh/page.js
-// <-- NO "use client" here -->
+import LocationPage, { LocationSchemas } from "../components/LocationPage";
+import locations from "../components/locations";
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Spa in Karol Bagh", item: "https://www.luxuryrussianspa.com/spa-in-karol-bagh" },
-  ],
-};
+const loc = locations["karol-bagh"];
 
 export const metadata = {
   title: "Russian Spa in Karol Bagh - Spa & Massage Centre | ₹1999",
@@ -33,12 +25,8 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <script
-        id="breadcrumb-schema-spa-in-karol-bagh"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <KarolBaghPage />
+      <LocationSchemas loc={loc} />
+      <LocationPage loc={loc} />
     </>
   );
 }

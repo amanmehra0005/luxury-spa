@@ -1,15 +1,7 @@
-import Gurpage from "./Gurpage";
-// src/app/page.js
-// <-- NO "use client" here -->
+import LocationPage, { LocationSchemas } from "../components/LocationPage";
+import locations from "../components/locations";
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Spa in Gurgaon", item: "https://www.luxuryrussianspa.com/spa-in-gurgaon" },
-  ],
-};
+const loc = locations["gurgaon"];
 
 export const metadata = {
   title: "Russian Spa in Gurgaon - Full Body Massage | From ₹1999",
@@ -30,20 +22,11 @@ export const metadata = {
   }
 };
 
-// import dynamic from "next/dynamic";
-
-// dynamic import is optional but helps to avoid SSR issues with some libs
-// const HomeClient = dynamic(() => import("./HomeClient"), { ssr: false });
-
 export default function page() {
   return (
     <>
-      <script
-        id="breadcrumb-schema-spa-in-gurgaon"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <Gurpage />
+      <LocationSchemas loc={loc} />
+      <LocationPage loc={loc} />
     </>
   );
 }

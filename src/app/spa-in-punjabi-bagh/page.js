@@ -1,86 +1,7 @@
-import PunjabiBaghPage from "./PunjabiBaghPage";
-// src/app/spa-in-punjabi-bagh/page.js
-// <-- NO "use client" here -->
+import LocationPage, { LocationSchemas } from "../components/LocationPage";
+import locations from "../components/locations";
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Is there a good spa in Punjabi Bagh Club Road?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, Luxury Russian Spa runs a genuine spa in Punjabi Bagh Club Road, close to Ring Road and Punjabi Bagh Metro Station, offering full body, deep tissue, and B2B massage in a private, hygienic setting.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What makes Luxury Russian Spa the best spa in Punjabi Bagh?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Certified therapists, transparent pricing, hygienic private rooms, and flexible outlet, home, and hotel spa options make us the best spa in Punjabi Bagh for residents across West Delhi.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer body massage in Punjabi Bagh for both men and women?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our body massage in Punjabi Bagh welcomes both men and women, with male and female therapist options — just mention your preference when booking your session.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are you close to A One Spa or B One Spa in Punjabi Bagh?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our outlet sits in the same West Punjabi Bagh stretch as well-known landmarks like A One Spa Punjabi Bagh and B One Spa Punjabi Bagh, so our address is easy to find and navigate to.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is there a massage center in Punjabi Bagh near Shivaji Park or Ring Road?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our massage center in Punjabi Bagh is easy to reach from Shivaji Park, Ring Road, Club Road, and West Punjabi Bagh, with home spa options across all of these areas.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer a full body massage Punjabi Bagh at home?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, alongside our outlet, we offer full body massage Punjabi Bagh as a home service across West Delhi. Our therapist arrives with all the equipment needed for a relaxing, hygienic session.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I book a couple massage in Punjabi Bagh?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Punjabi Bagh outlet has private rooms designed for couple massage, including our popular couple massage with female therapists, so two people can relax together in comfort.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much does a body spa in Punjabi Bagh cost?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "A body spa in Punjabi Bagh at our outlet starts from ₹1999 for the first visit. Home spa starts from ₹14,999 and hotel spa from ₹19,999, depending on duration and treatment.",
-      },
-    },
-  ],
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Spa in Punjabi Bagh", item: "https://www.luxuryrussianspa.com/spa-in-punjabi-bagh" },
-  ],
-};
+const loc = locations["punjabi-bagh"];
 
 export const metadata = {
   title: "Russian Spa in Punjabi Bagh - Spa on Club Road | ₹1999",
@@ -126,17 +47,8 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <script
-        id="faq-schema-punjabi-bagh"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        id="breadcrumb-schema-spa-in-punjabi-bagh"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <PunjabiBaghPage />
+      <LocationSchemas loc={loc} />
+      <LocationPage loc={loc} />
     </>
   );
 }

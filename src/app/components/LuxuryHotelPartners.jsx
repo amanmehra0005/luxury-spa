@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { Hotel, Star, MapPin, Heart, ArrowRight } from 'lucide-react';
 
 const LuxuryHotelPartners = () => {
@@ -64,48 +63,35 @@ const LuxuryHotelPartners = () => {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-10 md:mb-12">
-          <motion.span 
+          <span 
             className="inline-block text-amber-600 font-bold tracking-wider uppercase mb-3"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
           >
             Exclusive Partnerships
-          </motion.span>
-          <motion.h2 
+          </span>
+          <h2 
             className="text-4xl md:text-5xl font-bold text-amber-900 mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
           >
             Luxury Hotel Partners
-          </motion.h2>
-          <motion.p 
+          </h2>
+          <p 
             className="text-xl text-gray-700 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
           >
             Experience our premium spa services at these exquisite partner locations worldwide
-          </motion.p>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Hotel Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {hotels.map((hotel, index) => (
-              <motion.div 
+              <div 
                 key={hotel.id}
                 className={`relative bg-white rounded-2xl shadow-xl p-6 transition-all duration-300 border-2 cursor-pointer overflow-hidden group ${
                   activeHotel === index 
                     ? 'border-amber-500 shadow-2xl' 
                     : 'border-white hover:border-amber-300'
                 }`}
-                whileHover={{ y: -5 }}
                 onClick={() => setActiveHotel(index)}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
               >
                 {/* Highlight indicator */}
                 {activeHotel === index && (
@@ -136,16 +122,13 @@ const LuxuryHotelPartners = () => {
                 
                 {/* Hover effect overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </motion.div>
+              </div>
             ))}
           </div>
           
           {/* Featured Hotel Showcase */}
-          <motion.div 
+          <div 
             className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -198,14 +181,12 @@ const LuxuryHotelPartners = () => {
               </div>
               
               <div className="p-8 bg-gradient-to-t from-black/80 to-transparent">
-                <motion.button 
+                <button 
                   className="w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center justify-center gap-3"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
                 >
                   Book Spa Experience
                   <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </motion.button>
+                </button>
                 
                 <div className="mt-6 flex items-center justify-center gap-3">
                   <div className="flex items-center">
@@ -220,14 +201,11 @@ const LuxuryHotelPartners = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
         
-        <motion.div 
+        <div 
           className="mt-16 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
         >
           <button className="px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-800 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 group flex items-center justify-center gap-2 mx-auto">
             Explore All Partner Hotels
@@ -241,20 +219,16 @@ const LuxuryHotelPartners = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
       
       {/* Floating decorative elements */}
-      <motion.div 
+      <div 
         className="absolute top-1/4 left-10 w-8 h-8 rounded-full bg-amber-400/20"
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      ></motion.div>
-      <motion.div 
+      ></div>
+      <div 
         className="absolute bottom-1/3 right-20 w-6 h-6 rounded-full bg-amber-500/30"
-        animate={{ y: [0, 20, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-      ></motion.div>
+      ></div>
     </section>
   );
 };
@@ -432,50 +406,34 @@ export default LuxuryHotelPartners;
           <div className="text-center mb-10 md:mb-12 relative">
             {/* <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#c5a491]"></div> */}
   
-            <motion.div 
+            <div 
             className="text-center mb-10 md:mb-12"
-            initial={false}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
           >
-            <motion.div
+            <div
               className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-              initial={false}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
             >
               <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
               <span className="text-amber-700 font-medium tracking-wider">Sanctuary Story</span>
-            </motion.div>
+            </div>
             
-            <motion.h2
+            <h2
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
             >
              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Sanctuary Story</span>
-            </motion.h2>
+            </h2>
             
-            <motion.p
+            <p
               className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
             >
              Discover the journey, philosophy, and passion that created your urban oasis
-            </motion.p>
+            </p>
             
-            <motion.div
+            <div
               className="flex justify-center mt-10"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
             >
               <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
           </div>
   
           {/* Content Grid */}

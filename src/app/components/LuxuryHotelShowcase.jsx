@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const LuxuryHotelShowcase = ({
@@ -123,11 +122,10 @@ const LuxuryHotelShowcase = ({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {hotels.map((hotel, index) => (
-              <motion.div
+              <div
                 key={hotel.id}
                 className={`relative bg-white rounded-2xl shadow-lg p-5 transition-all duration-300 cursor-pointer overflow-hidden group ${activeHotel === index ? 'ring-4 ring-amber-500 shadow-xl' : 'hover:ring-2 hover:ring-amber-300'
                   }`}
-                whileHover={{ y: -5 }}
                 onClick={() => {
                   setActiveHotel(index);
                   if (window.innerWidth <= 768 && featuredCardRef.current) {
@@ -173,7 +171,7 @@ const LuxuryHotelShowcase = ({
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

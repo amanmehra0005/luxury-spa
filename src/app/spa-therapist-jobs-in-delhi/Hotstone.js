@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { Playfair_Display, Montserrat } from 'next/font/google';
 import Image from 'next/image';
 import { Check } from "lucide-react";
@@ -22,7 +21,6 @@ import {
 
 } from 'react-icons/fa';
 import { FaHotTub, FaBath, FaLeaf, FaHandSparkles, FaCrown, FaCheckCircle } from "react-icons/fa";
-import { AnimatePresence } from "framer-motion";
 import { FaHeart, FaFemale } from 'react-icons/fa';
 import Head from "next/head";
 import { FaTelegram } from 'react-icons/fa';
@@ -288,36 +286,27 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
         {/* Location */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
-            <motion.h2
+            <h2
               className="text-4xl md:text-5xl font-bold text-center text-amber-900 font-serif mb-6"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
             >
               Our Premium Location
-            </motion.h2>
+            </h2>
 
             {/* Description */}
-            <motion.p
+            <p
               className="text-center text-amber-800 max-w-3xl mx-auto mb-12 text-base md:text-lg font-medium"
-              initial={false}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
             >
               Meet our diverse team of professionals who bring excellence and passion to every engagement.
-            </motion.p>
+            </p>
 
 
 
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
               {cities.map((c, i) => (
-                <motion.a
+                <a
                   key={c.name}
                   href={`#/cities/${c.name.toLowerCase()}`}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.04, duration: 0.35 }}
                   className="group block rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
                 >
                   <div className="relative w-full h-44 sm:h-48 lg:h-52">
@@ -336,7 +325,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                   <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
                     <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
                   </div>
-                </motion.a>
+                </a>
               ))}
             </div>
 
@@ -362,35 +351,23 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
         <div className="bg-white text-gray-800">
           <section className="py-16 px-4">
             <div className="text-center mb-14">
-              <motion.h2
+              <h2
                 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
               >
                 Hiring Spa Therapists <span className="text-amber-600">– Build Your Future in Wellness</span>
-              </motion.h2>
-              <motion.p
+              </h2>
+              <p
                 className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
               >
                 We are recruiting qualified and enthusiastic spa therapists (both male and female) to work in our luxury massage rooms located in Delhi and Noida, Aerocity, and Mahipalpur. But be it part time spa work in Delhi or full-time, we are offering all the vacancy that suits you.
-              </motion.p>
+              </p>
               <div className="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
             </div>
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Responsibilities Card */}
-              <motion.div
+              <div
                 className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
               >
                 <div className="flex items-center mb-4">
                   <div className="bg-amber-100 p-3 rounded-full mr-4">
@@ -424,15 +401,11 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     <span>Create excellent branding of Represent Luxury Russian Spa.</span>
                   </li>
                 </ul>
-              </motion.div>
+              </div>
 
               {/* Requirements Card */}
-              <motion.div
+              <div
                 className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
               >
                 <div className="flex items-center mb-4">
                   <div className="bg-amber-100 p-3 rounded-full mr-4">
@@ -466,15 +439,11 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     <span><strong>Hotel:</strong> Flexible hotel spa jobs in Mahipalpur, Noida or in Aerocity.</span>
                   </li>
                 </ul>
-              </motion.div>
+              </div>
 
               {/* Benefits Card */}
-              <motion.div
+              <div
                 className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5 }}
               >
                 <div className="flex items-center mb-4">
                   <div className="bg-amber-100 p-3 rounded-full mr-4">
@@ -508,15 +477,11 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     <span>Supportive, respectful, and safe work culture.</span>
                   </li>
                 </ul>
-              </motion.div>
+              </div>
 
               {/* Positions Card */}
-              <motion.div
+              <div
                 className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.6 }}
               >
                 <div className="flex items-center mb-4">
                   <div className="bg-amber-100 p-3 rounded-full mr-4">
@@ -548,15 +513,11 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Locations Card */}
-              <motion.div
+              <div
                 className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.7 }}
               >
                 <div className="flex items-center mb-4">
                   <div className="bg-amber-100 p-3 rounded-full mr-4">
@@ -593,15 +554,11 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     <span className="text-amber-600 mr-2">•</span> Noida
                   </li>
                 </ul>
-              </motion.div>
+              </div>
 
               {/* Contact Card */}
-              <motion.div
+              <div
                 className="bg-amber-800 text-white rounded-xl p-6 shadow-lg"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.8 }}
               >
                 <h3 className="text-2xl font-bold mb-4">Apply Now</h3>
                 <p className="mb-6">
@@ -635,18 +592,14 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                   </button>
                 </a>
 
-              </motion.div>
+              </div>
             </div>
           </section>
         </div>
         <div className="bg-amber-50 py-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <motion.div
+            <div
               className="text-center mb-12"
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif mb-4">
                 Apply <span className="text-amber-600">Today</span>
@@ -655,16 +608,12 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
               <p className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed">
                 If you're looking for a spa job in Delhi, a spa job vacancy, or a therapist job in a luxury environment, we encourage you to apply.
               </p>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left Content */}
-              <motion.div
+              <div
                 className="space-y-6"
-                initial={false}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <p className="text-amber-800 text-lg">
                   We are particularly looking for dedicated and talented individuals for <span className="font-semibold">spa therapist jobs for females</span>, as well as <span className="font-semibold">male-to-female spa jobs</span> in our hotel spa outlets.
@@ -693,15 +642,11 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     </li>
                   </ul>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Right Content */}
-              <motion.div
+              <div
                 className="space-y-6"
-                initial={false}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
               >
                 <div className="bg-amber-100 p-6 rounded-xl border border-amber-200">
                   <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center">
@@ -732,12 +677,8 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                   </div>
                 </div>
 
-                <motion.div
+                <div
                   className="text-center mt-6"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
                 >
                   <a href='https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
                     <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
@@ -748,8 +689,8 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                   <p className="text-amber-700 text-sm mt-4">
                     Send your resume to: info@luxuryspacare.in
                   </p>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -757,44 +698,26 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
         <section className="bg-gradient-to-b from-amber-50 via-white to-amber-100 py-16 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-10">
-              <motion.h2
+              <h2
                 className="text-3xl md:text-4xl font-bold text-amber-900"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
               >
                 <span className="block">Why Choose <span className="text-amber-600">Luxury Russian Spa for Spa Therapist Jobs in Delhi Hotels?</span></span>
-              </motion.h2>
-              <motion.p
+              </h2>
+              <p
                 className="mt-3 max-w-2xl mx-auto text-gray-700"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.15, duration: 0.5 }}
               >
                 In case of your desire to get employed in the top 5-star hotel spa in Delhi or Aerocity, then Luxury Russian Spa presents you with the perfect platform to shine.
-              </motion.p>
+              </p>
             </div>
 
-            <motion.div
+            <div
               className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-              initial={false}
               whileInView="show"
-              viewport={{ once: true }}
-              variants={{
-                hidden: {},
-                show: {}
-              }}
             >
               {features.map((f, i) => (
-                <motion.article
+                <article
                   key={f.id}
                   className="relative bg-white rounded-2xl p-6 shadow-lg border border-amber-100 hover:shadow-xl transition-transform transform hover:-translate-y-1"
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.08 * i, duration: 0.45 }}
                   aria-labelledby={`feature-${f.id}-title`}
                 >
                   <div className="flex items-start gap-4">
@@ -811,9 +734,9 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
 
                   {/* decorative accent */}
                   <div className="absolute -right-4 -top-4 w-20 h-20 rounded-full bg-gradient-to-tr from-amber-100 to-amber-50 opacity-60 blur-xl pointer-events-none" aria-hidden="true" />
-                </motion.article>
+                </article>
               ))}
-            </motion.div>
+            </div>
 
             <div className="mt-8 text-center">
               <a
@@ -830,11 +753,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
             {/* Left: How to Apply steps */}
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+            <div
               className="bg-amber-50 border border-amber-100 rounded-2xl p-8 shadow-sm"
             >
               <div className="flex items-center gap-4 mb-4">
@@ -890,14 +809,10 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                 </ul>
               </div>
 
-            </motion.div>
+            </div>
 
             {/* Right: Contact & CTA */}
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+            <div
               className="bg-amber-800 text-white rounded-2xl p-8 shadow-lg"
               aria-labelledby="how-apply-contact"
             >
@@ -946,7 +861,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
               </div>
 
               <p className="mt-6 text-xs text-amber-200">Join us today and become part of a team dedicated to providing the ultimate luxury spa experience in the heart of Delhi NCR.</p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -956,22 +871,15 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
         {/* F&Q Section */}
         <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
           <div className="max-w-5xl mx-auto px-4">
-            <motion.div
-              initial={false}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+            <div
               className="text-center mb-14"
             >
-              <motion.div
+              <div
                 className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
               >
                 <FaStar className="text-amber-500" />
                 Questions? We’re here to help
-              </motion.div>
+              </div>
               <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
                 Frequently Asked <span className="text-amber-600">Questions</span>
               </h2>
@@ -981,17 +889,13 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
               <div className="flex justify-center mt-6">
                 <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
               </div>
-            </motion.div>
+            </div>
 
             {/* FAQ Accordion */}
             <div className="space-y-5">
               {faqs.map((faq, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={false}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
                 >
                   <button
@@ -1023,13 +927,8 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     </div>
                   </button>
 
-                  <AnimatePresence>
                     {activeIndex === index && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+                      <div
                         className="overflow-hidden"
                       >
                         <div className="px-6 pb-6 pt-2 border-t border-amber-50">
@@ -1037,19 +936,14 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                             {faq.answer}
                           </p>
                         </div>
-                      </motion.div>
+                      </div>
                     )}
-                  </AnimatePresence>
-                </motion.div>
+                </div>
               ))}
             </div>
 
             {/* CTA Box */}
-            {/* <motion.div
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
+            {/* <div
                 className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
               >
                 <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
@@ -1064,7 +958,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     Book Appointment
                   </button>
                 </div>
-              </motion.div> */}
+              </div> */}
           </div>
         </section>
         {/* End F&Q Section */}

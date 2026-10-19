@@ -1,77 +1,7 @@
-import Pitampurapage from "./pitampurapage";
-// src/app/spa-in-pitampura/page.js
-// <-- NO "use client" here -->
+import LocationPage, { LocationSchemas } from "../components/LocationPage";
+import locations from "../components/locations";
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Is there a good spa in Pitampura near NSP?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, Luxury Russian Spa runs a genuine spa in Pitampura, close to Netaji Subhash Place and Metro Walk Mall, offering full body, deep tissue, and B2B massage in a private, hygienic setting.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What makes Luxury Russian Spa the best spa in Pitampura?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Certified therapists, transparent pricing, hygienic private rooms, and flexible outlet, home, and hotel spa options make us the best spa in Pitampura for residents across North West Delhi.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer body massage in Pitampura for both men and women?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our body massage in Pitampura welcomes both men and women, with male and female therapist options — just mention your preference when booking your session.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is there a massage center in Pitampura near Rani Bagh or Kohat Enclave?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our massage center in Pitampura is easy to reach from Rani Bagh, Kohat Enclave, Shalimar Bagh, and Prashant Vihar, with home spa options across all of these areas.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer a Russian spa in Pitampura?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our russian spa in Pitampura packages pair you with experienced Russian, Thai, and Uzbek therapists alongside our skilled Indian staff.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I find a spa near Pitampura for a quick session?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Search spa near Pitampura and message us on WhatsApp or Telegram — our outlet, home spa, and hotel spa teams can usually confirm a same-day slot.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I book a couple massage in Pitampura?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Pitampura outlet has private rooms designed for couple massage, including our popular couple massage with female therapists, so two people can relax together in comfort.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much does a full body massage in Pitampura cost?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "A full body massage in Pitampura at our outlet starts from ₹1999 for the first visit. Home spa starts from ₹14,999 and hotel spa from ₹19,999, depending on duration and treatment.",
-      },
-    },
-  ],
-};
+const loc = locations["pitampura"];
 
 export const metadata = {
   title: "Russian Spa in Pitampura - Luxury Body Massage Centre",
@@ -112,29 +42,11 @@ export const metadata = {
   },
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Spa in Pitampura", item: "https://www.luxuryrussianspa.com/spa-in-pitampura" },
-  ],
-};
-
-export default function Page() {
+export default function page() {
   return (
     <>
-      <script
-        id="faq-schema-pitampura"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        id="breadcrumb-schema-spa-in-pitampura"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <Pitampurapage />
+      <LocationSchemas loc={loc} />
+      <LocationPage loc={loc} />
     </>
   );
 }

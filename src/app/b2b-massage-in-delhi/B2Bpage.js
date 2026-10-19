@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import {
   FaArrowRight,
   FaCheckCircle,
@@ -89,7 +88,7 @@ export default function B2Bpage() {
         <div className="absolute left-8 top-8 h-24 w-24 rounded-full bg-amber-200/30 blur-3xl" />
         <div className="absolute bottom-8 right-10 h-28 w-28 rounded-full bg-rose-200/30 blur-3xl" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center">
             <div className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-white/90 px-4 py-2 text-sm font-semibold text-amber-700 shadow-sm">
               <FaStar className="text-amber-500" /> SIGNATURE TREATMENT
             </div>
@@ -119,8 +118,8 @@ export default function B2Bpage() {
               Wondering about the legality of B2B massage?{" "}
               <Link href="/is-b2b-massage-legal-in-india" className="font-semibold text-amber-700 underline">Read our guide on Is B2B Massage Legal in India</Link>.
             </p>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="relative flex items-center">
+          </div>
+          <div className="relative flex items-center">
             <div className="w-full rounded-[32px] border border-amber-100 bg-white p-3 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.25)]">
               <div className="relative h-[410px] overflow-hidden rounded-[24px]">
                 <Image src="/images/fpkdl.com_960_1758982727_woman-getting-back-massage-from-female-masseur_23-2150461428.jpg" alt="Therapist giving a B2B massage in Delhi" fill className="object-cover" />
@@ -130,7 +129,7 @@ export default function B2Bpage() {
               <p className="text-sm text-gray-600">Starting from</p>
               <p className="font-semibold text-amber-700">₹1999 first visit</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -142,11 +141,11 @@ export default function B2Bpage() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {highlights.map((item) => (
-            <motion.div key={item.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
+            <div key={item.title} className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
               <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50">{item.icon}</div>
               <h3 className="text-lg font-semibold text-[#1f1a17]">{item.title}</h3>
               <p className="mt-2 leading-relaxed text-gray-600">{item.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -183,7 +182,7 @@ export default function B2Bpage() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <motion.div initial={false} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="flex flex-col">
+          <div className="flex flex-col">
             <div className="rounded-2xl border border-amber-100 bg-white p-8 shadow-sm">
               <div className="mb-5 flex items-start gap-4">
                 <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-amber-50 text-2xl text-amber-700"><FaUser /></div>
@@ -205,9 +204,9 @@ export default function B2Bpage() {
             <div className="relative mt-6 h-64 flex-1 overflow-hidden rounded-2xl shadow-sm">
               <Image src="/images/staff2.jpg" alt="Expert B2B massage therapist in Delhi" fill className="object-cover" />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div initial={false} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="flex flex-col">
+          <div className="flex flex-col">
             <div className="relative h-64 overflow-hidden rounded-2xl shadow-sm">
               <Image src="/images/staff3.jpg" alt="Premium oils used for B2B massage in Delhi" fill className="object-cover" />
             </div>
@@ -233,7 +232,7 @@ export default function B2Bpage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -252,12 +251,8 @@ export default function B2Bpage() {
               { role: "Full Body Specialist", specialty: "Deep Tissue & Swedish", experience: "8+ yrs", image: "/images/staff2.jpg" },
               { role: "Wellness Therapist", specialty: "Aromatherapy Blends", experience: "5+ yrs", image: "/images/staff3.jpg" },
             ].map((t, index) => (
-              <motion.div
+              <div
                 key={t.role}
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: index * 0.08 }}
                 className="group relative h-80 overflow-hidden rounded-[24px] shadow-lg"
               >
                 <Image src={t.image} alt={`${t.role} at Luxury Russian Spa`} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
@@ -269,7 +264,7 @@ export default function B2Bpage() {
                   <h3 className="text-lg font-semibold text-white">{t.role}</h3>
                   <p className="mt-1 text-sm text-amber-300">{t.specialty}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -283,13 +278,13 @@ export default function B2Bpage() {
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <motion.div key={service.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
+            <div key={service.title} className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
               <h3 className="text-lg font-semibold text-[#1f1a17]">{service.title}</h3>
               <p className="mt-2 text-gray-600">{service.desc}</p>
               <Link href={service.href} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-700 hover:underline">
                 Learn more <FaArrowRight className="text-xs" />
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -309,12 +304,12 @@ export default function B2Bpage() {
               { label: "Steam Bath", image: "/images/icons8-spa-care-64.webp" },
               { label: "Sauna", image: "/images/icons8-sauna-64.webp" },
             ].map((item) => (
-              <motion.div key={item.label} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="flex flex-col items-center">
+              <div key={item.label} className="flex flex-col items-center">
                 <div className="relative flex h-[100px] w-[100px] items-center justify-center rounded-full border border-amber-200 bg-white shadow-sm">
                   <Image src={item.image} alt={item.label} fill className="object-contain p-5" />
                 </div>
                 <p className="mt-3 text-sm font-medium text-[#1f1a17]">{item.label}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
           <Link href="/massage-in-delhi" className="mt-10 inline-flex items-center gap-2 rounded-full bg-amber-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-amber-700">
@@ -333,15 +328,11 @@ export default function B2Bpage() {
           </div>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {topDelhiLocations.map((loc) => (
-              <motion.a
+              <a
                 key={loc.name}
                 href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
                 target="_blank"
                 rel="noopener noreferrer"
-                initial={false}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45 }}
                 className="group relative block h-32 overflow-hidden rounded-2xl shadow-lg"
               >
                 <Image src={loc.image} alt={`B2B massage in ${loc.name}, Delhi`} fill className="object-cover transition duration-500 group-hover:scale-110" />
@@ -349,7 +340,7 @@ export default function B2Bpage() {
                 <div className="absolute inset-x-0 bottom-0 p-3">
                   <p className="text-sm font-bold uppercase tracking-wide text-white">{loc.name}</p>
                 </div>
-              </motion.a>
+              </a>
             ))}
           </div>
           <div className="mt-10 text-center">
@@ -369,7 +360,7 @@ export default function B2Bpage() {
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
             {pricingPlans.map((plan) => (
-              <motion.div key={plan.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45 }} className={`relative overflow-hidden rounded-[28px] border p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl ${plan.highlight ? "border-amber-400 bg-gradient-to-br from-[#fff3e8] to-[#fffaf5]" : "border-amber-100 bg-white"}`}>
+              <div key={plan.title} className={`relative overflow-hidden rounded-[28px] border p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl ${plan.highlight ? "border-amber-400 bg-gradient-to-br from-[#fff3e8] to-[#fffaf5]" : "border-amber-100 bg-white"}`}>
                 <div className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${plan.highlight ? "bg-amber-600 text-white" : "bg-amber-100 text-amber-700"}`}>{plan.badge}</div>
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50">{plan.icon}</div>
                 <h3 className="text-2xl font-semibold text-[#1f1a17]">{plan.title}</h3>
@@ -388,7 +379,7 @@ export default function B2Bpage() {
                 <a href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." className="mt-6 block rounded-full bg-amber-600 py-3 text-center font-semibold text-white transition hover:bg-amber-700">
                   Book Now
                 </a>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -402,19 +393,17 @@ export default function B2Bpage() {
         </div>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <motion.div key={faq.question} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} className="rounded-2xl border border-amber-100 bg-white p-5">
+            <div key={faq.question} className="rounded-2xl border border-amber-100 bg-white p-5">
               <button onClick={() => setActiveIndex(activeIndex === index ? -1 : index)} className="flex w-full items-center justify-between text-left">
                 <span className="text-lg font-semibold text-[#1f1a17]">{faq.question}</span>
                 <FaArrowRight className={`text-amber-700 transition ${activeIndex === index ? "rotate-90" : ""}`} />
               </button>
-              <AnimatePresence initial={false}>
                 {activeIndex === index && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.25 }} className="overflow-hidden">
+                  <div className="overflow-hidden">
                     <p className="mt-3 text-gray-600">{faq.answer}</p>
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
