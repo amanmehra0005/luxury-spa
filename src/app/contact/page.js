@@ -61,7 +61,7 @@ const contactSchema = {
 export const metadata = {
   title: "Contact Luxury Russian Spa - WhatsApp, Call or Visit | Book 24/7",
   description:
-    "Contact Luxury Russian Spa: WhatsApp or call +91 87997 16197, Telegram, or email. Bookings 24/7 across 24+ outlets in Delhi NCR. Main address in Aerocity.",
+    "Call or WhatsApp +91 87997 16197, any time of day. Tell us the massage, time and area and we'll reply with the price and nearest outlet in minutes.",
   keywords: [
     "contact luxury russian spa",
     "luxury russian spa phone number",

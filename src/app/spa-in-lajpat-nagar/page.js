@@ -49,7 +49,7 @@ const spaSchema = {
 export const metadata = {
   title: "Russian Spa in Lajpat Nagar - Luxury Body Massage | ₹1999",
   description:
-    "Russian spa in Lajpat Nagar near Central Market. Russian, Uzbek, Thai & Indian therapists, private rooms, body massage & B2B spa from ₹1999. Call +91 87997 16197.",
+    "Private rooms near Central Market, Russian & Indian therapists, and a fixed ₹1,999 price for 60 min. Pick your therapist and book on WhatsApp in a minute.",
   keywords: [
     "spa in lajpat nagar",
     "best spa in lajpat nagar",

@@ -85,7 +85,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Russian Spa in Laxmi Nagar - Spa & Full Body Massage | ₹1999",
   description:
-    "Russian spa in Laxmi Nagar, East Delhi, easy to reach from Laxmi Nagar metro. Russian & Indian therapists, private rooms, full body massage from ₹1999.",
+    "Spa near Laxmi Nagar metro, East Delhi. Private rooms, Russian & Indian therapists, full body massage for ₹1,999. Check today's free slots on WhatsApp.",
   keywords: [
     "spa in laxmi nagar",
     "spa in laxminagar",

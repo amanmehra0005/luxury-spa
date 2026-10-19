@@ -85,7 +85,7 @@ const breadcrumbSchema = {
 export const metadata = {
   title: "Russian Spa in Punjabi Bagh - Spa on Club Road | ₹1999",
   description:
-    "Russian spa in Punjabi Bagh on Club Road, West Delhi. Russian & Indian therapists, private rooms, luxury body massage & wellness spa from ₹1999.",
+    "Spa on Club Road, Punjabi Bagh. Private rooms, Russian & Indian therapists and a fixed ₹1,999 price for 60 min. Ask for today's slots on WhatsApp.",
   keywords: [
     "spa in punjabi bagh",
     "a one spa punjabi bagh",

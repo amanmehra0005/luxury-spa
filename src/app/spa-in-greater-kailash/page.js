@@ -76,7 +76,7 @@ const faqSchema = {
 export const metadata = {
   title: "Russian Spa in Greater Kailash - Spa in GK 1 & GK 2 | ₹1999",
   description:
-    "Russian spa in Greater Kailash for GK 1 & GK 2, near M Block Market. Russian & Indian therapists, private rooms, body massage from ₹1999. Book on WhatsApp.",
+    "Spa for GK 1 & GK 2, close to M Block Market. Private rooms, your choice of Russian or Indian therapist, ₹1,999 for 60 min. Book on WhatsApp.",
   keywords: [
     "spa in greater kailash",
     "spa gk",

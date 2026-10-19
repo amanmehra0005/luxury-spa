@@ -74,9 +74,9 @@ const priceSchema = {
 };
 
 export const metadata = {
-  title: "Spa Price in Delhi 2026 - Massage Rates From ₹1999 | Luxury Russian Spa",
+  title: "Spa Price in Delhi 2026 - Massage Rates From ₹1999",
   description:
-    "Spa price in Delhi: ₹1,999 for 60 min at any outlet, ₹14,999 for 90 min at home or hotel. Full body, Thai & couple spa rates. Same price in every area.",
+    "₹1,999 for a 60-min massage, ₹14,999 at home or hotel. Same price at every outlet, no hidden charges. See the full Delhi spa price list before you book.",
   keywords: [
     "spa price in delhi",
     "delhi spa price",

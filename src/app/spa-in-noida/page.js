@@ -49,7 +49,7 @@ const spaSchema = {
 export const metadata = {
   title: "Russian Spa in Noida - Spa Near Sector 18 & Home Massage",
   description:
-    "Luxury spa in Noida near Sector 18, plus massage at home across Noida, Noida Extension & Greater Noida. Russian & Thai therapists, private rooms. From ₹1999.",
+    "Spa near Noida Sector 18, or a therapist at your home in Noida, Extension or Greater Noida. Russian & Thai therapists, ₹1,999. Ask today's slots on WhatsApp.",
   keywords: [
     "spa in noida",
     "best spa in noida",

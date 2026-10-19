@@ -7,7 +7,7 @@ export const metadata = {
   // Informational guide: kept off "Sandwich Massage in Delhi" so it doesn't compete with the /sandwich-massage service page.
   title: "What to Expect From a Sandwich Massage: First-Timer's Guide",
   description:
-    "Never had a sandwich massage? What happens in the session, who it suits, how to pick a good spa and what to check before you book. A simple guide for first-timers.",
+    "Two therapists, one massage. Here's exactly what happens in a sandwich massage, how long it takes, what it costs in Delhi and what to check first.",
   keywords: ["sandwich massage guide", "sandwich massage benefits delhi", "what is sandwich massage"],
   alternates: {
     canonical:
@@ -173,6 +173,37 @@ export default function SandwichMassageDelhiPage() {
                     Before booking any massage treatment, it is important to understand the process, benefits, and how to choose a trusted spa. This guide covers everything you need to know about sandwich massage in Delhi, including its benefits, booking process, and what to expect from professional massage therapy in Delhi.
                   </p>
 
+                </section>
+
+                {/* Quick answer + booking box near the top, so readers who just want the short version (or want to book) don't have to scroll */}
+                <section aria-labelledby="quick-answer" className="rounded-2xl bg-[#2b1810] p-6 text-white sm:p-8">
+                  <p id="quick-answer" className="text-xs font-semibold uppercase tracking-[0.2em] text-[#fdc28c]">
+                    The short answer
+                  </p>
+                  <p className="mt-3 text-lg leading-8 text-white/90">
+                    A sandwich massage is a full body massage done by two therapists at the same time, one on each side
+                    of you. It usually lasts 60 to 90 minutes in a private room, and it feels more relaxing than a
+                    regular massage simply because twice the work happens in the same time.
+                  </p>
+                  <p className="mt-3 text-base text-white/75">
+                    At our outlets it starts at ₹1,999, and we confirm the exact price on WhatsApp before you book.
+                  </p>
+                  <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <a
+                      href="https://wa.me/918799716197?text=Hi!%20I%20read%20your%20sandwich%20massage%20guide.%20What%27s%20the%20price%20and%20is%20there%20a%20slot%20today%3F"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-full bg-[#15803d] px-6 py-3 text-sm font-semibold text-white hover:bg-[#166534]"
+                    >
+                      Ask Price on WhatsApp
+                    </a>
+                    <Link
+                      href="/sandwich-massage"
+                      className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/40 hover:bg-white/10"
+                    >
+                      See Our Sandwich Massage →
+                    </Link>
+                  </div>
                 </section>
 
                 <section className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">

@@ -76,7 +76,7 @@ const faqSchema = {
 export const metadata = {
   title: "Russian Spa in Rajouri Garden - Spa Near City Square Mall",
   description:
-    "Russian spa in Rajouri Garden, near City Square Mall and the metro. Russian & Indian therapists, private rooms, body massage from ₹1999. Book on WhatsApp.",
+    "A few minutes from City Square Mall and the metro. Private rooms, Russian & Indian therapists, ₹1,999 for 60 min. Check today's free slots on WhatsApp.",
   keywords: [
     "spa in rajouri garden",
     "best spa in rajouri garden",

@@ -84,7 +84,7 @@ const faqSchema = {
 export const metadata = {
   title: "Russian Spa in Kalkaji - Spa & Massage Centre | From ₹1999",
   description:
-    "Spa in Kalkaji near Kalkaji Temple & Nehru Place for full body, deep tissue & couple massage. Certified therapists, private hygienic rooms. Book from ₹1999 today!",
+    "Spa in Kalkaji near Nehru Place for full body, deep tissue & couple massage. Private rooms, fixed ₹1,999 price, pick your therapist. Book on WhatsApp.",
   keywords: [
     "spa in kalkaji",
     "massage in kalkaji",
