@@ -27,8 +27,8 @@ const outletDropdown = [
   { name: "Aerocity", href: "/spa-in-aerocity" },
   { name: "Connaught Place", href: "/spa-in-connaught-place" },
   { name: "Lajpat Nagar", href: "/spa-in-lajpat-nagar" },
-  { name: "Gurugram", href: "/spa-in-gurgaon" },
-  { name: "Noida", href: "/spa-in-noida" },
+  { name: "Dwarka", href: "/spa-in-dwarka" },
+  { name: "Mahipalpur", href: "/spa-in-mahipalpur" },
 ];
 
 const menu = [
