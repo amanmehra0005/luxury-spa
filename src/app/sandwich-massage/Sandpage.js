@@ -261,7 +261,7 @@ const related = [
 
 const guides = [
   { title: "Health Benefits of Sandwich Massage", href: "/health-benefits-of-sandwich-massage" },
-  { title: "What to Expect From Your First Sandwich Massage", href: "/blog/first-sandwich-massage-what-to-expect" },
+  { title: "What Is a Sandwich Massage? Process & What to Expect", href: "/blog/first-sandwich-massage-what-to-expect" },
 ];
 
 const testimonials = [

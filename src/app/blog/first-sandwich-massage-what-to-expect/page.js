@@ -5,18 +5,18 @@ import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
   // Informational guide: kept off "Sandwich Massage in Delhi" so it doesn't compete with the /sandwich-massage service page.
-  title: "What to Expect From a Sandwich Massage: First-Timer's Guide",
+  title: "What Is a Sandwich Massage? Process, Price & What to Expect",
   description:
-    "Two therapists, one massage. Here's exactly what happens in a sandwich massage, how long it takes, what it costs in Delhi and what to check first.",
-  keywords: ["sandwich massage guide", "sandwich massage benefits delhi", "what is sandwich massage"],
+    "A sandwich massage is a full body massage by two therapists at once. Here's how the process works, how long it takes, what it costs in Delhi and what to expect.",
+  keywords: ["what is sandwich massage", "what is sandwich massage in spa", "sandwich massage process", "sandwich massage meaning", "sandwich spa", "sandwich massage guide", "first sandwich massage"],
   alternates: {
     canonical:
       "https://www.luxuryrussianspa.com/blog/first-sandwich-massage-what-to-expect",
   },
   openGraph: {
-    title: "What to Expect From a Sandwich Massage: First-Timer's Guide",
+    title: "What Is a Sandwich Massage? Process, Price & What to Expect",
     description:
-      "What happens in a sandwich massage, who it suits and what to check before you book. A simple guide for first-timers.",
+      "A full body massage by two therapists at once. How the process works, how long it takes and what it costs in Delhi.",
     images: ["https://www.luxuryrussianspa.com/images/spa-treatments.jpg"],
     type: "article",
   },
@@ -26,41 +26,52 @@ export const metadata = {
   },
 };
 
+const faqSchemaFor = (list) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: list.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+});
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.luxuryrussianspa.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Your First Sandwich Massage", item: "https://www.luxuryrussianspa.com/blog/first-sandwich-massage-what-to-expect" },
+    { "@type": "ListItem", position: 3, name: "What Is a Sandwich Massage?", item: "https://www.luxuryrussianspa.com/blog/first-sandwich-massage-what-to-expect" },
   ],
 };
 
 const faqs = [
   {
-    question: "What is a sandwich massage in Delhi treatment?",
+    question: "What is a sandwich massage?",
     answer:
-      "A sandwich massage in Delhi is a specialized relaxation therapy designed to provide a calming wellness experience through professional massage techniques. It focuses on relaxation, stress reduction, and comfort when performed by trained therapists in a clean and professional spa environment.",
+      "A sandwich massage is a full body massage done by two therapists at the same time, one on each side of you. It usually lasts 60 to 90 minutes in a private room, and because twice the work happens at once, most people find it more relaxing than a regular massage.",
   },
   {
-    question: "What are benefits of sandwich massage therapy?",
+    question: "What is the sandwich massage process?",
     answer:
-      "Sandwich massage therapy helps promote relaxation, reduce stress, release muscle tension, improve comfort, and support overall wellness. A professional session provides a peaceful experience that allows individuals to refresh their body and mind after a busy routine.",
+      "It starts with a short chat about pressure and any sore spots. You lie down on the massage table, and both therapists work together with warm oil, usually starting with the back and shoulders, then the arms and legs. It ends with a few quiet minutes and a hot shower if you'd like one.",
   },
   {
-    question: "Why choose professional massage therapy in Delhi?",
+    question: "What does a sandwich massage mean in a spa?",
     answer:
-      "Professional massage therapy in Delhi offers expert care, trained therapists, hygienic facilities, and personalized treatments. It helps reduce physical fatigue, improve relaxation, support better circulation, and provide a comfortable wellness experience in a peaceful spa environment.",
+      "In a spa menu, \"sandwich\" simply means you're between two therapists who massage you at the same time. It's a professional, relaxing full body treatment done in a private room.",
   },
   {
-    question: "How does sandwich massage help reduce stress?",
+    question: "How much does a sandwich massage cost in Delhi?",
     answer:
-      "Sandwich massage helps reduce stress by creating a relaxing environment and using professional massage techniques to release body tension. It allows individuals to disconnect from daily pressure, relax tired muscles, and enjoy a refreshing wellness session.",
+      "At our Delhi outlets a sandwich massage starts at ₹1,999. Home and hotel sessions are ₹14,999 for 90 minutes. We always confirm the exact price on WhatsApp before you book.",
   },
   {
-    question: "What happens during a sandwich massage session?",
+    question: "How long does a sandwich massage take?",
     answer:
-      "A sandwich massage session usually begins with consultation, followed by preparation in a hygienic spa environment. The therapist then performs professional techniques based on comfort preferences, and the session ends with relaxation time to enjoy a refreshed feeling.",
+      "Most sessions are 60 or 90 minutes. For a first sandwich massage, 60 minutes is plenty to see whether you enjoy it.",
+  },
+  {
+    question: "Is a sandwich massage good for a first-timer?",
+    answer:
+      "Yes, as long as you're comfortable with two therapists. Tell them it's your first time and they'll keep the pressure gentle and check in with you during the session.",
   },
 ];
 
@@ -95,6 +106,11 @@ export default function SandwichMassageDelhiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        id="faq-schema-blog-sandwich-massage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaFor(faqs)) }}
+      />
       <style>{`
         html{
           scroll-behavior:smooth;
@@ -109,7 +125,7 @@ export default function SandwichMassageDelhiPage() {
             items={[
               { label: "Home", href: "/" },
               { label: "Blog", href: "/blog" },
-              { label: "Your First Sandwich Massage" },
+              { label: "What Is a Sandwich Massage?" },
             ]}
           />
 
@@ -126,7 +142,7 @@ export default function SandwichMassageDelhiPage() {
               </p>
 
               <h1 className="text-3xl font-bold leading-tight text-amber-900 sm:text-4xl lg:text-5xl">
-                What to Expect From Your First Sandwich Massage
+                What Is a Sandwich Massage? Process, Price &amp; What to Expect
               </h1>
 
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">

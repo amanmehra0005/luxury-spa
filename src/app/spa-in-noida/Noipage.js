@@ -346,7 +346,7 @@ export default function Noipage() {
             id="noida-hero-title"
             className="mt-6 font-title font-bold text-[40px] leading-[1.1] sm:text-6xl lg:text-7xl bg-gradient-to-b from-[#fff3e8] via-[#f6d2b4] to-[#e8a57a] bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
           >
-            Spa in Noida
+            Russian Spa in Noida
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">

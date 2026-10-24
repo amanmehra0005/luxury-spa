@@ -54,7 +54,7 @@ const blogs = [
   link: "/blog/what-is-b2b-full-body-massage",
 },
 {
-  title: "What to Expect From Your First Sandwich Massage",
+  title: "What Is a Sandwich Massage? Process, Price & What to Expect",
   description:
     "Discover Sandwich Massage in Delhi, its benefits, professional massage therapy, booking process, what to expect, and tips for choosing the best spa services in Delhi.",
   image: "/images/sandwich-massage.png",

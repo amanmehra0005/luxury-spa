@@ -52,7 +52,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Chandigarh - Body Massage at Home & Hotel",
+  title: "Russian Spa in Chandigarh & Mohali - Home & Hotel Massage",
   description:
     "No spa trip needed: our therapists come to your home or hotel in Chandigarh, Mohali & Zirakpur. Russian, Thai & Indian therapists. Get a price on WhatsApp.",
   keywords: [

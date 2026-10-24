@@ -186,6 +186,13 @@ const L = {
       "Rohini guests usually want two things: a spa they can reach without crossing half of North Delhi, and a price they know in advance. Our outlet near Rohini Metro covers the first, and we confirm the price on WhatsApp before you book.",
       "We get bookings from Sector 3, 7, 16, 17 and 24, and from Prashant Vihar and Shalimar Bagh too. If you'd rather stay in, a therapist can come to your home.",
     ],
+    localFaqs: [
+      {
+        question: "Is there a spa near City Centre Mall, Rohini?",
+        answer:
+          "Yes. Our Rohini outlet is a short distance from City Centre Mall and Rohini Metro on the Red Line, so it's easy to drop in after shopping. We send the exact location on WhatsApp when you book.",
+      },
+    ],
     areas: ["Rohini Sector 3", "Sector 7", "Sector 16", "Sector 17", "Sector 24", "City Centre Mall", "Rithala", "Prashant Vihar", "Shalimar Bagh", "Pitampura"],
     gettingHere: [
       { icon: "train", title: "By Metro", text: "Rohini East, Rohini West and Rithala on the Red Line are all close. Pick whichever is nearest to you." },
@@ -472,6 +479,13 @@ const L = {
       points: ["Short walk from the mall", "Good for legs and hips", "Finished in an hour"],
       href: "/thai-massage-in-delhi",
     },
+    localFaqs: [
+      {
+        question: "Is there a spa in City Square Mall, Rajouri Garden?",
+        answer:
+          "Our spa isn't inside the mall itself, but it's a short walk from City Square Mall and the Rajouri Garden metro interchange. A lot of guests finish shopping and walk over. We send the exact location on WhatsApp when you book.",
+      },
+    ],
     areas: ["Rajouri Garden", "City Square Mall", "Main Market", "Tagore Garden", "Subhash Nagar", "Punjabi Bagh", "Ramesh Nagar", "Tilak Nagar", "Mansarovar Garden"],
     gettingHere: [
       { icon: "train", title: "By Metro", text: "Rajouri Garden is an interchange on the Blue and Pink lines, so it's easy to reach from most of Delhi." },
@@ -574,6 +588,13 @@ const L = {
     intro: [
       "Our Hauz Khas guests are a mix of people living in the area, people working nearby, and visitors spending the day around the Village and Deer Park. All of them want the same thing: a clean private room and a good massage without any fuss.",
       "We confirm the therapist and the price on WhatsApp before you come. Home visits are available across South Delhi, including Green Park and Safdarjung Enclave.",
+    ],
+    localFaqs: [
+      {
+        question: "Is your spa in Hauz Khas Village or Hauz Khas Market?",
+        answer:
+          "We're close to both Hauz Khas Village and the main market, and about a short walk from Hauz Khas Metro. Once your slot is confirmed we send the exact location on WhatsApp.",
+      },
     ],
     areas: ["Hauz Khas Village", "Hauz Khas Market", "Green Park", "Safdarjung Enclave", "Green Park Extension", "Gulmohar Park", "SDA", "IIT Gate", "Malviya Nagar"],
     gettingHere: [

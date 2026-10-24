@@ -41,6 +41,11 @@ export const faqs = [
       "We work with JW Marriott Hotel Aerocity, Lemon Tree Premier Aerocity, Novotel New Delhi Aerocity, Pride Plaza Hotel Aerocity, ibis New Delhi Aerocity and Pullman New Delhi Aerocity. Tell us your hotel and room number when you book.",
   },
   {
+    question: "Which hotels in Aerocity have a spa?",
+    answer:
+      "If you're looking for a hotel with a spa in Aerocity, you don't have to move hotels. We do in-room massages at JW Marriott, Novotel, Pullman, Lemon Tree Premier, Pride Plaza and ibis in Aerocity, and our outlet near Lemon Tree is open 24/7.",
+  },
+  {
     question: "Is there a spa in Lemon Tree Aerocity?",
     answer:
       "Our outlet is right next to Lemon Tree Aerocity, and we also do in-room sessions for guests at Lemon Tree Premier. Most people walk over or just book us to their room.",
@@ -231,14 +236,14 @@ export default function Aeropage() {
           </nav>
 
           <span className="inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-black/30 px-5 py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-white">
-            <Sparkles className="size-3.5 text-secondary" /> Russian Spa in Aerocity <Sparkles className="size-3.5 text-secondary" />
+            <Sparkles className="size-3.5 text-secondary" /> Luxury Spa in Aerocity <Sparkles className="size-3.5 text-secondary" />
           </span>
 
           <h1
             id="aerocity-hero-title"
             className="mt-6 font-title font-bold text-[40px] leading-[1.1] sm:text-6xl lg:text-7xl bg-gradient-to-b from-[#fff3e8] via-[#f6d2b4] to-[#e8a57a] bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
           >
-            Spa in Aerocity
+            Russian Spa in Aerocity
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">

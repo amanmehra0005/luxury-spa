@@ -76,7 +76,7 @@ const relatedBlogs = [
     image: "/images/b2b-full-body-massage.jpg",
   },
   {
-    title: "Your First Sandwich Massage",
+    title: "What Is a Sandwich Massage?",
     href: "/blog/first-sandwich-massage-what-to-expect",
     image: "/images/sandwich-massage.png",
   },

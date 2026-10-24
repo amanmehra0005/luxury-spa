@@ -285,14 +285,14 @@ export default function LocationPage({ loc }) {
           </nav>
 
           <span className="inline-flex items-center gap-2 rounded-full border border-secondary/60 bg-black/30 px-5 py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-white">
-            <Sparkles className="size-3.5 text-secondary" /> Russian Spa in {loc.name} <Sparkles className="size-3.5 text-secondary" />
+            <Sparkles className="size-3.5 text-secondary" /> Luxury Spa in {loc.name} <Sparkles className="size-3.5 text-secondary" />
           </span>
 
           <h1
             id={`${id}-hero-title`}
             className="mt-6 font-title font-bold text-[40px] leading-[1.1] sm:text-6xl lg:text-7xl bg-gradient-to-b from-[#fff3e8] via-[#f6d2b4] to-[#e8a57a] bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
           >
-            Spa in {loc.name}
+            Russian Spa in {loc.name}
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">{loc.tagline}</p>
