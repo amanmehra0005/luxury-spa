@@ -10,44 +10,34 @@ import { WHATSAPP_URL } from "./siteContact";
 // Keep in sync with faqSchema in src/app/page.js
 const faqs = [
   {
-    question: "What services does Luxury Russian Spa provide?",
+    question: "Where Can I Find a Russian Massage in Delhi?",
     answer:
-      "At Luxury Russian Spa, we offer full-body massage, Thai massage, aromatherapy, B2B massage, sandwich massage, couple massage and more. Our certified Indian and international therapists deliver private, hygienic sessions tailored for relaxation, therapeutic relief, and special-event packages at all major outlets.",
+      "We are available in multiple locations in Delhi and NCR region. You can book a Russian spa in Aerocity, Cp, Paschim Vihar, Rohini etc. We have 12 + Russian spa outlets in Delhi.",
   },
   {
-    question: "What is the price of a full body massage in Delhi?",
+    question: "How to choose a safe spa in Delhi?",
     answer:
-      "A full body massage at our Delhi outlets starts at ₹1,999 for 60 minutes. An in-room session at a 5-star hotel is ₹14,999 for 90 minutes, and our VIP session with Russian and international therapists is ₹19,999 for 120 minutes. All prices are fixed, with no hidden charges.",
+      "Booking a safe Spa in Delhi is now easy with Luxury Russian Spa. Check Google reviews of the spa and get ideas from reviews. Check real photos and videos to confirm if the spa ambience is good or bad. See if the spa has a licence for their service. After that you can book your spa session without any hesitation.",
   },
   {
-    question: "Can male guests book a female therapist?",
+    question: "How to book a Russian spa in Delhi?",
     answer:
-      "Yes. Male guests can choose a female therapist, and female guests can choose a male or female therapist. Just share your preference when you book on WhatsApp or call and we'll confirm who is available at your outlet.",
+      "You can book a Russian spa in Delhi by contacting us via WhatsApp or direct call. Our team provides all necessary information for your requirements. You can also join our Telegram for daily updates.",
   },
   {
-    question: "Is Luxury Russian Spa a Russian body massage centre?",
+    question: "Why is the Russian spa in Aerocity famous for Luxury Service?",
     answer:
-      "Yes. Alongside our Indian therapists, we have trained therapists from Russia, Uzbekistan and Thailand. Most guests looking for the best Russian spa in Delhi come to us for the Russian-style full body massage, which you can book at our outlets across Delhi NCR or at a partner 5-star hotel.",
+      "For luxury spa services in Delhi, you can choose a Russian spa in Aerocity because this place has some of the top 5-star hotels and high-end wellness centres. Luxury Russian spa has a luxury spa in Aerocity for your 5-star service. If you’re searching for a Russian spa service near Delhi airport, Luxury Russian Spa is the perfect choice. Visit our spa for amazing service.",
   },
   {
-    question: "Do you have a Russian spa in Mahipalpur or Aerocity?",
+    question: "Is a Russian spa in Lajpat Nagar affordable?",
     answer:
-      "Yes. Both are only a few minutes from IGI Airport. Our Mahipalpur outlet is open 24/7 for a Russian massage after a late flight, and in Aerocity our therapists can come to your hotel room. Message us on WhatsApp and we'll tell you who's available.",
+      "Yes, Russian spas in Lajpat Nagar can be more affordable than luxury areas, but prices vary by location and service quality. Our first visit offer starts from just ₹1499 for your relaxing full-body massage in a private spa room.",
   },
   {
-    question: "Is Luxury Russian Spa open 24/7 for late-night massage?",
+    question: "Do you offer Nuru massage in Delhi with a Russian?",
     answer:
-      "Yes. Luxury Russian Spa is open 24/7, so you can book a massage late at night or early in the morning. Message us on WhatsApp or call anytime and we'll confirm your session, price and therapist before you arrive.",
-  },
-  {
-    question: "Is there a first-visit discount at Luxury Russian Spa?",
-    answer:
-      "Yes, we run first-visit offers periodically, such as introductory full body massage packages starting at ₹1999. Check the homepage deals or contact your preferred outlet for current promotions.",
-  },
-  {
-    question: "Are Luxury Russian Spa therapists certified and experienced?",
-    answer:
-      "All our therapists are trained and certified in their techniques. We have both Indian and foreign therapists from Thailand, Uzbekistan, Russia and Afghanistan to give you the best massage experience at our 5-star hotel outlets.",
+      "Yes, we offer relaxing Nuru massage in Delhi with Russian therapists. Luxury Russian spa offers a range of popular and relaxing massage therapies, including b2b massage, sandwich massage, erotic massage, Nuru massage, and full body massage.",
   },
 ];
 
@@ -117,7 +107,7 @@ export default function HomeFaqSection() {
           <div className="relative lg:sticky lg:top-28">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] shadow-[0_20px_50px_rgba(43,24,16,0.18)]">
               <Image
-                src="/images/faq-spa-therapist.png"
+                src="/images/staff2.jpg"
                 alt="Luxury Russian Spa therapist in Delhi"
                 fill
                 sizes="(max-width:1024px) 100vw, 45vw"

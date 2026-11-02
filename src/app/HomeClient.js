@@ -1,101 +1,118 @@
 import dynamic from "next/dynamic";
 
-// Above the fold
-import HomeBanner from "./components/HomeBanner";
-import HomeQuickFacts from "./components/HomeQuickFacts";
-import AboutSection from "./components/AboutSection";
-import HomeServicesSection from "./components/HomeServicesSection";
-import HomeHeading from "./components/HomeHeading";
+// Section 1 to 4: Above-the-fold & initial impressions
+import HomeHero from "./components/home/HomeHero";
+import HomeTherapistsRow from "./components/home/HomeTherapistsRow";
+import HomeAboutRussian from "./components/home/HomeAboutRussian";
+import HomeShowcasePhotos from "./components/home/HomeShowcasePhotos";
 
-// Below the fold (split into separate chunks, still server-rendered for SEO)
-const HomeEnquiry = dynamic(() => import("./components/HomeEnquiry"));
-const HomeGalleryTeaser = dynamic(() => import("./components/HomeGalleryTeaser"));
-const SignatureRange = dynamic(() => import("./components/SignatureRange"));
-const HomeVideoShowcase = dynamic(() => import("./components/HomeVideoShowcase"));
-const HomeSplitFeatures = dynamic(() => import("./components/HomeSplitFeatures"));
-const HomeWhyChoiceus = dynamic(() => import("./components/HomeWhyChoiceus"));
-const HomeAmenities = dynamic(() => import("./components/HomeAmenities"));
-const HomeLocations = dynamic(() => import("./components/HomeLocations"));
-const HomePricing = dynamic(() => import("./components/HomePricing"));
-const HomeOurProcess = dynamic(() => import("./components/HomeOurProcess"));
-const HomeTherapyest = dynamic(() => import("./components/HomeTherapyest"));
-const HomeHealthBenefits = dynamic(() => import("./components/HomeHealthBenefits"));
-const HomeTestimonials = dynamic(() => import("./components/HomeTestimonials"));
+// Below-the-fold sections dynamically imported for high Core Web Vitals
+const HomeSplitBlock1 = dynamic(() => import("./components/home/HomeSplitBlock1"));
+const HomeSplitBlock2 = dynamic(() => import("./components/home/HomeSplitBlock2"));
+const HomeLocationCircles = dynamic(() => import("./components/home/HomeLocationCircles"));
+const HomeSplitBlock3 = dynamic(() => import("./components/home/HomeSplitBlock3"));
+const HomeWhyBestSpa = dynamic(() => import("./components/home/HomeWhyBestSpa"));
+const HomeLajpatAerocityShowcase = dynamic(() => import("./components/home/HomeLajpatAerocityShowcase"));
+const HomePremiumRussianBanner = dynamic(() => import("./components/home/HomePremiumRussianBanner"));
+const HomeNuruAerocityExperience = dynamic(() => import("./components/home/HomeNuruAerocityExperience"));
+const HomeDarkVip = dynamic(() => import("./components/home/HomeDarkVip"));
+const HomePricingSection = dynamic(() => import("./components/home/HomePricingSection"));
+const HomeTopRatedAmenities = dynamic(() => import("./components/home/HomeTopRatedAmenities"));
+const HomeLajpatDeepRelaxation = dynamic(() => import("./components/home/HomeLajpatDeepRelaxation"));
+const HomeMassageCentreOfferings = dynamic(() => import("./components/home/HomeMassageCentreOfferings"));
+const HomeTrustBadges = dynamic(() => import("./components/home/HomeTrustBadges"));
+const HomeFullWidthBanner = dynamic(() => import("./components/home/HomeFullWidthBanner"));
+const HomeOurExperts = dynamic(() => import("./components/home/HomeOurExperts"));
+const HomeStatCounter = dynamic(() => import("./components/home/HomeStatCounter"));
+const HomeReviews = dynamic(() => import("./components/home/HomeReviews"));
+const HomeOutletsGrid = dynamic(() => import("./components/home/HomeOutletsGrid"));
+const HomeCircularTreatments = dynamic(() => import("./components/home/HomeCircularTreatments"));
+const HomeCalloutBanner2 = dynamic(() => import("./components/home/HomeCalloutBanner2"));
 const HomeFaqSection = dynamic(() => import("./components/Homefaqsection"));
 const WhatsappFloat = dynamic(() => import("./components/WhatsappFloat"));
-
-const guides = [
-  { title: "Best Spa Services in Delhi NCR", href: "/blog/best-spa-service-in-delhi-ncr" },
-  { title: "What Is a Sandwich Massage?", href: "/blog/first-sandwich-massage-what-to-expect" },
-  { title: "Connaught Place Spa Guide", href: "/blog/spa-in-connaught-place" },
-  { title: "What Does Thai Massage Do to Your Body?", href: "/blog/thai-massage-does-to-your-body" },
-  { title: "What is a B2B Full Body Massage?", href: "/blog/what-is-b2b-full-body-massage" },
-  { title: "Difference Between Spa and Massage", href: "/blog/what-is-the-difference-between-spa-and-massage" },
-];
 
 export default function HomeClient() {
   return (
     <main className="font-sans overflow-hidden">
-      {/* Each section covers one topic; don't add a section that repeats another's content. */}
-      {/* 1. First impression */}
-      <HomeBanner />
-      <HomeQuickFacts />
-      <AboutSection />
+      {/* 1. Hero Banner (Dark luxury background, H1, subheads, green CTA button) */}
+      <HomeHero />
 
-      {/* Below-the-fold sections are wrapped in .cv-auto (content-visibility: auto) so the browser skips
-          their style/layout/paint until they scroll near the viewport. Content stays in the HTML for SEO. */}
+      {/* 2. Russian Spa Therapists in Delhi (6 cards in a row) */}
+      <HomeTherapistsRow />
 
-      {/* 2. What we offer */}
-      <div className="cv-auto"><HomeServicesSection /></div>
+      {/* 3. About Russian Spa in Delhi (Olive green background, calligraphy badge, 2 columns of text) */}
+      <HomeAboutRussian />
 
-      {/* Book without leaving the page: WhatsApp message builder with a live preview */}
-      <div className="cv-auto"><HomeEnquiry /></div>
-      <div className="cv-auto"><SignatureRange /></div>
-      <div className="cv-auto"><HomeVideoShowcase /></div>
-      <div className="cv-auto"><HomeGalleryTeaser /></div>
-      <div className="cv-auto"><HomeSplitFeatures /></div>
+      {/* 4. 3-Photo Showcase Row (Rounded cards with green borders) */}
+      <HomeShowcasePhotos />
 
-      {/* 3. Why us & where */}
-      <div className="cv-auto"><HomeWhyChoiceus /></div>
-      <div className="cv-auto"><HomeLocations /></div>
-      <div className="cv-auto"><HomeAmenities /></div>
+      {/* 5. Feature Block 1 (Text Left, Jacuzzi Image Right) */}
+      <div className="cv-auto"><HomeSplitBlock1 /></div>
 
-      {/* 4. Price, booking & team */}
-      <div className="cv-auto"><HomePricing /></div>
-      <div className="cv-auto"><HomeOurProcess /></div>
-      <div className="cv-auto"><HomeTherapyest /></div>
-      <div className="cv-auto"><HomeHealthBenefits /></div>
+      {/* 6. Feature Block 2 (Image Left, Text Right) */}
+      <div className="cv-auto"><HomeSplitBlock2 /></div>
 
-      {/* 5. Trust & answers */}
-      <div className="cv-auto"><HomeTestimonials /></div>
+      {/* 7. Feature Block 3 (Text Left, Dark "RUSSIAN SPA" Graphic Right) */}
+      <div className="cv-auto"><HomeSplitBlock3 /></div>
 
-      {/* From Our Blog - real server-rendered links so every guide stays reachable from the homepage */}
-      <section aria-labelledby="home-guides-title" className="cv-auto bg-[#fffaf5] py-16 md:py-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <HomeHeading id="home-guides-title" eyebrow="Read & Relax" title="Spa & Massage" highlight="Guides" />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {guides.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="group flex items-center justify-between gap-4 rounded-2xl bg-white p-5 md:p-6 ring-1 ring-amber-100 shadow-[0_4px_24px_rgba(0,0,0,0.04)] trv-card"
-              >
-                <span className="font-title text-lg font-semibold text-ink transition-colors duration-300 group-hover:text-amber-500">
-                  {item.title}
-                </span>
-                <span
-                  className="flex size-9 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 transition-colors duration-300 group-hover:bg-amber-500 group-hover:text-white"
-                  aria-hidden="true"
-                >
-                  →
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Our Russian Spa in Delhi Locations (5 Circular Badges) */}
+      <div className="cv-auto"><HomeLocationCircles /></div>
 
+      {/* Why We're the Best Spa in Delhi with Full Service (4 Luxury Cards) */}
+      <div className="cv-auto"><HomeWhyBestSpa /></div>
+
+      {/* Lajpat Nagar Recharge & Aerocity 5-Star Showcase */}
+      <div className="cv-auto"><HomeLajpatAerocityShowcase /></div>
+
+      {/* Premium Russian Spa in Delhi with Full Service (Theme Banner) */}
+      <div className="cv-auto"><HomePremiumRussianBanner /></div>
+
+      {/* Experience Nuru Massage & Aerocity Guests Reviews */}
+      <div className="cv-auto"><HomeNuruAerocityExperience /></div>
+
+      {/* 15. Dark Luxury VIP Showcase (Model in red dress left, exclusive VIP text right) */}
+      <div className="cv-auto"><HomeDarkVip /></div>
+
+      {/* 16. Affordable Luxury Spa Packages (3 Pricing Cards) */}
+      <div className="cv-auto"><HomePricingSection /></div>
+
+      {/* Top Rated Massage Services with Russian (Shower, Jacuzzi, Steam, Sauna) */}
+      <div className="cv-auto"><HomeTopRatedAmenities /></div>
+
+      {/* Affordable Russian Spa in Lajpat Nagar For Deep Relaxation */}
+      <div className="cv-auto"><HomeLajpatDeepRelaxation /></div>
+
+      {/* What We're Offering At Massage Centre in Delhi (3 Optimized Luxury Cards) */}
+      <div className="cv-auto"><HomeMassageCentreOfferings /></div>
+
+      {/* 17. Trust Badges (4 horizontal icons) */}
+      <div className="cv-auto"><HomeTrustBadges /></div>
+
+      {/* 20. Full-Width Massage Panoramic Photo Banner */}
+      <div className="cv-auto"><HomeFullWidthBanner /></div>
+
+      {/* 21. "Our Experts - Russian Spa Delhi" (4 Model Photo Cards) */}
+      <div className="cv-auto"><HomeOurExperts /></div>
+
+      {/* 22. Stat Counter Bar (Olive green bar with 4 counter stats) */}
+      <div className="cv-auto"><HomeStatCounter /></div>
+
+      {/* 23. Testimonials / Client Reviews (3 white cards with 5 stars) */}
+      <div className="cv-auto"><HomeReviews /></div>
+
+      {/* 24. Delhi NCR Outlets Grid (2 Columns, 8 Olive Green Location Cards) */}
+      <div className="cv-auto"><HomeOutletsGrid /></div>
+
+      {/* 25. Signature Spa Treatments (4 Circular/Oval Badges) */}
+      <div className="cv-auto"><HomeCircularTreatments /></div>
+
+      {/* 26. Callout Banner 2 (Olive green banner) */}
+      <div className="cv-auto"><HomeCalloutBanner2 /></div>
+
+      {/* 30. Frequently Asked Questions (FAQ Section with Accordion) */}
       <div className="cv-auto"><HomeFaqSection /></div>
+
+      {/* Floating WhatsApp Quick Action Button */}
       <WhatsappFloat />
     </main>
   );

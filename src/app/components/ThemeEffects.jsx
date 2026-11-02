@@ -30,15 +30,6 @@ export default function ThemeEffects() {
 
   return (
     <>
-      {/* Vertical Enquire tab (Avataar) */}
-      <a
-        href={ENQUIRE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed right-0 top-1/2 z-40 hidden md:block -translate-y-1/2 rounded-l-lg bg-black px-2.5 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-lg transition-colors duration-300 hover:bg-primary [writing-mode:vertical-rl] rotate-180"
-      >
-        Enquire
-      </a>
 
       <button
         type="button"

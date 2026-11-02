@@ -29,18 +29,18 @@ export default function HomeHeading({
       <Tag
         id={id}
         className={`mt-5 font-title text-3xl sm:text-4xl lg:text-[46px] font-bold leading-tight ${
-          light ? "text-white" : "text-amber-900"
+          light ? "text-white" : "text-[#2b1810]"
         }`}
       >
         {title}
-        {highlight && <span className={light ? " text-secondary" : " text-amber-500"}> {highlight}</span>}
+        {highlight && <span className={light ? " text-secondary" : " text-[#9c5232]"}> {highlight}</span>}
         {after && <> {after}</>}
       </Tag>
       {text && (
         <p className={`mt-4 text-sm md:text-base leading-relaxed ${light ? "text-white/75" : "text-bodycolor"}`}>{text}</p>
       )}
       <span
-        className={`mt-6 block h-0.5 w-16 rounded-full ${light ? "bg-secondary" : "bg-amber-500"} ${center ? "mx-auto" : ""}`}
+        className={`mt-6 block h-0.5 w-16 rounded-full ${light ? "bg-secondary" : "bg-[#9c5232]"} ${center ? "mx-auto" : ""}`}
         aria-hidden="true"
       />
     </header>
