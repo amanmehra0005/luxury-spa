@@ -29,6 +29,7 @@ const HomeOutletsGrid = dynamic(() => import("./components/home/HomeOutletsGrid"
 const HomeCircularTreatments = dynamic(() => import("./components/home/HomeCircularTreatments"));
 const HomeCalloutBanner2 = dynamic(() => import("./components/home/HomeCalloutBanner2"));
 const HomeFaqSection = dynamic(() => import("./components/Homefaqsection"));
+const HomePreFooterOutlets = dynamic(() => import("./components/home/HomePreFooterOutlets"));
 const WhatsappFloat = dynamic(() => import("./components/WhatsappFloat"));
 
 export default function HomeClient() {
@@ -111,6 +112,9 @@ export default function HomeClient() {
 
       {/* 30. Frequently Asked Questions (FAQ Section with Accordion) */}
       <div className="cv-auto"><HomeFaqSection /></div>
+
+      {/* Popular Spa Locations Outlet Buttons (Only on Home Page) */}
+      <HomePreFooterOutlets />
 
       {/* Floating WhatsApp Quick Action Button */}
       <WhatsappFloat />
