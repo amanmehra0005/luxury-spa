@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["rohini"];
 
 export const metadata = {
-  title: "Russian Spa in Rohini - Spa in All Sectors | From ₹1999",
+  title: "Russian Spa in Rohini (₹1499 Offer) Near City Centre Mall & Metro",
   description:
-    "Best spa in Rohini covering Sector 3 to 24 & City Centre Mall. Full body, deep tissue & couple massage near Rohini Metro. Certified therapists. Book from ₹1999!",
+    "Best Russian Spa in Rohini covering Sectors 3 to 24 & City Centre Mall. Certified therapists, attached private rain shower & ₹1499 first visit offer. Book on WhatsApp!",
   keywords: [
     "spa in rohini",
     "massage in rohini",
@@ -32,9 +32,9 @@ export const metadata = {
     "night spa in rohini",
   ],
   openGraph: {
-    title: "Best Spa in Rohini - All Sectors & City Centre Mall | Luxury Russian Spa",
+    title: "Russian Spa in Rohini (₹1499 Offer) Near City Centre Mall & Metro",
     description:
-      "Best spa in Rohini covering Sector 3 to 24 & City Centre Mall. Full body, deep tissue & couple massage near Rohini Metro. Certified therapists. Book from ₹1999!",
+      "Best Russian Spa in Rohini covering Sector 3 to 24 & City Centre Mall. Certified therapists, attached private rain shower & ₹1499 first visit offer. Book on WhatsApp!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_960_1758981900_woman-getting-back-massage-from-masseur_23-2150461404.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-rohini",

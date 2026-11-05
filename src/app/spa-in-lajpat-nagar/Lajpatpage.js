@@ -146,7 +146,7 @@ const heroChips = [
 ];
 
 const quickFacts = [
-  { value: "₹1,999", label: "Starting Price", note: "60-minute massage" },
+  { value: "₹1,499", label: "First Visit Offer", note: "Welcome massage rate" },
   { value: "4", label: "Therapist Styles", note: "Russian, Uzbek, Thai, Indian" },
   { value: "60–120", label: "Minutes", note: "Pick your session" },
   { value: "0", label: "Hidden Charges", note: "Price fixed before you come" },
@@ -170,6 +170,15 @@ const therapists = [
 
 const pricingPlans = [
   {
+    title: "First Visit Offer",
+    price: "₹1,499",
+    period: "45–60 min",
+    description: "Welcome offer for new guests near Central Market",
+    features: ["Full Body Russian Oil Massage", "Private Sanitized Room", "Choice of Therapist", "Attached Hot Shower After"],
+    icon: Sparkles,
+    popular: true,
+  },
+  {
     title: "Spa Outlet",
     price: "₹1,999",
     period: "60 min",
@@ -184,7 +193,6 @@ const pricingPlans = [
     description: "In a private suite at a partner hotel",
     features: ["Oil, Cream or Dry Massage", "Private Suite", "Complimentary Refreshments", "90 min Session"],
     icon: Hotel,
-    popular: true,
   },
   {
     title: "5 Star Hotel Spa",
@@ -316,10 +324,14 @@ export default function Lajpatpage() {
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">
             Body Massage <span className="text-secondary" aria-hidden="true">·</span> Russian Therapists{" "}
-            <span className="text-secondary" aria-hidden="true">·</span> From ₹1,999
+            <span className="text-secondary" aria-hidden="true">·</span> From ₹1,499
           </p>
 
-          <p className="mt-5 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
+          <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-secondary/20 border border-secondary/40 px-4 py-1.5 text-xs font-semibold text-secondary">
+            <Sparkles className="size-3.5" /> First Visit Welcome Offer: Starting @ ₹1,499
+          </div>
+
+          <p className="mt-4 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
             Spent the whole day walking around Central Market? Or just had one of those weeks? Come lie down for an
             hour. Our spa in Lajpat Nagar has quiet private rooms, therapists you can choose yourself, and prices we
             tell you before you arrive.
@@ -548,12 +560,12 @@ export default function Lajpatpage() {
             highlight="Spa Prices"
             text={
               <>
-                Three options, and no surprises at the end. What we quote on WhatsApp is what you pay. You&apos;ll find
+                Transparent rates with our ₹1,499 first visit welcome offer, and no surprises at the end. What we quote on WhatsApp is what you pay. You&apos;ll find
                 every rate on our <a href="/spa-price-in-delhi" className={linkClass}>spa price in Delhi</a> page.
               </>
             }
           />
-          <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:items-stretch">
             {pricingPlans.map(({ title, price, period, description, features, icon: Icon, popular }) => (
               <div
                 key={title}

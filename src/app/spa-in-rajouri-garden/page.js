@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["rajouri-garden"];
 
 export const metadata = {
-  title: "Russian Spa in Rajouri Garden - Spa Near City Square Mall",
+  title: "Russian Spa in Rajouri Garden (₹1499 Offer) Near City Square Mall",
   description:
-    "A few minutes from City Square Mall and the metro. Private rooms, Russian & Indian therapists, ₹1,999 for 60 min. Check today's free slots on WhatsApp.",
+    "Best Russian Spa in Rajouri Garden near City Square Mall & Metro. Certified European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [
     "spa in rajouri garden",
     "best spa in rajouri garden",
@@ -27,9 +27,9 @@ export const metadata = {
     "spa near city square mall",
   ],
   openGraph: {
-    title: "Best Spa in Rajouri Garden - Near City Square Mall | Luxury Russian Spa",
+    title: "Best Russian Spa in Rajouri Garden - Near City Square Mall | Luxury Russian Spa",
     description:
-      "Best spa in Rajouri Garden for body massage near the mall & metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+      "Best Russian Spa in Rajouri Garden near City Square Mall & Metro. Certified therapists, attached private shower & ₹1499 welcome rate. Book on WhatsApp!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_960_1758981994_female-masseur-preparing-bed-massage-session_23-2150461390.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-rajouri-garden",

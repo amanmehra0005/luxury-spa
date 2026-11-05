@@ -292,13 +292,14 @@ export default function Pricpage() {
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">
-            One Clear Price List for Every Outlet, From ₹1,999
+            First Visit Offer From ₹1,499 · Regular Outlet From ₹1,999
           </p>
 
           <p className="mt-5 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
-            Most people searching for spa rates in Delhi just want a straight answer. So here it is. A massage at any
-            of our outlets is ₹1,999 for an hour. At home or in your hotel it&apos;s ₹14,999 for 90 minutes. That&apos;s
-            the full price, and it&apos;s the same in Mahipalpur as it is in Lajpat Nagar.
+            Most people searching for spa rates in Delhi just want a straight, honest answer. New guests enjoy our
+            special First Visit Offer starting from just ₹1,499. Regular 60-minute sessions at any of our Delhi
+            outlets are ₹1,999, and at-home or hotel visits are ₹14,999 for 90 minutes. That&apos;s the full price,
+            with 100% transparent billing, attached hot shower, and zero hidden charges.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -354,10 +355,34 @@ export default function Pricpage() {
           <HomeHeading
             id="price-tiers-title"
             eyebrow="Spa Charges in Delhi"
-            title="Three Prices."
-            highlight="That's It."
+            title="Transparent Rates."
+            highlight="No Hidden Extras."
             text="The price depends on two things only: how long your session is, and where it happens. The massage you pick doesn't change it."
           />
+
+          {/* First Visit Special Offer Callout Banner */}
+          <div className="mb-10 rounded-3xl bg-gradient-to-r from-[#2b1810] via-[#5a2c16] to-[#2b1810] p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 ring-1 ring-amber-300/30">
+            <div>
+              <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#fdc28c] text-[#2b1810] mb-2">
+                Limited Time Welcome Offer
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-bold font-title text-white">
+                First Visit Offer: Russian Body Massage @ Just ₹1,499
+              </h3>
+              <p className="text-sm text-stone-200 mt-2 max-w-2xl leading-relaxed">
+                Visiting Luxury Russian Spa for the first time? Experience an authentic 45–60 min full body oil massage in a private sanitized suite with an attached hot rain shower. Pay after your session with 100% transparent rates.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/918799716197?text=Hi!%20I%20want%20to%20claim%20the%20First%20Visit%20%E2%82%B91499%20Welcome%20Offer%20in%20Delhi.%20Please%20share%20today%27s%20open%20slots."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-[#15803d] hover:bg-[#166534] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/30 transition-all hover:-translate-y-0.5"
+            >
+              <FaWhatsapp className="text-lg" /> Claim ₹1,499 Offer
+            </a>
+          </div>
+
           <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
             {tiers.map(({ icon: Icon, title, label, time, description, features, popular }) => (
               <div

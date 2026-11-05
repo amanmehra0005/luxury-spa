@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["dwarka"];
 
 export const metadata = {
-  title: "Russian Spa in Dwarka - Best Spa & Body Massage | ₹1999",
+  title: "Russian Spa in Dwarka (₹1499 Offer) Near IGI Airport & Metro",
   description:
-    "Russian spa in Dwarka with Russian, Uzbek, Thai & Indian therapists. Body massage & body spa near IGI Airport, private rooms, home & hotel visits. From ₹1999.",
+    "Best Russian Spa in Dwarka near Metro & IGI Airport. Certified Russian therapists, attached private shower & ₹1499 welcome rate. Open 24/7. Book on WhatsApp!",
   keywords: [
     "spa in dwarka",
     "best spa in dwarka",
@@ -30,9 +30,9 @@ export const metadata = {
     "night spa in dwarka",
   ],
   openGraph: {
-    title: "Best Spa in Dwarka - Luxury Body Massage Near IGI Airport | Luxury Russian Spa",
+    title: "Russian Spa in Dwarka (₹1499 Offer) Near IGI Airport & Metro",
     description:
-      "Best spa in Dwarka for luxury body massage & body spa near IGI Airport. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+      "Best Russian Spa in Dwarka near Metro & IGI Airport. Certified Russian therapists, attached private shower & ₹1499 welcome rate. Open 24/7. Book on WhatsApp!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_960_1758983028_inviting-spa-room-designed-ultimate-relaxation_1079150-61092.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-dwarka",

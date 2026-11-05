@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["kalkaji"];
 
 export const metadata = {
-  title: "Russian Spa in Kalkaji - Spa & Massage Centre | From ₹1999",
+  title: "Russian Spa in Kalkaji (₹1499 Offer) Near Nehru Place & Metro",
   description:
-    "Spa in Kalkaji near Nehru Place for full body, deep tissue & couple massage. Private rooms, fixed ₹1,999 price, pick your therapist. Book on WhatsApp.",
+    "Top Russian Spa in Kalkaji near Nehru Place & Kalkaji Metro. Full body, B2B & deep tissue massage from ₹1499. Private hygienic suites & zero advance payment. Book on WhatsApp!",
   keywords: [
     "spa in kalkaji",
     "massage in kalkaji",
@@ -25,9 +25,9 @@ export const metadata = {
     "spa near kalkaji metro station",
   ],
   openGraph: {
-    title: "Spa in Kalkaji - Full Body Massage & Wellness Centre | Luxury Russian Spa",
+    title: "Russian Spa in Kalkaji (₹1499 Offer) Near Nehru Place & Metro",
     description:
-      "Spa in Kalkaji near Kalkaji Temple & Nehru Place for full body, deep tissue & couple massage. Certified therapists, private hygienic rooms. Book from ₹1999 today!",
+      "Spa in Kalkaji near Kalkaji Temple & Nehru Place for full body, deep tissue & couple massage. Certified therapists, private hygienic rooms. Book from ₹1499 today!",
     images: ["https://www.luxuryrussianspa.com/images/Reflexology.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-kalkaji",

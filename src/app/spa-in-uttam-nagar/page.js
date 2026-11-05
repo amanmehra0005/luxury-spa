@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["uttam-nagar"];
 
 export const metadata = {
-  title: "Russian Spa in Uttam Nagar - Spa With Price | From ₹1999",
+  title: "Russian Spa in Uttam Nagar (₹1499 Offer) Near Metro",
   description:
-    "Spa near Uttam Nagar metro with clear prices: ₹1,999 for 60 min, no extras. Body massage, Thai massage & home visits. Book on WhatsApp in a minute.",
+    "Best Russian Spa near Uttam Nagar East & West Metro. Transparent prices from ₹1499 (welcome offer). Attached hot shower & certified therapists. Book on WhatsApp in 1 min!",
   keywords: [
     "spa in uttam nagar",
     "uttam nagar spa",
@@ -29,9 +29,9 @@ export const metadata = {
     "night spa in uttam nagar",
   ],
   openGraph: {
-    title: "Best Spa in Uttam Nagar - Body Massage & Thai Spa | Luxury Russian Spa",
+    title: "Russian Spa in Uttam Nagar (₹1499 Offer) Near Metro",
     description:
-      "Best spa in Uttam Nagar for body massage, body spa & Thai massage near the metro. Certified therapists, hygienic private rooms, home service. Book from ₹1999!",
+      "Best Russian Spa in Uttam Nagar near Metro. Full body massage, Thai spa & attached rain shower. Welcome offer from ₹1499!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_960_1758982563_side-view-woman-getting-massaged-spa_23-2149871287.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-uttam-nagar",

@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["punjabi-bagh"];
 
 export const metadata = {
-  title: "Russian Spa in Punjabi Bagh - Spa on Club Road | ₹1999",
+  title: "Russian Spa in Punjabi Bagh (₹1499 Offer) | Club Road Spa",
   description:
-    "Spa on Club Road, Punjabi Bagh. Private rooms, Russian & Indian therapists and a fixed ₹1,999 price for 60 min. Ask for today's slots on WhatsApp.",
+    "Best Russian Spa on Club Road, Punjabi Bagh. Certified European & Russian therapists, attached rain shower & ₹1499 introductory offer. Open 24/7. Book on WhatsApp!",
   keywords: [
     "spa in punjabi bagh",
     "a one spa punjabi bagh",
@@ -28,9 +28,9 @@ export const metadata = {
     "russian spa in punjabi bagh",
   ],
   openGraph: {
-    title: "Best Spa in Punjabi Bagh - Luxury Body Massage on Club Road | Luxury Russian Spa",
+    title: "Russian Spa in Punjabi Bagh (₹1499 Offer) | Club Road Spa",
     description:
-      "Best spa in Punjabi Bagh for luxury body massage & body spa near Club Road. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+      "Best Russian Spa on Club Road, Punjabi Bagh. Certified European & Russian therapists, attached rain shower & ₹1499 introductory offer. Open 24/7. Book on WhatsApp!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_960_1758982563_side-view-woman-getting-massaged-spa_23-2149871287.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-punjabi-bagh",

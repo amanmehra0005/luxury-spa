@@ -38,7 +38,7 @@ import photos from "../gallery/galleryData";
 const SITE = "https://www.luxuryrussianspa.com";
 const ICONS = { train: TrainFront, car: Car, clock: Clock, plane: Plane, shop: ShoppingBag, home: Home, hotel: Hotel, users: Users, pin: MapPin };
 
-export const PRICES = { outlet: "₹1,999", home: "₹14,999", fiveStar: "₹19,999" };
+export const PRICES = { offer: "₹1,499", outlet: "₹1,999", home: "₹14,999", fiveStar: "₹19,999" };
 
 const linkClass = "font-semibold text-amber-700 underline decoration-amber-700/40 underline-offset-4 hover:decoration-amber-700";
 
@@ -205,10 +205,13 @@ export function LocationSchemas({ loc }) {
   ));
 }
 
-function WhatsAppButton({ children = "Book on WhatsApp", className = "" }) {
+function WhatsAppButton({ locName = "", children = "Book on WhatsApp", className = "" }) {
+  const url = locName
+    ? `https://wa.me/918799716197?text=${encodeURIComponent(`Hi! I'd like to book a massage at your ${locName} spa. Please share available therapists and the ₹1499 first visit offer.`)}`
+    : WHATSAPP_URL;
   return (
     <a
-      href={WHATSAPP_URL}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center justify-center gap-2.5 rounded-full bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-800 ${className}`}
@@ -236,16 +239,46 @@ export default function LocationPage({ loc }) {
   ];
 
   const quickFacts = [
-    { value: PRICES.outlet, label: "Starting Price", note: "60-minute massage" },
+    { value: PRICES.offer, label: "First Visit Offer", note: "Welcome massage rate" },
     loc.fact,
     { value: "60–120", label: "Minutes", note: "Pick your session" },
     { value: "₹0", label: "Hidden Charges", note: "Price fixed before you come" },
   ];
 
   const pricingPlans = [
-    { title: "Spa Outlet", price: PRICES.outlet, period: "60 min", description: `At our outlet ${loc.nearShort}`, features: ["Oil, Cream or Dry Massage", "Private Room", "Quick Consultation", "Hot Shower After"], icon: Leaf },
-    { title: "Home & Hotel Spa", price: PRICES.home, period: "90 min", description: `At your home or hotel in ${loc.short || loc.name}`, features: ["Oil, Cream or Dry Massage", "Therapist brings towels & oils", "Complimentary Refreshments", "90 min Session"], icon: Home, popular: true },
-    { title: "5 Star Hotel Spa", price: PRICES.fiveStar, period: "120 min", description: "Two full hours with an international therapist", features: ["International Therapists", "5-Star Property", "Aromatherapy Oils", "120 min Session"], icon: Star },
+    {
+      title: "First Visit Offer",
+      price: PRICES.offer,
+      period: "45–60 min",
+      description: `Special welcome rate for new guests in ${loc.short || loc.name}`,
+      features: ["Full Body Russian Oil Massage", "Private Sanitized Room", "Choice of Therapist", "Attached Hot Shower After"],
+      icon: Sparkles,
+      popular: true,
+    },
+    {
+      title: "Spa Outlet",
+      price: PRICES.outlet,
+      period: "60 min",
+      description: `At our outlet ${loc.nearShort}`,
+      features: ["Oil, Cream or Dry Massage", "Private Room", "Quick Consultation", "Hot Shower After"],
+      icon: Leaf,
+    },
+    {
+      title: "Home & Hotel Spa",
+      price: PRICES.home,
+      period: "90 min",
+      description: `At your home or hotel in ${loc.short || loc.name}`,
+      features: ["Oil, Cream or Dry Massage", "Therapist brings towels & oils", "Complimentary Refreshments", "90 min Session"],
+      icon: Home,
+    },
+    {
+      title: "5 Star Hotel Spa",
+      price: PRICES.fiveStar,
+      period: "120 min",
+      description: "Two full hours with an international therapist",
+      features: ["International Therapists", "5-Star Property", "Aromatherapy Oils", "120 min Session"],
+      icon: Star,
+    },
   ];
 
   const visitSteps = [
@@ -297,10 +330,14 @@ export default function LocationPage({ loc }) {
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">{loc.tagline}</p>
 
-          <p className="mt-5 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">{loc.heroText}</p>
+          <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-secondary/20 border border-secondary/40 px-4 py-1.5 text-xs font-semibold text-secondary">
+            <Sparkles className="size-3.5" /> First Visit Special Offer: Starting @ ₹1,499
+          </div>
+
+          <p className="mt-4 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">{loc.heroText}</p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <WhatsAppButton />
+            <WhatsAppButton locName={loc.name} />
             <a
               href={PHONE_LINK}
               aria-label={`Call Luxury Russian Spa ${loc.name} at ${PHONE_LABEL}`}
@@ -460,12 +497,12 @@ export default function LocationPage({ loc }) {
             highlight={`in ${loc.name}`}
             text={
               <>
-                Three options, and nothing added at the end. What we quote on WhatsApp is what you pay. Every rate is also
+                Transparent rates with our ₹1,499 first visit welcome offer, and nothing added at the end. What we quote on WhatsApp is what you pay. Every rate is also
                 on our <a href="/spa-price-in-delhi" className={linkClass}>spa price in Delhi</a> page.
               </>
             }
           />
-          <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:items-stretch">
             {pricingPlans.map(({ title, price, period, description, features, icon: Icon, popular }) => (
               <div key={title} className={`relative flex flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${popular ? "bg-dark text-white shadow-[0_25px_60px_rgba(43,24,16,0.35)] md:-my-4 md:py-12" : "bg-amber-50 ring-1 ring-amber-100"}`}>
                 {popular && (

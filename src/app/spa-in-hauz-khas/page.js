@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["hauz-khas"];
 
 export const metadata = {
-  title: "Russian Spa in Hauz Khas - Spa Near Hauz Khas Village",
+  title: "Russian Spa in Hauz Khas Village (₹1499 Offer) | South Delhi",
   description:
-    "Spa near Hauz Khas Village for full body and deep tissue massage. Private rooms, Russian & Indian therapists, ₹1,999 for 60 min. Book on WhatsApp.",
+    "Best Russian Spa near Hauz Khas Village & Green Park. Certified European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [
     "spa in hauz khas",
     "massage hauz khas",
@@ -30,9 +30,9 @@ export const metadata = {
     "spa near green park",
   ],
   openGraph: {
-    title: "Best Spa in Hauz Khas Village - Body Massage | Luxury Russian Spa",
+    title: "Russian Spa in Hauz Khas Village (₹1499 Offer) | South Delhi",
     description:
-      "Best spa in Hauz Khas Village for full body & body massage near the market. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+      "Best Russian Spa near Hauz Khas Village & Green Park. Certified European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_960_1758982845_cute-woman-relaxing-massage-spa-salon_118454-10400.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-hauz-khas",

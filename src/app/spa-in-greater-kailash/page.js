@@ -33,7 +33,7 @@ const spaSchema = {
   url: PAGE_URL,
   image: IMAGE_URL,
   telephone: "+91-8799716197",
-  priceRange: "₹1999 - ₹19999",
+  priceRange: "₹1499 - ₹19999",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Greater Kailash, New Delhi",
@@ -47,9 +47,9 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Greater Kailash - Spa in GK 1 & GK 2 | ₹1999",
+  title: "Russian Spa in Greater Kailash (₹1499 Offer) | Spa in GK 1 & GK 2",
   description:
-    "Spa for GK 1 & GK 2, close to M Block Market. Private rooms, your choice of Russian or Indian therapist, ₹1,999 for 60 min. Book on WhatsApp.",
+    "Luxury Russian Spa in Greater Kailash near M-Block Market & Kailash Colony Metro. Certified foreign therapists, private VIP suites & ₹1499 welcome rate. Book on WhatsApp!",
   keywords: [
     "spa in greater kailash",
     "spa gk",
@@ -77,9 +77,9 @@ export const metadata = {
     "spa near kailash colony metro",
   ],
   openGraph: {
-    title: "Russian Spa in Greater Kailash | Spa for GK 1 & GK 2",
+    title: "Russian Spa in Greater Kailash (₹1499 Offer) | Spa in GK 1 & GK 2",
     description:
-      "Private rooms near M Block Market, Russian & Indian therapists and a fixed ₹1,999 price for 60 min. Or a therapist at your home in GK.",
+      "Private rooms near M Block Market, Russian & European therapists and ₹1,499 first visit offer. Attached hot rain showers. Book on WhatsApp!",
     images: [IMAGE_URL],
     type: "website",
     url: PAGE_URL,

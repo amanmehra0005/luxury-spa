@@ -5,10 +5,10 @@ import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
   // Informational guide: kept off "Sandwich Massage in Delhi" so it doesn't compete with the /sandwich-massage service page.
-  title: "What Is a Sandwich Massage? Process, Price & What to Expect",
+  title: "What Is a Sandwich Massage? Step-by-Step Process & Delhi Price (2026 Guide)",
   description:
-    "A sandwich massage is a full body massage by two therapists at once. Here's how the process works, how long it takes, what it costs in Delhi and what to expect.",
-  keywords: ["what is sandwich massage", "what is sandwich massage in spa", "sandwich massage process", "sandwich massage meaning", "sandwich spa", "sandwich massage guide", "first sandwich massage"],
+    "Everything about sandwich massage in Delhi: what to expect, 2-therapist synchronized process, benefits & transparent pricing from ₹1999. Book top Delhi spas on WhatsApp!",
+  keywords: ["what is sandwich massage", "what is sandwich massage in spa", "sandwich massage process", "sandwich massage meaning", "sandwich spa", "sandwich massage guide", "first sandwich massage", "sandwich massage in delhi"],
   alternates: {
     canonical:
       "https://www.luxuryrussianspa.com/blog/first-sandwich-massage-what-to-expect",
@@ -192,32 +192,35 @@ export default function SandwichMassageDelhiPage() {
                 </section>
 
                 {/* Quick answer + booking box near the top, so readers who just want the short version (or want to book) don't have to scroll */}
-                <section aria-labelledby="quick-answer" className="rounded-2xl bg-[#2b1810] p-6 text-white sm:p-8">
-                  <p id="quick-answer" className="text-xs font-semibold uppercase tracking-[0.2em] text-[#fdc28c]">
-                    The short answer
+                <section aria-labelledby="quick-answer" className="rounded-2xl bg-gradient-to-br from-[#2b1810] via-[#452012] to-[#2b1810] p-6 text-white sm:p-8 shadow-xl ring-1 ring-amber-300/30">
+                  <div className="flex items-center justify-between">
+                    <p id="quick-answer" className="text-xs font-semibold uppercase tracking-[0.2em] text-[#fdc28c]">
+                      The short answer
+                    </p>
+                    <span className="text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-[#fdc28c] px-3 py-1 rounded-full border border-[#fdc28c]/30">
+                      Delhi NCR Availability
+                    </span>
+                  </div>
+                  <p className="mt-3 text-lg leading-8 text-white/95 font-medium">
+                    A sandwich massage is an authentic synchronized full-body massage performed by two certified therapists at the same time, working harmoniously on both sides of your body. It creates a deep sensory disconnect from stress and releases double the tension in a single 60 to 90-minute session.
                   </p>
-                  <p className="mt-3 text-lg leading-8 text-white/90">
-                    A sandwich massage is a full body massage done by two therapists at the same time, one on each side
-                    of you. It usually lasts 60 to 90 minutes in a private room, and it feels more relaxing than a
-                    regular massage simply because twice the work happens in the same time.
-                  </p>
-                  <p className="mt-3 text-base text-white/75">
-                    At our outlets it starts at ₹1,999, and we confirm the exact price on WhatsApp before you book.
+                  <p className="mt-3 text-sm text-stone-200">
+                    Available across our luxury Delhi outlets in <strong>Aerocity, South Delhi (Lajpat Nagar, Greater Kailash), Connaught Place, and West Delhi</strong> starting from ₹1,999. Includes private VIP room and attached hot shower.
                   </p>
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                     <a
-                      href="https://wa.me/918799716197?text=Hi!%20I%20read%20your%20sandwich%20massage%20guide.%20What%27s%20the%20price%20and%20is%20there%20a%20slot%20today%3F"
+                      href="https://wa.me/918799716197?text=Hi!%20I%20read%20your%20sandwich%20massage%20guide.%20I%20want%20to%20book%20a%20slot%20in%20Delhi%20today.%20Please%20share%20the%20details."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-full bg-[#15803d] px-6 py-3 text-sm font-semibold text-white hover:bg-[#166534]"
+                      className="inline-flex items-center justify-center gap-2 rounded-full bg-[#15803d] hover:bg-[#166534] px-7 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:-translate-y-0.5"
                     >
-                      Ask Price on WhatsApp
+                      Book on WhatsApp
                     </a>
                     <Link
                       href="/sandwich-massage"
-                      className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/40 hover:bg-white/10"
+                      className="inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-semibold text-white ring-1 ring-white/40 hover:bg-white/10"
                     >
-                      See Our Sandwich Massage →
+                      See Delhi Sandwich Massage Menu →
                     </Link>
                   </div>
                 </section>

@@ -4,9 +4,9 @@ import locations from "../components/locations";
 const loc = locations["laxmi-nagar"];
 
 export const metadata = {
-  title: "Russian Spa in Laxmi Nagar - Spa & Full Body Massage | ₹1999",
+  title: "Russian Spa in Laxmi Nagar (₹1499 Offer) | East Delhi Spa",
   description:
-    "Spa near Laxmi Nagar metro, East Delhi. Private rooms, Russian & Indian therapists, full body massage for ₹1,999. Check today's free slots on WhatsApp.",
+    "Best Russian Spa near Laxmi Nagar Metro, East Delhi. Full body Russian oil massage, attached hot shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [
     "spa in laxmi nagar",
     "spa in laxminagar",
@@ -28,9 +28,9 @@ export const metadata = {
     "hotel spa in laxmi nagar",
   ],
   openGraph: {
-    title: "Best Spa in Laxmi Nagar Delhi - Full Body Massage | Luxury Russian Spa",
+    title: "Russian Spa in Laxmi Nagar (₹1499 Offer) | East Delhi Spa",
     description:
-      "Best spa in Laxmi Nagar for full body & body spa near Vikas Marg Metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
+      "Best Russian Spa in Laxmi Nagar for full body & body spa near Vikas Marg Metro. Certified therapists, hygienic private rooms, attached shower. Book from ₹1499!",
     images: ["https://www.luxuryrussianspa.com/images/fpkdl.com_750_1758779654_happy-pretty-lady-lying-down-massage-bed-wellness-center-beauty-concept_151013-4029.jpg"],
     type: "website",
     url: "https://www.luxuryrussianspa.com/spa-in-laxmi-nagar",

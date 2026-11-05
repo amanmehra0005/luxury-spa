@@ -48,9 +48,9 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Sandwich Massage in Delhi - Price From ₹1999 | Luxury Russian Spa",
+  title: "Sandwich Massage in Delhi - 4-Hand Therapy From ₹1999 | Luxury Russian Spa",
   description:
-    "Best sandwich massage in Delhi by two trained therapists. See the sandwich massage price, find a sandwich massage centre near you and book on WhatsApp.",
+    "Experience authentic Sandwich Massage in Delhi by two synchronized therapists. Private VIP rooms, attached shower & clear rates from ₹1999. Book on WhatsApp!",
   alternates: {
     canonical: PAGE_URL,
   },
