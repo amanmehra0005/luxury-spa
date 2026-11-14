@@ -3,7 +3,7 @@ import Link from "next/link";
 const locations = [
   { label: "Spa in Defence Colony", href: "/spa-in-defence-colony" },
   { label: "Spa in Mahipalpur", href: "/spa-in-mahipalpur" },
-  { label: "Spa in Gurgoan", href: "/spa-in-gurgaon" },
+  { label: "Spa in Gurgaon", href: "/spa-in-gurgaon" },
   { label: "Spa in Noida", href: "/spa-in-noida" },
   { label: "Spa in Paharganj", href: "/spa-in-paharganj" },
 ];

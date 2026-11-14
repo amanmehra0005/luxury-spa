@@ -1,21 +1,21 @@
 import HomeClient from "./HomeClient";
 
 export const metadata = {
-  title: "Luxury Spa in Delhi | Russian Spa in Delhi From ₹1999",
+  title: "Luxury Russian Spa in Delhi | Best Full Body Massage From ₹1499",
   description:
-    "Looking for a luxury spa or Russian spa in Delhi? Russian & Indian therapists at 24+ outlets and 5-star hotels, incl. Aerocity & Mahipalpur. From ₹1999.",
+    "Experience premier Russian spa in Delhi with certified Russian & Indian therapists across 12+ luxury outlets & 5-star hotel visits in Aerocity, Lajpat Nagar & Mahipalpur. First visit @ ₹1499.",
 
   keywords: [
-    "luxury spa in delhi",
     "russian spa in delhi",
-    "luxury spa in delhi ncr",
-    "best luxury spa in delhi",
-    "5 star spa in delhi",
-    "best russian spa delhi",
+    "luxury spa in delhi",
+    "full body massage in delhi",
     "russian spa in aerocity",
+    "russian spa in lajpat nagar",
     "russian spa in mahipalpur",
-    "russian massage delhi",
-    "luxury spa in lajpat nagar",
+    "sandwich massage delhi",
+    "nuru massage in delhi",
+    "b2b massage in delhi",
+    "5 star spa in delhi",
   ],
 
   alternates: {
@@ -23,9 +23,9 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Luxury Spa in Delhi | Russian Spa in Aerocity & Mahipalpur",
+    title: "Luxury Russian Spa in Delhi | Best Full Body Massage From ₹1499",
     description:
-      "Russian and Indian therapists, private rooms and 5-star hotel sessions across Delhi NCR. First visit from ₹1999.",
+      "Certified Russian and Indian therapists, private suites with attached hot showers, and 5-star hotel visits across Delhi NCR. First visit offer @ ₹1499.",
     url: "https://www.luxuryrussianspa.com/",
     siteName: "Luxury Russian Spa",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
         url: "/images/luxurySpaRoom.jpg",
         width: 1200,
         height: 630,
-        alt: "Luxury Russian Spa",
+        alt: "Luxury Russian Spa in Delhi",
       },
     ],
     type: "website",
@@ -41,9 +41,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Luxury Spa in Delhi | Russian Spa in Aerocity & Mahipalpur",
+    title: "Luxury Russian Spa in Delhi | Best Full Body Massage From ₹1499",
     description:
-      "Russian and Indian therapists, private rooms and 5-star hotel sessions across Delhi NCR. First visit from ₹1999.",
+      "Certified Russian and Indian therapists, private suites with attached hot showers, and 5-star hotel visits across Delhi NCR. First visit offer @ ₹1499.",
     images: ["/images/luxurySpaRoom.jpg"],
   },
 };
@@ -54,66 +54,50 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What services does Luxury Russian Spa provide?",
+      name: "Where Can I Find a Russian Massage in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "At Luxury Russian Spa, we offer full-body massage, Thai massage, aromatherapy, B2B massage, sandwich massage, couple massage and more. Our certified Indian and international therapists deliver private, hygienic sessions tailored for relaxation, therapeutic relief, and special-event packages at all major outlets.",
+        text: "Luxury Russian Spa operates 12+ luxury outlets across Delhi NCR, including Aerocity, Lajpat Nagar, Mahipalpur, Connaught Place, Dwarka, Rohini, and Gurgaon. We also provide 24/7 in-room 5-star hotel visits near Delhi Airport and across the capital.",
       },
     },
     {
       "@type": "Question",
-      name: "What is the price of a full body massage in Delhi?",
+      name: "How to choose a safe spa in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A full body massage at our Delhi outlets starts at ₹1,999 for 60 minutes. An in-room session at a 5-star hotel is ₹14,999 for 90 minutes, and our VIP session with Russian and international therapists is ₹19,999 for 120 minutes. All prices are fixed, with no hidden charges.",
+        text: "To ensure a safe and hygienic experience, check verified customer reviews, look for real ambience photos of private rooms with attached showers, and confirm that therapists are certified professionals. At Luxury Russian Spa, all sessions are held in clean, private suites with complete safety and discretion.",
       },
     },
     {
       "@type": "Question",
-      name: "Can male guests book a female therapist?",
+      name: "How to book a Russian spa in Delhi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Male guests can choose a female therapist, and female guests can choose a male or female therapist. Just share your preference when you book on WhatsApp or call and we'll confirm who is available at your outlet.",
+        text: "Booking is simple and fast. You can message us on WhatsApp or call our 24/7 helpdesk. Our team will share available therapist profiles, confirm outlet or hotel visit options, and lock in your preferred appointment slot with no advance payment required.",
       },
     },
     {
       "@type": "Question",
-      name: "Is Luxury Russian Spa a Russian body massage centre?",
+      name: "Why is the Russian spa in Aerocity famous for Luxury Service?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Alongside our Indian therapists, we have trained therapists from Russia, Uzbekistan and Thailand. Most guests looking for the best Russian spa in Delhi come to us for the Russian-style full body massage, which you can book at our outlets across Delhi NCR or at a partner 5-star hotel.",
+        text: "Aerocity is home to Delhi's top 5-star hotels and luxury hospitality. Luxury Russian Spa in Aerocity provides five-star standard in-room hotel sessions with certified Russian and European therapists, making it the top choice for international business travelers and transit passengers near IGI Airport.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you have a Russian spa in Mahipalpur or Aerocity?",
+      name: "Is a Russian spa in Lajpat Nagar affordable?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Both are only a few minutes from IGI Airport. Our Mahipalpur outlet is open 24/7 for a Russian massage after a late flight, and in Aerocity our therapists can come to your hotel room. Message us on WhatsApp and we'll tell you who's available.",
+        text: "Yes, our Russian spa in Lajpat Nagar offers luxury bodywork at highly accessible rates. We provide an exclusive first visit offer starting from just ₹1499 for a full body massage in a private air-conditioned room with an attached hot shower.",
       },
     },
     {
       "@type": "Question",
-      name: "Is Luxury Russian Spa open 24/7 for late-night massage?",
+      name: "Do you offer Nuru massage in Delhi with a Russian?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Luxury Russian Spa is open 24/7, so you can book a massage late at night or early in the morning. Message us on WhatsApp or call anytime and we'll confirm your session, price and therapist before you arrive.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is there a first-visit discount at Luxury Russian Spa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, we run first-visit offers periodically, such as introductory full body massage packages starting at ₹1999. Check the homepage deals or contact your preferred outlet for current promotions.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are Luxury Russian Spa therapists certified and experienced?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "All our therapists are trained and certified in their techniques. We have both Indian and foreign therapists from Thailand, Uzbekistan, Russia and Afghanistan to give you the best massage experience at our 5-star hotel outlets.",
+        text: "Yes, we provide authentic Nuru massage in Delhi using genuine seaweed-based warm gel with certified Russian and European therapists. We also offer sandwich massage, B2B massage, Swedish therapy, and couples packages across our Delhi outlets.",
       },
     },
   ],

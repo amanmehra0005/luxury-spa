@@ -19,13 +19,12 @@ export default function HomeSplitBlock3() {
           </p>
 
           <p className="mt-4 text-[15px] leading-relaxed text-gray-600">
-            Searching Russian spa near me in Delhi? When you select a luxury spa in Delhi with
-            full service, you will receive the entire relaxation pack in the same roof. It gives you
-            complete relaxation during the session. Our Russian &amp; Indian therapists are polite
-            with customers. At a full night Russian spa in Delhi you will get hygienic rooms,
-            cozy atmosphere, showering, high-quality oils, and specialized massages of the
-            therapist. We are available 24/7 in Delhi for your service. Whenever you are looking
-            for a night spa in Delhi. Experience full night Russian spa in Delhi with full service.
+            Searching for a Russian spa near you in Delhi with all-inclusive amenities? When you choose
+            our full-service spa sessions, everything is curated for complete comfort under one roof. Each
+            appointment includes private air-conditioned suites, calming ambient lighting, attached hot
+            showers, premium aromatic oils, and customized bodywork from certified Russian and Indian
+            therapists. Available 24/7 across Delhi NCR, we ensure high hygiene standards, total privacy,
+            and an authentic wellness sanctuary whenever you need to recharge.
           </p>
 
           <div className="mt-6">

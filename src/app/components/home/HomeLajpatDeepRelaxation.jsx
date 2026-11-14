@@ -54,19 +54,18 @@ export default function HomeLajpatDeepRelaxation() {
           {/* Right: Paragraphs matching exact text */}
           <div className="lg:col-span-7 text-left space-y-4 text-[#fff3e8] text-sm sm:text-[14.5px] leading-relaxed font-light">
             <p>
-              Russian spa in Lajpat Nagar offers affordable spa services in south Delhi. We have international therapists from
-              Uzbekistan, Afghanistan, Thailand, and Russia. You can choose your{" "}
+              Our Russian spa in Lajpat Nagar offers affordable, premium wellness services in South Delhi. We feature
+              certified international therapists from Russia, Uzbekistan, and Thailand, trained in targeted deep tissue
+              techniques and gentle Swedish bodywork. You can customize your{" "}
               <Link href="/spa-in-lajpat-nagar" className="text-[#fdc28c] hover:underline font-normal">
                 Russian spa in Delhi
               </Link>{" "}
-              for night as per your preference. All our therapists are well trained and certified to provide 100% satisfaction.
-              Beat your daily stress and tension by getting a deep tissue massage, a B2B massage and{" "}
-              <strong className="font-semibold text-white">Happy ending massage in Delhi</strong>. You can book a home or hotel
-              spa in Delhi, and you can take a spa session in our spa outlets. Book your session now at our{" "}
+              session according to your schedule and wellness needs. Release daily tension with our specialized full body
+              massage, B2B massage, and soothing aromatherapy. Book an appointment at our{" "}
               <Link href="/spa-in-lajpat-nagar" className="text-[#fdc28c] hover:underline font-normal">
                 spa in Lajpat Nagar
               </Link>
-              , a 5 star spa in{" "}
+              , or request a 5-star hotel in-room visit in{" "}
               <Link href="/spa-in-aerocity" className="text-[#fdc28c] hover:underline font-normal">
                 Aerocity
               </Link>{" "}
@@ -78,10 +77,10 @@ export default function HomeLajpatDeepRelaxation() {
             </p>
 
             <p>
-              At our <strong className="font-semibold text-white">Russian spa in lajpat nagar</strong>, we offer high-quality
-              massage service to end your day to day stress. Our Russian spa in Delhi with full-service staff uses 100% genuine
-              techniques for your deep relaxation. Book Spa in Lajpat nagar today and claim the first visit offer of 1499 for a full
-              body massage at <strong className="font-semibold text-white">Luxury Russian Spa</strong>.
+              At our <strong className="font-semibold text-white">Russian spa in Lajpat Nagar</strong>, we maintain clean
+              private suites, fresh linens, attached hot showers, and pure botanical oils. Claim our exclusive first visit
+              offer starting at just ₹1499 for a full body massage at{" "}
+              <strong className="font-semibold text-white">Luxury Russian Spa</strong>.
             </p>
 
             {/* Action Buttons */}

@@ -30,15 +30,13 @@ export default function HomeSplitBlock2() {
           </p>
 
           <p className="mt-4 text-[15px] leading-relaxed text-gray-600">
-            Try female to male body to body massage in Delhi with Russian therapists. We offer
-            premium full body to body massage in Delhi with female therapists. Our Russian
-            therapists help you to remove all your body pain and muscle recovery. We use
-            flowing techniques and warm oils to release tension, improve circulation, and calm
-            the mind. B2b massage in Delhi gives the next level of relaxation during the session.
-            We have 12+ Russian spa outlets in Delhi. At our <strong className="font-semibold text-gray-800">Luxury Russian Spa</strong> in Aerocity Delhi, we
-            offer popular Nuru massages in Delhi, Noida &amp; Gurgaon. So call us and ready to
-            experience <strong className="font-semibold text-gray-800">B2B massage in Delhi</strong> with professional female therapists. Our full night
-            service in Delhi with Russian girls is most demanded service.
+            Experience deep physical rejuvenation with our female to male body to body massage in Delhi,
+            conducted by certified, courteous female therapists. Using warm therapeutic oils and fluid,
+            rhythmic pressure, this session dissolves stubborn muscle knots, accelerates physical recovery,
+            and calms an overworked mind. Available across our 12+ outlets including our flagship{" "}
+            <strong className="font-semibold text-gray-800">Luxury Russian Spa</strong> in Aerocity Delhi,
+            Lajpat Nagar, and Gurgaon. We also provide discreet 24/7 in-room 5-star hotel visits near Delhi
+            Airport for international business travelers seeking ultimate relaxation in absolute privacy.
           </p>
 
           <div className="mt-6">

@@ -34,13 +34,14 @@ export default function HomeAboutRussian() {
               Experience Luxury And Professional Russian Spa in Aerocity
             </h3>
             <p className="mt-4 text-[14px] sm:text-[15px] leading-relaxed text-gray-300">
-              Explore the most popular Russian spa in Aerocity with full night service for premium relaxation.
-              At full service spa in Aerocity we offer a 5-star hotel spa with Russian therapists. Our spa in
-              Aerocity Delhi offers you luxury spa service for your deep relaxation. Our 5-star hotel spa near
-              Delhi airport offer massage with Russian girls in Delhi for your complete relaxation. Aerocity{" "}
-              <strong className="font-semibold text-white">Luxury Russian Spa</strong> is the best place for your relaxation.
-              All our therapists come from all over the world, like Russia, Thailand, Afghanistan and Uzbekistan
-              with proper experience in massage &amp; spa services.
+              Explore premier Russian spa services in Aerocity Delhi, designed for travelers, business
+              professionals, and local guests seeking genuine relaxation. Located just minutes from IGI Airport,
+              our 5-star hotel spa service connects you with certified Russian and international therapists for
+              private in-room sessions or luxury outlet visits. Whether you want to relieve fatigue after a long
+              flight or unwind after a demanding day,{" "}
+              <strong className="font-semibold text-white">Luxury Russian Spa</strong> offers authentic European
+              bodywork, calming ambiance, and discreet hospitality 24 hours a day. All therapists are fully
+              certified with deep expertise across Swedish, Thai, and deep tissue wellness rituals.
             </p>
 
             {/* ─── Two Columns: Russian & Indian Therapists ─── */}
@@ -51,16 +52,15 @@ export default function HomeAboutRussian() {
                   Russian Therapists
                 </h4>
                 <p className="mt-3 text-[13.5px] leading-relaxed text-gray-300">
-                  At our Russian Spa Centre in Delhi, we have certified and highly skilled Russian therapists.
-                  They are trained for authentic Nuru Massage in Delhi methods and know how to give the best
-                  results for both your body and mind.
+                  At our Russian Spa Centre in Delhi, our certified Russian and European therapists bring genuine
+                  techniques from abroad. They specialize in therapeutic pressure, authentic Nuru relaxation, and
+                  revitalizing oil therapies designed to soothe stiff muscles, improve circulation, and clear mental stress.
                 </p>
                 <p className="mt-2.5 text-[13.5px] leading-relaxed text-gray-300">
-                  A Russian massage is not just for relaxation, it also improves blood circulation, reduces stress,
-                  eases muscle pain, and makes your skin feel better. Whether you visit our{" "}
-                  <strong className="font-semibold text-white">Luxury Russian Spa in Mahipalpur</strong> for a quick massage
-                  or visit our <strong className="font-semibold text-white">Luxury Russian Spa in Lajpat Nagar</strong> for
-                  a longer session at affordable prices, you&apos;ll always enjoy the same expert care.
+                  A Russian massage is designed for holistic wellbeing. Whether you visit our{" "}
+                  <strong className="font-semibold text-white">Luxury Russian Spa in Mahipalpur</strong> near the airport
+                  or our outlet at <strong className="font-semibold text-white">Luxury Russian Spa in Lajpat Nagar</strong>,
+                  you will always enjoy sanitized private rooms, warm towels, and soothing aromatherapy at honest, transparent rates.
                 </p>
               </div>
 
@@ -70,17 +70,16 @@ export default function HomeAboutRussian() {
                   Indian Therapists
                 </h4>
                 <p className="mt-3 text-[13.5px] leading-relaxed text-gray-300">
-                  Along with Russian therapists, we also have experienced Indian therapists who are trained in
-                  erotic massage and wellness treatments. At our{" "}
-                  <strong className="font-semibold text-white">Luxury Russian Spa in Noida</strong> and other outlets in Delhi
-                  like Aerocity, Karol Bagh, and Mahipalpur, you can choose from many different massage options.
-                  Our Indian therapists always put customer comfort first.
+                  Alongside our international specialists, we feature highly skilled Indian therapists trained in
+                  Swedish relaxation, deep tissue work, and traditional wellness therapies. Available across our outlets
+                  in <strong className="font-semibold text-white">Luxury Russian Spa in Noida</strong>, Aerocity, Karol Bagh,
+                  and Mahipalpur, our team ensures every guest receives warm, courteous, and attentive care.
                 </p>
                 <p className="mt-2.5 text-[13.5px] leading-relaxed text-gray-300">
-                  We always focus on hygiene, cleanliness, and professional care. With more than a dozen outlets,
-                  including popular <strong className="font-semibold text-white">female to male body to body massage in Delhi</strong>{" "}
-                  by Russian therapists at our branches, you will always get the same top-quality service. Our goal is
-                  simple – to help you remove stress and enjoy complete relaxation.
+                  Cleanliness, privacy, and safety are our highest priorities. All treatment rooms feature sanitized linens,
+                  attached hot showers, and a calm, quiet atmosphere. Whether you choose our popular{" "}
+                  <strong className="font-semibold text-white">female to male body to body massage in Delhi</strong> or
+                  an overnight full night spa service, we guarantee a peaceful and refreshing experience.
                 </p>
               </div>
             </div>

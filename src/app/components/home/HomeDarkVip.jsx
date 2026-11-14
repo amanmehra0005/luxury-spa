@@ -35,19 +35,18 @@ export default function HomeDarkVip() {
           </h2>
 
           <p className="mt-5 text-sm sm:text-[14.5px] md:text-[15px] text-gray-300 leading-relaxed font-light">
-            Try our full body massage in Delhi by Russian therapists. It gives you perfect relaxation and comfort and helps you to
-            beat your stress. If you are on a business trip or on a vacation, just contact us. We have a popular{" "}
+            Discover the restorative benefits of a full body massage in Delhi, expertly performed by certified Russian
+            and European therapists. Designed to ease stress, dissolve tension, and restore energy, our sessions offer
+            an ideal retreat for business executives and travelers alike. Staying near IGI Airport? Explore our acclaimed{" "}
             <Link href="/spa-in-aerocity" className="text-white hover:text-[#fdc28c] underline decoration-gray-500 font-normal transition-colors">
               Russian spa in Aerocity
             </Link>
-            . Which gives perfect relaxation to international clients and travellers at the 5-star hotel spa in Aerocity. Our therapists
-            maintain full hygiene and cleanliness during massages in Delhi. Our{" "}
+            , delivering five-star hotel in-room visits and private suite treatments. Our specialized{" "}
             <Link href="/b2b-massage-in-delhi" className="text-white hover:text-[#fdc28c] underline decoration-gray-500 font-normal transition-colors">
               female to male body to body massage in Delhi
             </Link>{" "}
-            by Russian therapists will improve your blood circulation, enhance flexibility and mobility, boost your immune system, improve
-            skin tone and texture and increase energy levels. So just contact us and book your Full body to body massage in Delhi by
-            Russian therapists at <strong className="font-semibold text-white">Luxury Russian Spa</strong>.
+            improves blood circulation, enhances physical flexibility, and calms your nervous system using natural aromatic
+            oils. Contact us 24/7 to reserve your appointment at <strong className="font-semibold text-white">Luxury Russian Spa</strong>.
           </p>
 
           <div className="mt-7">

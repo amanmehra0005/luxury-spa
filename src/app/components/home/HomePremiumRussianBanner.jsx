@@ -26,12 +26,11 @@ export default function HomePremiumRussianBanner() {
 
         {/* Description matching exact content */}
         <p className="mt-5 text-sm sm:text-[15px] md:text-base text-[#fff3e8] max-w-7xl mx-auto leading-relaxed font-light">
-          Delhi Russian spa is the best spa in Delhi with full service for your professional massage service. With 12+ spa outlets,
-          Delhi Russian spa covers all over Delhi NCR with well-trained Russian staff. Our aim is to provide 100% satisfaction to
-          customers. Whenever feeling tired and wanting some enjoyment, book Russian service in Delhi at 5 star hotels for your
-          complete relaxation. Reduce your stress and body pain with top-rated massage services. Our therapists perform a wide range of
-          massage therapies: sandwich massage, Nuru massage, erotic massage, happy ending massage and full body-to-body massage in
-          Delhi for deep relaxation.
+          Luxury Russian Spa is Delhi NCR&apos;s leading destination for authentic full-service massage therapies.
+          With 12+ luxury outlets and 24/7 in-room hotel visits, we serve guests across Delhi, Noida, and Gurgaon with
+          certified Russian, European, and Indian therapists. Whether you are recovering from a long journey or seeking a
+          peaceful evening retreat, our team specializes in sandwich massage, Nuru therapy, Swedish bodywork, and full
+          body-to-body massage in Delhi tailored for deep, lasting relaxation.
         </p>
 
         {/* Theme Action Buttons */}

@@ -25,15 +25,15 @@ export default function HomeLajpatAerocityShowcase() {
             </p>
 
             <p className="mt-4 text-sm sm:text-[14.5px] text-gray-600 leading-relaxed font-light">
-              We make you feel fresh at our{" "}
+              Recharge your body and mind at our{" "}
               <Link href="/spa-in-lajpat-nagar" className="font-medium text-gray-900 hover:text-[#7a9a60] transition-colors underline decoration-gray-300">
                 Russian Spa in Lajpat Nagar
-              </Link>{" "}
-              where we treat you head to toe. Offering our professionals in the field, we practice massage techniques and the
-              use of high-quality oils to alleviate stress, pain in the body, and everyday fatigue. There is the calm environment,
-              low-key music, and clean individual rooms that make you feel safe and at ease. Every session will help to relax your
-              muscles, enhance blood flow and relax your mind. Having light, stressful, and full of new energy, you will be prepared
-              to live your day positively after your massage. Our Russian girl in Delhi gives you full satisfaction.
+              </Link>
+              , South Delhi&apos;s preferred destination for therapeutic wellness. Our certified Russian and Indian
+              therapists use warm essential oils and targeted techniques to alleviate muscle tension, back stiffness,
+              and everyday stress. Each private room is thoughtfully appointed with soothing music, ambient lighting,
+              and an attached hot shower for ultimate convenience. You will leave feeling refreshed, completely
+              stress-free, and energized for the days ahead.
             </p>
 
             <div className="mt-6">
@@ -93,16 +93,15 @@ export default function HomeLajpatAerocityShowcase() {
             </p>
 
             <p className="mt-4 text-sm sm:text-[14.5px] text-gray-600 leading-relaxed font-light">
-              Want a relaxing B2B massage in Delhi with a luxury ambiance? Visit the{" "}
+              Searching for a five-star Russian spa experience in Aerocity near IGI Delhi Airport?{" "}
               <Link href="/spa-in-aerocity" className="font-medium text-gray-900 hover:text-[#7a9a60] transition-colors underline decoration-gray-300">
                 Russian spa Aerocity
-              </Link>
-              , where we offer 5-star hotel spa service in Delhi. Whenever you are near IGI Delhi airport and looking for luxury spa
-              service. Book a spa session in Aerocity with a Delhi Russian Spa. Our trusted and verified therapists come to your hotel
-              room. Our first visit offer started at just 1499 at spa outlets. Our Russian spa in Aerocity offers popular therapies like
-              b2b massage, nuru massage, sandwich massage, or couples massage with 100% private and safe service. We focus on proper
-              hygiene and cleanliness during your session. For next level benefits and freshness try our female to male massage in
-              Aerocity by Russian therapists. Book full night spa in Aerocity at 5 star hotels.
+              </Link>{" "}
+              by Luxury Russian Spa provides exclusive in-room 5-star hotel visits and private outlet appointments.
+              Designed specifically for international travelers and local guests seeking first-class hospitality, our
+              certified Russian therapists deliver authentic B2B massage, soothing Nuru gel rituals, and deep tissue
+              bodywork with complete discretion. Take advantage of our introductory first visit offer starting at
+              ₹1499 at our outlets, or book a 24/7 full night spa session directly in your hotel suite.
             </p>
 
             <div className="mt-6">

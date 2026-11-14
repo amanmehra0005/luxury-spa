@@ -25,15 +25,14 @@ export default function HomeTherapistsRow() {
 
         {/* Description Paragraph */}
         <p className="mt-5 max-w-6xl mx-auto text-center text-sm sm:text-[15px] text-gray-600 leading-relaxed">
-          Book a Russian spa in Delhi with extra service for your international massage experience. At{" "}
-          <strong className="font-semibold text-gray-800">Luxury Russian Spa</strong>, we have 12+ spa outlets all over Delhi,
-          Noida and Gurgaon. Try our{" "}
-          <strong className="font-semibold text-gray-800">full night spa in Delhi with full service</strong>{" "}
-          for your deep relaxation. We offer b2b massage, sandwich massage, full body massage and Nuru massage in Delhi
-          with expert therapists. Our first visit started at just ₹1499 for a full body massage in Delhi with a shower.
-          We are open 24/7 at a full night spa in Delhi. By{" "}
-          <strong className="font-semibold text-gray-800">booking Russian spa in Delhi</strong>{" "}
-          for night you will get next level experience.
+          Looking for the best Russian spa in Delhi? Welcome to{" "}
+          <strong className="font-semibold text-gray-800">Luxury Russian Spa</strong>, your premier destination
+          for international massage therapies across 12+ luxury outlets in Delhi, Gurgaon, and Noida. We provide
+          expert full body massage, authentic sandwich massage, Nuru therapy, and B2B massage delivered by certified
+          Russian, European, and Indian therapists. Enjoy 24/7 round-the-clock availability, private luxury suites
+          with attached hot showers, and 5-star hotel in-room visits. Take advantage of our special{" "}
+          <strong className="font-semibold text-gray-800">first visit offer starting at just ₹1499</strong>{" "}
+          for a full body massage in Delhi and experience complete head-to-toe relaxation.
         </p>
 
         {/* 6 Therapist Cards Grid */}

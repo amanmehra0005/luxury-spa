@@ -19,15 +19,13 @@ export default function HomeSplitBlock1() {
           </p>
 
           <p className="mt-4 text-[15px] leading-relaxed text-gray-600">
-            Are you looking for a Affordable full body massage spa in Delhi with Full service?
-            Calm down with <strong className="font-semibold text-gray-800">Luxury Russian Spa</strong> for your massage spa solution. We have 12+
-            luxury and premium Russian spas in Delhi, Gurgaon, and Noida. We have Uzbek,
-            Russian, Thai, Afghani, and Indian therapists, and all of them are well trained and
-            certified to give comfort and relaxation to you. Get a popular Nuru massage in Delhi
-            by our certified therapists. We provide first visit offer to our customers. Grab first
-            visit offer only ₹1499 at our Russian spa in Lajpat Nagar. Our therapists always
-            focus on customer satisfaction and comfort. Our spa session is fully private and safe.
-            So book best spa in Delhi with full service for your exclusive relaxation.
+            Looking for an affordable, high-quality full body massage in Delhi? Step into{" "}
+            <strong className="font-semibold text-gray-800">Luxury Russian Spa</strong> and leave your daily fatigue
+            behind. Across our 12+ luxury spa outlets in Delhi, Gurgaon, and Noida, we offer world-class therapies
+            led by certified Russian, European, Thai, and Indian therapists. Every session takes place in a 100% private,
+            sanitized suite equipped with an attached hot shower and freshly laundered towels. Take advantage of our
+            exclusive first visit offer at just ₹1499 at our popular Russian spa in Lajpat Nagar or nearby branches,
+            and experience deep relaxation, muscle relief, and total peace of mind.
           </p>
 
           <div className="mt-6">

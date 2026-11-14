@@ -7,21 +7,21 @@ const cards = [
     title: "12+ Spa Outlets",
     description: (
       <>
-        Your convenience shouldn&apos;t be location-based, and therefore,{" "}
-        <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> has established
-        over 12 luxury spa outlets in Delhi and NCR. Whether you wish to indulge in a refreshing{" "}
+        Convenience matters, which is why{" "}
+        <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> operates
+        over 12 luxury spa outlets across Delhi, Gurgaon, and Noida. Whether you book a refreshing{" "}
         <Link href="/full-body-massage-in-delhi" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           Body Massage in Delhi
         </Link>
-        , a high-end{" "}
+        , visit our high-end{" "}
         <Link href="/spa-in-paharganj" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           Russian spa in Paharganj
         </Link>
-        , or a peaceful retreat at our{" "}
+        , or enjoy a tranquil retreat at our{" "}
         <Link href="/spa-in-dwarka" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           Russian spa in Dwarka
         </Link>
-        , you will always receive the same level of convenience and care. We also offer full night spa services across Delhi.
+        , you will always receive spotless hygiene and attentive therapist care. We also offer 24/7 full night spa services.
       </>
     ),
   },
@@ -30,14 +30,14 @@ const cards = [
     title: "24/7 Support Available",
     description: (
       <>
-        That is why <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> maintains
-        dedicated 24/7 customer care. We understand that stress can arise anytime without any time limit, it is stuck in
-        your mind, and sometimes you need a good spa in Delhi. If you are looking to book an evening{" "}
+        Stress does not follow business hours, so{" "}
+        <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> maintains
+        dedicated 24/7 customer assistance. Whether you wish to book an evening{" "}
         <Link href="/b2b-massage-in-delhi" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           Nuru massage in Delhi
         </Link>
-        , an early morning appointment, or just need assistance in selecting the appropriate therapy, our staff will be
-        present to help you 24/7.
+        , an early morning post-travel session, or need guidance choosing the ideal therapy,
+        our team is always available to assist via WhatsApp or direct call.
       </>
     ),
   },
@@ -46,14 +46,14 @@ const cards = [
     title: "Luxury Massage",
     description: (
       <>
-        From traditional Russian techniques to the very popular full body massage in Delhi, each therapy is meant to relax
-        your body, reduce stress, and bring back your vitality. In our{" "}
-        <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> parlours in Delhi, there is emphasis
-        laid on total relaxation, 100% hygiene, and peace of mind. If you happen to be in NCR, our{" "}
+        From traditional Russian deep-tissue techniques to soothing full-body Swedish strokes, every therapy is
+        curated to alleviate tension and revive natural energy. Across our{" "}
+        <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> parlours in Delhi, we maintain
+        strict standards of cleanliness, private suites, and pure natural oils. Visiting NCR? Our{" "}
         <Link href="/spa-in-gurgaon" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           Russian spa in Gurgaon
         </Link>{" "}
-        also has special therapies that are meant to provide you with full comfort.
+        offers the same five-star wellness experience.
       </>
     ),
   },
@@ -62,7 +62,7 @@ const cards = [
     title: "Massage Therapists",
     description: (
       <>
-        We provide different types of therapy, such as oil massage, deep tissue massage, and{" "}
+        Choose from an extensive menu including essential oil therapies, hot stone relief, and authentic{" "}
         <Link href="/b2b-massage-in-delhi" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           nuru massage in Delhi
         </Link>
@@ -70,8 +70,7 @@ const cards = [
         <Link href="/b2b-massage-in-delhi" className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
           B2B spa in Delhi
         </Link>
-        , too, you can anticipate the same concern and professionalism, so every visit is one to cherish. We have Indian to
-        Russian, Thai, Afghani and Uzbek therapists. So you get an international massage experience in Delhi by our international therapists at{" "}
+        , you will enjoy respectful, personalized care from certified Russian, European, Thai, and Indian therapists at{" "}
         <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>.
       </>
     ),
@@ -101,17 +100,17 @@ export default function HomeWhyBestSpa() {
           </h2>
 
           <p className="mt-5 text-sm sm:text-[15px] md:text-base text-gray-600 leading-relaxed font-normal">
-            When you need relaxation and stress relief, there&apos;s nothing quite like a good massage at a reputable Russian spa in Delhi.
-            At <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>, we are one of the most trusted{" "}
+            When you need genuine relaxation and deep stress relief, choosing the right Russian spa in Delhi makes all the difference.
+            At <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>, we have earned the trust of thousands of clients across{" "}
             <Link href="/outlets" className="text-[#9c5232] hover:text-[#834329] font-medium underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
               Spa in Defence Colony
             </Link>{" "}
-            and Delhi for genuine massage service, with a combination of traditional massage techniques and contemporary comfort. We have 12+ Spa
-            outlets. Whenever you are looking for{" "}
+            and Greater Delhi by combining authentic international massage traditions with world-class hospitality. Explore our 12+ convenient
+            outlets or contact us to book a premium{" "}
             <Link href="/b2b-massage-in-delhi" className="text-[#9c5232] hover:text-[#834329] font-medium underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
               B2B spa in Delhi
             </Link>{" "}
-            with full service contact us for booking.
+            with complete privacy and round-the-clock service.
           </p>
         </div>
 

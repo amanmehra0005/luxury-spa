@@ -12,32 +12,32 @@ const faqs = [
   {
     question: "Where Can I Find a Russian Massage in Delhi?",
     answer:
-      "We are available in multiple locations in Delhi and NCR region. You can book a Russian spa in Aerocity, Cp, Paschim Vihar, Rohini etc. We have 12 + Russian spa outlets in Delhi.",
+      "Luxury Russian Spa operates 12+ luxury outlets across Delhi NCR, including Aerocity, Lajpat Nagar, Mahipalpur, Connaught Place, Dwarka, Rohini, and Gurgaon. We also provide 24/7 in-room 5-star hotel visits near Delhi Airport and across the capital.",
   },
   {
     question: "How to choose a safe spa in Delhi?",
     answer:
-      "Booking a safe Spa in Delhi is now easy with Luxury Russian Spa. Check Google reviews of the spa and get ideas from reviews. Check real photos and videos to confirm if the spa ambience is good or bad. See if the spa has a licence for their service. After that you can book your spa session without any hesitation.",
+      "To ensure a safe and hygienic experience, check verified customer reviews, look for real ambience photos of private rooms with attached showers, and confirm that therapists are certified professionals. At Luxury Russian Spa, all sessions are held in clean, private suites with complete safety and discretion.",
   },
   {
     question: "How to book a Russian spa in Delhi?",
     answer:
-      "You can book a Russian spa in Delhi by contacting us via WhatsApp or direct call. Our team provides all necessary information for your requirements. You can also join our Telegram for daily updates.",
+      "Booking is simple and fast. You can message us on WhatsApp or call our 24/7 helpdesk. Our team will share available therapist profiles, confirm outlet or hotel visit options, and lock in your preferred appointment slot with no advance payment required.",
   },
   {
     question: "Why is the Russian spa in Aerocity famous for Luxury Service?",
     answer:
-      "For luxury spa services in Delhi, you can choose a Russian spa in Aerocity because this place has some of the top 5-star hotels and high-end wellness centres. Luxury Russian spa has a luxury spa in Aerocity for your 5-star service. If you’re searching for a Russian spa service near Delhi airport, Luxury Russian Spa is the perfect choice. Visit our spa for amazing service.",
+      "Aerocity is home to Delhi's top 5-star hotels and luxury hospitality. Luxury Russian Spa in Aerocity provides five-star standard in-room hotel sessions with certified Russian and European therapists, making it the top choice for international business travelers and transit passengers near IGI Airport.",
   },
   {
     question: "Is a Russian spa in Lajpat Nagar affordable?",
     answer:
-      "Yes, Russian spas in Lajpat Nagar can be more affordable than luxury areas, but prices vary by location and service quality. Our first visit offer starts from just ₹1499 for your relaxing full-body massage in a private spa room.",
+      "Yes, our Russian spa in Lajpat Nagar offers luxury bodywork at highly accessible rates. We provide an exclusive first visit offer starting from just ₹1499 for a full body massage in a private air-conditioned room with an attached hot shower.",
   },
   {
     question: "Do you offer Nuru massage in Delhi with a Russian?",
     answer:
-      "Yes, we offer relaxing Nuru massage in Delhi with Russian therapists. Luxury Russian spa offers a range of popular and relaxing massage therapies, including b2b massage, sandwich massage, erotic massage, Nuru massage, and full body massage.",
+      "Yes, we provide authentic Nuru massage in Delhi using genuine seaweed-based warm gel with certified Russian and European therapists. We also offer sandwich massage, B2B massage, Swedish therapy, and couples packages across our Delhi outlets.",
   },
 ];
 

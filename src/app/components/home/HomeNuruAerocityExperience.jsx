@@ -22,13 +22,11 @@ export default function HomeNuruAerocityExperience() {
             </p>
 
             <p className="mt-4 text-sm sm:text-[14.5px] text-gray-600 leading-relaxed font-light">
-              Nuru massage in Delhi is a relaxing massage for your stress relief and mind relaxation.{" "}
-              <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> offers special Russian therapists
-              for your nuru massage in Delhi at 5-star hotels. We use authentic techniques and nuru gel during your relaxing
-              nuru massage in Delhi with Russian therapists. Daily travel and fatigue give so much stress and body pain. But now
-              is the time to invest some time in your body. Book a Nuru massage in Delhi just for ₹1499 at our spa outlets. We
-              are open 24/7 at <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>. For your relaxing
-              nuru massage in{" "}
+              Nuru massage in Delhi is an intensely soothing therapy celebrated for total muscle relaxation and
+              stress relief. At <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>, certified
+              Russian therapists use authentic seaweed-based nuru gel to glide smoothly across the body, releasing deep
+              knots and mental fatigue. Whether you need post-flight recovery or a calming escape from a busy routine,
+              our private suites in{" "}
               <Link href="/spa-in-aerocity" className="font-medium text-gray-900 hover:text-[#7a9a60] transition-colors underline decoration-gray-300">
                 Aerocity
               </Link>
@@ -43,10 +41,9 @@ export default function HomeNuruAerocityExperience() {
               and{" "}
               <Link href="/spa-in-lajpat-nagar" className="font-medium text-gray-900 hover:text-[#7a9a60] transition-colors underline decoration-gray-300">
                 Lajpat Nagar
-              </Link>
-              . We have Russian, Thai, Uzbek, Afghani and Indian therapists. At night or Day, anytime call us and book your Nuru
-              massage near Delhi airport with <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> in
-              Aerocity at a 5 star hotel spa in Delhi.
+              </Link>{" "}
+              provide the perfect setting. Book your Nuru massage near Delhi Airport 24/7 with first visit packages starting
+              from just ₹1499.
             </p>
 
             <div className="mt-6">
@@ -111,14 +108,12 @@ export default function HomeNuruAerocityExperience() {
             </h2>
 
             <p className="mt-4 text-sm sm:text-[14.5px] text-gray-600 leading-relaxed font-light">
-              Our full night Russian Spa in Aerocity is the perfect place to relax your body after a long flight. We are ready
-              at our Aerocity spa to give high-quality massage therapy for complete relaxation. It&apos;s day or night, we don&apos;t
-              care. Our spa in Aerocity is open all night, offering high-quality massages to late-night travellers. Call us
-              anytime, check staff availability, and book your Nuru massage in Aerocity with genuine Russian therapists in
-              Aerocity, Delhi. We have 5-star hotel spa outlets in Aerocity for your luxury service. Without leaving your hotel,
-              our massage therapists can come to you and offer their genuine massage service in your private rooms. We have
-              expert, beautiful Russian, Thai, Afghan, and Uzbek therapists for your full service spa in Aerocity at{" "}
-              <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>.
+              Our 24/7 Russian spa in Aerocity is the premier choice for transit travelers and hotel guests near
+              IGI Delhi Airport. Day or night, our team is always ready to deliver five-star relaxation. Enjoy verified
+              in-room massage service at Aerocity&apos;s luxury hotels without ever leaving the comfort of your room.
+              With certified Russian, European, Thai, and Indian therapists,{" "}
+              <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong> guarantees pristine hygiene,
+              discreet booking, and prompt arrival whenever you need complete full-body relaxation.
             </p>
 
             <div className="mt-6">

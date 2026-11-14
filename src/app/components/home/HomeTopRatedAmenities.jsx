@@ -19,7 +19,7 @@ const amenities = [
   },
   {
     icon: "/images/icons8-sauna-64.webp",
-    name: "Souna",
+    name: "Sauna",
     alt: "Traditional Russian Sauna at Luxury Russian Spa Delhi",
   },
 ];
@@ -33,19 +33,19 @@ export default function HomeTopRatedAmenities() {
           id="top-rated-massage-title"
           className="font-serif italic text-3xl sm:text-4xl md:text-[2.75rem] lg:text-5xl font-bold text-[#2b1810] leading-tight tracking-tight"
         >
-          Top Rated Massage Services in Delhi With Russian
+          Top Rated Massage Services in Delhi with Russian Therapists
         </h2>
 
         {/* Description matching exact text */}
         <p className="mt-4 max-w-3xl mx-auto text-sm sm:text-[15px] text-gray-600 leading-relaxed font-light">
-          We offer Russian spa in south Delhi, Kalkaji, CP and Aerocity. Get Genuine{" "}
+          We provide luxury Russian spa experiences across South Delhi, Kalkaji, Connaught Place, and Aerocity. Enjoy verified{" "}
           <Link
             href="/massage-in-delhi"
             className="text-gray-900 font-medium underline underline-offset-4 hover:text-[#9c5232] transition-colors"
           >
             Massage Service in Delhi
           </Link>{" "}
-          like Nuru massage, b2b massage, hot stone &amp; oil massage and many more.
+          including Nuru massage, B2B massage, hot stone therapy, Swedish relief, and soothing aromatherapy.
         </p>
 
         {/* 4 Amenities Icons Row */}

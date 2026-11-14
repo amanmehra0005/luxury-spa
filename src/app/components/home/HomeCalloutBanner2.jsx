@@ -26,7 +26,7 @@ export default function HomeCalloutBanner2() {
 
         {/* Paragraph matching exact content */}
         <p className="mt-5 text-sm sm:text-[15px] md:text-base text-[#fff3e8] max-w-8xl mx-auto leading-relaxed font-light">
-          Exploring a perfect session for relaxation after having a hectic schedule and getting into a calming space of a premium full night spa in Delhi, includes comfort, relaxation, and luxury for a perfect blend of wellness experience. The time you enter, you will receive a soothing aroma, soft music, and calming ambient lighting makes the surroundings relaxed. Our expert therapist provides a full night spa in Delhi while keeping full concern in mind about privacy, ensuring to release body pain, reduce stress, enhance blood circulation and regain all energy naturally. Whether you require a refreshing body after long working hours or just want to relax, our full night spa in Delhi is the perfect place. Enjoy full privacy and a hygienic environment that makes each moment memorable. Makes the body refreshed, recharged, and mind relaxed.
+          Looking for the ultimate way to unwind after a demanding work week or long flight? Step into our premium full night spa in Delhi for a deeply calming overnight wellness retreat. From the moment you arrive, gentle aromatherapy, soft acoustic music, and ambient candlelight ease your senses. Our certified therapists provide customized bodywork that releases muscle tension, boosts circulation, and recharges your natural vitality. With 24/7 round-the-clock availability, attached hot showers, and guaranteed discretion, our full night spa in Delhi is your private haven for complete peace of mind.
         </p>
 
         {/* Action Buttons in Website Theme */}
