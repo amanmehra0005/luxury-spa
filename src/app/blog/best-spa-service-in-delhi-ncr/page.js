@@ -4,25 +4,32 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title:
-    "Best Spa Services in Delhi NCR - How to Choose | Luxury Russian Spa",
+  title: "Best Spa Services in Delhi NCR (2026): Top 7 Massages, Price List & Offers",
   description:
-    "Best spa services in Delhi NCR explained - full body, couple, sandwich & B2B massage. Certified therapists guide your choice. Read the full guide & book today!",
-  keywords: ["best spa services in delhi ncr", "spa services delhi ncr", "choosing spa treatment delhi"],
+    "Explore the top 7 best spa services in Delhi NCR: Russian Massage, Sandwich Massage, B2B Therapy, Nuru & Deep Tissue. Complete price list from ₹1499 at 12+ luxury outlets. Book 24/7!",
+  keywords: [
+    "best spa services in delhi ncr",
+    "best spa in delhi",
+    "spa price in delhi",
+    "top massage in delhi",
+    "luxury spa delhi ncr",
+    "russian spa in delhi",
+    "sandwich massage delhi",
+    "b2b massage in delhi",
+  ],
   alternates: {
-    canonical:
-      "https://www.luxuryrussianspa.com/blog/best-spa-service-in-delhi-ncr",
+    canonical: "https://www.luxuryrussianspa.com/blog/best-spa-service-in-delhi-ncr",
   },
   openGraph: {
-    title: "Best Spa Services in Delhi NCR: What Services Should You Choose?",
+    title: "Best Spa Services in Delhi NCR (2026): Top 7 Massages, Price List & Offers",
     description:
-      "Explore the best spa services in Delhi NCR, including Full Body Massage, Couple Massage, Sandwich Massage, and B2B Massage.",
-    images: ["https://www.luxuryrussianspa.com/images/spa-treatments.jpg"],
+      "A complete guide to Delhi NCR's top 7 spa and massage therapies, prices from ₹1499, benefits, and how to choose the right wellness package.",
+    images: ["https://www.luxuryrussianspa.com/images/spaservices1.jpg"],
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://www.luxuryrussianspa.com/images/spa-treatments.jpg"],
+    images: ["https://www.luxuryrussianspa.com/images/spaservices1.jpg"],
   },
 };
 
@@ -36,934 +43,500 @@ const breadcrumbSchema = {
   ],
 };
 
-const faqs = [
+const topServices = [
   {
-    question: "1. What are the best spa services in Delhi NCR?",
-    answer:
-      "The best spa services in Delhi NCR include Full Body Massage, Couple Massage, Sandwich Massage, B2B Massage, and customized wellness treatments. Choosing a professional spa with trained therapists, hygiene standards, and premium facilities ensures a comfortable and relaxing experience.",
+    rank: "1",
+    name: "Russian Full Body Massage",
+    tag: "Most Popular for Deep Relaxation",
+    price: "From ₹1,499 (Offer) / ₹2,499",
+    duration: "60 - 90 Minutes",
+    description:
+      "A harmonious blend of heated aromatic botanical oils, deep myofascial gliding, and gentle percussion. Delivered by certified Russian and European therapists, this session melts away long-standing stress and restores physical vitality.",
+    href: "/full-body-massage-in-delhi",
   },
   {
-    question: "2. Why choose professional spa services in Delhi NCR?",
-    answer:
-      "Professional spa services in Delhi NCR provide expert care, trained therapists, hygienic facilities, and personalized treatments. They help reduce stress, relax muscles, improve comfort, and support overall wellness through a peaceful environment and quality massage therapies.",
+    rank: "2",
+    name: "Sandwich Massage (4-Hand Synchronized)",
+    tag: "Ultimate Luxury Experience",
+    price: "From ₹1,999 (Offer) / ₹3,999",
+    duration: "60 - 90 Minutes",
+    description:
+      "Performed simultaneously by two certified therapists working in perfect harmony across both sides of your body. Double the touch provides profound sensory immersion and eliminates mental chattering within minutes.",
+    href: "/sandwich-massage",
   },
   {
-    question: "3. What benefits does Full Body Massage in Delhi provide?",
-    answer:
-      "Full Body Massage in Delhi helps relieve muscle tension, reduce physical fatigue, improve blood circulation, and promote complete relaxation. It is suitable for busy professionals and individuals seeking a refreshing wellness treatment to relax their body and mind.",
+    rank: "3",
+    name: "B2B (Body-to-Body) Therapy",
+    tag: "Maximum Stress & Pain Relief",
+    price: "From ₹1,499 (Offer) / ₹2,499",
+    duration: "60 - 90 Minutes",
+    description:
+      "Continuous full-body contact utilizing warm therapeutic oils and sweeping pressure glides. It releases deep-seated knots across the back, shoulders, and legs while thoroughly hydrating the skin.",
+    href: "/b2b-massage-in-delhi",
   },
   {
-    question: "4. How does Couple Massage in Delhi enhance relaxation?",
-    answer:
-      "Couple Massage in Delhi allows partners to enjoy a relaxing wellness experience together in a comfortable setting. It helps reduce stress, relax tired muscles, spend quality time together, and create a refreshing spa experience with professional care.",
+    rank: "4",
+    name: "Authentic Nuru Gel Massage",
+    tag: "Japanese Frictionless Wellness",
+    price: "From ₹2,499 / ₹4,499",
+    duration: "60 - 90 Minutes",
+    description:
+      "Utilizes clear, odorless seaweed-based Nuru gel on a specialized waterproof mattress. Intensely smooth and slippery, this specialized ritual calms the sympathetic nervous system and leaves the skin glowing.",
+    href: "/b2b-massage-in-delhi",
   },
   {
-    question: "5. What makes a wellness spa in Delhi reliable?",
-    answer:
-      "A reliable wellness spa in Delhi offers trained therapists, hygienic treatment rooms, personalized therapies, professional services, and a peaceful environment. These factors ensure customers receive safe, comfortable, and effective wellness treatments designed according to their relaxation needs.",
+    rank: "5",
+    name: "Deep Tissue & Sports Recovery",
+    tag: "Chronic Muscle Knot Relief",
+    price: "From ₹1,499 (Offer) / ₹2,499",
+    duration: "60 - 90 Minutes",
+    description:
+      "Focuses on deep muscle layers, tendons, and connective tissue fascia. Ideal for athletes, gym-goers, and individuals suffering from stubborn neck, shoulder, or lower back aches.",
+    href: "/deep-tissue-massage-in-delhi",
+  },
+  {
+    rank: "6",
+    name: "Traditional Thai Acupressure & Yoga",
+    tag: "Zero-Oil Flexibility Restoration",
+    price: "From ₹1,499 (Offer) / ₹2,499",
+    duration: "60 - 90 Minutes",
+    description:
+      "An oil-free bodywork technique combining assisted yoga stretching and rhythmic thumb pressure along the body's Sen lines. Decompresses spinal discs and restores joint range of motion.",
+    href: "/thai-massage-in-delhi",
+  },
+  {
+    rank: "7",
+    name: "Couples Romance Spa Package",
+    tag: "Shared Wellness Sanctuary",
+    price: "From ₹3,999 / ₹6,999",
+    duration: "90 - 120 Minutes",
+    description:
+      "A private VIP double suite featuring ambient candlelight, relaxing aromatherapy, synchronized massages for two, and optional jacuzzi hydrotherapy. Perfect for anniversaries and special celebrations.",
+    href: "/couple-massage",
   },
 ];
 
-const relatedBlogs = [
+const faqs = [
   {
-    title: "Difference Between Spa and Massage",
-    href: "/blog/what-is-the-difference-between-spa-and-massage",
-    image: "/images/spa-treatments.jpg",
+    question: "What is the best spa service in Delhi NCR for stress relief?",
+    answer:
+      "For deep stress relief and sensory relaxation, Russian Full Body Massage, B2B Therapy, and 4-hand Sandwich Massage are the most popular choices. For chronic muscle knots and stiff joints, Deep Tissue or Traditional Thai stretching are recommended.",
   },
   {
-    title: "What is a B2B Full Body Massage?",
+    question: "How much does a luxury spa session cost in Delhi?",
+    answer:
+      "At Luxury Russian Spa outlets, introductory First Visit Offers start from ₹1499 for a 60-minute session. Regular outlet packages range from ₹2,499 to ₹4,999. In-room 5-star hotel visits start at ₹14,999 for 90 minutes with certified Russian therapists.",
+  },
+  {
+    question: "Do all spa sessions in Delhi include a private shower?",
+    answer:
+      "At standard local parlours, showers are often shared down common corridors. At Luxury Russian Spa, every private suite includes its own attached hot shower, fresh towels, and luxury toiletries.",
+  },
+  {
+    question: "Where are the best spa outlets located in Delhi NCR?",
+    answer:
+      "Luxury Russian Spa operates 12+ verified outlets in prime locations including Aerocity (near IGI Airport), Lajpat Nagar (South Delhi), Mahipalpur, Connaught Place, Gurgaon (Cyber City / MG Road), and Noida.",
+  },
+  {
+    question: "Can I book a massage session late at night in Delhi?",
+    answer:
+      "Yes. Luxury Russian Spa is open 24/7. We offer round-the-clock outlet appointments as well as discreet in-room visits to all major 5-star hotels in Delhi NCR.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.answer,
+    },
+  })),
+};
+
+const relatedBlogs = [
+  {
+    title: "What is B2B Massage in Delhi? Full Guide & Prices",
     href: "/blog/what-is-b2b-full-body-massage",
     image: "/images/b2b-full-body-massage.jpg",
   },
   {
-    title: "What Is a Sandwich Massage?",
+    title: "What Is a Sandwich Massage? Step-by-Step Guide",
     href: "/blog/first-sandwich-massage-what-to-expect",
     image: "/images/sandwich-massage.png",
   },
   {
-    title: "Connaught Place Spa Guide",
-    href: "/blog/spa-in-connaught-place",
-    image: "/images/spa-in-Connaught-place.png",
+    title: "Russian Spa vs Normal Spa: Key Differences",
+    href: "/blog/what-is-the-difference-between-spa-and-massage",
+    image: "/images/spa-treatments.jpg",
+  },
+  {
+    title: "Thai Massage in Delhi: Health Benefits & Prices",
+    href: "/blog/thai-massage-does-to-your-body",
+    image: "/images/thaimassage1.png",
   },
 ];
 
-export default function BestSpaServicesDelhiNCR() {
+export default function BestSpaServicesBlogPage() {
   return (
     <>
       <script
-        id="breadcrumb-schema-best-spa-service-in-delhi-ncr"
+        id="breadcrumb-schema-blog-best-spa-services"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        id="faq-schema-blog-best-spa-services"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <style>{`
-        html{
-          scroll-behavior:smooth;
+        html {
+          scroll-behavior: smooth;
         }
       `}</style>
 
-      <main className="bg-[#FFFDF8] text-gray-800">
+      <main className="bg-[#fffaf5] text-gray-800">
         <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
-              { label: "Blogs", href: "/blog" },
-              {
-                label: "Best Spa Services in Delhi NCR"
-              },
+              { label: "Blog", href: "/blog" },
+              { label: "Best Spa Services in Delhi NCR" },
             ]}
           />
         </section>
 
-        {/* Hero Section */}
+        <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+          <div className="rounded-[32px] border border-amber-100 bg-white p-6 shadow-[0_20px_60px_-25px_rgba(0,0,0,0.18)] sm:p-8 lg:p-12">
+            
+            {/* Header Area */}
+            <div className="mb-8 space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9c5232]">
+                Delhi NCR Spa Guide &bull; 2026 Edition
+              </p>
 
-        <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-white to-orange-50">
+              <h1 className="text-3xl font-bold leading-tight text-[#2b1810] sm:text-4xl lg:text-5xl font-serif">
+                Best Spa Services in Delhi NCR: Top 7 Massages, Prices &amp; Booking Guide
+              </h1>
 
-          <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-
-            <div className="grid items-center gap-12 lg:grid-cols-2">
-
-              <div>
-
-                <span className="inline-flex items-center rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
-                  Spa Guide
-                </span>
-
-                <h1 className="mt-6 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
-                  Best Spa Services in Delhi NCR:
-                  <span className="block text-amber-600">
-                    What Services Should You Choose?
-                  </span>
-                </h1>
-
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Explore the best spa services in Delhi NCR, including Full
-                  Body Massage, Couple Massage, Sandwich Massage, and B2B
-                  Massage. Learn how to choose the right wellness treatment for
-                  complete relaxation and comfort.
-                </p>
-
-                <div className="mt-8 flex flex-wrap gap-4">
-
-                  <Link
-                    href="/contact"
-                    className="rounded-full bg-amber-600 px-7 py-3 font-semibold text-white transition hover:bg-amber-700"
-                  >
-                    Book Appointment
-                  </Link>
-
-                  <Link
-                    href="#table-of-contents"
-                    className="rounded-full border border-amber-600 px-7 py-3 font-semibold text-amber-700 transition hover:bg-amber-50"
-                  >
-                    Read Guide
-                  </Link>
-
-                </div>
-
+              <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
+                <span>By Luxury Russian Spa Team</span>
+                <span>•</span>
+                <span>Updated November 2026</span>
+                <span>•</span>
+                <span>8 min read</span>
+                <span>•</span>
+                <span className="text-[#9c5232] font-semibold">Price Verified</span>
               </div>
-
-              <div className="relative">
-
-                <div className="relative h-[320px] overflow-hidden rounded-[28px] shadow-2xl sm:h-[450px] lg:h-[550px]">
-
-                  <Image
-                    src="/images/spaservices1.jpg"
-                    alt="Best Spa Services in Delhi NCR"
-                    fill
-                    priority
-                    className="object-cover"
-                  />
-
-                </div>
-
-              </div>
-
             </div>
 
-          </div>
+            {/* Banner Image */}
+            <div className="relative mb-8 h-[280px] overflow-hidden rounded-[24px] sm:h-[400px]">
+              <Image
+                src="/images/spaservices1.jpg"
+                alt="Best Spa Services in Delhi NCR - Luxury Russian Spa"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
 
-        </section>
+            {/* Quick Summary / Deal Box */}
+            <div className="mb-10 rounded-2xl bg-[#fcfbf7] border border-[#9c5232]/25 p-6 sm:p-7 shadow-sm">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9c5232]">
+                    Exclusive Delhi Offer
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#2b1810] mt-1 font-serif">
+                    First Visit Offer on Top Spa Therapies from ₹1499
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl leading-relaxed">
+                    Available across 12+ luxury spa outlets in Aerocity, Lajpat Nagar, Connaught Place, and Gurgaon.
+                    Includes 60-min session &bull; Attached hot shower &bull; Russian and Indian therapists.
+                  </p>
+                </div>
+                <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5">
+                  <a
+                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20explore%20spa%20services%20and%20claim%20the%201499%20first%20visit%20offer."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white px-7 py-3 text-sm font-bold shadow-md transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    Claim Deal on WhatsApp
+                  </a>
+                  <Link
+                    href="/spa-price-in-delhi"
+                    className="inline-flex items-center justify-center rounded-full border border-[#9c5232] text-[#9c5232] hover:bg-[#9c5232]/10 px-6 py-2.5 text-xs font-bold transition-all text-center"
+                  >
+                    View All Spa Prices
+                  </Link>
+                </div>
+              </div>
+            </div>
 
-        <section className="py--2">
+            {/* Main Content Layout */}
+            <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+              <article className="space-y-8">
+                
+                {/* Intro */}
+                <section className="space-y-4">
+                  <p className="text-lg leading-8 text-gray-700 font-normal">
+                    Delhi NCR is a bustling metropolis where hectic commutes, long office hours, and constant deadlines
+                    take a heavy toll on the body and mind. Whether you are a local resident needing weekend recovery or a
+                    traveler staying near IGI Airport, indulging in a professional spa session is the quickest way to reset.
+                  </p>
+                  <p className="text-lg leading-8 text-gray-700">
+                    With hundreds of parlours across Delhi, Gurgaon, and Noida, choosing the right therapy can feel overwhelming.
+                    To help you choose the ideal session for your exact needs and budget, we have ranked the{" "}
+                    <strong>top 7 best spa services in Delhi NCR</strong> with pricing, benefits, and insider tips.
+                  </p>
+                </section>
 
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-
-            <div className="grid gap-12 lg:grid-cols-[1fr_320px]">
-
-              <article className="space-y-12">
-
-                {/* <div className="relative h-[280px] overflow-hidden rounded-[24px] sm:h-[420px]">
-
-                  <Image
-                    src="/images/spaservices2.jpg"
-                    alt="Best Spa Services in Delhi NCR"
-                    fill
-                    priority
-                    className="object-cover"
-                  />
-
-                </div> */}
-
+                {/* Top 7 Services List */}
                 <section className="space-y-6">
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Introduction
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#2b1810] font-serif">
+                    The 7 Best Spa Services in Delhi NCR Ranked
                   </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Modern lifestyles often bring stress, tiredness, and physical discomfort due to long working hours, travel, and daily responsibilities. Taking time for relaxation and self-care has become essential for maintaining a healthy balance between body and mind. This is where professional spa services in Delhi NCR can help you relax, refresh, and restore your energy.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A trusted spa offers a variety of treatments designed to meet different wellness needs. Whether you are looking for a relaxing Full Body Massage in Delhi, a special experience with Couple Massage in Delhi, or other premium spa services, choosing the right therapy can make your spa visit more effective and enjoyable.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    This guide explains the most popular massage services in Delhi, their benefits, and how to choose the right treatment at a reliable wellness spa in Delhi.
-                  </p>
-
-                </section>
-
-                <section
-                  id="table-of-contents"
-                  className="scroll-mt-32 rounded-[24px] border border-amber-100 bg-amber-50 p-8"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Table of Contents
-                  </h2>
-
-                  <ul className="mt-6 space-y-3 text-lg text-amber-800">
-
-                    <li>
-                      <a href="#why-choose" className="hover:underline">
-                        Why Choose Professional Spa Services in Delhi NCR?
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#services" className="hover:underline">
-                        Popular Massage Services in Delhi You Can Choose From
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#choose-spa" className="hover:underline">
-                        How to Choose the Best Spa in Delhi?
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#premium" className="hover:underline">
-                        Why Choose Premium Spa Services?
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#wellness" className="hover:underline">
-                        Wellness Spa in Delhi: More Than Just Relaxation
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#tips" className="hover:underline">
-                        Tips Before Booking Spa Services in Delhi NCR
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#select-service" className="hover:underline">
-                        How to Select the Right Massage Service for Your Needs?
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#conclusion" className="hover:underline">
-                        Conclusion
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#faqs" className="hover:underline">
-                        FAQs
-                      </a>
-                    </li>
-
-                  </ul>
-
-                </section>
-
-                <section
-                  id="why-choose"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Why Choose Professional Spa Services in Delhi NCR?
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Delhi NCR offers a wide range of wellness centers, but selecting a professional spa ensures better comfort, safety, and service quality. A reputed spa focuses on providing a peaceful environment, trained therapists, and customized treatments based on individual preferences.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Professional spa services in Delhi NCR help:
-                  </p>
-
-                  <ul className="list-disc space-y-3 pl-6 text-lg leading-8 text-gray-700">
-
-                    <li>Reduce daily stress and fatigue</li>
-
-                    <li>Relax tired muscles</li>
-
-                    <li>Improve overall comfort</li>
-
-                    <li>Promote mental relaxation</li>
-
-                    <li>Support a healthy self-care routine</li>
-
-                  </ul>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A quality wellness spa in Delhi combines expert techniques with a comfortable atmosphere, allowing guests to enjoy a complete relaxation experience away from their busy schedules.
-                  </p>
-
-                </section>
-
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spaservices6.jpg"
-                    alt="Professional Spa Services in Delhi NCR"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="services"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Popular Massage Services in Delhi You Can Choose From
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Different massage therapies offer different benefits. Selecting the right treatment depends on your relaxation goals, comfort level, and wellness requirements.
-                  </p>
-
-                  <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                    <h3 className="text-xl font-semibold text-amber-900">
-                      1. Full Body Massage in Delhi
-                    </h3>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      A Full Body Massage in Delhi is one of the most popular spa treatments for complete relaxation. This therapy focuses on different areas of the body, including the back, shoulders, arms, legs, and feet, using professional massage techniques.
-                    </p>
-
-                    <h4 className="mt-6 text-lg font-semibold text-amber-800">
-                      Benefits of Full Body Massage:
-                    </h4>
-
-                    <ul className="mt-3 list-disc space-y-3 pl-6 text-lg leading-8 text-gray-700">
-
-                      <li>Helps relieve muscle tension</li>
-
-                      <li>Improves blood circulation</li>
-
-                      <li>Reduces physical fatigue</li>
-
-                      <li>Promotes relaxation</li>
-
-                      <li>Helps refresh the body and mind</li>
-
-                    </ul>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      This massage is ideal for people with busy lifestyles, office professionals, and anyone looking for a complete wellness experience.
-                    </p>
-
-                  </div>
-
-                </section>
-
-                {/* <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/MassageSession.webp"
-                    alt="Full Body Massage in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div> */}
-
-                <div className="space-y-8">
-
-                  <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                    <h3 className="text-xl font-semibold text-amber-900">
-                      2. Sandwich Massage in Delhi
-                    </h3>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      A Sandwich Massage in Delhi is a specialized relaxation therapy offered by professional spas. It focuses on creating a comfortable and calming experience through coordinated massage techniques performed in a professional environment.
-                    </p>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      This therapy is preferred by individuals looking for a unique relaxation session that helps release stress and provides a soothing spa experience.
-                    </p>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      Choosing a trusted spa ensures that the treatment is performed with proper hygiene standards, trained professionals, and customer comfort as the priority.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                {/* <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/sandwich-massage-delhi.webp"
-                    alt="Sandwich Massage in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div> */}
-
-                <div className="space-y-8">
-
-                  <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                    <h3 className="text-xl font-semibold text-amber-900">
-                      3. Couple Massage in Delhi
-                    </h3>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      A Couple Massage in Delhi is a perfect option for partners who want to enjoy relaxation together. This therapy allows couples to share a peaceful spa experience in a comfortable setting.
-                    </p>
-
-                    <h4 className="mt-6 text-lg font-semibold text-amber-800">
-                      Benefits of Couple Massage:
-                    </h4>
-
-                    <ul className="mt-3 list-disc space-y-3 pl-6 text-lg leading-8 text-gray-700">
-
-                      <li>Enjoy quality time together</li>
-
-                      <li>Reduce stress as a couple</li>
-
-                      <li>Relax tired muscles</li>
-
-                      <li>Create a refreshing wellness experience</li>
-
-                    </ul>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      Many premium spas provide private couple rooms and customized treatments to make the experience more comfortable and memorable.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                {/* <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/couple-massage-delhi.webp"
-                    alt="Couple Massage in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div> */}
-
-                <div className="space-y-8">
-
-                  <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                    <h3 className="text-xl font-semibold text-amber-900">
-                      4. B2B Massage in Delhi
-                    </h3>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      A B2B Massage in Delhi is a specialized spa service that focuses on relaxation and comfort in a professional spa environment. It is designed for individuals looking for a premium massage experience with trained therapists and personalized attention.
-                    </p>
-
-                    <p className="mt-4 text-lg leading-8 text-gray-700">
-                      When choosing this service, it is important to select a reputed spa that follows professional standards, maintains hygiene, and provides quality customer care.
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <div className="relative h-[390px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spaservices3.jpg"
-                    alt="B2B Massage in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="choose-spa"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    How to Choose the Best Spa in Delhi?
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    With many options available, selecting the right spa requires careful consideration. Here are some important factors to check before booking:
-                  </p>
-
-                  <div className="space-y-6">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Check Hygiene and Cleanliness
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        A professional spa should maintain clean treatment rooms, fresh towels, and proper sanitation practices. Hygiene plays an important role in ensuring a safe and comfortable experience.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Look for Experienced Therapists
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Trained therapists understand different massage techniques and provide treatments according to individual comfort levels. Professional expertise improves the quality of your spa experience.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Explore Available Services
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Choose a spa that offers multiple treatments, including:
-                      </p>
-
-                      <ul className="mt-3 list-disc space-y-3 pl-6 text-lg leading-8 text-gray-700">
-
-                        <li>Full Body Massage</li>
-
-                        <li>Couple Massage</li>
-
-                        <li>Sandwich Massage</li>
-
-                        <li>Relaxation therapies</li>
-
-                        <li>Customized wellness treatments</li>
-
-                      </ul>
-
-                      <p className="mt-4 text-lg leading-8 text-gray-700">
-                        Having different options allows you to select a service that matches your specific needs.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Read Reviews and Customer Feedback
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Customer reviews provide insights into service quality, professionalism, cleanliness, and overall experience. Positive feedback helps you identify a reliable best spa in Delhi.
-                      </p>
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-                {/* <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/luxurySpaRoom.jpg"
-                    alt="Best Spa in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div> */}
-
-                <section
-                  id="premium"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Why Choose Premium Spa Services?
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Premium spa services provide more than just massage—they offer a complete wellness experience with comfort, professionalism, and personalized care.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Benefits of choosing premium services include:
-                  </p>
-
-                  <div className="grid gap-4 md:grid-cols-2">
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Experienced therapists
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Peaceful and relaxing environment
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Private treatment rooms
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ High hygiene standards
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Customized massage sessions
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Professional customer support
-                    </div>
-
-                  </div>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A premium spa focuses on creating a relaxing atmosphere where guests can disconnect from daily stress and enjoy quality time dedicated to wellness.
-                  </p>
-
-                </section>
-
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place6.jpg"
-                    alt="Premium Spa Services"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="wellness"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Wellness Spa in Delhi: More Than Just Relaxation
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A wellness spa in Delhi focuses on improving overall well-being through professional treatments and relaxation therapies. These spas combine massage techniques, peaceful surroundings, and personalized services to create a balanced wellness experience.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Regular spa visits can help:
-                  </p>
-
-                  <div className="grid gap-4 md:grid-cols-2">
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Manage everyday stress
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Relax muscles
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Improve mood
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Support better relaxation habits
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm md:col-span-2">
-                      Encourage self-care
-                    </div>
-
-                  </div>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Choosing the right wellness spa allows you to enjoy long-term benefits while maintaining a healthier lifestyle.
-                  </p>
-
-                </section>
-
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place5.jpg"
-                    alt="Wellness Spa in Delhi"
-                    fill
-                    className="object-cover " />
-
-                </div>
-
-                <section
-                  id="tips"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Tips Before Booking Spa Services in Delhi NCR
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Before your appointment, keep these points in mind:
-                  </p>
-
-                  <ul className="list-disc space-y-3 pl-6 text-lg leading-8 text-gray-700">
-
-                    <li>Choose a reputed spa with professional services</li>
-
-                    <li>Check available treatments and pricing</li>
-
-                    <li>Communicate your preferences clearly</li>
-
-                    <li>Stay hydrated before and after your session</li>
-
-                    <li>Arrive early to enjoy a stress-free experience</li>
-
-                    <li>Follow therapist recommendations</li>
-
-                  </ul>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Proper preparation helps you get the maximum benefits from your chosen therapy.
-                  </p>
-
-                </section>
-
-                <section
-                  id="select-service"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    How to Select the Right Massage Service for Your Needs?
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Your choice depends on your wellness goals:
-                  </p>
 
                   <div className="space-y-5">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        For Complete Relaxation
-                      </h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Choose Full Body Massage in Delhi for overall body relaxation and stress relief.
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        For Couples
-                      </h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Choose Couple Massage in Delhi to enjoy a relaxing experience together.
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        For Unique Relaxation
-                      </h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Choose Sandwich Massage in Delhi from a professional spa offering quality services.
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        For Premium Experience
-                      </h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Choose premium spa services that provide personalized care and luxury facilities.
-                      </p>
-                    </div>
-
-                  </div>
-
-                </section>
-
-                <section
-                  id="conclusion"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Conclusion
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Choosing the right spa services in Delhi NCR can transform your regular relaxation routine into a complete wellness experience. From a refreshing Full Body Massage in Delhi to specialized treatments like Sandwich Massage in Delhi, Couple Massage in Delhi, and B2B Massage in Delhi, there are various options available based on your needs.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A trusted best spa in Delhi provides professional therapists, hygienic facilities, and personalized treatments to ensure comfort and relaxation. Whether you are looking for stress relief, muscle relaxation, or a premium wellness experience, selecting the right spa service helps you enjoy better physical and mental well-being.
-                  </p>
-
-                </section>
-
-                <section
-                  id="faqs"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Frequently Asked Questions
-                  </h2>
-
-                  <div className="space-y-4">
-
-                    {faqs.map((faq) => (
+                    {topServices.map((service) => (
                       <div
-                        key={faq.question}
-                        className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm"
+                        key={service.rank}
+                        className="rounded-2xl border border-amber-200/80 bg-white p-6 shadow-sm hover:shadow-md transition"
                       >
-                        <h3 className="text-lg font-semibold text-amber-900">
-                          {faq.question}
-                        </h3>
+                        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-amber-100 pb-3">
+                          <div className="flex items-center gap-3">
+                            <span className="flex size-8 items-center justify-center rounded-full bg-[#9c5232] text-sm font-bold text-white">
+                              {service.rank}
+                            </span>
+                            <h3 className="text-xl font-bold text-[#2b1810] font-serif">
+                              {service.name}
+                            </h3>
+                          </div>
+                          <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-[#9c5232]">
+                            {service.tag}
+                          </span>
+                        </div>
 
-                        <p className="mt-3 text-lg leading-8 text-gray-700">
-                          {faq.answer}
+                        <p className="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+                          {service.description}
                         </p>
+
+                        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm font-semibold">
+                          <div className="flex items-center gap-4 text-gray-600">
+                            <span>⏱️ {service.duration}</span>
+                            <span className="text-[#9c5232]">💰 {service.price}</span>
+                          </div>
+                          <Link
+                            href={service.href}
+                            className="text-[#9c5232] hover:text-[#834329] underline decoration-[#9c5232]/40"
+                          >
+                            Learn More &rarr;
+                          </Link>
+                        </div>
                       </div>
                     ))}
-
                   </div>
-
                 </section>
-                <section className="rounded-[24px] bg-gradient-to-r from-amber-600 to-amber-700 p-8 mb-5 text-white shadow-lg">
 
-                  <h2 className="text-3xl font-bold">
-                    Looking for a Relaxing Spa Experience?
+                {/* Pricing Overview Table */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Delhi NCR Spa Pricing Overview (2026 Rate Card)
                   </h2>
-
-                  <p className="mt-4 max-w-2xl text-lg text-amber-50">
-                    Discover professional massage therapies, premium wellness
-                    services, and a peaceful spa environment designed to help
-                    you relax, refresh, and feel your best.
+                  <p className="text-lg leading-8 text-gray-700">
+                    Transparent rates across our 12+ luxury outlets in Delhi, Gurgaon, and Noida:
                   </p>
 
-                  <div className="mt-8 flex flex-wrap gap-4">
+                  <div className="overflow-x-auto rounded-2xl border border-amber-200 shadow-sm">
+                    <table className="w-full text-left text-sm">
+                      <thead className="bg-[#2b1810] text-white">
+                        <tr>
+                          <th className="p-4 font-semibold">Service</th>
+                          <th className="p-4 font-semibold">Duration</th>
+                          <th className="p-4 font-semibold">First Visit Offer</th>
+                          <th className="p-4 font-semibold">Standard Rate</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-amber-100 bg-white">
+                        <tr className="bg-amber-50/40">
+                          <td className="p-4 font-bold text-gray-900">Russian Full Body Massage</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4 font-bold text-emerald-700">₹1,499</td>
+                          <td className="p-4">₹2,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-bold text-gray-900">B2B Full Body Therapy</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4 font-bold text-emerald-700">₹1,499</td>
+                          <td className="p-4">₹2,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-bold text-gray-900">Sandwich Massage (2 Therapists)</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4 font-bold text-emerald-700">₹1,999</td>
+                          <td className="p-4">₹3,999</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-bold text-gray-900">Deep Tissue Massage</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4 font-bold text-emerald-700">₹1,499</td>
+                          <td className="p-4">₹2,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-bold text-gray-900">Nuru Gel Massage</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4 font-bold text-emerald-700">₹2,499</td>
+                          <td className="p-4">₹4,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-bold text-gray-900">5-Star Hotel In-Room Session</td>
+                          <td className="p-4">90 Min</td>
+                          <td className="p-4 font-bold text-emerald-700">₹14,999</td>
+                          <td className="p-4">₹14,999</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
 
-                    <Link
-                      href="/contact"
-                      className="rounded-full bg-white px-7 py-3 font-semibold text-amber-700 transition hover:bg-amber-50"
-                    >
-                      Contact Us
+                {/* Where to Visit */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Top Outlet Locations Across Delhi NCR
+                  </h2>
+                  <p className="text-lg leading-8 text-gray-700">
+                    Visit any of our sanitized, discreet outlets with attached hot showers:
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm font-semibold">
+                    <Link href="/spa-in-aerocity" className="p-3 bg-amber-50 rounded-xl text-[#9c5232] hover:bg-amber-100 transition text-center">
+                      Aerocity (Near Airport)
                     </Link>
+                    <Link href="/spa-in-lajpat-nagar" className="p-3 bg-amber-50 rounded-xl text-[#9c5232] hover:bg-amber-100 transition text-center">
+                      Lajpat Nagar (South Delhi)
+                    </Link>
+                    <Link href="/spa-in-mahipalpur" className="p-3 bg-amber-50 rounded-xl text-[#9c5232] hover:bg-amber-100 transition text-center">
+                      Mahipalpur (24/7)
+                    </Link>
+                    <Link href="/spa-in-connaught-place" className="p-3 bg-amber-50 rounded-xl text-[#9c5232] hover:bg-amber-100 transition text-center">
+                      Connaught Place (Central)
+                    </Link>
+                    <Link href="/spa-in-gurgaon" className="p-3 bg-amber-50 rounded-xl text-[#9c5232] hover:bg-amber-100 transition text-center">
+                      Gurgaon (Cyber City)
+                    </Link>
+                    <Link href="/spa-in-noida" className="p-3 bg-amber-50 rounded-xl text-[#9c5232] hover:bg-amber-100 transition text-center">
+                      Noida (Sector 18)
+                    </Link>
+                  </div>
+                </section>
 
+                {/* FAQs */}
+                <section className="space-y-5">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Frequently Asked Questions
+                  </h2>
+                  <div className="space-y-3">
+                    {faqs.map((faq, idx) => (
+                      <div key={idx} className="rounded-xl border border-amber-100 bg-[#fffaf3] p-5">
+                        <h3 className="font-bold text-amber-950 text-base sm:text-lg">{faq.question}</h3>
+                        <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                {/* Bottom CTA Banner */}
+                <section className="rounded-[24px] bg-gradient-to-r from-[#9c5232] to-[#7a391e] p-8 text-white shadow-lg">
+                  <h2 className="text-2xl sm:text-3xl font-bold font-serif">
+                    Reserve Your Premium Spa Session Today
+                  </h2>
+                  <p className="mt-3 text-amber-100 text-sm sm:text-base max-w-2xl leading-relaxed">
+                    Treat your body to Delhi NCR&apos;s best wellness therapies. Certified Russian and Indian therapists,
+                    attached hot showers, and introductory offers from just ₹1499.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-4">
                     <a
-                      href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
+                      href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20book%20a%20spa%20session%20in%20Delhi%20NCR.%20Please%20share%20today%27s%20available%20slots."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full border border-white px-7 py-3 font-semibold hover:bg-white/10"
+                      className="rounded-full bg-white px-7 py-3 font-bold text-[#9c5232] transition hover:bg-amber-50 shadow-md"
                     >
-                      Book on WhatsApp
+                      Book on WhatsApp (24/7)
                     </a>
-
+                    <Link
+                      href="/outlets"
+                      className="rounded-full border border-white px-7 py-3 font-semibold hover:bg-white/10 transition"
+                    >
+                      View All Outlets
+                    </Link>
                   </div>
-
                 </section>
 
               </article>
 
+              {/* Sidebar */}
               <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-
-                <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm mb-5">
-
-                  <h3 className="text-xl font-semibold text-amber-900">
-                    Related Blogs
+                {/* Special Offer Card */}
+                <div className="rounded-2xl border border-amber-200 bg-[#fffaf5] p-6 shadow-sm text-center">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9c5232]">
+                    Limited Time Deal
+                  </span>
+                  <h3 className="text-xl font-bold text-[#2b1810] mt-1 font-serif">
+                    First Visit Offer @ ₹1499
                   </h3>
-
-                  <div className="mt-5 space-y-4">
-
-                    {relatedBlogs.map((blog) => (
-
-                      <Link
-                        key={blog.title}
-                        href={blog.href}
-                        className="flex items-center gap-3 rounded-xl border border-amber-100 p-3 transition hover:bg-amber-50"
-                      >
-
-                        <div className="relative h-16 w-16 overflow-hidden rounded-lg">
-
-                          <Image
-                            src={blog.image}
-                            alt={blog.title}
-                            fill
-                            className="object-cover"
-                          />
-
-                        </div>
-
-                        <div>
-
-                          <p className="font-medium text-gray-800">
-                            {blog.title}
-                          </p>
-
-                          <p className="text-sm text-amber-700">
-                            Read More
-                          </p>
-
-                        </div>
-
-                      </Link>
-
-                    ))}
-
-                  </div>
-
+                  <p className="text-xs text-gray-600 mt-2 leading-relaxed">
+                    Choose from Full Body, B2B, or Deep Tissue &bull; Attached hot shower &bull; 100% Private Suite
+                  </p>
+                  <a
+                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20for%20spa%20services."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 w-full inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white py-3 text-sm font-bold shadow-md transition"
+                  >
+                    Claim ₹1499 Offer
+                  </a>
                 </div>
 
+                {/* Related Blogs */}
+                <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-amber-950 font-serif">
+                    Related Guides &amp; Blogs
+                  </h3>
+                  <div className="mt-4 space-y-3">
+                    {relatedBlogs.map((blog, idx) => (
+                      <Link
+                        key={idx}
+                        href={blog.href}
+                        className="flex items-center gap-3 rounded-xl border border-amber-100 p-2.5 hover:bg-amber-50 transition"
+                      >
+                        <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-stone-100">
+                          <Image src={blog.image} alt={blog.title} fill className="object-cover" />
+                        </div>
+                        <div>
+                          <p className="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2">
+                            {blog.title}
+                          </p>
+                          <span className="text-xs font-bold text-[#9c5232] mt-0.5 inline-block">
+                            Read Guide &rarr;
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </aside>
-
             </div>
 
           </div>
-
         </section>
-
       </main>
 
       <WhatsappFloat />
-
     </>
   );
 }

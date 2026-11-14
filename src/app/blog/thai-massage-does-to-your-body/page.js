@@ -1,25 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import WhatsappFloat from "../../components/WhatsappFloat";
-import { Breadcrumbs, InfoBox, BenefitCard, FaqAccordion } from "../../components/BlogComponents";
+import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title: "What Thai Massage Does to Your Body - Benefits | Luxury Russian Spa",
-  description: "Thai massage benefits for your body explained - stress relief, flexibility & pain relief. Backed by Luxury Russian Spa's certified therapists. Read the full guide now!",
-  keywords: ["thai massage benefits", "what does thai massage do", "thai massage stress relief"],
+  title: "Thai Massage in Delhi: Health Benefits, Body Stretching, Price & What to Expect (2026)",
+  description:
+    "Discover authentic Thai massage in Delhi: assisted yoga stretching, acupressure benefits, pricing from ₹1499, and certified Thai therapists across 12+ luxury spa outlets. Read our 2026 guide!",
+  keywords: [
+    "thai massage in delhi",
+    "thai massage benefits",
+    "thai massage price delhi",
+    "what is thai massage",
+    "thai stretching massage",
+    "best thai spa in delhi",
+    "thai massage near me",
+  ],
   alternates: {
     canonical: "https://www.luxuryrussianspa.com/blog/thai-massage-does-to-your-body",
   },
   openGraph: {
-    title: "What Does Thai Massage Do to Your Body?",
+    title: "Thai Massage in Delhi: Health Benefits, Body Stretching, Price & What to Expect",
     description:
-      "Learn how Thai massage helps reduce stress, improve flexibility, relieve muscle pain, and support better circulation.",
-    images: ["https://www.luxuryrussianspa.com/images/steptodown.com870307.webp"],
+      "Learn how authentic Thai massage works in Delhi, its unique yoga-like stretching benefits, price list starting from ₹1499, and what happens in a session.",
+    images: ["https://www.luxuryrussianspa.com/images/thaimassage1.png"],
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://www.luxuryrussianspa.com/images/steptodown.com870307.webp"],
+    images: ["https://www.luxuryrussianspa.com/images/thaimassage1.png"],
   },
 };
 
@@ -29,57 +38,103 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.luxuryrussianspa.com/blog" },
-    { "@type": "ListItem", position: 3, name: "What Does Thai Massage Do to Your Body", item: "https://www.luxuryrussianspa.com/blog/thai-massage-does-to-your-body" },
+    { "@type": "ListItem", position: 3, name: "Thai Massage in Delhi", item: "https://www.luxuryrussianspa.com/blog/thai-massage-does-to-your-body" },
   ],
 };
 
-const benefits = [
-  { title: "Stress Relief", description: "Helps your body relax and may leave you feeling calmer after the session." },
-  { title: "Better Sleep", description: "A calming massage can support more restful sleep and better recovery." },
-  { title: "Pain Relief", description: "Gentle stretching and pressure can ease tight muscles and soreness." },
-  { title: "Flexibility", description: "Improves mobility and makes daily movement feel more comfortable." },
-  { title: "Blood Circulation", description: "May support better circulation and a fresh, energized feeling." },
-];
-
 const faqs = [
   {
+    question: "What is an authentic Thai massage?",
+    answer:
+      "Traditional Thai massage (Nuad Bo-Rarn) combines assisted yoga-like stretching, deep rhythmic acupressure along the body's energy pathways (Sen lines), and joint mobilization. Unlike Western massages, it is performed fully clothed without heavy oil on a firm, comfortable mattress.",
+  },
+  {
+    question: "How much does a Thai massage cost in Delhi?",
+    answer:
+      "At Luxury Russian Spa outlets across Delhi NCR, introductory first-visit packages for authentic Thai massage start from ₹1499 for 60 minutes. Standard 90-minute full body sessions with certified therapists range from ₹2,499 to ₹3,999.",
+  },
+  {
     question: "Is Thai massage painful?",
-    answer: "Thai massage should not be painful. Some stretches may feel strong, but you should always tell your therapist if you feel uncomfortable.",
+    answer:
+      "No. While Thai massage involves firm compression and passive stretching, it should never cause sharp pain. A certified therapist will check in with you continuously to tailor the stretch and pressure to your body's flexibility.",
   },
   {
-    question: "How long does a Thai massage session last?",
-    answer: "Most sessions last between 60 and 90 minutes, depending on the treatment you choose.",
+    question: "What should I wear during a Thai massage?",
+    answer:
+      "You do not need to bring anything. The spa provides clean, loose-fitting cotton clothing (Thai pants and top) designed to allow your limbs to stretch freely during the session.",
   },
   {
-    question: "Can Thai massage help with back pain?",
-    answer: "Many people find that Thai massage helps reduce muscle tightness and improves flexibility. If you have severe or long-term back pain, it is best to consult a doctor first.",
+    question: "How is Thai massage different from Russian oil massage?",
+    answer:
+      "Russian massage uses warm botanical oils with continuous flowing strokes and heat therapy on bare skin for deep relaxation. Thai massage uses zero oil and active body stretching to improve physical flexibility, joint mobility, and release postural stiffness.",
   },
   {
-    question: "What should I wear for a Thai massage?",
-    answer: "Loose and comfortable clothing is usually recommended because the massage includes stretching and body movements.",
+    question: "Where can I book Thai massage in Delhi?",
+    answer:
+      "Luxury Russian Spa offers certified Thai and international therapists at 12+ outlets including Aerocity, Lajpat Nagar, Connaught Place, and Gurgaon, as well as 24/7 5-star hotel visits.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.answer,
+    },
+  })),
+};
+
+const benefits = [
+  {
+    title: "Relieves Desk & Lower Back Stiffness",
+    description: "Deep stretches decompress the spine, open tight hip flexors, and release pressure caused by long hours sitting.",
+  },
+  {
+    title: "Dramatically Increases Flexibility",
+    description: "Assisted passive stretching lengthens shortened muscle fibers and increases joint range of motion safely.",
+  },
+  {
+    title: "Boosts Energy & Clears Fatigue",
+    description: "Stimulating traditional Sen energy lines releases sluggish blockages, leaving you energized rather than sleepy.",
+  },
+  {
+    title: "Eases Chronic Tension Headaches",
+    description: "Targeted acupressure across the neck, temples, and shoulders relieves myofascial triggers that trigger migraines.",
+  },
+  {
+    title: "Improves Blood & Lymphatic Flow",
+    description: "Gentle rocking and rhythmic compression accelerate circulation and assist the body in flushing metabolic waste.",
+  },
+  {
+    title: "Reduces Cortisol & Stress",
+    description: "Synchronized deep breathing and slow, rhythmic compression lower heart rate and reduce stress hormones naturally.",
   },
 ];
 
 const relatedBlogs = [
   {
-    title: "Difference Between Spa and Massage",
+    title: "What is B2B Massage in Delhi? Full Guide & Prices",
+    href: "/blog/what-is-b2b-full-body-massage",
+    image: "/images/b2b-full-body-massage.jpg",
+  },
+  {
+    title: "What Is a Sandwich Massage? Step-by-Step Guide",
+    href: "/blog/first-sandwich-massage-what-to-expect",
+    image: "/images/sandwich-massage.png",
+  },
+  {
+    title: "Russian Spa vs Normal Spa: Key Differences",
     href: "/blog/what-is-the-difference-between-spa-and-massage",
     image: "/images/spa-treatments.jpg",
   },
   {
-    title: "Swedish Massage vs Deep Tissue Massage",
-    href: "/swedish-massage-vs-deep-tissue-massage",
-    image: "/images/80535.webp",
-  },
-  {
-    title: "Health Benefits of Sandwich Massage",
-    href: "/health-benefits-of-sandwich-massage",
-    image: "/images/hb1.webp",
-  },
-  {
-    title: "How a Hot Stone Massage Works",
-    href: "/how-hot-stone-massage-works-in-delhi-spa",
-    image: "/images/1627.jpg",
+    title: "Best Spa Services in Delhi NCR: 2026 Price List",
+    href: "/blog/best-spa-service-in-delhi-ncr",
+    image: "/images/spaservices1.jpg",
   },
 ];
 
@@ -87,406 +142,324 @@ export default function ThaiMassageBlogPage() {
   return (
     <>
       <script
-        id="breadcrumb-schema-blog-thai-massage-does-to-your-body"
+        id="breadcrumb-schema-blog-thai-massage"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <style>{`html { scroll-behavior: smooth; }`}</style>
+      <script
+        id="faq-schema-blog-thai-massage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
+
       <main className="bg-[#fffaf5] text-gray-800">
         <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Thai Massage" }]} />
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: "Thai Massage in Delhi" },
+            ]}
+          />
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+        <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
           <div className="rounded-[32px] border border-amber-100 bg-white p-6 shadow-[0_20px_60px_-25px_rgba(0,0,0,0.18)] sm:p-8 lg:p-12">
+            
+            {/* Header */}
             <div className="mb-8 space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Wellness Guide</p>
-              <h1 className="text-3xl font-bold leading-tight text-amber-900 sm:text-4xl lg:text-5xl">
-                What Does Thai Massage Do to Your Body?
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9c5232]">
+                Traditional Bodywork &bull; Delhi Health Guide
+              </p>
+
+              <h1 className="text-3xl font-bold leading-tight text-[#2b1810] sm:text-4xl lg:text-5xl font-serif">
+                Thai Massage in Delhi: Health Benefits, Body Stretching, Price &amp; What to Expect
               </h1>
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
                 <span>By Luxury Russian Spa Team</span>
                 <span>•</span>
-                <span>Updated July 20, 2026</span>
+                <span>Updated November 2026</span>
                 <span>•</span>
-                <span>6 min read</span>
+                <span>7 min read</span>
+                <span>•</span>
+                <span className="text-[#9c5232] font-semibold">Authentic Thai Wellness</span>
               </div>
             </div>
 
-            <div className="relative mb-8 h-[280px] overflow-hidden rounded-[24px] sm:h-[380px]">
+            {/* Banner Image */}
+            <div className="relative mb-8 h-[280px] overflow-hidden rounded-[24px] sm:h-[400px]">
               <Image
                 src="/images/thaimassage1.png"
-                alt="Thai massage therapy session"
+                alt="Authentic Thai Massage in Delhi - Luxury Russian Spa"
                 fill
-                className="object-cover"
                 priority
+                className="object-cover"
               />
             </div>
 
+            {/* Quick Summary Box */}
+            <div className="mb-10 rounded-2xl bg-[#fcfbf7] border border-[#9c5232]/25 p-6 sm:p-7 shadow-sm">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9c5232]">
+                    At A Glance
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#2b1810] mt-1 font-serif">
+                    Authentic Thai Yoga Massage from ₹1499
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl leading-relaxed">
+                    Zero-oil passive stretching and acupressure delivered by certified therapists. Ideal for stiff backs,
+                    desk fatigue, and tight hamstrings. Available across 12+ luxury outlets in Delhi NCR.
+                  </p>
+                </div>
+                <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5">
+                  <a
+                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20book%20an%20authentic%20Thai%20Massage%20session%20in%20Delhi.%20Please%20share%20available%20slots."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white px-7 py-3 text-sm font-bold shadow-md transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    Book on WhatsApp
+                  </a>
+                  <Link
+                    href="/thai-massage-in-delhi"
+                    className="inline-flex items-center justify-center rounded-full border border-[#9c5232] text-[#9c5232] hover:bg-[#9c5232]/10 px-6 py-2.5 text-xs font-bold transition-all text-center"
+                  >
+                    View Service Page
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Main Layout */}
             <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
               <article className="space-y-8">
+                
+                {/* Intro */}
                 <section className="space-y-4">
-                  <p className="text-lg leading-8 text-gray-700">
-                    Have you ever felt tired, stressed, or had pain in your back or shoulders? Many people feel this way after working long hours or sitting in one place for too long.
+                  <p className="text-lg leading-8 text-gray-700 font-normal">
+                    Often nicknamed <em>&ldquo;lazy man&apos;s yoga&rdquo;</em>, <strong>Thai Massage</strong> is one of the
+                    world&apos;s most revered healing arts. If you spend your work days sitting at a desk, battling Delhi traffic,
+                    or feeling persistent stiffness in your lower back and shoulders, Thai massage offers targeted physical relief
+                    that regular oil rubs simply cannot achieve.
                   </p>
                   <p className="text-lg leading-8 text-gray-700">
-                    A Thai massage is one of the best ways to relax your body and mind. It is not just about feeling good for a short time. It can also help improve flexibility, reduce muscle pain, and make you feel fresh again.
+                    Instead of lying passive on an oily massage table, you are positioned on a comfortable floor mat while
+                    a certified therapist uses their hands, thumbs, elbows, knees, and feet to gently compress muscle lines and
+                    stretch your entire body into therapeutic yoga postures.
                   </p>
                   <p className="text-lg leading-8 text-gray-700">
-                    In this guide, you will learn what Thai massage does to your body, its benefits, what happens during a session, and who should or should not get one.
+                    Below, we review how Thai massage works, its medically proven benefits, pricing in Delhi, and what you should
+                    know before your first appointment.
                   </p>
                 </section>
 
-                <section className="rounded-2xl border border-amber-100 bg-amber-50/60 p-5 sm:p-6">
-                  <h2 className="mb-4 text-2xl font-semibold text-amber-900">Table of Contents</h2>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li><a href="#what-is-thai-massage" className="hover:text-amber-700">• What is Thai Massage?</a></li>
-                    <li><a href="#how-does-thai-massage-work" className="hover:text-amber-700">• How Does Thai Massage Work?</a></li>
-                    <li><a href="#benefits" className="hover:text-amber-700">• Benefits</a></li>
-                    <li><a href="#who-should-get-it" className="hover:text-amber-700">• Who Should Get a Thai Massage?</a></li>
-                    <li><a href="#what-to-expect" className="hover:text-amber-700">• What to Expect During a Thai Massage Session</a></li>
-                    <li><a href="#risks" className="hover:text-amber-700">• Risks and Safety</a></li>
-                    <li><a href="#who-should-avoid-thai-massage" className="hover:text-amber-700">• Who Should Avoid Thai Massage?</a></li>
-                    <li><a href="#tips-before-your-thai-massage" className="hover:text-amber-700">• Tips Before Your Thai Massage</a></li>
-                    <li><a href="#what-to-do-after-a-thai-massage" className="hover:text-amber-700">• What Should You Do After a Thai Massage?</a></li>
-                    <li><a href="#faqs" className="hover:text-amber-700">• Frequently Asked Questions</a></li>
-                    <li><a href="#final-thoughts" className="hover:text-amber-700">• Final Thoughts</a></li>
-                  </ul>
+                {/* Section: How Thai Massage Works */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    How Does Authentic Thai Massage Work?
+                  </h2>
+                  <p className="text-lg leading-8 text-gray-700">
+                    Rooted in Ayurvedic and traditional Chinese medicine, Thai massage works along the body&apos;s 10 primary energy
+                    channels, known as <em>Sen lines</em>. When physical stress or poor posture creates blockages along these pathways,
+                    muscles tighten and energy feels sluggish.
+                  </p>
+                  <p className="text-lg leading-8 text-gray-700">
+                    The therapist systematically applies rhythmic palm and thumb compression to stimulate circulation and soften
+                    myofascial tissue. Then, using leverage and body weight, the therapist guides your limbs into gentle, assisted
+                    yoga stretches that open your chest, lengthen your hamstrings, and mobilize spinal discs safely.
+                  </p>
                 </section>
 
-                <section id="what-is-thai-massage" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">What Is Thai Massage?</h2>
+                {/* Section: Pricing Table */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Thai Massage Price in Delhi NCR (2026 Rates)
+                  </h2>
                   <p className="text-lg leading-8 text-gray-700">
-                    Thai massage is a traditional healing therapy that started in Thailand many years ago.
+                    At <strong>Luxury Russian Spa</strong>, we believe authentic traditional therapy should be both premium and accessible:
                   </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Unlike a regular oil massage, Thai massage uses gentle stretching, body movements, and pressure on different parts of the body. Some people even call it "lazy yoga" because the therapist helps stretch your body while you relax.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    During the session, you usually wear comfortable clothes, and oil is not always used.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    The main goal of Thai massage is to help your body move better, reduce stress, and improve overall wellness.
-                  </p>
-                  <div className="relative h-[240px] overflow-hidden rounded-[20px]">
-                    <Image src="/images/steptodown.com870307.webp" alt="Thai massage stretching movement" fill className="object-cover" />
+
+                  <div className="overflow-x-auto rounded-2xl border border-amber-200 shadow-sm">
+                    <table className="w-full text-left text-sm">
+                      <thead className="bg-[#2b1810] text-white">
+                        <tr>
+                          <th className="p-4 font-semibold">Therapy Option</th>
+                          <th className="p-4 font-semibold">Duration</th>
+                          <th className="p-4 font-semibold">Focus Area</th>
+                          <th className="p-4 font-semibold">Price (INR)</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-amber-100 bg-white">
+                        <tr className="bg-amber-50/50">
+                          <td className="p-4 font-bold text-[#9c5232]">First Visit Offer (Special)</td>
+                          <td className="p-4">60 Minutes</td>
+                          <td className="p-4">Full Body Acupressure &amp; Stretch</td>
+                          <td className="p-4 font-bold text-emerald-700">₹1,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">Classic Traditional Thai</td>
+                          <td className="p-4">60 Minutes</td>
+                          <td className="p-4">Sen Lines, Back &amp; Legs</td>
+                          <td className="p-4 font-semibold">₹2,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">Deep Thai Flexibility Session</td>
+                          <td className="p-4">90 Minutes</td>
+                          <td className="p-4">Full Body Spinal Decompression</td>
+                          <td className="p-4 font-semibold">₹3,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">Thai Herbal Compress (Pinda)</td>
+                          <td className="p-4">90 Minutes</td>
+                          <td className="p-4">Warm Steamed Herbal Poultice</td>
+                          <td className="p-4 font-semibold">₹4,499</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </section>
 
-                <section id="how-does-thai-massage-work" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">How Does Thai Massage Work?</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    A trained therapist uses their hands, thumbs, elbows, knees, and sometimes even their feet to apply gentle pressure and stretch different muscles.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    These movements can help:
-                  </p>
-                  <ul className="list-disc space-y-2 pl-6 text-lg text-gray-700">
-                    <li>Relax tight muscles</li>
-                    <li>Improve blood flow</li>
-                    <li>Increase flexibility</li>
-                    <li>Reduce body stiffness</li>
-                    <li>Help you feel calm</li>
-                  </ul>
-                  <p className="text-lg leading-8 text-gray-700">
-                    The pressure is adjusted according to your comfort level, so you should always let the therapist know if something feels too strong.
-                  </p>
-                </section>
-
-                <section id="benefits" className="space-y-5 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Benefits of Thai Massage</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Thai massage offers many benefits for both your body and your mind.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Let&apos;s look at some of the most common ones.
-                  </p>
-
-                  <div className="space-y-8">
-                    <div>
-                      <h3 className="text-xl font-semibold text-amber-900">1. Reduces Stress</h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Daily life can be stressful. Work, studies, family responsibilities, and long hours on your phone or computer can make your mind feel tired.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Thai massage helps your body relax, which may also help you feel calmer and more peaceful after the session.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Many people say they sleep better and feel less stressed after getting a massage.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-amber-900">2. Relieves Muscle Pain</h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        If your neck, shoulders, back, or legs often feel tight or sore, Thai massage may help reduce that discomfort.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Gentle stretching and pressure can help loosen tight muscles and improve how your body feels.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        This is one reason why many office workers choose Thai massage after long working hours.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-amber-900">3. Improves Flexibility</h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Your body becomes stiff when you don&apos;t move enough.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Thai massage includes different stretching techniques that may help your muscles and joints move more freely.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Better flexibility can make everyday activities feel easier and more comfortable.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-amber-900">4. Improves Blood Circulation</h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Good blood circulation helps carry oxygen and nutrients throughout your body.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        The stretching and pressure used during Thai massage may support healthy blood flow, which can help your muscles feel refreshed.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-amber-900">5. Helps You Sleep Better</h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Stress and body pain can make it difficult to sleep well.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        After a relaxing Thai massage, many people feel calmer and more comfortable, which may help improve sleep quality.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        A good night&apos;s sleep also helps your body recover and gives you more energy for the next day.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-amber-900">6. Helps You Feel More Active</h3>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        When your muscles feel relaxed and your body moves more easily, you may notice that you have more energy during the day.
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Many people leave a Thai massage session feeling refreshed, lighter, and ready to get back to their daily routine.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-
-                <section className="relative h-[240px] overflow-hidden rounded-[20px]">
-                  <Image src="/images/thaimassage2.png" alt="Relaxing spa environment" fill className="object-cover" />
-                </section>
-
-                <section id="who-should-get-it" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Who Should Get a Thai Massage?</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Thai massage may be a good choice for:
-                  </p>
-                  <ul className="list-disc space-y-2 pl-6 text-lg text-gray-700">
-                    <li>Office workers who sit for long hours</li>
-                    <li>People with muscle tightness</li>
-                    <li>Those who feel stressed or tired</li>
-                    <li>People who want to improve flexibility</li>
-                    <li>Anyone looking for a natural way to relax</li>
-                  </ul>
-                  <p className="text-lg leading-8 text-gray-700">
-                    If you have a medical condition or recent injury, it is always a good idea to speak with your doctor before getting any type of massage.
-                  </p>
-                </section>
-
-                <section id="what-to-expect" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">What to Expect During a Thai Massage Session</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    If it is your first Thai massage, you may wonder what will happen.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    A typical session usually follows these steps:
-                  </p>
-                  <div className="space-y-4">
-                    {[
-                      "Consultation: The therapist will ask if you have any pain, injuries, or health concerns.",
-                      "Comfortable Clothing: Unlike many other massages, you usually wear loose and comfortable clothes.",
-                      "Massage Begins: The therapist gently stretches your body and applies pressure to different muscles using their hands, thumbs, elbows, or feet.",
-                      "Relaxation: The session normally lasts between 60 and 90 minutes, depending on the treatment you choose.",
-                    ].map((step, index) => (
-                      <div key={step} className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                        <p className="font-semibold text-amber-900">Step {index + 1}</p>
-                        <p className="mt-1 text-gray-700">{step}</p>
+                {/* Section: Benefits Grid */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Top 6 Health Benefits for Mind and Body
+                  </h2>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {benefits.map((b, idx) => (
+                      <div key={idx} className="rounded-xl border border-amber-100 bg-[#fffdfa] p-5 shadow-sm">
+                        <h3 className="font-bold text-amber-950 font-serif text-lg">{b.title}</h3>
+                        <p className="text-sm text-gray-600 mt-1.5 leading-relaxed">{b.description}</p>
                       </div>
                     ))}
                   </div>
-                  <p className="text-lg leading-8 text-gray-700">
-                    After the massage, many people feel relaxed, refreshed, and more flexible.
-                  </p>
                 </section>
 
-                <section id="risks" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Risks and Safety</h2>
+                {/* Section: Thai vs Russian Massage */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Thai Massage vs. Russian Massage: Which is Right for You?
+                  </h2>
                   <p className="text-lg leading-8 text-gray-700">
-                    Thai massage is safe for most healthy people when it is done by a trained therapist.
+                    Clients often ask whether they should book a Thai massage or a Russian oil massage:
                   </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    However, it may not be the right choice for everyone.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    You should talk to your doctor before getting a Thai massage if you:
-                  </p>
-                  <ul className="list-disc space-y-2 pl-6 text-lg text-gray-700">
-                    <li>Are pregnant</li>
-                    <li>Have a recent bone fracture</li>
-                    <li>Have severe osteoporosis</li>
-                    <li>Have a serious heart condition</li>
-                    <li>Have recently had surgery</li>
-                    <li>Have a serious skin infection or open wound</li>
-                  </ul>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Always tell your therapist about any medical condition before the massage starts. This helps them choose the safest technique for you.
-                  </p>
-                </section>
-
-                <section id="who-should-avoid-thai-massage" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Who Should Avoid Thai Massage?</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Thai massage may not be suitable for some people.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    It is better to avoid it if you have:
-                  </p>
-                  <ul className="list-disc space-y-2 pl-6 text-lg text-gray-700">
-                    <li>A high fever</li>
-                    <li>A fresh injury</li>
-                    <li>Severe back or neck problems without medical advice</li>
-                    <li>Blood clotting disorders</li>
-                    <li>Serious medical conditions unless your doctor says it is safe</li>
-                  </ul>
-                  <p className="text-lg leading-8 text-gray-700">
-                    If you are unsure, ask your healthcare provider before booking a session.
-                  </p>
-                </section>
-
-                <section id="tips-before-your-thai-massage" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Tips Before Your Thai Massage</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    A little preparation can make your experience even better.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Here are some simple tips:
-                  </p>
-                  <ul className="list-disc space-y-2 pl-6 text-lg text-gray-700">
-                    <li>Wear loose and comfortable clothes.</li>
-                    <li>Drink enough water before your appointment.</li>
-                    <li>Avoid eating a heavy meal just before the massage.</li>
-                    <li>Arrive 10–15 minutes early so you can relax.</li>
-                    <li>Tell your therapist if you have pain or any health condition.</li>
-                  </ul>
-                </section>
-
-                <section id="what-to-do-after-a-thai-massage" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">What Should You Do After a Thai Massage?</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    After your session, your body needs a little time to recover.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Here are a few simple things you can do:
-                  </p>
-                  <ul className="list-disc space-y-2 pl-6 text-lg text-gray-700">
-                    <li>Drink plenty of water.</li>
-                    <li>Rest for a while if you feel tired.</li>
-                    <li>Avoid heavy exercise for a few hours.</li>
-                    <li>Eat a light and healthy meal.</li>
-                    <li>Enjoy the relaxed feeling and let your body recover naturally.</li>
-                  </ul>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Some people may feel mild soreness after their first session. This usually goes away within a day or two.
-                  </p>
-                </section>
-
-                <section id="faqs" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Frequently Asked Questions</h2>
-                  <div className="space-y-4">
-                    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                      <h3 className="font-semibold text-amber-900">Is Thai massage painful?</h3>
-                      <p className="mt-2 text-gray-700">Thai massage should not be painful. Some stretches may feel strong, but you should always tell your therapist if you feel uncomfortable.</p>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-xl border border-amber-200 bg-white p-5">
+                      <h3 className="font-bold text-[#9c5232] text-lg">Choose Thai Massage If:</h3>
+                      <ul className="list-disc pl-5 mt-3 space-y-1.5 text-sm text-gray-700">
+                        <li>You suffer from joint stiffness and tight hips or hamstrings.</li>
+                        <li>You want to feel energized, alert, and physically flexible.</li>
+                        <li>You prefer a dry massage without oils on your hair or skin.</li>
+                        <li>You want assisted stretches similar to deep yoga.</li>
+                      </ul>
                     </div>
-                    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                      <h3 className="font-semibold text-amber-900">How long does a Thai massage session last?</h3>
-                      <p className="mt-2 text-gray-700">Most sessions last between 60 and 90 minutes, depending on the treatment you choose.</p>
-                    </div>
-                    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                      <h3 className="font-semibold text-amber-900">Can Thai massage help with back pain?</h3>
-                      <p className="mt-2 text-gray-700">Many people find that Thai massage helps reduce muscle tightness and improves flexibility. If you have severe or long-term back pain, it is best to consult a doctor first.</p>
-                    </div>
-                    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                      <h3 className="font-semibold text-amber-900">How often should I get a Thai massage?</h3>
-                      <p className="mt-2 text-gray-700">It depends on your needs.</p>
-                      <p className="mt-2 text-gray-700">Some people enjoy one session every month, while others visit every two weeks to help manage stress and muscle tension.</p>
-                    </div>
-                    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                      <h3 className="font-semibold text-amber-900">What should I wear for a Thai massage?</h3>
-                      <p className="mt-2 text-gray-700">Loose and comfortable clothing is usually recommended because the massage includes stretching and body movements.</p>
-                    </div>
-                    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
-                      <h3 className="font-semibold text-amber-900">Can beginners get a Thai massage?</h3>
-                      <p className="mt-2 text-gray-700">Yes.</p>
-                      <p className="mt-2 text-gray-700">If it is your first session, tell your therapist so they can adjust the pressure according to your comfort.</p>
+                    <div className="rounded-xl border border-amber-200 bg-white p-5">
+                      <h3 className="font-bold text-[#9c5232] text-lg">Choose Russian Massage If:</h3>
+                      <ul className="list-disc pl-5 mt-3 space-y-1.5 text-sm text-gray-700">
+                        <li>You feel deep mental fatigue, anxiety, or insomnia.</li>
+                        <li>You want soothing warm oils and rhythmic glide techniques.</li>
+                        <li>You want private suites with an attached hot shower and hydrotherapy.</li>
+                        <li>You seek deeply relaxing therapies like Nuru or B2B bodywork.</li>
+                      </ul>
                     </div>
                   </div>
                 </section>
 
-                <section id="final-thoughts" className="space-y-4 scroll-mt-32">
-                  <h2 className="text-2xl font-semibold text-amber-900">Final Thoughts</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Thai massage is much more than a way to relax.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    It may help improve flexibility, reduce muscle tension, support better blood circulation, and leave you feeling refreshed.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Every person is different, so your experience may not be exactly the same as someone else&apos;s. If you have any medical concerns, always speak with your doctor before getting a massage.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    When performed by a trained therapist, Thai massage can be a safe and enjoyable part of your wellness routine.
-                  </p>
+                {/* Section: FAQs */}
+                <section className="space-y-5">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Frequently Asked Questions About Thai Massage
+                  </h2>
+                  <div className="space-y-3">
+                    {faqs.map((faq, idx) => (
+                      <div key={idx} className="rounded-xl border border-amber-100 bg-[#fffaf3] p-5">
+                        <h3 className="font-bold text-amber-950 text-base sm:text-lg">{faq.question}</h3>
+                        <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    ))}
+                  </div>
                 </section>
 
-                <section className="space-y-4">
-                  <h2 className="text-2xl font-semibold text-amber-900">Looking for a Professional Thai Massage in Delhi?</h2>
-                  <p className="text-lg leading-8 text-gray-700">
-                    If you are looking for a relaxing and professional Thai massage experience in Delhi, choose a spa that has trained therapists, maintains high hygiene standards, and focuses on customer comfort.
-                  </p>
-                  <p className="text-lg leading-8 text-gray-700">
-                    Luxury Russian Spa offers a dedicated <a href="/thai-massage-in-delhi" className="font-semibold text-amber-700 underline hover:text-amber-800">Thai massage in Delhi</a> service across 24+ outlets, including home and hotel spa options. Book your appointment today and experience the benefits of Thai massage for yourself.
-                  </p>
-                </section>
-
-                <section className="rounded-[24px] bg-gradient-to-r from-amber-600 to-amber-700 p-8 text-white shadow-lg">
-                  <h2 className="text-2xl font-semibold">Book Your Thai Massage in Delhi</h2>
-                  <p className="mt-3 max-w-2xl text-amber-50">
-                    Experience a relaxing, professional Thai massage session in Delhi with trained therapists and a soothing atmosphere.
+                {/* Bottom CTA */}
+                <section className="rounded-[24px] bg-gradient-to-r from-[#9c5232] to-[#7a391e] p-8 text-white shadow-lg">
+                  <h2 className="text-2xl sm:text-3xl font-bold font-serif">
+                    Unlock Flexibility &amp; Free Your Body from Pain
+                  </h2>
+                  <p className="mt-3 text-amber-100 text-sm sm:text-base max-w-2xl leading-relaxed">
+                    Treat your back and joints to authentic Thai bodywork performed by certified therapists in clean, private suites.
+                    First visit offers start from just ₹1499.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-4">
-                    <a href="/thai-massage-in-delhi" className="rounded-full bg-white px-6 py-3 font-semibold text-amber-700 transition hover:bg-amber-50">View Thai Massage Service</a>
-                    <a href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." className="rounded-full border border-white/60 px-6 py-3 font-semibold transition hover:bg-white/10">Book on WhatsApp</a>
+                    <a
+                      href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Thai%20Massage%20session%20in%20Delhi%20at%201499."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full bg-white px-7 py-3 font-bold text-[#9c5232] transition hover:bg-amber-50 shadow-md"
+                    >
+                      Book on WhatsApp (24/7)
+                    </a>
+                    <Link
+                      href="/spa-price-in-delhi"
+                      className="rounded-full border border-white px-7 py-3 font-semibold hover:bg-white/10 transition"
+                    >
+                      View Price Menu
+                    </Link>
                   </div>
                 </section>
+
               </article>
 
+              {/* Sidebar */}
               <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+                {/* Special Offer Card */}
+                <div className="rounded-2xl border border-amber-200 bg-[#fffaf5] p-6 shadow-sm text-center">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9c5232]">
+                    Introductory Special
+                  </span>
+                  <h3 className="text-xl font-bold text-[#2b1810] mt-1 font-serif">
+                    Thai Massage @ ₹1499
+                  </h3>
+                  <p className="text-xs text-gray-600 mt-2 leading-relaxed">
+                    Assisted yoga stretching &bull; Deep acupressure &bull; Private air-conditioned rooms &bull; Attached shower
+                  </p>
+                  <a
+                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20for%20Thai%20Massage."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 w-full inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white py-3 text-sm font-bold shadow-md transition"
+                  >
+                    Claim ₹1499 Deal
+                  </a>
+                </div>
+
+                {/* Related Blogs */}
                 <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-amber-900">Related Blogs</h3>
-                  <div className="mt-5 space-y-4">
-                    {relatedBlogs.map((blog) => (
-                      <Link key={blog.title} href={blog.href} className="flex items-center gap-3 rounded-xl border border-amber-100 p-3 transition hover:bg-amber-50">
-                        <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg">
+                  <h3 className="text-lg font-bold text-amber-950 font-serif">
+                    Related Guides &amp; Blogs
+                  </h3>
+                  <div className="mt-4 space-y-3">
+                    {relatedBlogs.map((blog, idx) => (
+                      <Link
+                        key={idx}
+                        href={blog.href}
+                        className="flex items-center gap-3 rounded-xl border border-amber-100 p-2.5 hover:bg-amber-50 transition"
+                      >
+                        <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-stone-100">
                           <Image src={blog.image} alt={blog.title} fill className="object-cover" />
                         </div>
                         <div>
-                          <p className="font-medium text-gray-800">{blog.title}</p>
-                          <p className="text-sm text-amber-700">Read more</p>
+                          <p className="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2">
+                            {blog.title}
+                          </p>
+                          <span className="text-xs font-bold text-[#9c5232] mt-0.5 inline-block">
+                            Read Guide &rarr;
+                          </span>
                         </div>
                       </Link>
                     ))}
@@ -494,9 +467,11 @@ export default function ThaiMassageBlogPage() {
                 </div>
               </aside>
             </div>
+
           </div>
         </section>
       </main>
+
       <WhatsappFloat />
     </>
   );

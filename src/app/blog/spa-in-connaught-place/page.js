@@ -4,19 +4,25 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title:
-    "Connaught Place Spa Guide: How to Choose a Hotel Spa in CP | Luxury Russian Spa",
+  title: "Best Russian Spa in Connaught Place (CP): Prices, 5-Star Hotel Visits & Guide (2026)",
   description:
-    "A practical CP spa guide: how to pick a hotel spa in Connaught Place, which massage to choose, the best time to go and what to check before you book.",
-  keywords: ["best hotels connaught place spa", "connaught place spa guide", "cp massage options"],
+    "Looking for a luxury Russian spa in Connaught Place (CP)? Enjoy in-room 5-star hotel visits, private suites with attached hot showers, certified therapists & packages from ₹1499. Book on WhatsApp 24/7!",
+  keywords: [
+    "russian spa in connaught place",
+    "spa in cp delhi",
+    "hotel spa connaught place",
+    "spa price in cp",
+    "massage in connaught place",
+    "luxury spa in cp",
+    "b2b spa in cp",
+  ],
   alternates: {
-    canonical:
-      "https://www.luxuryrussianspa.com/blog/spa-in-connaught-place",
+    canonical: "https://www.luxuryrussianspa.com/blog/spa-in-connaught-place",
   },
   openGraph: {
-    title: "Connaught Place Spa Guide: How to Choose a Hotel Spa in CP",
+    title: "Best Russian Spa in Connaught Place (CP): Prices, 5-Star Hotel Visits & Guide",
     description:
-      "How to pick a hotel spa in CP, which massage suits you, the best time to go and what to check before you book.",
+      "A complete guide to booking luxury Russian spa therapies in Connaught Place (CP), Delhi: 5-star hotel visits, private suites, and prices from ₹1499.",
     images: ["https://www.luxuryrussianspa.com/images/spa-treatments.jpg"],
     type: "article",
   },
@@ -32,881 +38,414 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.luxuryrussianspa.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Connaught Place Spa Guide", item: "https://www.luxuryrussianspa.com/blog/spa-in-connaught-place" },
+    { "@type": "ListItem", position: 3, name: "Russian Spa in Connaught Place", item: "https://www.luxuryrussianspa.com/blog/spa-in-connaught-place" },
   ],
 };
 
 const faqs = [
   {
-    question: "Why pick a hotel spa in CP for relaxation?",
+    question: "Where can I book a Russian spa in Connaught Place (CP)?",
     answer:
-      "A hotel spa in CP offers convenient access, professional wellness services, peaceful surroundings, and multiple massage options. Its central location makes it ideal for working professionals, travelers, and visitors seeking relaxation, stress relief, and a refreshing self-care experience.",
+      "Luxury Russian Spa operates private wellness suites easily accessible from Inner and Outer Circles of Connaught Place, Barakhamba Road, and Janpath. We also offer 24/7 in-room visits to all luxury hotels in CP including The Lalit, Shangri-La Eros, The Imperial, and Le Meridien.",
   },
   {
-    question: "What services are available at massage centres?",
+    question: "How much does a spa session cost in Connaught Place?",
     answer:
-      "Massage centres in Connaught Place offer various wellness treatments, including Full Body Massage, Thai Massage, Aromatherapy Massage, and Deep Tissue Massage. These therapies help reduce stress, relax muscles, improve comfort, and provide a complete wellness experience.",
+      "Our introductory first-visit offer starts from just ₹1499 for a 60-minute full body massage in a private suite with an attached hot shower. Standard outlet sessions range from ₹2,499 to ₹4,999, while in-room 5-star hotel visits start at ₹14,999 for 90 minutes with certified Russian therapists.",
   },
   {
-    question: "How does a full body massage help?",
+    question: "Can I book a therapist to visit my hotel in Connaught Place?",
     answer:
-      "A full body massage helps relax major muscle groups, reduce physical fatigue, improve blood circulation, and release body tension. It is suitable for individuals with busy lifestyles who want a refreshing treatment to relax their body and mind.",
+      "Yes. We specialize in 24/7 in-room hotel visits across Central Delhi. Once you share your hotel name and preferred therapy on WhatsApp, our certified therapist arrives at your hotel room within 30 to 45 minutes.",
   },
   {
-    question: "What makes a massage centre in Connaught Place reliable?",
+    question: "What therapies are available at the CP outlet?",
     answer:
-      "A reliable massage centre in Connaught Place maintains hygiene standards, offers experienced therapists, provides quality services, and focuses on customer comfort. Professional care, clean facilities, and personalized treatments help ensure a safe and relaxing wellness experience.",
+      "Available therapies include Russian Full Body Massage, B2B Body-to-Body Relaxation, 4-Hand Sandwich Massage, Authentic Nuru Gel Therapy, Deep Tissue Relief, and Traditional Thai Bodywork.",
   },
   {
-    question: "Why consider a hotel spa in Delhi?",
+    question: "Are the suites in Connaught Place safe and private?",
     answer:
-      "A hotel spa in Delhi provides a premium wellness experience with luxury facilities, professional therapists, elegant surroundings, private treatment spaces, and personalized services. It is ideal for travelers and individuals seeking comfort, relaxation, and high-quality spa treatments.",
+      "Yes, 100%. Every suite is completely private, soundproof, and equipped with an attached hot shower, fresh linens, clean disposable amenities, and climate control.",
   },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.answer,
+    },
+  })),
+};
+
+const hotelsNearCP = [
+  "The Lalit New Delhi (Barakhamba Avenue)",
+  "Shangri-La Eros New Delhi (Connaught Place / Janpath)",
+  "The Imperial New Delhi (Janpath)",
+  "Le Méridien New Delhi (Windsor Place)",
+  "The Park New Delhi (Parliament Street)",
+  "Radisson Blu Marina Hotel (Connaught Circus)",
 ];
 
 const relatedBlogs = [
   {
-    title: "Difference Between Spa and Massage",
-    href: "/blog/what-is-the-difference-between-spa-and-massage",
-    image: "/images/spa-treatments.jpg",
-  },
-  {
-    title: "What Is a Sandwich Massage?",
-    href: "/blog/first-sandwich-massage-what-to-expect",
-    image: "/images/sandwich-massage.png",
-  },
-  {
-    title: "What is a B2B Full Body Massage?",
+    title: "What is B2B Massage in Delhi? Full Guide & Prices",
     href: "/blog/what-is-b2b-full-body-massage",
     image: "/images/b2b-full-body-massage.jpg",
   },
   {
-    title: "What Does Thai Massage Do to Your Body?",
-    href: "/blog/thai-massage-does-to-your-body",
-    image: "/images/thaimassage1.png",
+    title: "What Is a Sandwich Massage? Step-by-Step Guide",
+    href: "/blog/first-sandwich-massage-what-to-expect",
+    image: "/images/sandwich-massage.png",
+  },
+  {
+    title: "Russian Spa vs Normal Spa: Key Differences",
+    href: "/blog/what-is-the-difference-between-spa-and-massage",
+    image: "/images/spa-treatments.jpg",
+  },
+  {
+    title: "Best Spa Services in Delhi NCR: 2026 Price List",
+    href: "/blog/best-spa-service-in-delhi-ncr",
+    image: "/images/spaservices1.jpg",
   },
 ];
 
-export default function SpaInConnaughtPlacePage() {
+export default function CPSpaBlogPage() {
   return (
     <>
       <script
-        id="breadcrumb-schema-blog-spa-in-connaught-place"
+        id="breadcrumb-schema-blog-cp-spa"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        id="faq-schema-blog-cp-spa"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <style>{`
-        html{
-          scroll-behavior:smooth;
+        html {
+          scroll-behavior: smooth;
         }
       `}</style>
 
       <main className="bg-[#fffaf5] text-gray-800">
-
         <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
               { label: "Blog", href: "/blog" },
-              { label: "Connaught Place Spa Guide" },
+              { label: "Russian Spa in Connaught Place" },
             ]}
           />
-
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
-
+        <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
           <div className="rounded-[32px] border border-amber-100 bg-white p-6 shadow-[0_20px_60px_-25px_rgba(0,0,0,0.18)] sm:p-8 lg:p-12">
-
+            
+            {/* Header */}
             <div className="mb-8 space-y-4">
-
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">
-                Wellness Guide
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9c5232]">
+                Central Delhi Luxury &bull; Connaught Place Guide
               </p>
 
-              <h1 className="text-3xl font-bold leading-tight text-amber-900 sm:text-4xl lg:text-5xl">
-                Connaught Place Spa Guide: How to Choose a Hotel Spa in CP
+              <h1 className="text-3xl font-bold leading-tight text-[#2b1810] sm:text-4xl lg:text-5xl font-serif">
+                Best Russian Spa in Connaught Place (CP): Prices, 5-Star Hotel Visits &amp; Guide
               </h1>
 
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
                 <span>By Luxury Russian Spa Team</span>
                 <span>•</span>
-                <span>Updated July 2026</span>
+                <span>Updated November 2026</span>
                 <span>•</span>
-                <span>10 min read</span>
+                <span>7 min read</span>
+                <span>•</span>
+                <span className="text-[#9c5232] font-semibold">Central Delhi Wellness</span>
               </div>
-
             </div>
 
-            <div className="relative mb-8 h-[280px] overflow-hidden rounded-[24px] sm:h-[380px]">
-
+            {/* Banner Image */}
+            <div className="relative mb-8 h-[280px] overflow-hidden rounded-[24px] sm:h-[400px]">
               <Image
-                src="/images/spa-in-Connaught-place1.png"
-                alt="Hotel spa room in Connaught Place"
+                src="/images/spa-in-Connaught-place.png"
+                alt="Best Russian Spa in Connaught Place Delhi - Luxury Russian Spa"
                 fill
                 priority
                 className="object-cover"
               />
-
             </div>
 
+            {/* Quick Summary / CTA Box */}
+            <div className="mb-10 rounded-2xl bg-[#fcfbf7] border border-[#9c5232]/25 p-6 sm:p-7 shadow-sm">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9c5232]">
+                    Central Delhi Wellness
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#2b1810] mt-1 font-serif">
+                    Connaught Place Spa Packages from ₹1499
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl leading-relaxed">
+                    Private sanitized suites with attached hot showers in CP &bull; 24/7 Hotel In-Room Visits across
+                    Barakhamba, Janpath, and Parliament Street &bull; Russian and Indian Therapists.
+                  </p>
+                </div>
+                <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5">
+                  <a
+                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20book%20a%20Russian%20Spa%20session%20in%20Connaught%20Place%20(CP).%20Please%20share%20details."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white px-7 py-3 text-sm font-bold shadow-md transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    Book on WhatsApp
+                  </a>
+                  <Link
+                    href="/spa-in-connaught-place"
+                    className="inline-flex items-center justify-center rounded-full border border-[#9c5232] text-[#9c5232] hover:bg-[#9c5232]/10 px-6 py-2.5 text-xs font-bold transition-all text-center"
+                  >
+                    View CP Outlet Page
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Main Content Layout */}
             <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-
               <article className="space-y-8">
-
+                
+                {/* Intro */}
                 <section className="space-y-4">
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Introduction
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Connaught Place is one of Delhi's most popular destinations, known for its shopping streets, restaurants, business hubs, and premium lifestyle experiences. With the increasing demand for wellness and relaxation, finding a trusted hotel spa in CP has become easier for people looking to take a break from their busy schedules. Ready to book? See our <Link href="/spa-in-connaught-place" className="font-semibold text-amber-700 underline underline-offset-4">spa in Connaught Place</Link> page for prices, hotels and timings.
+                  <p className="text-lg leading-8 text-gray-700 font-normal">
+                    <strong>Connaught Place (CP)</strong> is the vibrant heart of New Delhi. Surrounded by corporate headquarters,
+                    heritage architecture, fine-dining restaurants, and luxury 5-star hotels, it is home to thousands of busy executives,
+                    diplomats, and international travelers every day.
                   </p>
-
                   <p className="text-lg leading-8 text-gray-700">
-                    A professional spa experience offers more than relaxation—it helps reduce daily stress, relax tired muscles, and improve overall well-being. Whether you are a working professional, traveler, or someone looking for quality self-care, choosing the right massage centre in Connaught Place ensures a comfortable and refreshing experience.
+                    After hours of intense meetings, negotiating business deals, or exploring the capital, unwinding at a
+                    reputable <strong>Russian spa in Connaught Place</strong> offers the perfect antidote to fatigue.
                   </p>
-
                   <p className="text-lg leading-8 text-gray-700">
-                    From premium wellness therapies to relaxing massage options, many spas near this area provide professional services, peaceful environments, and personalized treatments. This guide explores the best services, hotel spa experiences, and massage options available when choosing a spa near Connaught Place.
+                    Whether you prefer visiting our private wellness suites equipped with attached hot showers or requesting an
+                    exclusive in-room therapist visit at your 5-star hotel suite, Luxury Russian Spa ensures an unmatched standard
+                    of discretion, hygiene, and relaxation.
                   </p>
-
                 </section>
 
-                <section className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">
-
-                  <h2 className="mb-5 text-2xl font-semibold text-amber-900">
-                    Table of Contents
+                {/* 5-Star Hotel Visits */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    24/7 In-Room 5-Star Hotel Visits in Connaught Place
                   </h2>
-
-                  <ul className="space-y-2 text-gray-700">
-
-                    <li><a href="#why-choose">• Why Pick a Hotel Spa in CP?</a></li>
-
-                    <li><a href="#services">• Popular Massage Services Available at Spas in Connaught Place</a></li>
-
-                    <li><a href="#benefits">• Benefits of Visiting a Spa Near Connaught Place</a></li>
-
-                    <li><a href="#hotel-spa">• Hotel Spa in Delhi: A Premium Wellness Experience</a></li>
-
-                    <li><a href="#choose-centre">• How to Choose the Best Massage Centre in Connaught Place</a></li>
-
-                    <li><a href="#luxury-spa">• Luxury Spa in Delhi: What Makes It Different?</a></li>
-
-                    <li><a href="#best-time">• Best Time for a Massage in CP</a></li>
-
-                    <li><a href="#tips">• Tips Before Your Spa Appointment</a></li>
-
-                    <li><a href="#conclusion">• Conclusion</a></li>
-
-                    <li><a href="#faqs">• FAQs</a></li>
-
-                  </ul>
-
-                </section>
-
-                <section
-                  id="why-choose"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Why Pick a Hotel Spa in CP?
-                  </h2>
-
                   <p className="text-lg leading-8 text-gray-700">
-                    Connaught Place is located in the heart of Delhi, making it a convenient destination for wellness services. Its central location attracts both local visitors and travelers looking for premium relaxation experiences after a busy day.
+                    Traveling for business or staying at a luxury hotel in Central Delhi? You don&apos;t even need to step out of
+                    your room. Our certified Russian and European therapists provide on-demand in-room visits:
                   </p>
 
-                  <p className="text-lg leading-8 text-gray-700">
-                    Choosing a hotel spa in CP offers several advantages:
-                  </p>
-
-                  <div className="space-y-6">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Convenient Location
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Being centrally located, Connaught Place is easily accessible from major parts of Delhi. Whether you are visiting for work, shopping, or sightseeing, a nearby spa allows you to enjoy relaxation without traveling far.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Premium Wellness Experience
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Many spas in and around Connaught Place focus on providing comfortable interiors, professional services, and personalized treatments. A quality luxury spa in Delhi creates a peaceful environment where guests can relax away from everyday stress.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Wide Range of Services
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        From relaxing massages to complete wellness therapies, spas offer multiple options based on individual preferences and relaxation needs.
-                      </p>
-
-                    </div>
-
+                  <div className="rounded-2xl border border-amber-100 bg-[#fffdfa] p-6">
+                    <h3 className="font-bold text-[#9c5232] text-lg font-serif mb-3">
+                      Partner &amp; Popular Hotel Locations We Serve in CP:
+                    </h3>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-gray-700">
+                      {hotelsNearCP.map((hotel, idx) => (
+                        <li key={idx} className="flex items-center gap-2">
+                          <span className="text-amber-600">📍</span>
+                          <span>{hotel}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-4 text-xs text-gray-500 italic">
+                      *Therapists arrive promptly within 30-45 minutes after WhatsApp booking confirmation. Zero advance payment required.
+                    </p>
                   </div>
-
                 </section>
 
-                {<div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place8.jpg"
-                    alt="Hotel spa room in Connaught Place"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>}
-
-                <section
-                  id="services"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Popular Massage Services Available at Spas in Connaught Place
+                {/* Price Table */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Connaught Place Spa Packages &amp; Pricing
                   </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A reputed massage centre in Connaught Place offers different massage therapies designed to support relaxation and wellness.
-                  </p>
-
-                  <div className="space-y-6">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Full Body Massage
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        A full body massage focuses on relaxing major muscle groups, improving circulation, and reducing physical fatigue. It is ideal for people dealing with stress, tiredness, and daily body tension.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Thai Massage
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Thai massage combines stretching techniques and pressure-based movements to improve flexibility and release muscle stiffness. It is a popular choice among individuals looking for a refreshing wellness experience.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Aromatherapy Massage
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Aromatherapy massage uses calming essential oils along with gentle massage techniques to promote relaxation and mental calmness.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Deep Tissue Massage
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Deep tissue massage focuses on deeper muscle layers to help relieve stiffness and support muscle recovery.
-                      </p>
-
-                    </div>
-
+                  <div className="overflow-x-auto rounded-2xl border border-amber-200 shadow-sm">
+                    <table className="w-full text-left text-sm">
+                      <thead className="bg-[#2b1810] text-white">
+                        <tr>
+                          <th className="p-4 font-semibold">Service</th>
+                          <th className="p-4 font-semibold">Duration</th>
+                          <th className="p-4 font-semibold">Therapist</th>
+                          <th className="p-4 font-semibold">Price (INR)</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-amber-100 bg-white">
+                        <tr className="bg-amber-50/50">
+                          <td className="p-4 font-bold text-[#9c5232]">First Visit Special (Outlet)</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4">Trained Professional</td>
+                          <td className="p-4 font-bold text-emerald-700">₹1,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">Russian Full Body Massage</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4">Russian Specialist</td>
+                          <td className="p-4 font-semibold">₹3,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">B2B Body-to-Body Therapy</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4">Certified Female Therapist</td>
+                          <td className="p-4 font-semibold">₹2,499</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">Sandwich Massage (2 Therapists)</td>
+                          <td className="p-4">60 Min</td>
+                          <td className="p-4">Dual Therapists</td>
+                          <td className="p-4 font-semibold">₹3,999</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-gray-900">5-Star In-Room Hotel Visit</td>
+                          <td className="p-4">90 Min</td>
+                          <td className="p-4">Russian / International</td>
+                          <td className="p-4 font-semibold">₹14,999</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    These services make a professional Massage Centre in Delhi a preferred choice for people looking for relaxation and wellness solutions.
-                  </p>
-
                 </section>
 
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place2.png"
-                    alt="Massage Centre in Connaught Place"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="benefits"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Benefits of Visiting a Spa Near Connaught Place
+                {/* What makes our CP Outlet Special */}
+                <section className="space-y-4">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Why Choose Luxury Russian Spa in Connaught Place?
                   </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Choosing a spa near Connaught Place provides several wellness benefits:
-                  </p>
-
-                  <div className="space-y-6">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Reduces Stress and Mental Fatigue
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        A peaceful spa environment helps you disconnect from daily pressure and enjoy moments of relaxation.
+                  <div className="space-y-3.5">
+                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
+                      <h3 className="font-bold text-[#9c5232] text-lg font-serif">1. 100% Private Suites With Hot Showers</h3>
+                      <p className="text-gray-700 mt-1.5 text-sm sm:text-base leading-relaxed">
+                        No shared washrooms or noisy corridors. Each room in CP is a self-contained luxury oasis with its own
+                        attached hot shower, climate control, and fresh towels.
                       </p>
-
                     </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Relieves Muscle Tension
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Professional massage techniques help relax stiff muscles caused by long working hours, travel, or physical activity.
+                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
+                      <h3 className="font-bold text-[#9c5232] text-lg font-serif">2. Complete Discretion &amp; Confidentiality</h3>
+                      <p className="text-gray-700 mt-1.5 text-sm sm:text-base leading-relaxed">
+                        We value your privacy. Client contact details and booking information remain strictly confidential.
                       </p>
-
                     </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Improves Relaxation and Comfort
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        A quality spa session allows your body and mind to feel refreshed.
+                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
+                      <h3 className="font-bold text-[#9c5232] text-lg font-serif">3. 24/7 Availability</h3>
+                      <p className="text-gray-700 mt-1.5 text-sm sm:text-base leading-relaxed">
+                        Whether you need a quick post-lunch relaxation session or an overnight late-night retreat after a late flight,
+                        our doors and hotel-visit teams are open 24 hours every day.
                       </p>
-
                     </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Supports Self-Care Routine
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Regular wellness sessions can become an important part of maintaining balance in a busy lifestyle.
-                      </p>
-
-                    </div>
-
                   </div>
-
                 </section>
 
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place7.jpg"
-                    alt="Benefits of Visiting a Spa Near Connaught Place"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="hotel-spa"
-                  className="space-y-6 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Hotel Spa in Delhi: A Premium Wellness Experience
+                {/* FAQs */}
+                <section className="space-y-5">
+                  <h2 className="text-2xl font-bold text-[#2b1810] font-serif">
+                    Frequently Asked Questions
                   </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    For travelers and individuals looking for a high-end experience, a hotel spa in Delhi offers luxury, comfort, and professional wellness services under one roof.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Hotel spas are known for:
-                  </p>
-
-                  <div className="grid gap-4 md:grid-cols-2">
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Premium facilities
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Elegant surroundings
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Professional therapists
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Private treatment spaces
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      Personalized wellness programs
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      High hygiene standards
-                    </div>
-
-                  </div>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A 5 Star Hotel Spa in Delhi provides an elevated experience by combining luxury hospitality with professional spa treatments. These spas are especially popular among business travelers and visitors who prefer premium services with exceptional comfort.
-                  </p>
-
-                </section>
-
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place5.jpg"
-                    alt="Hotel Spa in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="choose-centre"
-                  className="space-y-5 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    How to Choose the Best Massage Centre in Connaught Place
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    With many options available, selecting the right massage centre in Connaught Place requires attention to a few important factors.
-                  </p>
-
-                  <div className="space-y-5">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Check Hygiene Standards
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        A trusted spa should maintain clean treatment rooms, fresh towels, and proper sanitation practices to ensure guest safety and comfort.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Look for Experienced Therapists
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Professional therapists understand different massage techniques and provide treatments according to your comfort level and requirements.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Explore Available Services
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Choose a spa that offers a variety of massage options, allowing you to select the therapy that best matches your wellness goals.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Read Reviews and Feedback
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Customer reviews provide useful information about service quality, atmosphere, and overall experience.
-                      </p>
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place6.jpg"
-                    alt="Massage Centre in Connaught Place"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="luxury-spa"
-                  className="space-y-5 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Luxury Spa in Delhi: What Makes It Different?
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A luxury spa in Delhi focuses on providing a complete wellness experience rather than just a massage. From the ambience to personalized treatments, every element is designed to enhance relaxation.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Key features include:
-                  </p>
-
-                  <div className="grid gap-4 md:grid-cols-2">
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Comfortable and peaceful environment
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Premium massage therapies
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Experienced professionals
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Hygienic treatment rooms
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Personalized wellness sessions
-                    </div>
-
-                    <div className="rounded-xl border border-amber-100 bg-white p-5 shadow-sm">
-                      ✔ Quality customer service
-                    </div>
-
-                  </div>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Luxury spas are ideal for individuals who want to enjoy relaxation with professional care and premium facilities.
-                  </p>
-
-                </section>
-
-                {/* <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/luxurySpaRoom.jpg"
-                    alt="Luxury Spa in Delhi"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div> */}
-
-                <section
-                  id="best-time"
-                  className="space-y-5 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Best Time for a Massage in CP
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    A spa visit can be planned according to your schedule and wellness needs.
-                  </p>
-
-                  <div className="space-y-5">
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        After Work
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Relax after a stressful day and release physical tension.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Weekend Visits
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Take dedicated time for self-care and relaxation.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Before or After Travel
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Refresh your body after a tiring journey.
-                      </p>
-
-                    </div>
-
-                    <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                      <h3 className="text-xl font-semibold text-amber-900">
-                        Special Occasions
-                      </h3>
-
-                      <p className="mt-3 text-lg leading-8 text-gray-700">
-                        Enjoy a premium wellness experience as part of celebrations.
-                      </p>
-
-                    </div>
-
-                  </div>
-
-                </section>
-
-                {/* <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/JwMarriott_CP.jpg"
-                    alt="Best time for a massage in Connaught Place"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div> */}
-
-                <section
-                  id="tips"
-                  className="space-y-5 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Tips Before Your Spa Appointment
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    To enjoy a comfortable spa session:
-                  </p>
-
-                  <ul className="list-disc space-y-3 pl-6 text-lg leading-8 text-gray-700">
-
-                    <li>Drink enough water before and after your treatment.</li>
-
-                    <li>Arrive a few minutes early.</li>
-
-                    <li>Communicate your preferences clearly.</li>
-
-                    <li>Choose the right massage according to your needs.</li>
-
-                    <li>Follow therapist recommendations for better relaxation.</li>
-
-                  </ul>
-
-                </section>
-
-                <div className="relative h-[320px] overflow-hidden rounded-[20px]">
-
-                  <Image
-                    src="/images/spa-in-connaught-place3.png"
-                    alt="Spa Appointment Tips"
-                    fill
-                    className="object-cover"
-                  />
-
-                </div>
-
-                <section
-                  id="conclusion"
-                  className="space-y-5 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    Conclusion
-                  </h2>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    Finding the right hotel spa in CP allows you to enjoy professional wellness services in one of Delhi's most convenient locations. Whether you are looking for a relaxing massage, a premium hotel spa in Delhi, or a trusted massage centre in Connaught Place, choosing a professional spa ensures comfort, quality, and relaxation.
-                  </p>
-
-                  <p className="text-lg leading-8 text-gray-700">
-                    From 5 Star Hotel Spa in Delhi experiences to specialized massage therapies, Connaught Place offers multiple options for people seeking stress relief and rejuvenation. By considering factors like hygiene, therapist expertise, services, and customer reviews, you can select the ideal spa experience that matches your wellness needs.
-                  </p>
-
-                </section>
-
-                <section
-                  id="faqs"
-                  className="space-y-5 scroll-mt-32"
-                >
-
-                  <h2 className="text-2xl font-semibold text-amber-900">
-                    FAQs
-                  </h2>
-
-                  <div className="space-y-4">
-
-                    {faqs.map((faq) => (
-
-                      <div
-                        key={faq.question}
-                        className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm"
-                      >
-
-                        <h3 className="text-lg font-semibold text-amber-900">
-                          {faq.question}
-                        </h3>
-
-                        <p className="mt-3 text-lg leading-8 text-gray-700">
-                          {faq.answer}
-                        </p>
-
+                  <div className="space-y-3">
+                    {faqs.map((faq, idx) => (
+                      <div key={idx} className="rounded-xl border border-amber-100 bg-[#fffaf3] p-5">
+                        <h3 className="font-bold text-amber-950 text-base sm:text-lg">{faq.question}</h3>
+                        <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed">{faq.answer}</p>
                       </div>
-
                     ))}
-
                   </div>
-
                 </section>
 
-                <section className="rounded-[24px] bg-gradient-to-r from-amber-600 to-amber-700 p-8 text-white shadow-lg">
-
-                  <h2 className="text-3xl font-bold">
-                    Looking for a Relaxing Spa Experience?
+                {/* Bottom CTA */}
+                <section className="rounded-[24px] bg-gradient-to-r from-[#9c5232] to-[#7a391e] p-8 text-white shadow-lg">
+                  <h2 className="text-2xl sm:text-3xl font-bold font-serif">
+                    Book Your Connaught Place Spa Session
                   </h2>
-
-                  <p className="mt-4 max-w-2xl text-lg text-amber-50">
-                    Discover professional massage therapies, premium wellness
-                    services, and a peaceful spa environment designed to help
-                    you relax, refresh, and feel your best.
+                  <p className="mt-3 text-amber-100 text-sm sm:text-base max-w-2xl leading-relaxed">
+                    Enjoy first-class wellness right in the heart of Delhi. Certified therapists, attached hot showers,
+                    and introductory first-visit packages from just ₹1499.
                   </p>
-
-                  <div className="mt-8 flex flex-wrap gap-4">
-
-                    <Link
-                      href="/contact"
-                      className="rounded-full bg-white px-7 py-3 font-semibold text-amber-700 transition hover:bg-amber-50"
-                    >
-                      Contact Us
-                    </Link>
-
+                  <div className="mt-6 flex flex-wrap gap-4">
                     <a
-                      href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
+                      href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20book%20a%20spa%20appointment%20in%20Connaught%20Place%20(CP)."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full border border-white px-7 py-3 font-semibold hover:bg-white/10"
+                      className="rounded-full bg-white px-7 py-3 font-bold text-[#9c5232] transition hover:bg-amber-50 shadow-md"
                     >
-                      Book on WhatsApp
+                      Book on WhatsApp (24/7)
                     </a>
-
+                    <Link
+                      href="/contact"
+                      className="rounded-full border border-white px-7 py-3 font-semibold hover:bg-white/10 transition"
+                    >
+                      Contact Information
+                    </Link>
                   </div>
-
                 </section>
 
               </article>
 
+              {/* Sidebar */}
               <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-
-                <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
-
-                  <h3 className="text-xl font-semibold text-amber-900">
-                    Related Blogs
+                {/* Special Offer Card */}
+                <div className="rounded-2xl border border-amber-200 bg-[#fffaf5] p-6 shadow-sm text-center">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9c5232]">
+                    CP Special Deal
+                  </span>
+                  <h3 className="text-xl font-bold text-[#2b1810] mt-1 font-serif">
+                    First Visit Offer @ ₹1499
                   </h3>
-
-                  <div className="mt-5 space-y-4">
-
-                    {relatedBlogs.map((blog) => (
-
-                      <Link
-                        key={blog.title}
-                        href={blog.href}
-                        className="flex items-center gap-3 rounded-xl border border-amber-100 p-3 transition hover:bg-amber-50"
-                      >
-
-                        <div className="relative h-16 w-16 overflow-hidden rounded-lg">
-
-                          <Image
-                            src={blog.image}
-                            alt={blog.title}
-                            fill
-                            className="object-cover"
-                          />
-
-                        </div>
-
-                        <div>
-
-                          <p className="font-medium text-gray-800">
-                            {blog.title}
-                          </p>
-
-                          <p className="text-sm text-amber-700">
-                            Read More
-                          </p>
-
-                        </div>
-
-                      </Link>
-
-                    ))}
-
-                  </div>
-
+                  <p className="text-xs text-gray-600 mt-2 leading-relaxed">
+                    60-min session &bull; Attached hot shower &bull; Central Delhi outlet &bull; Certified therapists
+                  </p>
+                  <a
+                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20at%20CP%20spa."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 w-full inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white py-3 text-sm font-bold shadow-md transition"
+                  >
+                    Claim ₹1499 Offer
+                  </a>
                 </div>
 
+                {/* Related Blogs */}
+                <div className="rounded-2xl border border-amber-100 bg-white p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-amber-950 font-serif">
+                    Related Guides &amp; Blogs
+                  </h3>
+                  <div className="mt-4 space-y-3">
+                    {relatedBlogs.map((blog, idx) => (
+                      <Link
+                        key={idx}
+                        href={blog.href}
+                        className="flex items-center gap-3 rounded-xl border border-amber-100 p-2.5 hover:bg-amber-50 transition"
+                      >
+                        <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-stone-100">
+                          <Image src={blog.image} alt={blog.title} fill className="object-cover" />
+                        </div>
+                        <div>
+                          <p className="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2">
+                            {blog.title}
+                          </p>
+                          <span className="text-xs font-bold text-[#9c5232] mt-0.5 inline-block">
+                            Read Guide &rarr;
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </aside>
-
             </div>
 
           </div>
-
         </section>
-
       </main>
 
       <WhatsappFloat />
-
     </>
   );
 }

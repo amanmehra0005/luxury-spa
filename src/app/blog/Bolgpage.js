@@ -40,47 +40,47 @@ const blogs = [
     link: "/is-b2b-massage-legal-in-india",
   },
   {
-    title: "What Does Thai Massage Do to Your Body?",
+    title: "Thai Massage in Delhi: Health Benefits, Body Stretching, Price & What to Expect",
     description:
-      "Learn how Thai massage can help reduce stress, improve flexibility, relieve muscle tension, and support better circulation in a relaxing wellness experience.",
+      "Discover authentic Thai yoga massage in Delhi: assisted full-body stretching, acupressure benefits, pricing from ₹1499, and certified Thai therapists across 12+ luxury outlets.",
     image: "/images/thaimassage1.png",
     link: "/blog/thai-massage-does-to-your-body",
   },
- {
-  title: "What is a B2B Full Body Massage? Complete Beginner's Guide",
-  description:
-    "Discover what a B2B Full Body Massage is, how it works, its benefits, safety tips, session duration, FAQs, and everything beginners need to know.",
-  image: "/images/b2b-full-body-massage.jpg",
-  link: "/blog/what-is-b2b-full-body-massage",
-},
-{
-  title: "What Is a Sandwich Massage? Process, Price & What to Expect",
-  description:
-    "Discover Sandwich Massage in Delhi, its benefits, professional massage therapy, booking process, what to expect, and tips for choosing the best spa services in Delhi.",
-  image: "/images/sandwich-massage.png",
-  link: "/blog/first-sandwich-massage-what-to-expect",
-},
-{
-  title: "Connaught Place Spa Guide: How to Choose a Hotel Spa in CP",
-  description:
-    "How to pick a hotel spa in CP, which massage suits you, the best time to go and what to check before you book.",
-  image: "/images/spa-in-Connaught-place.png",
-  link: "/blog/spa-in-connaught-place",
-},
-{
-  title: "Best Spa Services in Delhi NCR: What Services Should You Choose?",
-  description:
-    "Discover the best spa services in Delhi NCR, including Full Body Massage, Couple Massage, Sandwich Massage, and B2B Massage. Learn how to choose the right wellness treatment for relaxation and self-care.",
-  image: "/images/spaservices1.jpg",
-  link: "/blog/best-spa-service-in-delhi-ncr",
-},
-{
-  title: "What Is the Difference Between Spa and Massage? A Simple Guide",
-  description:
-    "Understand the difference between a spa and a massage. Learn how massage is a specific hands-on therapy while a spa offers a complete wellness environment with multiple rejuvenating treatments.",
-  image: "/images/spa-treatments.jpg",
-  link: "/blog/what-is-the-difference-between-spa-and-massage",
-},
+  {
+    title: "What is B2B Massage in Delhi? Full Body Process, Price & Safety Guide (2026)",
+    description:
+      "Complete guide to B2B massage in Delhi: what to expect, step-by-step process, health benefits, transparent prices from ₹1499, and safety tips across 12+ luxury spa outlets.",
+    image: "/images/b2b-full-body-massage.jpg",
+    link: "/blog/what-is-b2b-full-body-massage",
+  },
+  {
+    title: "What Is a Sandwich Massage? Step-by-Step Process & Delhi Price (2026 Guide)",
+    description:
+      "Everything about sandwich massage in Delhi: what to expect, 2-therapist synchronized process, benefits, and transparent pricing from ₹1499 at Luxury Russian Spa.",
+    image: "/images/sandwich-massage.png",
+    link: "/blog/first-sandwich-massage-what-to-expect",
+  },
+  {
+    title: "Best Russian Spa in Connaught Place (CP): Prices, 5-Star Hotel Visits & Guide",
+    description:
+      "Looking for a luxury Russian spa in Connaught Place (CP)? Enjoy in-room 5-star hotel visits, private suites with attached hot showers, certified therapists & packages from ₹1499.",
+    image: "/images/spa-in-Connaught-place.png",
+    link: "/blog/spa-in-connaught-place",
+  },
+  {
+    title: "Best Spa Services in Delhi NCR (2026): Top 7 Massages, Prices & Offers",
+    description:
+      "Explore the top 7 best spa services in Delhi NCR: Russian Massage, Sandwich Massage, B2B Therapy, Nuru & Deep Tissue. Complete price list from ₹1499 at 12+ luxury outlets.",
+    image: "/images/spaservices1.jpg",
+    link: "/blog/best-spa-service-in-delhi-ncr",
+  },
+  {
+    title: "Russian Spa vs Normal Spa: Key Differences, Services & Delhi Price Guide",
+    description:
+      "Discover the real difference between a Russian spa and a normal spa in Delhi: amenities, private hot showers, international therapists, therapies (Nuru, B2B, Sandwich), and prices from ₹1499.",
+    image: "/images/spa-treatments.jpg",
+    link: "/blog/what-is-the-difference-between-spa-and-massage",
+  },
 ];
 
 export default function Bolgpage() {
