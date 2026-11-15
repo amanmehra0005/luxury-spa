@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.luxuryrussianspa.com/aromatherapy-massage-in-delhi
 const IMAGE_URL = `https://www.luxuryrussianspa.com/images/gallery/${svc.hero}-lg.webp`;
 
 export const metadata = {
-  title: "Aromatherapy Massage in Delhi - Essential Oils | ₹1999",
+  title: "Aromatherapy Massage in Delhi | Essential Oil Spa From ₹1999",
   description:
     "Aromatherapy massage in Delhi with lavender, lemongrass or eucalyptus oils you choose. Gentle, calming, 24+ outlets or at home. ₹1,999 for 60 min.",
   keywords: [

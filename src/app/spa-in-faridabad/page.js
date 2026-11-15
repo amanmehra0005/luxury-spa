@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["faridabad"];
 
 export const metadata = {
-  title: "Russian Spa in Faridabad - Body Massage Near NIT",
+  title: "Russian Spa in Faridabad | Best Body Massage From ₹1999",
   description:
     "Best spa in Faridabad for body massage & body spa near NIT. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

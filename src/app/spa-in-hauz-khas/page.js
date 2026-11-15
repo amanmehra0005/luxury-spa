@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["hauz-khas"];
 
 export const metadata = {
-  title: "Russian Spa in Hauz Khas Village (₹1499 Offer) | South Delhi",
+  title: "Russian Spa in Hauz Khas | Best Body Massage From ₹1999",
   description:
     "Best Russian Spa near Hauz Khas Village & Green Park. Certified European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [

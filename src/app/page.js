@@ -1,7 +1,7 @@
 import HomeClient from "./HomeClient";
 
 export const metadata = {
-  title: "Luxury Russian Spa in Delhi | Best Full Body Massage From ₹1499",
+  title: "Luxury Russian Spa in Delhi | Full Body Massage From ₹1499",
   description:
     "Experience premier Russian spa in Delhi with certified Russian & Indian therapists across 12+ luxury outlets & 5-star hotel visits in Aerocity, Lajpat Nagar & Mahipalpur. First visit @ ₹1499.",
 

@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["karol-bagh"];
 
 export const metadata = {
-  title: "Russian Spa in Karol Bagh - Spa & Massage Centre | ₹1999",
+  title: "Russian Spa in Karol Bagh | Best Body Massage Centre ₹1999",
   description: "Russian spa in Karol Bagh, Central Delhi. Massage centre with Russian & Indian therapists for full body, deep tissue & couple massage. Private rooms, from ₹1999.",
   keywords: ["spa in karol bagh", "massage in karol bagh", "full body massage karol bagh", "massage centre karol bagh", "body massage karol bagh", "couple massage in karol bagh", "home spa in karol bagh", "hotel spa in karol bagh", "spa near karol bagh metro station"],
   openGraph: {

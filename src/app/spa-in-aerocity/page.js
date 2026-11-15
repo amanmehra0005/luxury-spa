@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Aerocity).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Aerocity).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Aerocity", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Aerocity", item: PAGE_URL },
   ],
 };
 
@@ -46,7 +45,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Aerocity - Spa Near IGI Airport, Open 24/7",
+  title: "Russian Spa in Aerocity (24/7 Open) | Near Airport ₹1999",
   description:
     "Russian spa in Aerocity near Lemon Tree and IGI Airport, open 24/7. Massage at our outlet or in your room at JW Marriott, Novotel or Pullman. From ₹1999.",
   alternates: {

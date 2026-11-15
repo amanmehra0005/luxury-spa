@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Lajpat Nagar).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Lajpat Nagar).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Lajpat Nagar", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Lajpat Nagar", item: PAGE_URL },
   ],
 };
 
@@ -47,7 +46,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Lajpat Nagar (₹1499 Offer) | Near Central Market",
+  title: "Russian Spa in Lajpat Nagar | Best Spa Central Market ₹1999",
   description:
     "Best Russian Spa in Lajpat Nagar near Central Market & Metro Gate 2. Certified European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [

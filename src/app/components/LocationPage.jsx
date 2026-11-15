@@ -162,8 +162,7 @@ export function locationSchemas(loc) {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-        { "@type": "ListItem", position: 2, name: "Outlets", item: `${SITE}/outlets` },
-        { "@type": "ListItem", position: 3, name: `Spa in ${loc.name}`, item: url },
+        { "@type": "ListItem", position: 2, name: `Spa in ${loc.name}`, item: url },
       ],
     },
     {
@@ -311,8 +310,6 @@ export default function LocationPage({ loc }) {
         <div className="relative max-w-5xl mx-auto px-5 md:px-10 pt-14 pb-36 md:pt-20 md:pb-44 text-center">
           <nav aria-label="Breadcrumb" className="mb-6 text-xs text-white/70">
             <a href="/" className="hover:text-secondary">Home</a>
-            <span className="mx-2">/</span>
-            <a href="/outlets" className="hover:text-secondary">Outlets</a>
             <span className="mx-2">/</span>
             <span className="text-white">Spa in {loc.name}</span>
           </nav>

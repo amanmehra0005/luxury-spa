@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["punjabi-bagh"];
 
 export const metadata = {
-  title: "Russian Spa in Punjabi Bagh (₹1499 Offer) | Club Road Spa",
+  title: "Russian Spa in Punjabi Bagh | Best Club Road Spa From ₹1999",
   description:
     "Best Russian Spa on Club Road, Punjabi Bagh. Certified European & Russian therapists, attached rain shower & ₹1499 introductory offer. Open 24/7. Book on WhatsApp!",
   keywords: [

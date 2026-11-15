@@ -23,7 +23,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "B2B Massage in Connaught Place - Near Rajiv Chowk | Luxury Russian Spa",
+  title: "B2B Massage in Connaught Place | Private Luxury Spa ₹1999",
   description:
     "B2B massage in Connaught Place near Rajiv Chowk Metro for genuine B2B therapy. Certified therapists, private hygienic rooms. Book from ₹2999 today!",
   keywords: [

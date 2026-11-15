@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Noida).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Noida).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Noida", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Noida", item: PAGE_URL },
   ],
 };
 
@@ -47,7 +46,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Noida - Spa Near Sector 18 & Home Massage",
+  title: "Russian Spa in Noida (Sector 18) | Best Body Massage ₹1999",
   description:
     "Spa near Noida Sector 18, or a therapist at your home in Noida, Extension or Greater Noida. Russian & Thai therapists, ₹1,999. Ask today's slots on WhatsApp.",
   keywords: [

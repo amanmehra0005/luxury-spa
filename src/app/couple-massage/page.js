@@ -48,7 +48,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Couple Massage in Delhi - Couples Spa From ₹1999 | Luxury Russian Spa",
+  title: "Couple Massage in Delhi | Luxury Couples Spa From ₹1999",
   description:
     "Book a couple massage in Delhi side by side with your partner. Private couples spa rooms, romantic packages, home visits and 5-star hotel sessions across Delhi NCR.",
   alternates: {

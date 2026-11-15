@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["paharganj"];
 
 export const metadata = {
-  title: "Russian Spa in Paharganj - Near New Delhi Railway Station",
+  title: "Russian Spa in Paharganj | Best Spa Near NDLS Station ₹1999",
   description:
     "Best spa in Paharganj near New Delhi Railway Station & Main Bazaar. 24 hours booking, certified therapists, home & hotel spa available. Book from ₹1999!",
   keywords: [

@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Greater Kailash).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Greater Kailash).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Greater Kailash", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Greater Kailash", item: PAGE_URL },
   ],
 };
 
@@ -47,7 +46,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Greater Kailash (₹1499 Offer) | Spa in GK 1 & GK 2",
+  title: "Russian Spa in Greater Kailash | Best Body Massage ₹1999",
   description:
     "Luxury Russian Spa in Greater Kailash near M-Block Market & Kailash Colony Metro. Certified foreign therapists, private VIP suites & ₹1499 welcome rate. Book on WhatsApp!",
   keywords: [

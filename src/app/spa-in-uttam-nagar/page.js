@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["uttam-nagar"];
 
 export const metadata = {
-  title: "Russian Spa in Uttam Nagar (₹1499 Offer) Near Metro",
+  title: "Russian Spa in Uttam Nagar | Best Body Massage From ₹1999",
   description:
     "Best Russian Spa near Uttam Nagar East & West Metro. Transparent prices from ₹1499 (welcome offer). Attached hot shower & certified therapists. Book on WhatsApp in 1 min!",
   keywords: [

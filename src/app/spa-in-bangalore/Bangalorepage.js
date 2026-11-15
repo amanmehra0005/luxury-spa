@@ -295,8 +295,6 @@ export default function Bangalorepage() {
           <nav aria-label="Breadcrumb" className="mb-6 text-xs text-white/70">
             <a href="/" className="hover:text-secondary">Home</a>
             <span className="mx-2">/</span>
-            <a href="/outlets" className="hover:text-secondary">Outlets</a>
-            <span className="mx-2">/</span>
             <span className="text-white">Spa in Bangalore</span>
           </nav>
 

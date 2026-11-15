@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["kalkaji"];
 
 export const metadata = {
-  title: "Russian Spa in Kalkaji (₹1499 Offer) Near Nehru Place & Metro",
+  title: "Russian Spa in Kalkaji | Best Spa Near Nehru Place ₹1999",
   description:
     "Top Russian Spa in Kalkaji near Nehru Place & Kalkaji Metro. Full body, B2B & deep tissue massage from ₹1499. Private hygienic suites & zero advance payment. Book on WhatsApp!",
   keywords: [

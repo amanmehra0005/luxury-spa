@@ -3,7 +3,7 @@ import Swedishvsdeeptissue, { faqs } from "./Swedishvsdeeptissue";
 const SITE = "https://www.luxuryrussianspa.com";
 const PAGE_URL = `${SITE}/swedish-massage-vs-deep-tissue-massage`;
 const IMAGE_URL = `${SITE}/images/gallery/g15-lg.webp`;
-const TITLE = "Swedish vs Deep Tissue Massage: Difference & Which to Choose";
+const TITLE = "Swedish vs Deep Tissue Massage: Key Differences & Benefits";
 const DESCRIPTION =
   "Swedish massage vs deep tissue: how the pressure, feel and soreness differ, which is better for back pain, and how both compare with hot stone and sports massage.";
 

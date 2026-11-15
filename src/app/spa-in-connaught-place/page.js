@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Connaught Place).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Connaught Place).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Connaught Place", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Connaught Place", item: PAGE_URL },
   ],
 };
 
@@ -46,7 +45,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Connaught Place - Best Spa in CP | ₹1999",
+  title: "Russian Spa in Connaught Place | Best CP Body Massage ₹1999",
   description:
     "Russian spa in Connaught Place inside The Park hotel. Russian & Indian therapists, private rooms, open 24/7. Full body, B2B & couple massage in CP from ₹1999.",
   keywords: [

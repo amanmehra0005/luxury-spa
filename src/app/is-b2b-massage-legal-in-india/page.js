@@ -13,7 +13,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Is B2B Massage Legal in India - Know the Facts | Luxury Russian Spa",
+  title: "Is B2B Massage Legal in India? Laws, Facts & Safety Guide",
   description: "B2B massage legality in India explained - laws, risks & how to choose safely. Trusted, professional guidance from Luxury Russian Spa in Delhi NCR. Read the full guide!",
   keywords: ["is b2b massage legal in india", "b2b massage law india", "b2b massage legality"],
   openGraph: {

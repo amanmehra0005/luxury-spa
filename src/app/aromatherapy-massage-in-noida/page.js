@@ -18,7 +18,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Aromatherapy Massage in Noida - Essential Oil Relief | Luxury Russian Spa",
+  title: "Aromatherapy Massage in Noida | Essential Oil Therapy ₹1999",
   description:
     "Aromatherapy massage in Noida near Sector 18 for essential oil stress relief & relaxation. Certified therapists, hygienic setting. Book from ₹1999 today!",
   keywords: [

@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.luxuryrussianspa.com/thai-massage-in-delhi";
 const IMAGE_URL = `https://www.luxuryrussianspa.com/images/gallery/${svc.hero}-lg.webp`;
 
 export const metadata = {
-  title: "Thai Massage in Delhi - Thai Therapists | From ₹1999",
+  title: "Authentic Thai Massage in Delhi | Stretch Therapy From ₹1999",
   description:
     "Traditional Thai massage in Delhi by Thai therapists: stretching and pressure points on a mat, no oil. 24+ outlets or at home. ₹1,999 for 60 min.",
   keywords: [

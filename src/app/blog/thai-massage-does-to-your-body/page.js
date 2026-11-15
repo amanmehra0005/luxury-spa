@@ -4,7 +4,7 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title: "Thai Massage in Delhi: Health Benefits, Body Stretching, Price & What to Expect (2026)",
+  title: "Thai Massage in Delhi: Health Benefits & Price Guide (2026)",
   description:
     "Discover authentic Thai massage in Delhi: assisted yoga stretching, acupressure benefits, pricing from ₹1499, and certified Thai therapists across 12+ luxury spa outlets. Read our 2026 guide!",
   keywords: [

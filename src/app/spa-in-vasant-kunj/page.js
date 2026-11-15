@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["vasant-kunj"];
 
 export const metadata = {
-  title: "Russian Spa in Vasant Kunj - Luxury Full Body Massage",
+  title: "Russian Spa in Vasant Kunj | Luxury Body Massage From ₹1999",
   description:
     "Spa in Vasant Kunj for full body, deep tissue & couple massage near Ambience Mall. Certified therapists, hygienic rooms. Book from ₹1999 today!",
   keywords: [

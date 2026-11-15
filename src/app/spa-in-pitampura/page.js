@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["pitampura"];
 
 export const metadata = {
-  title: "Russian Spa in Pitampura - Luxury Body Massage Centre",
+  title: "Russian Spa in Pitampura | Best Body Massage From ₹1999",
   description:
     "Best spa in Pitampura for full body & body massage near NSP. Luxury spa Pitampura with certified therapists, hygienic private rooms. Book from ₹1999!",
   keywords: [

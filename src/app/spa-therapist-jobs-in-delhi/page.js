@@ -12,7 +12,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Spa Therapist Jobs in Delhi - Part & Full Time | Luxury Russian Spa",
+  title: "Spa Therapist Jobs in Delhi | Hiring Female Therapists 24/7",
   description: "Spa therapist jobs in Delhi, Noida & Gurgaon with part-time and full-time openings. Join a trusted, growing wellness brand. Contact us to apply today!",
   keywords: ["spa therapist jobs in delhi", "massage therapist jobs delhi", "spa jobs delhi", "part time spa jobs delhi"],
   openGraph: {

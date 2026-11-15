@@ -4,7 +4,7 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title: "Best Spa Services in Delhi NCR (2026): Top 7 Massages, Price List & Offers",
+  title: "Best Spa Services in Delhi NCR (2026): Top Massages & Prices",
   description:
     "Explore the top 7 best spa services in Delhi NCR: Russian Massage, Sandwich Massage, B2B Therapy, Nuru & Deep Tissue. Complete price list from ₹1499 at 12+ luxury outlets. Book 24/7!",
   keywords: [

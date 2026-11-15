@@ -63,7 +63,7 @@ const aboutSchema = {
 };
 
 export const metadata = {
-  title: "About Us - Luxury Russian Spa | 24+ Massage Spas Across Delhi NCR",
+  title: "About Us | Luxury Russian Spa - 24+ Outlets Across Delhi NCR",
   description:
     "24+ massage spas across Delhi NCR, hotel spas at The Park, The Suryaa & Novotel, and one honest price list. See who we are before you book.",
   keywords: [

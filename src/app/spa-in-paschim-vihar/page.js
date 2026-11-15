@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["paschim-vihar"];
 
 export const metadata = {
-  title: "Russian Spa in Paschim Vihar - Full Body Massage | ₹1999",
+  title: "Russian Spa in Paschim Vihar | Full Body Massage From ₹1999",
   description:
     "Best spa in Paschim Vihar for full body & body massage near the metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

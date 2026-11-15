@@ -5,7 +5,7 @@ import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
   // Informational guide: kept off "Sandwich Massage in Delhi" so it doesn't compete with the /sandwich-massage service page.
-  title: "What Is a Sandwich Massage? Step-by-Step Process & Delhi Price (2026 Guide)",
+  title: "What Is Sandwich Massage? Steps, Benefits & Price (2026)",
   description:
     "Everything about sandwich massage in Delhi: what to expect, 2-therapist synchronized process, benefits & transparent pricing from ₹1999. Book top Delhi spas on WhatsApp!",
   keywords: ["what is sandwich massage", "what is sandwich massage in spa", "sandwich massage process", "sandwich massage meaning", "sandwich spa", "sandwich massage guide", "first sandwich massage", "sandwich massage in delhi"],

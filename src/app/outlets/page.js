@@ -12,7 +12,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "5-Star Hotel Spa Outlets in Delhi - Rohini & Pitampura | Luxury Russian Spa",
+  title: "Luxury Spa Outlets in Delhi NCR | 24+ Locations & Hotel Spas",
   description: "Spa outlets in Delhi including Rohini & Pitampura at luxury 5-star hotels. Relaxing body massages by certified therapists. Find your nearest outlet - book now!",
   keywords: ["spa outlets in delhi", "hotel spa outlets delhi", "spa locations delhi", "spa branches delhi"],
   openGraph: {

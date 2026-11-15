@@ -12,7 +12,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa & Massage Blog Delhi: Guides, Prices & Offers (2026)",
+  title: "Russian Spa & Massage Blog Delhi | Guides & Rates (2026)",
   description:
     "Explore expert Delhi spa guides: B2B massage process, sandwich massage benefits, Thai stretching, price lists from ₹1499, and tips to choose the best Russian spa in Delhi NCR.",
   keywords: [

@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.luxuryrussianspa.com/b2b-massage-in-delhi";
 const IMAGE_URL = `https://www.luxuryrussianspa.com/images/gallery/${svc.hero}-lg.webp`;
 
 export const metadata = {
-  title: "B2B Massage in Delhi - Private Premium Session | ₹1999",
+  title: "B2B Massage in Delhi | Luxury Full Body Therapy From ₹1999",
   description:
     "B2B massage in Delhi in a fully private room with a therapist you choose. 24+ Delhi outlets, or at your home or hotel. Price confirmed before you book.",
   keywords: [

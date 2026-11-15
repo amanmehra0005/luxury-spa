@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["mahipalpur"];
 
 export const metadata = {
-  title: "Russian Spa in Mahipalpur - Open 24/7 Near IGI Airport",
+  title: "Russian Spa in Mahipalpur (24/7 Open) | Near Airport ₹1999",
   description:
     "Best spa in Mahipalpur for massage, body massage & russian spa near IGI Airport. Certified therapists, hygienic private rooms, hotel & home spa. Book from ₹1999!",
   keywords: [

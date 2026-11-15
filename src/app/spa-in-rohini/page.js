@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["rohini"];
 
 export const metadata = {
-  title: "Russian Spa in Rohini (₹1499 Offer) Near City Centre Mall & Metro",
+  title: "Russian Spa in Rohini | Best Full Body Massage From ₹1999",
   description:
     "Best Russian Spa in Rohini covering Sectors 3 to 24 & City Centre Mall. Certified therapists, attached private rain shower & ₹1499 first visit offer. Book on WhatsApp!",
   keywords: [

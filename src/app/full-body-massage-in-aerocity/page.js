@@ -18,7 +18,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Full Body Massage in Aerocity - Near IGI Airport | Luxury Russian Spa",
+  title: "Full Body Massage in Aerocity | 24/7 Spa Near Airport ₹1999",
   description:
     "Full body massage in Aerocity near IGI Airport Terminal 3 for complete relaxation. Certified therapists, hotel & outlet options. Book from ₹1999 today!",
   keywords: [

@@ -47,7 +47,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Massage in Delhi - Spa, Home & Hotel Massage From ₹1999 | Luxury Russian Spa",
+  title: "Best Massage in Delhi | Luxury Spa, Home & Hotel From ₹1499",
   description:
     "Full body massage in Delhi at 24+ massage centres across Delhi NCR, in 5-star hotels or at home. Thai, deep tissue, couple and more. See prices and book on WhatsApp.",
   alternates: {

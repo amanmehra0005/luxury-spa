@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["preet-vihar"];
 
 export const metadata = {
-  title: "Russian Spa in Preet Vihar - Body Massage Near Vikas Marg",
+  title: "Russian Spa in Preet Vihar | Best Body Massage From ₹1999",
   description:
     "Best spa in Preet Vihar for full body & body massage near Vikas Marg Metro. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

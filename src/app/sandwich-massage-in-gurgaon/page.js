@@ -18,7 +18,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Sandwich Massage in Gurgaon - Two-Therapist Session | Luxury Russian Spa",
+  title: "Sandwich Massage in Gurgaon | 4-Hand Luxury Therapy ₹1999",
   description:
     "Sandwich massage in Gurgaon near Cyber Hub for a unique two-therapist relaxation session. Certified therapists, hygienic setting. Book from ₹2999 today!",
   keywords: [

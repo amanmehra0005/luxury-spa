@@ -4,7 +4,7 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title: "Best Russian Spa in Connaught Place (CP): Prices, 5-Star Hotel Visits & Guide (2026)",
+  title: "Best Russian Spa in Connaught Place: Rates & Guide (2026)",
   description:
     "Looking for a luxury Russian spa in Connaught Place (CP)? Enjoy in-room 5-star hotel visits, private suites with attached hot showers, certified therapists & packages from ₹1499. Book on WhatsApp 24/7!",
   keywords: [

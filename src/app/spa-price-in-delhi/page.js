@@ -74,7 +74,7 @@ const priceSchema = {
 };
 
 export const metadata = {
-  title: "Spa Price in Delhi 2026: Massage Rates From ₹1499 (Full Menu List)",
+  title: "Spa Price in Delhi (2026): Massage Rates From ₹1499 | Menu",
   description:
     "Check full 2026 spa price list in Delhi. First visit massage offer starting @ ₹1499, regular from ₹1999. Russian, B2B, Swedish & Sandwich therapy. 100% transparent rates, attached hot shower, pay after session. Book on WhatsApp!",
   keywords: [

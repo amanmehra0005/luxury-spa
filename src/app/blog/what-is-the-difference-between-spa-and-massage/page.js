@@ -4,7 +4,7 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title: "Russian Spa vs Normal Spa: Key Differences, Services & Delhi Price Guide (2026)",
+  title: "Russian Spa vs Normal Spa: Differences & Price Guide (2026)",
   description:
     "Discover the real difference between a Russian spa and a normal spa in Delhi: amenities, private hot showers, international therapists, therapies (Nuru, B2B, Sandwich), and prices from ₹1499. Read our 2026 guide!",
   keywords: [

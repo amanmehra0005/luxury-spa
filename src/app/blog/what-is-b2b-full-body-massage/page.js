@@ -4,7 +4,7 @@ import WhatsappFloat from "../../components/WhatsappFloat";
 import { Breadcrumbs } from "../../components/BlogComponents";
 
 export const metadata = {
-  title: "What is B2B Massage in Delhi? Full Body Process, Price & Safety Guide (2026)",
+  title: "What is B2B Massage in Delhi? Process, Price & Safety (2026)",
   description:
     "Complete 2026 guide to B2B massage in Delhi: what to expect, step-by-step process, health benefits, transparent prices from ₹1499, and safety tips across 12+ luxury outlets. Read now!",
   keywords: [

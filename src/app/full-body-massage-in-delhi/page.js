@@ -54,7 +54,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Full Body Massage in Delhi - Price From ₹1999 | Luxury Russian Spa",
+  title: "Full Body Massage in Delhi | Best Relaxing Spa From ₹1499",
   description:
     "Full body massage in Delhi at 24+ outlets or at your home. Saket, Rohini, Lajpat Nagar, Mahipalpur, Laxmi Nagar & more. See prices and book on WhatsApp.",
   keywords: [

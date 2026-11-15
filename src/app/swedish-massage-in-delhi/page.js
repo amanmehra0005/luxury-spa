@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.luxuryrussianspa.com/swedish-massage-in-delhi";
 const IMAGE_URL = `https://www.luxuryrussianspa.com/images/gallery/${svc.hero}-lg.webp`;
 
 export const metadata = {
-  title: "Swedish Massage in Delhi - Relaxing Full Body | ₹1999",
+  title: "Swedish Massage in Delhi | Gentle Full Body Spa From ₹1999",
   description:
     "Swedish massage in Delhi with warm oil and long, gentle strokes. Ideal for stress, sleep and a first massage. 24+ outlets or at home, ₹1,999 for 60 min.",
   keywords: [

@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Chandigarh).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Chandigarh).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Chandigarh", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Chandigarh", item: PAGE_URL },
   ],
 };
 
@@ -52,7 +51,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Chandigarh & Mohali - Home & Hotel Massage",
+  title: "Russian Spa in Chandigarh & Mohali | Hotel Visits ₹1999",
   description:
     "No spa trip needed: our therapists come to your home or hotel in Chandigarh, Mohali & Zirakpur. Russian, Thai & Indian therapists. Get a price on WhatsApp.",
   keywords: [

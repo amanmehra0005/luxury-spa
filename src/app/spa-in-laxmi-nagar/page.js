@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["laxmi-nagar"];
 
 export const metadata = {
-  title: "Russian Spa in Laxmi Nagar (₹1499 Offer) | East Delhi Spa",
+  title: "Russian Spa in Laxmi Nagar | Best East Delhi Spa ₹1999",
   description:
     "Best Russian Spa near Laxmi Nagar Metro, East Delhi. Full body Russian oil massage, attached hot shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [

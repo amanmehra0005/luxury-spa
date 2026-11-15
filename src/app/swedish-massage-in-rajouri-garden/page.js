@@ -18,7 +18,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Swedish Massage in Rajouri Garden - Gentle Relaxation | Luxury Russian Spa",
+  title: "Swedish Massage in Rajouri Garden | Relaxing Spa ₹1999",
   description:
     "Swedish massage in Rajouri Garden near City Square Mall for gentle, full body relaxation. Certified therapists, hygienic setting. Book from ₹1999 today!",
   keywords: [

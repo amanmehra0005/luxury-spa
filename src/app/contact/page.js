@@ -59,7 +59,7 @@ const contactSchema = {
 };
 
 export const metadata = {
-  title: "Contact Luxury Russian Spa - WhatsApp, Call or Visit | Book 24/7",
+  title: "Contact Luxury Russian Spa | 24/7 Booking & Outlet Locations",
   description:
     "Call or WhatsApp +91 87997 16197, any time of day. Tell us the massage, time and area and we'll reply with the price and nearest outlet in minutes.",
   keywords: [

@@ -54,7 +54,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Deep Tissue Massage in Delhi - Near You or at Home | From ₹1999",
+  title: "Deep Tissue Massage in Delhi | Muscle Pain Relief From ₹1999",
   description:
     "Deep tissue massage in Delhi for neck, shoulder and lower back pain. Firm pressure by experienced therapists at 24+ outlets or at home. See prices & book.",
   keywords: [

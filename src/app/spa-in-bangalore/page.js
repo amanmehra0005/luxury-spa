@@ -13,14 +13,13 @@ const faqSchema = {
   })),
 };
 
-// Mirrors the visible breadcrumb on the page (Home / Outlets / Spa in Bangalore).
+// Mirrors the visible breadcrumb on the page (Home / Spa in Bangalore).
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.luxuryrussianspa.com/" },
-    { "@type": "ListItem", position: 2, name: "Outlets", item: "https://www.luxuryrussianspa.com/outlets" },
-    { "@type": "ListItem", position: 3, name: "Spa in Bangalore", item: PAGE_URL },
+    { "@type": "ListItem", position: 2, name: "Spa in Bangalore", item: PAGE_URL },
   ],
 };
 
@@ -51,7 +50,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Spa in Bangalore - Body Massage at Home & Hotel | Luxury Russian Spa",
+  title: "Russian Spa in Bangalore | Luxury Home & Hotel Visits ₹1999",
   description:
     "Luxury spa in Bangalore that comes to you. Full body, Thai & B2B massage at your home or hotel in Koramangala, Indiranagar, Whitefield & more. Book on WhatsApp.",
   keywords: [

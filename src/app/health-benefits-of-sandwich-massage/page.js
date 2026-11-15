@@ -12,7 +12,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: "Health Benefits of Sandwich Massage - Deep Relaxation | Luxury Russian Spa",
+  title: "7 Health Benefits of Sandwich Massage | Luxury Russian Spa",
   description: "Health benefits of sandwich massage in Delhi - deep relaxation, better circulation & pain relief from two therapists in sync. Learn more and book your session!",
   keywords: ["health benefits of sandwich massage", "sandwich massage benefits", "sandwich massage advantages"],
   openGraph: {

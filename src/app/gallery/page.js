@@ -32,7 +32,7 @@ const gallerySchema = {
 };
 
 export const metadata = {
-  title: "Spa Gallery Delhi - Photos & Videos of Our Spa | Luxury Russian Spa",
+  title: "Luxury Spa Gallery Delhi | Photos of Rooms & Therapists",
   description:
     "See inside Luxury Russian Spa before you book: treatment rooms, massage sessions, couple suites, therapies and outlets across Delhi NCR. Photos and videos.",
   keywords: [

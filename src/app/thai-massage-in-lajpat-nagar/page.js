@@ -18,7 +18,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Thai Massage in Lajpat Nagar - Stretch Therapy | Luxury Russian Spa",
+  title: "Thai Massage in Lajpat Nagar | Authentic Thai Therapy ₹1999",
   description:
     "Thai massage in Lajpat Nagar near Central Market for traditional stretching & stress relief. Certified therapists. Book from ₹1999 today!",
   keywords: [

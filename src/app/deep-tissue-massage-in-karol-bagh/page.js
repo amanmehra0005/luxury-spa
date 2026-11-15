@@ -18,7 +18,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Deep Tissue Massage in Karol Bagh - Real Pain Relief | Luxury Russian Spa",
+  title: "Deep Tissue Massage in Karol Bagh | Muscle Pain Relief ₹1999",
   description:
     "Deep tissue massage in Karol Bagh near Karol Bagh Metro for chronic pain & muscle knots. Certified therapists, private hygienic rooms. Book from ₹1999 today!",
   keywords: [

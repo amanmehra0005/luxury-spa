@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["janakpuri"];
 
 export const metadata = {
-  title: "Russian Spa in Janakpuri - Full Body Massage Near Metro",
+  title: "Russian Spa in Janakpuri | Best Body Massage From ₹1999",
   description:
     "Spa in Janakpuri for full body, deep tissue & couple massage near Janakpuri West Metro. Certified therapists, hygienic private rooms. Book today!",
   keywords: [

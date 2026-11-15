@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["saket"];
 
 export const metadata = {
-  title: "Russian Spa in Saket - Body Massage Near Select Citywalk",
+  title: "Russian Spa in Saket | Best Body Massage From ₹1999",
   description:
     "Best spa in Saket for full body & body massage near Select Citywalk. Certified therapists, hygienic private rooms, home & hotel spa. Book from ₹1999!",
   keywords: [

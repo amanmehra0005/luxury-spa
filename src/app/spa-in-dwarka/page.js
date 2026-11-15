@@ -4,7 +4,7 @@ import locations from "../components/locations";
 const loc = locations["dwarka"];
 
 export const metadata = {
-  title: "Russian Spa in Dwarka (₹1499 Offer) Near IGI Airport & Metro",
+  title: "Russian Spa in Dwarka | Best Full Body Massage From ₹1999",
   description:
     "Best Russian Spa in Dwarka near Metro & IGI Airport. Certified Russian therapists, attached private shower & ₹1499 welcome rate. Open 24/7. Book on WhatsApp!",
   keywords: [

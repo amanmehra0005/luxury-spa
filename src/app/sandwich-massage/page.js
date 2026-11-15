@@ -48,7 +48,7 @@ const serviceSchema = {
 };
 
 export const metadata = {
-  title: "Sandwich Massage in Delhi - 4-Hand Therapy From ₹1999 | Luxury Russian Spa",
+  title: "Sandwich Massage in Delhi | 4-Hand Luxury Therapy From ₹1999",
   description:
     "Experience authentic Sandwich Massage in Delhi by two synchronized therapists. Private VIP rooms, attached shower & clear rates from ₹1999. Book on WhatsApp!",
   alternates: {
