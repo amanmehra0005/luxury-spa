@@ -61,9 +61,31 @@ const processSteps = [
 ];
 
 const pricingPlans = [
-  { title: "Thai Massage Outlet", price: "₹1999", desc: "A traditional Thai session at our Lajpat Nagar outlet, close to Central Market.", features: ["Acupressure & Stretching", "Warm Oil Add-on", "Private Room", "60 min Session"], icon: <FaSpa className="text-amber-500" />, highlight: false, badge: "Starter" },
-  { title: "Home Thai Spa", price: "₹14999", desc: "The same traditional technique delivered to your home anywhere near Lajpat Nagar.", features: ["Full Body Technique", "Private Setting", "Aromatherapy Add-on", "90 min Session"], icon: <FaHotel className="text-amber-500" />, highlight: true, badge: "Most Popular" },
-  { title: "5 Star Hotel Thai Spa", price: "₹19999", desc: "A longer, more thorough Thai session at your hotel with added treatments.", features: ["Foreign Therapist", "Private Suite", "Facial Add-on", "120 min Session"], icon: <FaCrown className="text-amber-500" />, highlight: false, badge: "Luxury" },
+  {
+    title: "Spa Outlet",
+    price: "₹1499/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Shower 60 min",
+      "Consultation",
+    ],
+    highlight: false,
+  },
+  {
+    title: "5 Star Hotel Outlet",
+    price: "₹12,999/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Private Suite",
+      "B2B Massage",
+      "120 min Session",
+    ],
+    highlight: true,
+  },
 ];
 
 const faqs = [
@@ -256,30 +278,54 @@ export default function ThaiMassageLajpatNagarPage() {
         </div>
       </section>
 
-      <section id="Pricing" className="bg-[#fff3e8] py-16 lg:py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-10 text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">Pricing options</p>
-            <h2 className="mt-3 text-3xl font-bold text-[#1f1a17] md:text-4xl">Transparent pricing for every visit.</h2>
+      <section id="Pricing" className="relative bg-[#2b1810] py-16 lg:py-24 px-6 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2b1810] via-[#24130d] to-[#1c0f09] pointer-events-none" />
+        <div className="relative mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#fdc28c]">Pricing options</p>
+            <h2 className="mt-3 font-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Transparent pricing for every visit.</h2>
+            <p className="mt-3 text-sm text-white/70">Simple, fixed rates with no surprise charges on WhatsApp.</p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mx-auto max-w-3xl grid gap-6 sm:gap-8 sm:grid-cols-2 items-stretch">
             {pricingPlans.map((plan) => (
-              <div key={plan.title} className={`relative overflow-hidden rounded-[28px] border p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl ${plan.highlight ? "border-amber-400 bg-gradient-to-br from-[#fff3e8] to-[#fffaf5]" : "border-amber-100 bg-white"}`}>
-                <div className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${plan.highlight ? "bg-amber-600 text-white" : "bg-amber-100 text-amber-700"}`}>{plan.badge}</div>
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50">{plan.icon}</div>
-                <h3 className="text-2xl font-semibold text-[#1f1a17]">{plan.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">{plan.desc}</p>
-                <div className="mt-6 flex items-end gap-2">
-                  <span className="text-4xl font-bold text-amber-700">{plan.price}</span>
-                  <span className="pb-1 text-sm font-medium text-gray-500">/ session</span>
+              <div
+                key={plan.title}
+                className={`relative flex flex-col rounded-[26px] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 ${
+                  plan.highlight
+                    ? "bg-white/[0.08] backdrop-blur-md border border-[#fdc28c]/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-[#fdc28c]/20"
+                    : "bg-white/[0.04] backdrop-blur-md border border-white/10 shadow-xl hover:border-white/20"
+                }`}
+              >
+                {plan.highlight && (
+                  <span className="absolute -top-3.5 right-6 rounded-full bg-[#fdc28c] px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#2b1810] shadow-md">
+                    Popular
+                  </span>
+                )}
+                <h3 className="font-title text-2xl sm:text-3xl font-bold text-white tracking-tight">{plan.title}</h3>
+                <div className="mt-4">
+                  <p className={`font-title text-4xl sm:text-5xl font-bold tracking-tight ${plan.highlight ? "text-[#fdc28c]" : "text-white"}`}>
+                    {plan.price}
+                  </p>
+                  <p className="mt-1 text-xs sm:text-sm text-white/75 font-medium">{plan.period}</p>
                 </div>
-                <ul className="mt-6 space-y-3">
+                <div className="my-6 h-px w-full bg-white/10" />
+                <ul className="flex-1 space-y-3.5">
                   {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
-                      <FaCheckCircle className="text-amber-600" /> {feature}
+                    <li key={feature} className="flex items-center gap-3 text-sm font-medium text-white/95">
+                      <FaCheckCircle className={`size-4 shrink-0 ${plan.highlight ? "text-[#fdc28c]" : "text-white"}`} />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
+                <a
+                  href="https://wa.me/918799716197"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white py-3.5 px-6 text-sm font-bold text-[#2b1810] shadow-lg transition-all duration-200 hover:bg-[#fdc28c] hover:text-[#2b1810] active:scale-95"
+                >
+                  <FaWhatsapp className="size-4 text-emerald-600" />
+                  Book Now
+                </a>
               </div>
             ))}
           </div>

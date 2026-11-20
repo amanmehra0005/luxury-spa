@@ -32,7 +32,7 @@ const spaSchema = {
   url: PAGE_URL,
   image: IMAGE_URL,
   telephone: "+91-8799716197",
-  priceRange: "₹1999 - ₹19999",
+  priceRange: "₹1499 - ₹12999",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lajpat Nagar, New Delhi",
@@ -46,35 +46,39 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Lajpat Nagar | Best Spa Central Market ₹1999",
+  title: "Russian Spa in Lajpat Nagar At Just ₹1499 | Book Now",
   description:
-    "Best Russian Spa in Lajpat Nagar near Central Market & Metro Gate 2. Certified European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
+    "Best Russian Spa in Lajpat Nagar near Central Market & Metro Gate 2. Certified Russian & European therapists, private hot rain shower & ₹1499 first visit offer. Open 24/7. Book on WhatsApp!",
   keywords: [
+    "russian spa in lajpat nagar",
     "spa in lajpat nagar",
     "best spa in lajpat nagar",
     "body massage in lajpat nagar",
     "body spa in lajpat nagar",
+    "thai massage in lajpat nagar",
     "lajpat nagar massage",
     "lajpat nagar massage spa",
     "lajpat nagar spa contact number",
     "luxury spa in lajpat nagar",
     "luxury spa lajpat nagar",
-    "russian spa in lajpat nagar",
     "spa in lajpat nagar 2",
+    "spa in lajpat nagar 4",
     "spa lajpat nagar 2",
     "b2b spa in lajpat nagar",
     "body massage spa in lajpat nagar",
     "massage spa in lajpat nagar central market",
     "lajpat nagar spa prices",
-    "spa in lajpat nagar 4",
+    "russian girl spa lajpat nagar",
+    "russian booking lajpat nagar",
+    "couple massage in lajpat nagar",
   ],
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Spa in Lajpat Nagar | Luxury Body Massage Near Central Market",
+    title: "Russian Spa in Lajpat Nagar At Just ₹1499 | Book Now",
     description:
-      "Private rooms, Russian & Indian therapists and fixed prices from ₹1999. Book your body massage in Lajpat Nagar on WhatsApp.",
+      "Private rooms with hot rain shower, Russian & Indian therapists, and fixed prices from ₹1499. Book your body massage in Lajpat Nagar on WhatsApp.",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 1402, height: 1122, alt: "Spa in Lajpat Nagar at Luxury Russian Spa" }],
@@ -82,9 +86,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spa in Lajpat Nagar | Luxury Body Massage Near Central Market",
+    title: "Russian Spa in Lajpat Nagar At Just ₹1499 | Book Now",
     description:
-      "Private rooms, Russian & Indian therapists and fixed prices from ₹1999. Book your body massage in Lajpat Nagar on WhatsApp.",
+      "Private rooms with hot rain shower, Russian & Indian therapists, and fixed prices from ₹1499. Book your body massage in Lajpat Nagar on WhatsApp.",
     images: [IMAGE_URL],
   },
 };

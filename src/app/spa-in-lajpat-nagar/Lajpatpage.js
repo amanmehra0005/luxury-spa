@@ -28,54 +28,54 @@ import MassagePicker from "../components/MassagePicker";
 // Also used for the FAQPage schema in ./page.js, so the page and schema never drift apart.
 export const faqs = [
   {
-    question: "Where is your spa in Lajpat Nagar?",
+    question: "Where is your Russian spa in Lajpat Nagar located?",
     answer:
-      "Our spa in Lajpat Nagar is close to Central Market and a few minutes from Lajpat Nagar metro station. Guests from Lajpat Nagar 2 and Lajpat Nagar 4 usually reach us in minutes. We send the exact location on WhatsApp as soon as your slot is confirmed.",
+      "Our spa is located in Lajpat Nagar 2, just 3 minutes from Central Market and Lajpat Nagar Metro Station (Violet & Pink Lines, Gate 2 & 5). Guests from Lajpat Nagar 4, Defence Colony, and South Extension reach us in minutes. We send the exact location and GPS pin on WhatsApp as soon as your slot is confirmed.",
   },
   {
     question: "What is the Lajpat Nagar spa contact number?",
     answer:
-      "You can call or WhatsApp us on +91 87997 16197. The same number works for booking, checking today's free slots, or asking about prices. We reply on WhatsApp at all hours.",
+      "You can call or WhatsApp us directly on +91 87997 16197. The same number works 24/7 for booking, checking today's free therapist slots, or asking about prices. We reply instantly on WhatsApp at all hours.",
   },
   {
-    question: "What are the spa prices in Lajpat Nagar?",
+    question: "What are your body massage and Russian spa prices in Lajpat Nagar?",
     answer:
-      "A 60-minute massage at our Lajpat Nagar spa starts at ₹1,999. A 90-minute session in a hotel suite is ₹14,999, and the 120-minute 5-star hotel spa package is ₹19,999. The price we confirm on WhatsApp is the price you pay, with no extra charges at the end.",
+      "Our Lajpat Nagar spa outlet starts at ₹1,499 per session (includes oil massage, cream massage, 60 min shower & consultation). For guests seeking a premium luxury experience in a 5-star hotel suite, sessions are ₹12,999 per session (includes oil & cream massage, private suite, B2B massage & 120 min session). What we quote on WhatsApp is exactly what you pay, with zero hidden charges.",
   },
   {
-    question: "Which is the best spa in Lajpat Nagar for a body massage?",
+    question: "Do you offer authentic Thai massage in Lajpat Nagar?",
     answer:
-      "It depends on what you need, but guests who choose us usually mention the same things: a private room, a therapist they picked themselves, and a fixed price they knew before arriving. Our full body massage is the most booked body massage in Lajpat Nagar, and our deep tissue massage is popular with people who sit at a desk all day.",
+      "Yes, traditional Thai massage in Lajpat Nagar is one of our most requested treatments. Performed on a traditional firm mat with passive yoga stretching and rhythmic acupressure (with or without warm oil), it is the perfect body massage after a long day of shopping in Central Market.",
   },
   {
-    question: "Do you have a Russian spa in Lajpat Nagar?",
+    question: "How is your spa different from third-party Russian booking websites?",
     answer:
-      "Yes. Along with our Indian therapists, we have therapists from Russia, Uzbekistan and Thailand. Just tell us who you'd prefer when you book and we'll confirm who is free.",
+      "Unlike third-party aggregator portals or unverified online Russian booking networks that charge broker commissions and offer no guarantee of hygiene or safety, we run a direct, fully verified luxury day spa outlet in Lajpat Nagar 2. You get certified European, Russian and Indian therapists, spotless private rooms with attached hot rain showers, fresh steam-sanitized towels, and 100% upfront pricing.",
   },
   {
-    question: "Do you offer B2B massage in Lajpat Nagar?",
+    question: "Which is the best spa in Lajpat Nagar for a body massage or body spa?",
     answer:
-      "Yes, B2B massage is available at our Lajpat Nagar spa in a fully private room. Message us on WhatsApp and we'll explain the session, the timing and the price before you book.",
+      "Guests looking for genuine relaxation choose us for three key reasons: complete privacy in soundproof en-suites, certified Russian, European, Thai, and Indian therapists, and transparent fixed pricing. Our Russian body massage is our most booked full body therapy, and our deep tissue massage is popular with people with neck and back stiffness.",
   },
   {
-    question: "Is your spa near Lajpat Nagar Central Market?",
+    question: "Do you offer B2B and couple massage in Lajpat Nagar?",
     answer:
-      "Yes. Many of our guests book a massage right after shopping at Central Market. A one-hour Thai or full body massage is a nice way to rest your legs before heading home.",
+      "Yes, B2B massage, Nuru body spa, and luxury couple massages are available at our Lajpat Nagar spa in fully private, climate-controlled rooms with attached hot showers. Message us on WhatsApp and we will share available therapists, timings, and rates before you book.",
   },
   {
-    question: "Can I walk in without booking?",
+    question: "Is your spa near Lajpat Nagar Central Market and Metro?",
     answer:
-      "You can, but it depends on which therapists are free at that moment. Evenings and weekends get busy, so a quick WhatsApp message before you come saves you any waiting.",
+      "Yes. We are located right near Central Market and just 300 meters from Lajpat Nagar Metro Station. Many of our guests finish shopping, enjoy an hour of restorative body massage or Thai massage, take a hot shower, and head home fully refreshed.",
   },
   {
-    question: "Can I choose a female therapist?",
+    question: "Can I choose a Russian or European female therapist?",
     answer:
-      "Yes. Male guests can ask for a female therapist, and female guests can choose a male or female therapist. Mention it when you book and we'll confirm who is available.",
+      "Yes. Male guests can request a European, Russian, Thai, or Indian female therapist, and female guests can choose their preferred male or female therapist. Mention your preference when you book on WhatsApp and we will confirm who is available.",
   },
   {
-    question: "How can I pay?",
+    question: "Can I walk in without booking, and how do I pay?",
     answer:
-      "You can pay by UPI, cash or card at the spa. There's no advance payment needed for outlet bookings.",
+      "Walk-ins are welcome, but a quick WhatsApp message 30 to 60 minutes before arriving is recommended because popular afternoon and evening slots fill quickly. You can pay conveniently at the outlet by UPI (GPay, PhonePe, Paytm), cash, or card. No advance payment is needed for outlet bookings.",
   },
 ];
 
@@ -161,46 +161,39 @@ const services = [
   { title: "Sandwich Massage", text: "Two therapists working together. Twice the hands, half the stress.", time: "60–90 min", href: "/sandwich-massage" },
 ];
 
-const therapists = [
-  { name: "Russian", note: "Long, flowing strokes that help you switch off" },
-  { name: "Uzbek", note: "Firm and steady, good for tired muscles" },
-  { name: "Thai", note: "Stretching and pressure points, no oil" },
-  { name: "Indian", note: "Warm oil and deep, familiar techniques" },
+const galleryTherapists = [
+  { id: 1, image: "/images/lajpat/therapist-1.webp", alt: "Russian Spa Therapist in Lajpat Nagar" },
+  { id: 2, image: "/images/lajpat/therapist-2.webp", alt: "Certified Russian Body Massage Therapist Lajpat Nagar" },
+  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "European Spa Therapist at Lajpat Nagar Spa" },
+  { id: 4, image: "/images/lajpat/therapist-4.webp", alt: "Professional Thai and Russian Therapist Lajpat Nagar" },
+  { id: 5, image: "/images/lajpat/therapist-5.webp", alt: "Luxury Russian Spa Expert Lajpat Nagar Central Market" },
 ];
 
 const pricingPlans = [
   {
-    title: "First Visit Offer",
-    price: "₹1,499",
-    period: "45–60 min",
-    description: "Welcome offer for new guests near Central Market",
-    features: ["Full Body Russian Oil Massage", "Private Sanitized Room", "Choice of Therapist", "Attached Hot Shower After"],
-    icon: Sparkles,
-    popular: true,
-  },
-  {
     title: "Spa Outlet",
-    price: "₹1,999",
-    period: "60 min",
-    description: "At our Lajpat Nagar spa, near Central Market",
-    features: ["Oil, Cream or Dry Massage", "Private Room", "Quick Consultation", "Hot Shower After"],
-    icon: Leaf,
+    price: "₹1499/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Shower 60 min",
+      "Consultation",
+    ],
+    popular: false,
   },
   {
-    title: "Hotel Outlet",
-    price: "₹14,999",
-    period: "90 min",
-    description: "In a private suite at a partner hotel",
-    features: ["Oil, Cream or Dry Massage", "Private Suite", "Complimentary Refreshments", "90 min Session"],
-    icon: Hotel,
-  },
-  {
-    title: "5 Star Hotel Spa",
-    price: "₹19,999",
-    period: "120 min",
-    description: "Two full hours with international therapists",
-    features: ["International Therapists", "5-Star Property", "Aromatherapy Oils", "120 min Session"],
-    icon: Star,
+    title: "5 Star Hotel Outlet",
+    price: "₹12,999/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Private Suite",
+      "B2B Massage",
+      "120 min Session",
+    ],
+    popular: true,
   },
 ];
 
@@ -321,7 +314,8 @@ export default function Lajpatpage() {
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">
-            Body Massage <span className="text-secondary" aria-hidden="true">·</span> Russian Therapists{" "}
+            Russian Spa <span className="text-secondary" aria-hidden="true">·</span> Body Massage{" "}
+            <span className="text-secondary" aria-hidden="true">·</span> Thai Massage{" "}
             <span className="text-secondary" aria-hidden="true">·</span> From ₹1,499
           </p>
 
@@ -330,9 +324,9 @@ export default function Lajpatpage() {
           </div>
 
           <p className="mt-4 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
-            Spent the whole day walking around Central Market? Or just had one of those weeks? Come lie down for an
-            hour. Our spa in Lajpat Nagar has quiet private rooms, therapists you can choose yourself, and prices we
-            tell you before you arrive.
+            Spent the day walking around Central Market? Or just tired after a long week? Come in, lie down and relax.
+            Our Russian spa in Lajpat Nagar offers peaceful private rooms with an attached hot rain shower, certified
+            therapists, and fixed prices with no hidden charges.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -403,21 +397,25 @@ export default function Lajpatpage() {
             <HomeHeading
               id="ln-intro-title"
               align="left"
-              eyebrow="Lajpat Nagar Massage Spa"
-              title="A Calm Corner in"
-              highlight="Busy Lajpat Nagar"
+              eyebrow="Russian Spa & Body Massage in Lajpat Nagar"
+              title="Authentic Russian Spa, Body Spa &"
+              highlight="Body Massage in Lajpat Nagar"
               className="!mb-6"
             />
             <p className="leading-relaxed text-bodycolor">
-              If you live around here, you know Lajpat Nagar never really slows down. Shoppers fill Central Market,
-              the Ring Road is jammed by six, and the metro is packed. That&apos;s exactly why people come to us. You
-              step in, the noise drops away, and for the next hour nobody needs anything from you.
+              If you live or work around South Delhi, you know Lajpat Nagar never really slows down. Shoppers fill
+              Central Market, the Ring Road is jammed during peak hours, and the metro stations are packed. That is
+              exactly why clients visit our luxury Russian spa in Lajpat Nagar. You step in, the chaotic street noise
+              drops away, and you are welcomed into a serene, air-conditioned sanctuary where certified international
+              therapists take complete care of your body.
             </p>
             <p className="mt-4 leading-relaxed text-bodycolor">
-              We&apos;re a luxury spa in Lajpat Nagar, but we try not to be fussy about it. No long menus, no hard
-              sell. Tell us how you feel, sore, tired or just fed up, and we&apos;ll suggest a body massage that fits.
-              Most of our guests come from Lajpat Nagar 2 and Lajpat Nagar 4, and plenty come over from Defence
-              Colony and Amar Colony too.
+              We are recognized as the premier body massage spa in Lajpat Nagar, offering authentic Russian classical
+              bodywork, traditional Thai massage, deep tissue therapy, and soothing aromatherapy body spa sessions.
+              Unlike unverified online Russian booking agents or third-party classifieds, we operate a direct, sanitized
+              spa facility in Lajpat Nagar 2, serving clients across Lajpat Nagar 1, 3, 4, Amar Colony, Defence Colony,
+              and South Extension. No hidden commissions, no awkward upselling—just pure European relaxation and total
+              privacy with attached hot rain showers.
             </p>
 
             <div className="mt-8 rounded-2xl bg-amber-50 p-5 ring-1 ring-amber-100">
@@ -507,103 +505,117 @@ export default function Lajpatpage() {
         </div>
       </section>
 
-      {/* 5. Russian spa: therapists */}
-      <section aria-labelledby="ln-russian-title" className="relative overflow-hidden bg-dark py-16 md:py-24 px-4 md:px-8">
-        <Image src="/images/hb3.webp" alt="" fill sizes="100vw" className="object-cover opacity-15" aria-hidden="true" />
-        <div className="relative max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
-          <div>
-            <HomeHeading
-              light
-              id="ln-russian-title"
-              align="left"
-              eyebrow="Russian Spa in Lajpat Nagar"
-              title="Meet the Hands"
-              highlight="Behind the Calm"
-              className="!mb-6"
-            />
-            <p className="leading-relaxed text-white/80">
-              People often ask if we&apos;re really a Russian spa in Lajpat Nagar. We are, and then some. Our team
-              includes therapists from Russia, Uzbekistan and Thailand, alongside Indian therapists who&apos;ve been
-              doing this for years. Each one has their own touch, so don&apos;t be shy about asking for someone
-              specific.
-            </p>
-            <WhatsAppButton className="mt-8 !bg-secondary !text-dark hover:!bg-white">Pick My Therapist</WhatsAppButton>
+      {/* 5. Therapists: Meet Our Therapists At Russian Spa in Lajpat Nagar */}
+      <section aria-labelledby="ln-therapists-gallery-title" className="bg-[#fffaf5] py-14 md:py-20 px-4 md:px-8 border-y border-amber-100">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2
+            id="ln-therapists-gallery-title"
+            className="font-title text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c86d5e]"
+          >
+            Meet Our Therapists At Russian Spa in Lajpat Nagar
+          </h2>
+          <p className="mt-3 max-w-2xl mx-auto text-sm text-bodycolor">
+            Pick the therapist you like best. Our team includes certified Russian, European, Thai, and Indian therapists who take real care of your body.
+          </p>
+
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 md:gap-5">
+            {galleryTherapists.map((t) => (
+              <div key={t.id} className="flex flex-col items-center">
+                <div className="relative aspect-[3/4.6] w-full overflow-hidden rounded-[24px] border-[3px] border-[#555a64] shadow-md transition-transform duration-300 hover:scale-[1.02]">
+                  <Image
+                    src={t.image}
+                    alt={t.alt}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                    className="object-cover"
+                  />
+                </div>
+                <a
+                  href={TELEGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-xl bg-[#0088cc] px-2.5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow transition-all duration-200 hover:bg-[#0077b5] active:scale-95"
+                >
+                  <FaTelegramPlane className="size-3.5 shrink-0" />
+                  <span className="truncate">View More On Telegram</span>
+                </a>
+              </div>
+            ))}
           </div>
 
-          <ul className="grid grid-cols-2 gap-4">
-            {therapists.map((t) => (
-              <li
-                key={t.name}
-                className="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:ring-secondary/50"
-              >
-                <span className="flex size-11 items-center justify-center rounded-full bg-secondary/15 text-secondary">
-                  <Users className="size-5" />
-                </span>
-                <p className="mt-4 font-title text-xl font-bold text-white">{t.name}</p>
-                <p className="text-xs uppercase tracking-wider text-white/60">Therapist</p>
-                <p className="mt-3 text-sm text-white/80">{t.note}</p>
-              </li>
-            ))}
-          </ul>
+          <p className="mt-8 text-xs sm:text-sm text-bodycolor">
+            Want to check who is available today? Message us on{" "}
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline underline-offset-4 hover:text-emerald-800">
+              WhatsApp (+91-8799716197)
+            </a>{" "}
+            and we will confirm your slot and therapist right away.
+          </p>
         </div>
       </section>
 
       {/* 6. Pricing */}
-      <section id="pricing" aria-labelledby="ln-pricing-title" className="bg-white py-16 md:py-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <HomeHeading
-            id="ln-pricing-title"
-            eyebrow="Clear Prices"
-            title="Lajpat Nagar"
-            highlight="Spa Prices"
-            text={
-              <>
-                Transparent rates with our ₹1,499 first visit welcome offer, and no surprises at the end. What we quote on WhatsApp is what you pay. You&apos;ll find
-                every rate on our <a href="/spa-price-in-delhi" className={linkClass}>spa price in Delhi</a> page.
-              </>
-            }
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:items-stretch">
-            {pricingPlans.map(({ title, price, period, description, features, icon: Icon, popular }) => (
+      <section id="pricing" aria-labelledby="ln-pricing-title" className="relative bg-[#2b1810] py-16 md:py-24 px-4 md:px-8 overflow-hidden text-white">
+        {/* Subtle decorative background gradient with brand espresso and copper tones */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2b1810] via-[#24130d] to-[#1c0f09] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#9c5232]/15 rounded-full blur-[140px] pointer-events-none" />
+
+        <div className="relative max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs uppercase tracking-[0.25em] font-semibold text-[#fdc28c]">
+              Clear Prices
+            </span>
+            <h2 id="ln-pricing-title" className="mt-3 font-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+              Lajpat Nagar <span className="italic font-normal text-[#fdc28c]">Spa Prices</span>
+            </h2>
+            <p className="mt-3 max-w-xl mx-auto text-sm sm:text-base text-white/70">
+              Transparent rates with our ₹1,499 spa outlet session and ₹12,999 5-star hotel outlet package. What we quote on WhatsApp is what you pay.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto grid gap-6 sm:gap-8 sm:grid-cols-2 items-stretch">
+            {pricingPlans.map(({ title, price, period, features, popular }) => (
               <div
                 key={title}
-                className={`relative flex flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${
+                className={`relative flex flex-col rounded-[26px] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 ${
                   popular
-                    ? "bg-dark text-white shadow-[0_25px_60px_rgba(43,24,16,0.35)] md:-my-4 md:py-12"
-                    : "bg-amber-50 ring-1 ring-amber-100"
+                    ? "bg-white/[0.08] backdrop-blur-md border border-[#fdc28c]/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-[#fdc28c]/20"
+                    : "bg-white/[0.04] backdrop-blur-md border border-white/10 shadow-xl hover:border-white/20"
                 }`}
               >
                 {popular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-secondary px-4 py-1 text-[11px] font-bold uppercase tracking-wider text-dark">
-                    Most Popular
+                  <span className="absolute -top-3.5 right-6 rounded-full bg-[#fdc28c] px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#2b1810] shadow-md">
+                    Popular
                   </span>
                 )}
-                <span className={`flex size-12 items-center justify-center rounded-xl ${popular ? "bg-white/10 text-secondary" : "bg-white text-primary"}`}>
-                  <Icon className="size-6" />
-                </span>
-                <h3 className={`mt-5 font-title text-2xl font-bold ${popular ? "text-white" : "text-amber-900"}`}>{title}</h3>
-                <p className={`mt-1 text-sm ${popular ? "text-white/70" : "text-bodycolor"}`}>{description}</p>
-                <p className="mt-6 flex items-end gap-2">
-                  <span className={`font-title text-4xl font-bold ${popular ? "text-secondary" : "text-primary"}`}>{price}</span>
-                  <span className={`pb-1 text-sm ${popular ? "text-white/60" : "text-bodycolor"}`}>/ {period}</span>
-                </p>
-                <ul className="mt-6 flex-1 space-y-3">
+
+                <h3 className="font-title text-2xl sm:text-3xl font-bold text-white tracking-tight">{title}</h3>
+
+                <div className="mt-4">
+                  <p className={`font-title text-4xl sm:text-5xl font-bold tracking-tight ${popular ? "text-[#fdc28c]" : "text-white"}`}>
+                    {price}
+                  </p>
+                  <p className="mt-1 text-xs sm:text-sm text-white/75 font-medium">{period}</p>
+                </div>
+
+                <div className="my-6 h-px w-full bg-white/10" />
+
+                <ul className="flex-1 space-y-3.5">
                   {features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm">
-                      <Check className={`size-4 shrink-0 ${popular ? "text-secondary" : "text-primary"}`} strokeWidth={3} />
-                      <span className={popular ? "text-white/90" : "text-amber-900"}>{f}</span>
+                    <li key={f} className="flex items-center gap-3 text-sm font-medium text-white/95">
+                      <Check className={`size-4 shrink-0 ${popular ? "text-[#fdc28c]" : "text-white"}`} strokeWidth={3} />
+                      <span>{f}</span>
                     </li>
                   ))}
                 </ul>
+
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full py-3.5 text-sm font-semibold transition-colors duration-300 ${
-                    popular ? "bg-secondary text-dark hover:bg-white" : "bg-white text-primary ring-1 ring-amber-200 hover:bg-primary hover:text-white"
-                  }`}
+                  className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white py-3.5 px-6 text-sm font-bold text-[#2b1810] shadow-lg transition-all duration-200 hover:bg-[#fdc28c] hover:text-[#2b1810] active:scale-95"
                 >
-                  <FaWhatsapp className="size-4" /> Book Now
+                  <FaWhatsapp className="size-4 text-emerald-600" />
+                  Book Now
                 </a>
               </div>
             ))}
