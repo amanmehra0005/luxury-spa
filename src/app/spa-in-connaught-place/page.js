@@ -32,7 +32,7 @@ const spaSchema = {
   url: PAGE_URL,
   image: IMAGE_URL,
   telephone: "+91-8799716197",
-  priceRange: "₹1999 - ₹19999",
+  priceRange: "₹1499 - ₹12999",
   address: { "@type": "PostalAddress", ...CP_ADDRESS, addressCountry: "IN" },
   areaServed: ["Connaught Place", "Janpath", "Barakhamba Road", "Rajiv Chowk", "Gole Market", "Central Delhi", "New Delhi"],
   openingHoursSpecification: {
@@ -45,9 +45,9 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Connaught Place | Best CP Body Massage ₹1999",
+  title: "Russian Spa in Connaught Place At Just ₹1499 | Open 24/7 Near Rajiv Chowk",
   description:
-    "Russian spa in Connaught Place inside The Park hotel. Russian & Indian therapists, private rooms, open 24/7. Full body, B2B & couple massage in CP from ₹1999.",
+    "Best Russian Spa in Connaught Place inside The Park hotel & near Rajiv Chowk. Certified Russian therapists, attached hot rain shower, in-room hotel visits & ₹1499 offer. Open 24/7.",
   keywords: [
     "spa in connaught place",
     "russian spa in connaught place",
@@ -65,9 +65,9 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Spa in Connaught Place | Russian Spa at The Park, Open 24/7",
+    title: "Russian Spa in Connaught Place At Just ₹1499 | Open 24/7 Near Rajiv Chowk",
     description:
-      "Massage at our CP outlet inside The Park hotel, or in your room at The LaLiT, The Imperial or Shangri-La Eros. Open 24/7. From ₹1999.",
+      "Best Russian Spa in Connaught Place inside The Park hotel & near Rajiv Chowk. Certified Russian therapists, attached hot rain shower, in-room hotel visits & ₹1499 offer. Open 24/7.",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Spa in Connaught Place at Luxury Russian Spa" }],
@@ -75,9 +75,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spa in Connaught Place | Russian Spa at The Park, Open 24/7",
+    title: "Russian Spa in Connaught Place At Just ₹1499 | Open 24/7 Near Rajiv Chowk",
     description:
-      "Massage at our CP outlet inside The Park hotel, or in your room at The LaLiT, The Imperial or Shangri-La Eros. Open 24/7. From ₹1999.",
+      "Best Russian Spa in Connaught Place inside The Park hotel & near Rajiv Chowk. Certified Russian therapists, attached hot rain shower, in-room hotel visits & ₹1499 offer. Open 24/7.",
     images: [IMAGE_URL],
   },
 };

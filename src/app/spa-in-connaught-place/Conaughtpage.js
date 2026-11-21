@@ -32,177 +32,211 @@ export const CP_ADDRESS = {
 // Also used for the FAQPage schema in ./page.js, so the page and schema never drift apart.
 export const faqs = [
   {
-    question: "Where is your spa in Connaught Place?",
+    question: "Where is your Russian spa in Connaught Place located?",
     answer:
-      "Our Connaught Place spa is at The Park New Delhi, 15 Parliament Street, a few minutes from Patel Chowk and Rajiv Chowk metro stations. If you're staying at another CP hotel, such as The LaLiT, The Imperial or Shangri-La Eros, our therapist can come to your room instead.",
+      "Our spa is located inside The Park New Delhi, 15 Parliament Street, Connaught Place. It is just a 2-minute walk from Patel Chowk Metro Station (Yellow Line) and 5 minutes from Rajiv Chowk Metro Station. If you are staying at any 5-star hotel in CP like The LaLiT, The Imperial, or Shangri-La Eros, our therapist can visit your hotel room directly within 15–20 minutes.",
   },
   {
-    question: "Do you have a Russian spa in Connaught Place?",
+    question: "What are your massage charges in Connaught Place?",
     answer:
-      "Yes. Our Russian spa in Connaught Place has Russian, Uzbek and Thai therapists as well as Indian therapists. Tell us who you'd like when you book, and how firm you want the pressure, and we'll match you with the right person.",
+      "We believe in 100% price transparency. Our basic Spa Outlet session starts at just ₹1,499 per session (includes full body oil/cream massage, 60-min session, hot shower, and therapist consultation). Our 5-Star Hotel Outlet package is ₹12,999 per session (includes private luxury suite, B2B massage, cream & oil therapy, and full 120-minute session). What we quote on WhatsApp is exactly what you pay—no hidden counter charges.",
   },
   {
-    question: "What makes you one of the best spas in Connaught Place?",
+    question: "Do you have authentic Russian and European therapists in CP?",
     answer:
-      "Guests usually mention three things: private rooms inside a 5-star hotel, prices we fix on WhatsApp before you come, and being open 24/7. You also choose your therapist and the type of massage, so the session is built around you rather than a set menu.",
+      "Yes, absolutely. We have certified Russian, Ukrainian, and European therapists along with skilled Thai and Indian therapists. You can preview verified therapist profiles on our Telegram channel or WhatsApp before booking and select the therapist who matches your preference.",
   },
   {
-    question: "How much does a massage in Connaught Place cost?",
+    question: "How do 5-star hotel in-room visits work in Connaught Place?",
     answer:
-      "A 60-minute massage at our Connaught Place outlet starts at ₹1,999. A 90-minute session in a hotel suite is ₹14,999, and the 120-minute 5-star hotel spa package is ₹19,999. There are no hidden charges.",
+      "If you are staying at The Park, The LaLiT, The Imperial, Shangri-La Eros, Radisson Blu Marina, or The Metropolitan Hotel, simply WhatsApp us your hotel name and room number. Our therapist will arrive at your room within 15 to 20 minutes carrying fresh sanitized linen, organic massage oils, and essentials.",
   },
   {
-    question: "Is there a spa near the Metropolitan Hotel in Connaught Place?",
+    question: "Is there any advance payment required for booking?",
     answer:
-      "Yes. The Metropolitan Hotel is on Bangla Sahib Road, a short drive from our outlet at The Park on Parliament Street. Many guests staying near Gole Market and Bangla Sahib come over to us. Message us with where you're staying and we'll tell you the quickest way to reach us.",
+      "No. For all outlet visits at The Park, we have a strict zero-advance-payment policy. You arrive at our spa, meet your therapist in person, and pay only after you are completely satisfied with the setup. We accept Cash, UPI (Google Pay, PhonePe, Paytm), and Cards.",
   },
   {
-    question: "How are you different from massage parlours in Connaught Place?",
+    question: "How are you different from typical massage parlours in Connaught Place?",
     answer:
-      "Many massage parlours in Connaught Place work out of small rooms with shared spaces and prices that change at the counter. We work from a 5-star hotel, every room is private and cleaned after each guest, our therapists are trained and certified, and the price you see on WhatsApp is the price you pay.",
+      "Typical massage parlours in CP operate from cramped commercial flats or basements with curtained cabins, unhygienic shared bathrooms, and surprise counter charges. In contrast, Luxury Russian Spa offers a true 5-star hotel ambiance inside The Park, 100% soundproof private rooms with attached hot rain showers, certified international staff, and fixed transparent rates.",
   },
   {
     question: "Is your Connaught Place spa open late at night?",
     answer:
-      "Yes, we're open 24/7. Office workers in CP often come after 9 p.m., and hotel guests book us late at night after a long day of meetings.",
+      "Yes, we are open 24 hours a day, 7 days a week. Many corporate executives from Barakhamba Road and Janpath visit us after 9 PM, and hotel guests frequently book late-night in-room sessions to cure jet lag and fatigue.",
   },
   {
-    question: "Can I choose a female therapist?",
+    question: "Do your rooms have attached private hot showers?",
     answer:
-      "Yes. Male guests can ask for a female therapist, and female guests can choose a male or female therapist. Mention it when you book and we'll confirm who is available.",
-  },
-  {
-    question: "How do I book a massage in Connaught Place?",
-    answer:
-      "WhatsApp us or call +91 87997 16197. Tell us the massage, the time, and whether you'll come to The Park or want us at your hotel. We confirm the slot and the price on the same chat.",
+      "Yes. Every private massage room at our Connaught Place spa features an attached private hot rain shower, fresh sanitized cotton towels, premium bathrobes, and imported toiletries for your complete comfort and privacy.",
   },
 ];
 
 const linkClass = "font-semibold text-amber-700 underline decoration-amber-700/40 underline-offset-4 hover:decoration-amber-700";
 
 const heroChips = [
-  { icon: Hotel, label: "Inside The Park, CP" },
-  { icon: Users, label: "Russian & Indian Therapists" },
+  { icon: Hotel, label: "The Park Hotel, CP" },
+  { icon: Users, label: "Russian & European Therapists" },
   { icon: TrainFront, label: "Near Rajiv Chowk Metro" },
-  { icon: Clock, label: "Open 24/7" },
+  { icon: Clock, label: "Open 24/7 (Late Nights)" },
 ];
 
 const quickFacts = [
-  { value: "24/7", label: "Open", note: "Late nights too" },
-  { value: "5", label: "CP Hotels", note: "In-room sessions" },
-  { value: "₹1,999", label: "Starting Price", note: "No hidden charges" },
-  { value: "60–120", label: "Minutes", note: "Pick your session" },
+  { value: "₹1,499", label: "First Visit Offer", note: "Welcome massage rate" },
+  { value: "24/7", label: "Always Open", note: "Day & late night slots" },
+  { value: "5+ CP Hotels", label: "In-Room Visits", note: "15-min room delivery" },
+  { value: "0", label: "Hidden Charges", note: "Fixed price on WhatsApp" },
 ];
 
 const therapists = [
-  { name: "Russian", note: "Long, flowing strokes" },
-  { name: "Uzbek", note: "Firm, steady pressure" },
-  { name: "Thai", note: "Stretching, no oil" },
-  { name: "Indian", note: "Warm oil, deep relief" },
+  { name: "Russian", note: "Long, flowing classical strokes for deep sensory relaxation" },
+  { name: "European", note: "Gentle Swedish pressure to release chronic mental stress" },
+  { name: "Thai", note: "Passive rhythmic stretching and acupressure without oil" },
+  { name: "Indian", note: "Warm herbal oil therapy targeting stubborn muscle stiffness" },
 ];
 
 const hotels = [
   {
     name: "The Park New Delhi",
-    area: "Parliament Street",
+    area: "15 Parliament Street, CP",
     image: "/images/thePrak_CP.jpg",
-    text: "Our Connaught Place outlet is right here. Walk in for your session, or book a longer one in a private suite upstairs.",
+    text: "Our physical luxury outlet is right here. Walk in for your session in a private suite, or book directly if you are staying in the hotel.",
     outlet: true,
   },
   {
     name: "The LaLiT New Delhi",
-    area: "Barakhamba Avenue",
+    area: "Barakhamba Avenue, CP",
     image: "/images/theLalit_CP.jpg",
-    text: "Staying at The LaLiT? Send us your room number and the therapist comes up with fresh towels and warm oil.",
+    text: "Staying at The LaLiT after corporate meetings? Message your room number and our therapist reaches within 15–20 minutes with fresh linens and essential oils.",
   },
   {
     name: "The Imperial New Delhi",
-    area: "Janpath",
+    area: "Janpath, CP",
     image: "/images/theImperial_CP.jpeg",
-    text: "A quiet in-room massage is the easiest way to unwind after a day of walking Janpath and the CP circles.",
+    text: "Unwind quietly inside your room after walking Janpath market. A soothing full body massage right inside your private hotel suite.",
   },
   {
     name: "Shangri-La Eros New Delhi",
-    area: "Ashoka Road",
+    area: "Ashoka Road, Connaught Place",
     image: "/images/shangri-la-s-eros-hotel-connaught-place-delhi-5-star-hotels-2zj8oj1.avif",
-    text: "Business guests at Shangri-La Eros book us between meetings. Even 60 minutes makes a long day feel shorter.",
+    text: "Business travelers at Shangri-La love our fast 24/7 room service. Re-energize between flight layovers and busy conference days.",
   },
   {
     name: "Radisson Blu Marina",
-    area: "Connaught Place, G Block",
+    area: "G-Block, Connaught Circus",
     image: "/images/radissonblu_CP.jpg",
-    text: "Right on the CP circle. We can set up a full body or couple massage in your room, timed around your plans.",
+    text: "Situated right on the CP inner circle. Enjoy complete privacy and genuine therapy without having to step outside into Delhi traffic.",
   },
 ];
 
 const services = [
-  { title: "Full Body Massage", text: "Head to toe, with warm oil. Our most booked massage in Connaught Place.", time: "60–90 min", href: "/full-body-massage-in-delhi" },
-  { title: "B2B Massage", text: "A body to body massage in a fully private room at The Park.", time: "60–90 min", href: "/b2b-massage-in-connaught-place" },
-  { title: "Couple Massage", text: "Two tables, one room. A good plan for a date night in central Delhi.", time: "60–120 min", href: "/couple-massage" },
-  { title: "Sandwich Massage", text: "Two therapists working together. Twice the hands, half the stress.", time: "60–90 min", href: "/sandwich-massage" },
-  { title: "Deep Tissue Massage", text: "Firm pressure for a stiff neck and back from long hours at a desk.", time: "60–90 min", href: "/deep-tissue-massage-in-delhi" },
-  { title: "Thai Massage", text: "Stretching on a mat, no oil. Great for tight hips and shoulders.", time: "60–90 min", href: "/thai-massage-in-delhi" },
+  {
+    title: "Russian Full Body Massage",
+    text: "Head to toe soothing strokes using warm aromatic oils to release muscle fatigue, calm the mind, and restore natural energy. Our most popular massage in Connaught Place.",
+    time: "60–90 min",
+    href: "/full-body-massage-in-delhi",
+  },
+  {
+    title: "B2B Body Spa Massage",
+    text: "A premium, deeply relaxing body-to-body therapy in complete privacy. Performed by certified Russian therapists with warm oils and attached hot shower.",
+    time: "60–90 min",
+    href: "/b2b-massage-in-connaught-place",
+  },
+  {
+    title: "Deep Tissue Therapy",
+    text: "Targeted firm pressure on chronic knots in your neck, stiff shoulders, and lower back caused by long hours of desk work or meetings around Barakhamba.",
+    time: "60–90 min",
+    href: "/deep-tissue-massage-in-delhi",
+  },
+  {
+    title: "Traditional Thai Massage",
+    text: "Oil-free rhythmic stretching and pressure-point techniques on a comfortable floor mat. The perfect cure for tired legs after shopping around Janpath and CP.",
+    time: "60–90 min",
+    href: "/thai-massage-in-delhi",
+  },
+  {
+    title: "Luxury Couple Massage",
+    text: "Two dedicated massage tables in one spacious, candle-lit private suite. Ideal for couples, anniversaries, or a relaxing weekend treat in Central Delhi.",
+    time: "60–120 min",
+    href: "/couple-massage",
+  },
+  {
+    title: "Four-Hands Sandwich Massage",
+    text: "Two certified therapists working in perfect synchronized harmony. Twice the hands, double the relaxation, and complete stress relief in one sitting.",
+    time: "60–90 min",
+    href: "/sandwich-massage",
+  },
 ];
 
 // Our spa vs a typical massage parlour in CP (targets "massage parlours in connaught place" honestly)
 const comparison = [
-  { point: "Where it happens", us: "Inside a 5-star hotel", them: "Small rooms above shops" },
-  { point: "Room", us: "Fully private, cleaned after every guest", them: "Often shared or curtained" },
-  { point: "Price", us: "Fixed on WhatsApp before you come", them: "Decided at the counter" },
-  { point: "Therapists", us: "Trained and certified, your choice", them: "Whoever is free" },
-  { point: "Hours", us: "Open 24/7", them: "Usually closes by evening" },
+  { point: "Location & Hygiene", us: "Inside The Park 5-star hotel, fresh linen every guest", them: "Dingy basements or crowded shop alleys" },
+  { point: "Privacy & Facilities", us: "100% private soundproof suite with attached hot rain shower", them: "Curtained cabins or shared washing spaces" },
+  { point: "Pricing Transparency", us: "Fixed ₹1,499 & ₹12,999 confirmed on WhatsApp before arrival", them: "Bait rates that double at the reception counter" },
+  { point: "Therapist Quality", us: "Certified Russian, European, Thai & Indian female staff", them: "Untrained local staff with no therapy skills" },
+  { point: "Advance Payment", us: "Zero advance deposit for outlet visits. Pay after meeting", them: "Advance UPI transfers that lead to scams" },
+  { point: "Operating Hours", us: "Open 24/7 with dedicated late-night and morning slots", them: "Close early with rushed, low-quality sessions" },
 ];
 
 const pricingPlans = [
   {
     title: "Spa Outlet",
-    price: "₹1,999",
-    period: "60 min",
-    description: "At our outlet in The Park, Connaught Place",
-    features: ["Oil, Cream or Dry Massage", "Private Room", "Quick Consultation", "Hot Shower After"],
-    icon: Leaf,
+    price: "₹1499/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Shower 60 min",
+      "Consultation",
+    ],
+    popular: false,
   },
   {
-    title: "Hotel Outlet",
-    price: "₹14,999",
-    period: "90 min",
-    description: "In your room at a Connaught Place hotel",
-    features: ["Oil, Cream or Dry Massage", "Private Suite", "Complimentary Refreshments", "90 min Session"],
-    icon: Hotel,
+    title: "5 Star Hotel Outlet",
+    price: "₹12,999/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Private Suite",
+      "B2B Massage",
+      "120 min Session",
+    ],
     popular: true,
   },
-  {
-    title: "5 Star Hotel Spa",
-    price: "₹19,999",
-    period: "120 min",
-    description: "Two full hours with international therapists",
-    features: ["International Therapists", "5-Star Property", "Aromatherapy Oils", "120 min Session"],
-    icon: Star,
-  },
+];
+
+const galleryTherapists = [
+  { id: 1, image: "/images/Russian-massage-girls.webp", alt: "Russian Spa Therapist in Connaught Place Near Rajiv Chowk" },
+  { id: 2, image: "/images/lajpat/therapist-2.webp", alt: "Certified Russian Body Massage Therapist Connaught Place" },
+  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "European Spa Therapist at Connaught Place Luxury Spa" },
+  { id: 4, image: "/images/image2.webp", alt: "Professional Thai and Russian Therapist Connaught Place Hotel Visit" },
+  { id: 5, image: "/images/lajpat/therapist-5.webp", alt: "Luxury Russian Spa Expert Connaught Place Delhi" },
 ];
 
 const steps = [
   {
-    title: "Send Us a Message",
-    text: "WhatsApp, Telegram or a call. Tell us the time, the massage, and whether it's The Park or your hotel room.",
+    title: "Send a Quick Message",
+    text: "WhatsApp, Telegram or call us. Tell us your preferred time, treatment, and whether you're visiting The Park or want an in-room 5-star hotel visit.",
     image: "/images/spa-booking-consultation.webp",
   },
   {
-    title: "Get Your Slot Confirmed",
-    text: "We confirm the therapist, the time and the price on the same chat. No surprises when you arrive.",
+    title: "Preview Therapist & Lock Price",
+    text: "We share therapist photos, confirm your slot, and lock in the transparent rate (₹1,499 outlet or ₹12,999 hotel suite). Zero advance payment needed.",
     image: "/images/private-spa-room-delhi.webp",
   },
   {
-    title: "Walk In and Relax",
-    text: "Come to The Park on Parliament Street, or wait in your room. Your therapist asks about pressure, then you just lie back.",
+    title: "Arrive, Relax & Pay Later",
+    text: "Step into our serene private suite with attached hot shower at The Park, or welcome your therapist to your hotel suite. Pay by Cash or UPI after meeting.",
     image: "/images/hb2.webp",
   },
 ];
 
 const gettingHere = [
-  { icon: TrainFront, title: "By Metro", text: "Patel Chowk (Yellow Line) is the closest station. Rajiv Chowk is a short auto ride away." },
-  { icon: MapPin, title: "Landmarks", text: "On Parliament Street, near Jantar Mantar and the CP Outer Circle." },
-  { icon: Clock, title: "Best Time", text: "Evenings get busy with office crowd. Late night and early morning slots are easiest to get." },
+  { icon: TrainFront, title: "By Metro", text: "Patel Chowk Metro (Yellow Line Gate 2) is a 2-minute walk. Rajiv Chowk Metro (Gate 6) is just 5 minutes away." },
+  { icon: MapPin, title: "Prime Landmark", text: "Inside The Park New Delhi, 15 Parliament Street, right opposite Jantar Mantar and steps from CP Outer Circle." },
+  { icon: Clock, title: "24/7 Availability", text: "Open day and night. Late night slots after 10 PM and early morning transit sessions are readily available." },
 ];
 
 const nearby = [
@@ -260,14 +294,20 @@ export default function Conaughtpage() {
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">
-            Inside The Park Hotel <span className="text-secondary" aria-hidden="true">·</span> Hotel Room Visits{" "}
-            <span className="text-secondary" aria-hidden="true">·</span> From ₹1,999
+            Russian Spa <span className="text-secondary" aria-hidden="true">·</span> Body Massage{" "}
+            <span className="text-secondary" aria-hidden="true">·</span> The Park Hotel{" "}
+            <span className="text-secondary" aria-hidden="true">·</span> From ₹1,499
           </p>
 
-          <p className="mt-5 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
-            A long day in CP, between meetings, shopping and traffic on the Outer Circle, deserves a proper massage.
-            Our spa in Connaught Place is inside The Park hotel on Parliament Street, open 24/7, with Russian and
-            Indian therapists. Come to us, or we&apos;ll come to your hotel room.
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-secondary/20 border border-secondary/40 px-4 py-1.5 text-xs font-semibold text-secondary">
+            <Sparkles className="size-3.5" /> First Visit Special Offer: Full Body Massage @ ₹1,499 Only
+          </div>
+
+          <p className="mt-4 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
+            Tired from long office hours around Barakhamba Road or walking the vibrant markets of Janpath and Connaught Place?
+            Step into a peaceful world of luxury relaxation. Our Russian spa in Connaught Place is located inside The Park New Delhi
+            on Parliament Street. Enjoy quiet, sanitized private suites, certified European and Russian therapists, attached hot rain
+            showers, and fixed pricing with zero hidden charges. Walk in 24/7 or book an in-room 5-star hotel visit.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -330,7 +370,7 @@ export default function Conaughtpage() {
               />
             </div>
             <span className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-xs font-bold uppercase tracking-wider text-primary shadow">
-              In the Heart of CP
+              The Park · CP Central
             </span>
           </div>
 
@@ -338,36 +378,54 @@ export default function Conaughtpage() {
             <HomeHeading
               id="cp-intro-title"
               align="left"
-              eyebrow="Connaught Place Spa"
-              title="The Best Spa in Connaught Place"
-              highlight="Without the Fuss"
+              eyebrow="Russian Spa & Body Massage in Connaught Place"
+              title="Authentic Russian Spa, Body Spa &"
+              highlight="Body Massage in Connaught Place"
               className="!mb-6"
             />
             <p className="leading-relaxed text-bodycolor">
-              Connaught Place is busy at every hour. Office crowds, shoppers on Janpath, tourists walking the inner
-              circle. When people look for the best spa in Connaught Place, they usually want three simple things: a
-              clean private room, a therapist who knows what they&apos;re doing, and a fair price they know in advance.
+              Connaught Place is the busy commercial heart of Delhi. Between high-stakes corporate meetings in Barakhamba towers,
+              embassy appointments, long walking hours through Janpath and CP circle shops, and traffic jams on the outer ring,
+              both mental exhaustion and muscular fatigue build up quickly. That is exactly why clients choose our luxury Russian spa in
+              Connaught Place. The moment you step through our doors inside The Park New Delhi on Parliament Street, the chaotic city noise
+              fades into silence, replaced by tranquil music, gentle aromatherapy scents, and welcoming certified therapists.
             </p>
             <p className="mt-4 leading-relaxed text-bodycolor">
-              That&apos;s what we do. Our CP spa sits inside The Park hotel, so it&apos;s calm the moment you step in.
-              Choose a full body massage, a couple session or a deep tissue massage for that desk-job back, and book
-              it in one WhatsApp message. Prefer to stay in? Our therapists visit the big Connaught Place hotels every day.
+              As the top-rated Russian body massage centre in Connaught Place, we specialize in authentic Russian classical strokes,
+              relaxing Swedish oil massages, intensive deep tissue recovery, and soothing Thai stretching. Unlike typical street massage
+              parlours in Connaught Place that crowd guests into curtained cubicles with surprise counter charges, we provide 100% soundproof,
+              air-conditioned private suites with personal attached hot rain showers. Plus, we maintain a strict <strong>Zero Advance Payment</strong> policy
+              for all outlet bookings—you arrive, meet your therapist in person, and pay the fixed price after your session.
             </p>
 
-            <address className="mt-8 flex gap-4 rounded-2xl bg-amber-50 p-5 not-italic ring-1 ring-amber-100">
-              <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-white text-primary shadow-sm">
-                <MapPin className="size-6" />
-              </span>
-              <span>
-                <span className="block font-title text-lg font-bold text-amber-900">Our Connaught Place Outlet</span>
-                <span className="mt-1 block text-sm leading-relaxed text-bodycolor">
-                  {CP_ADDRESS.streetAddress}, {CP_ADDRESS.addressLocality} {CP_ADDRESS.postalCode}
-                </span>
-                <a href={PHONE_LINK} className="mt-1 inline-block text-sm font-semibold text-primary hover:underline">
-                  {PHONE_LABEL}
+            <div className="mt-8 rounded-2xl bg-amber-50 p-5 ring-1 ring-amber-100">
+              <p className="flex items-center gap-2 font-title text-lg font-bold text-amber-900">
+                <Phone className="size-5 text-primary" /> Connaught Place Spa Contact & Bookings
+              </p>
+              <a href={PHONE_LINK} className="mt-2 block font-title text-3xl font-bold text-primary hover:underline">
+                {PHONE_LABEL}
+              </a>
+              <p className="mt-2 text-sm text-bodycolor">
+                {CP_ADDRESS.streetAddress}, {CP_ADDRESS.addressLocality} {CP_ADDRESS.postalCode} (Near Rajiv Chowk & Patel Chowk Metro).
+                Call or WhatsApp for immediate slots, therapist previews, and direct bookings.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#15803d] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#166534]"
+                >
+                  <FaWhatsapp /> WhatsApp Booking
                 </a>
-              </span>
-            </address>
+                <a
+                  href={PHONE_LINK}
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-primary ring-1 ring-amber-200 transition-colors hover:bg-primary hover:text-white"
+                >
+                  <Phone className="size-4" /> Call Direct
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -381,17 +439,18 @@ export default function Conaughtpage() {
               light
               id="cp-russian-title"
               align="left"
-              eyebrow="Russian Spa in CP"
+              eyebrow="Certified International Team"
               title="A Russian Spa in Connaught Place,"
-              highlight="Your Way"
+              highlight="Tailored To Your Body"
               className="!mb-6"
             />
             <p className="leading-relaxed text-white/80">
-              Our Russian spa in Connaught Place brings together therapists from Russia, Uzbekistan and Thailand
-              alongside our experienced Indian team. Each one has a different touch. Not sure which suits you?
-              Tell us how you feel, sore, tired or just stressed, and we&apos;ll suggest someone.
+              Our Russian spa in Connaught Place features a verified team of certified therapists from Russia, Ukraine,
+              and Europe, alongside expert Thai and Indian therapists. Each therapist brings years of professional training in anatomy,
+              muscle release, and stress relief. Whether you prefer gentle Swedish pressure, firm Russian rhythmic strokes, or focused
+              deep tissue relief for a stiff back, we personalize every minute of your session to leave you completely recharged.
             </p>
-            <WhatsAppButton className="mt-8 !bg-secondary !text-dark hover:!bg-white">Pick My Therapist</WhatsAppButton>
+            <WhatsAppButton className="mt-8 !bg-secondary !text-dark hover:!bg-white">Choose My Therapist</WhatsAppButton>
           </div>
 
           <ul className="grid grid-cols-2 gap-4">
@@ -412,15 +471,63 @@ export default function Conaughtpage() {
         </div>
       </section>
 
+      {/* 3b. Therapists Gallery: Meet Our Therapists At Russian Spa in Connaught Place */}
+      <section aria-labelledby="cp-therapists-gallery-title" className="bg-white py-14 md:py-20 px-4 md:px-8 border-y border-amber-100">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2
+            id="cp-therapists-gallery-title"
+            className="font-title text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c86d5e]"
+          >
+            Meet Our Therapists At Russian Spa in Connaught Place
+          </h2>
+          <p className="mt-3 max-w-2xl mx-auto text-sm text-bodycolor">
+            Pick the therapist you like best. Our team includes certified Russian, European, and Indian therapists available 24/7 for outlet visits inside The Park hotel and hotel in-room sessions across CP.
+          </p>
+
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 md:gap-5">
+            {galleryTherapists.map((t) => (
+              <div key={t.id} className="flex flex-col items-center">
+                <div className="relative aspect-[3/4.6] w-full overflow-hidden rounded-[20px] border-[3px] border-[#5a616c] shadow-md transition-transform duration-300 hover:scale-[1.02]">
+                  <Image
+                    src={t.image}
+                    alt={t.alt}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                    className="object-cover"
+                  />
+                </div>
+                <a
+                  href={TELEGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-xl bg-[#0088cc] px-2.5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow transition-all duration-200 hover:bg-[#0077b5] active:scale-95"
+                >
+                  <FaTelegramPlane className="size-4 shrink-0" />
+                  <span className="truncate">View More On Telegram</span>
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 text-xs sm:text-sm text-bodycolor">
+            Want to check who is available right now? Message us on{" "}
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline underline-offset-4 hover:text-emerald-800">
+              WhatsApp (+91-8799716197)
+            </a>{" "}
+            and we will confirm your therapist and appointment immediately.
+          </p>
+        </div>
+      </section>
+
       {/* 4. Hotels */}
       <section aria-labelledby="cp-hotels-title" className="bg-[#fffaf5] py-16 md:py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <HomeHeading
             id="cp-hotels-title"
-            eyebrow="5-Star Hotel Spa"
-            title="Our Outlet and Hotels"
-            highlight="in Connaught Place"
-            text="Visit our outlet at The Park, or stay where you are. Send us your hotel name and room number, and the therapist comes straight up."
+            eyebrow="5-Star Hotel In-Room Visits"
+            title="CP Spa Outlet & 5-Star Hotel"
+            highlight="In-Room Visits in 15 Mins"
+            text="Visit our private outlet inside The Park on Parliament Street, or stay relaxed in your hotel room. Send us your hotel name and room number on WhatsApp, and our certified therapist reaches within 15–20 minutes with fresh linens and essential oils."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {hotels.map((h) => (
@@ -466,10 +573,10 @@ export default function Conaughtpage() {
             {/* Fills the last grid cell with a booking prompt for hotels not listed */}
             <div className="flex flex-col justify-center rounded-3xl bg-primary p-8 text-white shadow-[0_10px_30px_rgba(43,24,16,0.15)]">
               <Hotel className="size-10 text-secondary" />
-              <p className="mt-4 font-title text-2xl font-bold">Staying somewhere else in CP?</p>
+              <p className="mt-4 font-title text-2xl font-bold">Staying at another hotel in CP?</p>
               <p className="mt-2 text-sm text-white">
-                Near the Metropolitan Hotel, Janpath or Barakhamba Road? Message us your location and we&apos;ll tell
-                you the quickest way to get your massage.
+                Near the Metropolitan Hotel Bangla Sahib Road, Janpath, or Barakhamba? Message us your location and we will send
+                our nearest therapist to your hotel suite within 20 minutes.
               </p>
               <a
                 href={WHATSAPP_URL}
@@ -477,7 +584,7 @@ export default function Conaughtpage() {
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex w-max items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-secondary hover:text-dark"
               >
-                <FaWhatsapp /> Ask Us
+                <FaWhatsapp /> Request In-Room Visit
               </a>
             </div>
           </div>
@@ -489,10 +596,10 @@ export default function Conaughtpage() {
         <div className="max-w-6xl mx-auto">
           <HomeHeading
             id="cp-services-title"
-            eyebrow="Massage in Connaught Place"
-            title="Body Massage in CP:"
-            highlight="What You Can Book"
-            text="These are the massages our Connaught Place guests ask for most. Tap one to read more."
+            eyebrow="Best Body Massage in Connaught Place"
+            title="Body Massage Spa in Connaught Place:"
+            highlight="Our Premium Menu"
+            text="Every session is conducted in a soundproof private suite with warm organic oils, temperature control, and an attached hot rain shower. Tap any treatment to learn more."
           />
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map(({ title, text, time, href }, i) => (
@@ -520,7 +627,7 @@ export default function Conaughtpage() {
             ))}
           </ul>
           <p className="mt-8 text-center text-sm text-bodycolor">
-            Want the full list? Have a look at our <a href="/massage-in-delhi" className={linkClass}>massage in Delhi</a> page.
+            Want to explore all specialized therapies? Check our full <a href="/massage-in-delhi" className={linkClass}>body massage in Delhi</a> menu.
           </p>
         </div>
       </section>
@@ -530,10 +637,10 @@ export default function Conaughtpage() {
         <div className="max-w-5xl mx-auto">
           <HomeHeading
             id="cp-compare-title"
-            eyebrow="Know the Difference"
-            title="Not Just Another"
-            highlight="Massage Parlour in CP"
-            text="There are plenty of massage parlours in Connaught Place. Here's what changes when you book a hotel spa instead."
+            eyebrow="5-Star Hotel Spa vs CP Parlours"
+            title="Why We Are Better Than Typical"
+            highlight="Massage Parlours in Connaught Place"
+            text="There are dozens of shady massage parlours in Connaught Place with hidden charges and thin curtains. Here is why discerning guests choose our 5-star hotel luxury spa instead."
           />
           <div className="overflow-x-auto rounded-3xl bg-white shadow-[0_15px_40px_rgba(43,24,16,0.1)] ring-1 ring-amber-100">
             <table className="w-full text-left text-xs sm:text-sm">
@@ -541,7 +648,7 @@ export default function Conaughtpage() {
                 <tr className="border-b border-amber-100">
                   <th scope="col" className="p-3 sm:p-5 font-semibold text-bodycolor"><span className="sr-only">Compared on</span></th>
                   <th scope="col" className="bg-primary p-3 sm:p-5 font-title text-sm sm:text-lg font-bold text-white">Luxury Russian Spa</th>
-                  <th scope="col" className="p-3 sm:p-5 font-title text-sm sm:text-lg font-bold text-amber-900">Typical Parlour</th>
+                  <th scope="col" className="p-3 sm:p-5 font-title text-sm sm:text-lg font-bold text-amber-900">Typical CP Parlour</th>
                 </tr>
               </thead>
               <tbody>
@@ -567,61 +674,67 @@ export default function Conaughtpage() {
       </section>
 
       {/* 7. Pricing */}
-      <section id="pricing" aria-labelledby="cp-pricing-title" className="bg-white py-16 md:py-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <HomeHeading
-            id="cp-pricing-title"
-            eyebrow="Clear Prices"
-            title="Spa Price"
-            highlight="in Connaught Place"
-            text={
-              <>
-                Three options, depending on where and how long. What we quote on WhatsApp is what you pay. The full rate
-                list is on our <a href="/spa-price-in-delhi" className={linkClass}>spa price in Delhi</a> page.
-              </>
-            }
-          />
-          <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
-            {pricingPlans.map(({ title, price, period, description, features, icon: Icon, popular }) => (
+      <section id="pricing" aria-labelledby="cp-pricing-title" className="relative bg-[#2b1810] py-16 md:py-24 px-4 md:px-8 overflow-hidden text-white">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2b1810] via-[#24130d] to-[#1c0f09] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#9c5232]/15 rounded-full blur-[140px] pointer-events-none" />
+
+        <div className="relative max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs uppercase tracking-[0.25em] font-semibold text-[#fdc28c]">
+              Clear & Transparent Rates
+            </span>
+            <h2 id="cp-pricing-title" className="mt-3 font-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+              Connaught Place <span className="italic font-normal text-[#fdc28c]">Spa Prices</span>
+            </h2>
+            <p className="mt-3 max-w-xl mx-auto text-sm sm:text-base text-white/70">
+              No surprise charges at the counter. Our ₹1,499 spa outlet session and ₹12,999 5-star hotel outlet package come with everything included. What we confirm on WhatsApp is exactly what you pay.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto grid gap-6 sm:gap-8 sm:grid-cols-2 items-stretch">
+            {pricingPlans.map(({ title, price, period, features, popular }) => (
               <div
                 key={title}
-                className={`relative flex flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${
+                className={`relative flex flex-col rounded-[26px] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 ${
                   popular
-                    ? "bg-dark text-white shadow-[0_25px_60px_rgba(43,24,16,0.35)] md:-my-4 md:py-12"
-                    : "bg-amber-50 ring-1 ring-amber-100"
+                    ? "bg-white/[0.08] backdrop-blur-md border border-[#fdc28c]/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-[#fdc28c]/20"
+                    : "bg-white/[0.04] backdrop-blur-md border border-white/10 shadow-xl hover:border-white/20"
                 }`}
               >
                 {popular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-secondary px-4 py-1 text-[11px] font-bold uppercase tracking-wider text-dark">
-                    Most Popular
+                  <span className="absolute -top-3.5 right-6 rounded-full bg-[#fdc28c] px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#2b1810] shadow-md">
+                    Popular
                   </span>
                 )}
-                <span className={`flex size-12 items-center justify-center rounded-xl ${popular ? "bg-white/10 text-secondary" : "bg-white text-primary"}`}>
-                  <Icon className="size-6" />
-                </span>
-                <h3 className={`mt-5 font-title text-2xl font-bold ${popular ? "text-white" : "text-amber-900"}`}>{title}</h3>
-                <p className={`mt-1 text-sm ${popular ? "text-white/70" : "text-bodycolor"}`}>{description}</p>
-                <p className="mt-6 flex items-end gap-2">
-                  <span className={`font-title text-4xl font-bold ${popular ? "text-secondary" : "text-primary"}`}>{price}</span>
-                  <span className={`pb-1 text-sm ${popular ? "text-white/60" : "text-bodycolor"}`}>/ {period}</span>
-                </p>
-                <ul className="mt-6 flex-1 space-y-3">
+
+                <h3 className="font-title text-2xl sm:text-3xl font-bold text-white tracking-tight">{title}</h3>
+
+                <div className="mt-4">
+                  <p className={`font-title text-4xl sm:text-5xl font-bold tracking-tight ${popular ? "text-[#fdc28c]" : "text-white"}`}>
+                    {price}
+                  </p>
+                  <p className="mt-1 text-xs sm:text-sm text-white/75 font-medium">{period}</p>
+                </div>
+
+                <div className="my-6 h-px w-full bg-white/10" />
+
+                <ul className="flex-1 space-y-3.5">
                   {features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm">
-                      <Check className={`size-4 shrink-0 ${popular ? "text-secondary" : "text-primary"}`} strokeWidth={3} />
-                      <span className={popular ? "text-white/90" : "text-amber-900"}>{f}</span>
+                    <li key={f} className="flex items-center gap-3 text-sm font-medium text-white/95">
+                      <Check className={`size-4 shrink-0 ${popular ? "text-[#fdc28c]" : "text-white"}`} strokeWidth={3} />
+                      <span>{f}</span>
                     </li>
                   ))}
                 </ul>
+
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full py-3.5 text-sm font-semibold transition-colors duration-300 ${
-                    popular ? "bg-secondary text-dark hover:bg-white" : "bg-white text-primary ring-1 ring-amber-200 hover:bg-primary hover:text-white"
-                  }`}
+                  className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white py-3.5 px-6 text-sm font-bold text-[#2b1810] shadow-lg transition-all duration-200 hover:bg-[#fdc28c] hover:text-[#2b1810] active:scale-95"
                 >
-                  <FaWhatsapp className="size-4" /> Book Now
+                  <FaWhatsapp className="size-4 text-emerald-600" />
+                  Book Now
                 </a>
               </div>
             ))}
@@ -663,9 +776,9 @@ export default function Conaughtpage() {
         <div className="max-w-5xl mx-auto">
           <HomeHeading
             id="cp-directions-title"
-            eyebrow="Getting Here"
-            title="Find Our Spa"
-            highlight="Near Rajiv Chowk"
+            eyebrow="Prime Central Delhi Location"
+            title="How to Reach Our Spa"
+            highlight="Near Rajiv Chowk Metro"
           />
           <div className="grid gap-5 md:grid-cols-3">
             {gettingHere.map(({ icon: Icon, title, text }) => (
@@ -773,10 +886,10 @@ export default function Conaughtpage() {
           <HomeHeading
             light
             id="cp-cta-title"
-            eyebrow="Book Today"
-            title="Ready to Relax"
+            eyebrow="24/7 Appointments & In-Room Visits"
+            title="Ready For True Relaxation"
             highlight="in Connaught Place?"
-            text="Message us with your time and your hotel, or just say you're coming to The Park. We reply at all hours."
+            text="Message us with your preferred time and hotel name, or drop by our private suite at The Park New Delhi on Parliament Street. Open 24/7 with 100% fixed rates and zero advance deposit."
             className="!mb-8"
           />
           <div className="flex flex-col sm:flex-row justify-center gap-4">
