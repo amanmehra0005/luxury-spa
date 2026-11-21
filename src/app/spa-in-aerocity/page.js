@@ -32,7 +32,7 @@ const spaSchema = {
   url: PAGE_URL,
   image: IMAGE_URL,
   telephone: "+91-8799716197",
-  priceRange: "₹1999 - ₹19999",
+  priceRange: "₹1499 - ₹12999",
   address: { "@type": "PostalAddress", ...AEROCITY_ADDRESS, addressCountry: "IN" },
   areaServed: ["Aerocity", "Mahipalpur", "IGI Airport", "Dwarka", "Vasant Kunj", "New Delhi"],
   openingHoursSpecification: {
@@ -45,26 +45,26 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Aerocity (24/7 Open) | Near Airport ₹1999",
+  title: "Russian Spa in Aerocity At Just ₹1499 | Open 24/7 Near Airport",
   description:
-    "Russian spa in Aerocity near Lemon Tree and IGI Airport, open 24/7. Massage at our outlet or in your room at JW Marriott, Novotel or Pullman. From ₹1999.",
+    "Best Russian Spa in Aerocity near IGI Airport & Lemon Tree. Certified Russian & European therapists, attached hot rain shower, in-room hotel visits & ₹1499 offer. Open 24/7.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Spa in Aerocity | Russian Spa Near IGI Airport, Open 24/7",
+    title: "Russian Spa in Aerocity At Just ₹1499 | Open 24/7 Near Airport",
     description:
-      "Massage at our Aerocity outlet near Lemon Tree, or in your room at a partner hotel. Open all night for late flights. From ₹1999.",
+      "Best Russian Spa in Aerocity near IGI Airport & Lemon Tree. Certified Russian & European therapists, attached hot rain shower, in-room hotel visits & ₹1499 offer. Open 24/7.",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
-    images: [{ url: IMAGE_URL, width: 1920, height: 1280, alt: "Spa in Aerocity at Luxury Russian Spa" }],
+    images: [{ url: IMAGE_URL, width: 1920, height: 1280, alt: "Russian Spa in Aerocity at Luxury Russian Spa" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spa in Aerocity | Russian Spa Near IGI Airport, Open 24/7",
+    title: "Russian Spa in Aerocity At Just ₹1499 | Open 24/7 Near Airport",
     description:
-      "Massage at our Aerocity outlet near Lemon Tree, or in your room at a partner hotel. Open all night for late flights. From ₹1999.",
+      "Best Russian Spa in Aerocity near IGI Airport & Lemon Tree. Certified Russian & European therapists, attached hot rain shower, in-room hotel visits & ₹1499 offer. Open 24/7.",
     images: [IMAGE_URL],
   },
 };
