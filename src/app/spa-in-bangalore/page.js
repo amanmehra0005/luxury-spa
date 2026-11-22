@@ -36,7 +36,7 @@ const serviceSchema = {
     "@type": "Organization",
     name: "Luxury Russian Spa",
     url: "https://www.luxuryrussianspa.com/",
-    telephone: "+91-8799716197",
+    telephone: "+91-9990193385",
   },
   areaServed: {
     "@type": "City",

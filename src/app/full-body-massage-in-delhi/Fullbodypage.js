@@ -87,7 +87,7 @@ export const faqs = [
   {
     question: "What's the contact number to book?",
     answer:
-      "Call or WhatsApp +91 87997 16197. The same number works for every outlet, as well as home and hotel bookings.",
+      "Call or WhatsApp +91 99901 93385. The same number works for every outlet, as well as home and hotel bookings.",
   },
 ];
 

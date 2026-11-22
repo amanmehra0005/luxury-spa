@@ -33,7 +33,7 @@ export default function Analytics() {
             url: "https://www.luxuryrussianspa.com/",
             logo: "https://www.luxuryrussianspa.com/images/luxuryrussianspa-logo.png",
             image: "https://www.luxuryrussianspa.com/images/luxurySpaRoom.jpg",
-            telephone: "+91-8799716197",
+            telephone: "+91-9990193385",
             priceRange: "₹₹₹",
             address: {
               "@type": "PostalAddress",
@@ -88,7 +88,7 @@ export default function Analytics() {
             logo: "https://www.luxuryrussianspa.com/images/luxuryrussianspa-logo.png",
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+91-8799716197",
+              telephone: "+91-9990193385",
               contactType: "customer support",
               areaServed: "IN",
               availableLanguage: ["English", "Hindi"],

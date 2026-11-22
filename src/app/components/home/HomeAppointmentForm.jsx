@@ -17,7 +17,7 @@ export default function HomeAppointmentForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const text = `Hi Luxury Russian Spa! I would like to book an appointment:%0A- Name: ${formData.name}%0A- Phone: ${formData.phone}%0A- Service: ${formData.service}%0A- Location: ${formData.location}%0A- Date/Time: ${formData.date} ${formData.time}`;
-    window.open(`https://wa.me/918799716197?text=${text}`, "_blank");
+    window.open(`https://wa.me/919990193385?text=${text}`, "_blank");
   };
 
   return (

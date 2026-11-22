@@ -4,7 +4,7 @@ import { FiMail } from "react-icons/fi";
 
 const socials = [
   { name: "Telegram", icon: FaTelegramPlane, link: "https://t.me/+yulqEcJa2dxhM2I9" },
-  { name: "WhatsApp", icon: FaWhatsapp, link: "https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." },
+  { name: "WhatsApp", icon: FaWhatsapp, link: "https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer." },
   { name: "Instagram", icon: FaInstagram, link: "https://www.instagram.com/delhi.luxury_spa/" },
 ];
 
@@ -90,7 +90,7 @@ export default function Footer() {
               ))}
             </ul>
             <a
-              href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
+              href="https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block text-xs sm:text-sm font-bold text-[#fdc28c] hover:text-white hover:underline underline-offset-4 transition-colors"
@@ -104,11 +104,11 @@ export default function Footer() {
             <Heading>Contact Us</Heading>
             <ul className="space-y-4 text-sm">
               <li>
-                <a href="tel:+918799716197" className="flex items-center gap-3 hover:text-[#fdc28c] transition-colors">
+                <a href="tel:+919990193385" className="flex items-center gap-3 hover:text-[#fdc28c] transition-colors">
                   <span className="size-9 shrink-0 rounded-full bg-[#9c5232]/25 text-[#fdc28c] ring-1 ring-[#9c5232]/50 flex items-center justify-center">
                     <FaPhoneAlt size={13} />
                   </span>
-                  +91 8799716197
+                  +91 9990193385
                 </a>
               </li>
               <li>
@@ -143,7 +143,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Luxury Russian Spa. All rights reserved.</p>
           <p>
             Mail <a href="mailto:luxuryrussianspa1947@gmail.com" className="hover:text-[#fdc28c] transition-colors">luxuryrussianspa1947@gmail.com</a> | Phone{" "}
-            <a href="tel:+918799716197" className="hover:text-[#fdc28c] transition-colors">+91 8799716197</a>
+            <a href="tel:+919990193385" className="hover:text-[#fdc28c] transition-colors">+91 9990193385</a>
           </p>
         </div>
       </div>

@@ -340,7 +340,7 @@ const L = {
     localFaqs: [
       {
         question: "What is the Uttam Nagar spa contact number?",
-        answer: "Call or WhatsApp +91 87997 16197. It's the same number for bookings, prices and today's free slots, and we reply at any hour.",
+        answer: "Call or WhatsApp +91 99901 93385. It's the same number for bookings, prices and today's free slots, and we reply at any hour.",
       },
     ],
     areas: ["Uttam Nagar East", "Uttam Nagar West", "Nawada", "Dwarka Mor", "Najafgarh", "Vikaspuri", "Janakpuri", "Mohan Garden", "Bindapur"],

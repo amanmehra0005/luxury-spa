@@ -61,7 +61,7 @@ export const faqs = [
   {
     question: "How do I book a sandwich massage?",
     answer:
-      "Message us on WhatsApp or call +91 87997 16197. Tell us the time, the outlet or hotel you prefer, and whether you'd like Russian or Indian therapists, and we'll confirm your booking.",
+      "Message us on WhatsApp or call +91 99901 93385. Tell us the time, the outlet or hotel you prefer, and whether you'd like Russian or Indian therapists, and we'll confirm your booking.",
   },
 ];
 

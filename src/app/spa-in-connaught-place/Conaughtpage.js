@@ -512,7 +512,7 @@ export default function Conaughtpage() {
           <p className="mt-8 text-xs sm:text-sm text-bodycolor">
             Want to check who is available right now? Message us on{" "}
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline underline-offset-4 hover:text-emerald-800">
-              WhatsApp (+91-8799716197)
+              WhatsApp (+91-9990193385)
             </a>{" "}
             and we will confirm your therapist and appointment immediately.
           </p>

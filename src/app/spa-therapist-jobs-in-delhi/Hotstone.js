@@ -91,7 +91,7 @@ const features = [
 ]
 
 
-export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#', phone = '+91-+91 8799716197' }) {
+export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#', phone = '+91-+91 9990193385' }) {
 
   <Head>
     <title>Looking for Spa Therapist jobs in Delhi? Part Time & Full Time</title>
@@ -232,7 +232,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     </svg>
                   </button>
                 </a>
-                <a href='https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
+                <a href='https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
                   <button className="px-6 py-3 bg-white text-amber-800 rounded-sm border border-amber-200 hover:bg-amber-50 transition-colors duration-300 flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 0 0 -5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 0 1 9.288 0M15 7a3 3 0 1 1 -6 0 3 3 0 016 0zm6 3a2 2 0 1 1 -4 0 2 2 0 014 0zM7 10a2 2 0 1 1 -4 0 2 2 0 014 0z" />
@@ -572,7 +572,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     </div>
                     <div>
                       <p className="text-amber-200 text-sm">Call or WhatsApp</p>
-                      <p className="font-semibold">+91-8799716197</p>
+                      <p className="font-semibold">+91-9990193385</p>
                     </div>
                   </div>
 
@@ -586,7 +586,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                     </div>
                   </div>
                 </div>
-                <a href='https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
+                <a href='https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
                   <button className="mt-6 w-full bg-white text-amber-800 py-3 rounded-lg font-semibold hover:bg-amber-100 transition-colors">
                     Apply Now
                   </button>
@@ -680,7 +680,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
                 <div
                   className="text-center mt-6"
                 >
-                  <a href='https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
+                  <a href='https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.'>
                     <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
                       Apply Now
                     </button>
@@ -740,7 +740,7 @@ export default function Hotstone({ email = 'info@luxuryspacare.in', website = '#
 
             <div className="mt-8 text-center">
               <a
-                href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
+                href="https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
                 className="inline-block px-8 py-3 rounded-full bg-amber-600 text-white font-semibold shadow-lg hover:brightness-95 transition"
                 aria-label="Apply via email"
               >

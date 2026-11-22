@@ -64,7 +64,7 @@ export const faqs = [
   {
     question: "How do I book a Russian therapist in Chandigarh?",
     answer:
-      "Send us a WhatsApp on +91 87997 16197 with your sector or hotel, the time you'd like and \"Russian therapist\". We'll check who's free that day and confirm the therapist, time and price on the same chat. Booking a day ahead gives you the best chance.",
+      "Send us a WhatsApp on +91 99901 93385 with your sector or hotel, the time you'd like and \"Russian therapist\". We'll check who's free that day and confirm the therapist, time and price on the same chat. Booking a day ahead gives you the best chance.",
   },
   {
     question: "Can we book a couple massage at home?",
@@ -84,7 +84,7 @@ export const faqs = [
   {
     question: "How do I book, and how do I pay?",
     answer:
-      "Call or WhatsApp +91 87997 16197 with your sector and a time. We confirm the therapist and price on the same chat. You pay after the session, by UPI, cash or card.",
+      "Call or WhatsApp +91 99901 93385 with your sector and a time. We confirm the therapist and price on the same chat. You pay after the session, by UPI, cash or card.",
   },
 ];
 

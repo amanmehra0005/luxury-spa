@@ -65,7 +65,7 @@ export const faqs = [
   {
     question: "How do I book?",
     answer:
-      "WhatsApp or call +91 87997 16197 with the massage you'd like, a time, and whether you're coming to us or want us at home. We confirm the slot, therapist and price on the same chat.",
+      "WhatsApp or call +91 99901 93385 with the massage you'd like, a time, and whether you're coming to us or want us at home. We confirm the slot, therapist and price on the same chat.",
   },
 ];
 

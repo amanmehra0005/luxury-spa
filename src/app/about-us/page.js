@@ -41,7 +41,7 @@ const aboutSchema = {
     url: `${SITE}/`,
     logo: `${SITE}/images/luxuryrussianspa-logo.png`,
     image: IMAGE_URL,
-    telephone: "+91-8799716197",
+    telephone: "+91-9990193385",
     email: CONTACT_EMAIL,
     address: { "@type": "PostalAddress", ...MAIN_ADDRESS, addressCountry: "IN" },
     areaServed: ["Delhi", "New Delhi", "Gurgaon", "Noida", "Faridabad", "Bangalore", "Chandigarh"],
@@ -49,7 +49,7 @@ const aboutSchema = {
     sameAs: ["https://www.instagram.com/delhi.luxury_spa/", "https://t.me/+yulqEcJa2dxhM2I9"],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91-8799716197",
+      telephone: "+91-9990193385",
       contactType: "customer service",
       availableLanguage: ["English", "Hindi"],
       hoursAvailable: {

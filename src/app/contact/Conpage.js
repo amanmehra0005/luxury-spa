@@ -8,14 +8,14 @@ import MapEmbed from "./MapEmbed";
 
 const FULL_ADDRESS = `${MAIN_ADDRESS.streetAddress}, ${MAIN_ADDRESS.addressLocality}, Delhi ${MAIN_ADDRESS.postalCode}`;
 const MAP_QUERY = encodeURIComponent("Novotel New Delhi Aerocity, GMR Hospitality District, New Delhi 110037");
-const nearestOutletUrl = `https://wa.me/918799716197?text=${encodeURIComponent("Hi! Which of your outlets is nearest to me? My area is: ")}`;
+const nearestOutletUrl = `https://wa.me/919990193385?text=${encodeURIComponent("Hi! Which of your outlets is nearest to me? My area is: ")}`;
 
 // Also used for the FAQPage schema in ./page.js, so the page and schema never drift apart.
 export const faqs = [
   {
     question: "What's the fastest way to reach Luxury Russian Spa?",
     answer:
-      "WhatsApp on +91 87997 16197. We usually reply within a few minutes, and you get the price, a time and your therapist all on the same chat.",
+      "WhatsApp on +91 99901 93385. We usually reply within a few minutes, and you get the price, a time and your therapist all on the same chat.",
   },
   {
     question: "Can I message or call late at night?",

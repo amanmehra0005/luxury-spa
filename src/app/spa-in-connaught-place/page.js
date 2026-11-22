@@ -31,7 +31,7 @@ const spaSchema = {
   name: "Luxury Russian Spa - Connaught Place",
   url: PAGE_URL,
   image: IMAGE_URL,
-  telephone: "+91-8799716197",
+  telephone: "+91-9990193385",
   priceRange: "₹1499 - ₹12999",
   address: { "@type": "PostalAddress", ...CP_ADDRESS, addressCountry: "IN" },
   areaServed: ["Connaught Place", "Janpath", "Barakhamba Road", "Rajiv Chowk", "Gole Market", "Central Delhi", "New Delhi"],

@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { CheckCheck, Mail, Send } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WHATSAPP_NUMBER_URL = "https://wa.me/918799716197";
+const WHATSAPP_NUMBER_URL = "https://wa.me/919990193385";
 
 const massages = [
   "Not sure yet",

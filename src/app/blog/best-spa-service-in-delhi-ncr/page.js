@@ -262,7 +262,7 @@ export default function BestSpaServicesBlogPage() {
                 </div>
                 <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5">
                   <a
-                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20explore%20spa%20services%20and%20claim%20the%201499%20first%20visit%20offer."
+                    href="https://wa.me/919990193385?text=Hi%2C%20I%20want%20to%20explore%20spa%20services%20and%20claim%20the%201499%20first%20visit%20offer."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white px-7 py-3 text-sm font-bold shadow-md transition-all duration-300 hover:-translate-y-0.5"
@@ -461,7 +461,7 @@ export default function BestSpaServicesBlogPage() {
                   </p>
                   <div className="mt-6 flex flex-wrap gap-4">
                     <a
-                      href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20book%20a%20spa%20session%20in%20Delhi%20NCR.%20Please%20share%20today%27s%20available%20slots."
+                      href="https://wa.me/919990193385?text=Hi%2C%20I%20would%20like%20to%20book%20a%20spa%20session%20in%20Delhi%20NCR.%20Please%20share%20today%27s%20available%20slots."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-full bg-white px-7 py-3 font-bold text-[#9c5232] transition hover:bg-amber-50 shadow-md"
@@ -493,7 +493,7 @@ export default function BestSpaServicesBlogPage() {
                     Choose from Full Body, B2B, or Deep Tissue &bull; Attached hot shower &bull; 100% Private Suite
                   </p>
                   <a
-                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20for%20spa%20services."
+                    href="https://wa.me/919990193385?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20for%20spa%20services."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white py-3 text-sm font-bold shadow-md transition"

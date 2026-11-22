@@ -36,7 +36,7 @@ const serviceSchema = {
   provider: {
     "@type": "LocalBusiness",
     name: "Luxury Russian Spa",
-    telephone: "+91-8799716197",
+    telephone: "+91-9990193385",
     url: "https://www.luxuryrussianspa.com/",
   },
   areaServed: ["Delhi", "New Delhi", "Delhi NCR", "Noida", "Gurgaon"],

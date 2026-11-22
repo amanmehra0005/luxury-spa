@@ -31,7 +31,7 @@ const spaSchema = {
   name: "Luxury Russian Spa - Aerocity",
   url: PAGE_URL,
   image: IMAGE_URL,
-  telephone: "+91-8799716197",
+  telephone: "+91-9990193385",
   priceRange: "₹1499 - ₹12999",
   address: { "@type": "PostalAddress", ...AEROCITY_ADDRESS, addressCountry: "IN" },
   areaServed: ["Aerocity", "Mahipalpur", "IGI Airport", "Dwarka", "Vasant Kunj", "New Delhi"],

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const ENQUIRE_URL = "https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.";
+const ENQUIRE_URL = "https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer.";
 
 /**
  * Site-wide theme effects:
@@ -64,7 +64,7 @@ export default function ThemeEffects() {
         className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 gap-2 border-t border-amber-100 bg-white/95 px-3 pt-2 shadow-[0_-8px_30px_rgba(43,24,16,0.12)] backdrop-blur md:hidden"
         style={{ paddingBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}
       >
-        <a href="tel:+918799716197" className="flex flex-col items-center justify-center gap-0.5 rounded-xl py-2 text-[11px] font-semibold text-amber-900 active:bg-amber-50">
+        <a href="tel:+919990193385" className="flex flex-col items-center justify-center gap-0.5 rounded-xl py-2 text-[11px] font-semibold text-amber-900 active:bg-amber-50">
           <svg className="size-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
             <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" strokeLinecap="round" strokeLinejoin="round" />
           </svg>

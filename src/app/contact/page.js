@@ -37,13 +37,13 @@ const contactSchema = {
     "@id": `${SITE}/#organization`,
     name: "Luxury Russian Spa",
     url: `${SITE}/`,
-    telephone: "+91-8799716197",
+    telephone: "+91-9990193385",
     email: CONTACT_EMAIL,
     address: { "@type": "PostalAddress", ...MAIN_ADDRESS, addressCountry: "IN" },
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+91-8799716197",
+        telephone: "+91-9990193385",
         contactType: "reservations",
         availableLanguage: ["English", "Hindi"],
         hoursAvailable: {
@@ -61,7 +61,7 @@ const contactSchema = {
 export const metadata = {
   title: "Contact Luxury Russian Spa | 24/7 Booking & Outlet Locations",
   description:
-    "Call or WhatsApp +91 87997 16197, any time of day. Tell us the massage, time and area and we'll reply with the price and nearest outlet in minutes.",
+    "Call or WhatsApp +91 99901 93385, any time of day. Tell us the massage, time and area and we'll reply with the price and nearest outlet in minutes.",
   keywords: [
     "contact luxury russian spa",
     "luxury russian spa phone number",

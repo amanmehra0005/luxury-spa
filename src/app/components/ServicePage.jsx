@@ -88,7 +88,7 @@ export function serviceSchemas(svc) {
       url,
       image,
       description: svc.schemaDescription,
-      provider: { "@type": "Organization", name: "Luxury Russian Spa", telephone: "+91-8799716197", url: `${SITE}/` },
+      provider: { "@type": "Organization", name: "Luxury Russian Spa", telephone: "+91-9990193385", url: `${SITE}/` },
       areaServed: [{ "@type": "City", name: "Delhi" }, { "@type": "City", name: "New Delhi" }],
       offers: PRICES.map((p) => ({ "@type": "Offer", name: `${svc.name}, ${p.option.toLowerCase()}, ${p.time}`, price: String(p.value), priceCurrency: "INR" })),
     },

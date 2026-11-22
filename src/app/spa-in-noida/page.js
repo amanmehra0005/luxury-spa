@@ -31,7 +31,7 @@ const spaSchema = {
   name: "Luxury Russian Spa - Noida",
   url: PAGE_URL,
   image: IMAGE_URL,
-  telephone: "+91-8799716197",
+  telephone: "+91-9990193385",
   priceRange: "₹1999 - ₹19999",
   address: {
     "@type": "PostalAddress",

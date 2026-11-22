@@ -148,7 +148,7 @@ export function locationFaqs(loc) {
     {
       question: "How do I book?",
       answer:
-        "WhatsApp or call +91 87997 16197 with the massage you'd like, a time, and whether you're coming to us or want us at home. We confirm the slot, therapist and price on the same chat.",
+        "WhatsApp or call +91 99901 93385 with the massage you'd like, a time, and whether you're coming to us or want us at home. We confirm the slot, therapist and price on the same chat.",
     },
   ];
 }
@@ -172,7 +172,7 @@ export function locationSchemas(loc) {
       name: `Luxury Russian Spa - ${loc.name}`,
       url,
       image,
-      telephone: "+91-8799716197",
+      telephone: "+91-9990193385",
       priceRange: "₹1999 - ₹19999",
       address: {
         "@type": "PostalAddress",
@@ -206,7 +206,7 @@ export function LocationSchemas({ loc }) {
 
 function WhatsAppButton({ locName = "", children = "Book on WhatsApp", className = "" }) {
   const url = locName
-    ? `https://wa.me/918799716197?text=${encodeURIComponent(`Hi! I'd like to book a massage at your ${locName} spa. Please share available therapists and the ₹1499 first visit offer.`)}`
+    ? `https://wa.me/919990193385?text=${encodeURIComponent(`Hi! I'd like to book a massage at your ${locName} spa. Please share available therapists and the ₹1499 first visit offer.`)}`
     : WHATSAPP_URL;
   return (
     <a

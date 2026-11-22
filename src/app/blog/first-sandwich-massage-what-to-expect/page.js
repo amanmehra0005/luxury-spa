@@ -209,7 +209,7 @@ export default function SandwichMassageDelhiPage() {
                   </p>
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                     <a
-                      href="https://wa.me/918799716197?text=Hi!%20I%20read%20your%20sandwich%20massage%20guide.%20I%20want%20to%20book%20a%20slot%20in%20Delhi%20today.%20Please%20share%20the%20details."
+                      href="https://wa.me/919990193385?text=Hi!%20I%20read%20your%20sandwich%20massage%20guide.%20I%20want%20to%20book%20a%20slot%20in%20Delhi%20today.%20Please%20share%20the%20details."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-full bg-[#15803d] hover:bg-[#166534] px-7 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:-translate-y-0.5"
@@ -962,7 +962,7 @@ export default function SandwichMassageDelhiPage() {
                     </Link>
 
                     <a
-                      href="https://wa.me/918799716197?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
+                      href="https://wa.me/919990193385?text=Hi!%20How%20can%20I%20book%20an%20appointment%20at%20your%205-star%20hotel%20spa%20outlets%3A%20The%20Suryaa%20(NFC)%2C%20The%20Park%20(CP)%20or%20Novotel%20(Aerocity)%3F%20Please%20send%20me%20today%27s%20offer."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-full border border-white px-7 py-3 font-semibold hover:bg-white/10"

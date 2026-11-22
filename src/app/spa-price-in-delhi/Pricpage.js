@@ -133,7 +133,7 @@ const tiers = [
 ];
 
 // Every massage, with a link to its own page and a WhatsApp link that already names the massage
-const WHATSAPP_NUMBER_URL = "https://wa.me/918799716197";
+const WHATSAPP_NUMBER_URL = "https://wa.me/919990193385";
 const askPriceUrl = (massage) =>
   `${WHATSAPP_NUMBER_URL}?text=${encodeURIComponent(`Hi! What's the price for a ${massage}? I'd like to book at an outlet / at home (please tell me both).`)}`;
 
@@ -217,7 +217,7 @@ const areaZones = [
   },
 ];
 
-const nearestOutletUrl = `https://wa.me/918799716197?text=${encodeURIComponent("Hi! Which of your outlets is nearest to me? My area is: ")}`;
+const nearestOutletUrl = `https://wa.me/919990193385?text=${encodeURIComponent("Hi! Which of your outlets is nearest to me? My area is: ")}`;
 
 const getPriceSteps = [
   { title: "Tell us three things", text: "Which massage, how long, and whether it's at an outlet, your home or a hotel. That's all we need." },
@@ -374,7 +374,7 @@ export default function Pricpage() {
               </p>
             </div>
             <a
-              href="https://wa.me/918799716197?text=Hi!%20I%20want%20to%20claim%20the%20First%20Visit%20%E2%82%B91499%20Welcome%20Offer%20in%20Delhi.%20Please%20share%20today%27s%20open%20slots."
+              href="https://wa.me/919990193385?text=Hi!%20I%20want%20to%20claim%20the%20First%20Visit%20%E2%82%B91499%20Welcome%20Offer%20in%20Delhi.%20Please%20share%20today%27s%20open%20slots."
               target="_blank"
               rel="noopener noreferrer"
               className="shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-[#15803d] hover:bg-[#166534] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/30 transition-all hover:-translate-y-0.5"

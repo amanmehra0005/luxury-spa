@@ -35,7 +35,7 @@ export const faqs = [
   {
     question: "What is the Lajpat Nagar spa contact number?",
     answer:
-      "You can call or WhatsApp us directly on +91 87997 16197. The same number works 24/7 for booking, checking today's free therapist slots, or asking about prices. We reply instantly on WhatsApp at all hours.",
+      "You can call or WhatsApp us directly on +91 99901 93385. The same number works 24/7 for booking, checking today's free therapist slots, or asking about prices. We reply instantly on WhatsApp at all hours.",
   },
   {
     question: "What are your body massage and Russian spa prices in Lajpat Nagar?",
@@ -546,7 +546,7 @@ export default function Lajpatpage() {
           <p className="mt-8 text-xs sm:text-sm text-bodycolor">
             Want to check who is available today? Message us on{" "}
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline underline-offset-4 hover:text-emerald-800">
-              WhatsApp (+91-8799716197)
+              WhatsApp (+91-9990193385)
             </a>{" "}
             and we will confirm your slot and therapist right away.
           </p>

@@ -48,7 +48,7 @@ export const faqs = [
   {
     question: "How do I contact Luxury Russian Spa?",
     answer:
-      "Call or WhatsApp +91 87997 16197, message us on Telegram, or email luxuryrussianspa1947@gmail.com. WhatsApp is usually the quickest way to reach us.",
+      "Call or WhatsApp +91 99901 93385, message us on Telegram, or email luxuryrussianspa1947@gmail.com. WhatsApp is usually the quickest way to reach us.",
   },
 ];
 

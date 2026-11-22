@@ -220,7 +220,7 @@ export default function ThaiMassageBlogPage() {
                 </div>
                 <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5">
                   <a
-                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20book%20an%20authentic%20Thai%20Massage%20session%20in%20Delhi.%20Please%20share%20available%20slots."
+                    href="https://wa.me/919990193385?text=Hi%2C%20I%20want%20to%20book%20an%20authentic%20Thai%20Massage%20session%20in%20Delhi.%20Please%20share%20available%20slots."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white px-7 py-3 text-sm font-bold shadow-md transition-all duration-300 hover:-translate-y-0.5"
@@ -397,7 +397,7 @@ export default function ThaiMassageBlogPage() {
                   </p>
                   <div className="mt-6 flex flex-wrap gap-4">
                     <a
-                      href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Thai%20Massage%20session%20in%20Delhi%20at%201499."
+                      href="https://wa.me/919990193385?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Thai%20Massage%20session%20in%20Delhi%20at%201499."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-full bg-white px-7 py-3 font-bold text-[#9c5232] transition hover:bg-amber-50 shadow-md"
@@ -429,7 +429,7 @@ export default function ThaiMassageBlogPage() {
                     Assisted yoga stretching &bull; Deep acupressure &bull; Private air-conditioned rooms &bull; Attached shower
                   </p>
                   <a
-                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20for%20Thai%20Massage."
+                    href="https://wa.me/919990193385?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20for%20Thai%20Massage."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white py-3 text-sm font-bold shadow-md transition"

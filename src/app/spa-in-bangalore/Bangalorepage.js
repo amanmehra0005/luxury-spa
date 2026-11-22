@@ -79,7 +79,7 @@ export const faqs = [
   {
     question: "What's your contact number for bookings in Bangalore?",
     answer:
-      "Call or WhatsApp +91 87997 16197. The same number is used for all our bookings, and we usually reply on WhatsApp within a few minutes.",
+      "Call or WhatsApp +91 99901 93385. The same number is used for all our bookings, and we usually reply on WhatsApp within a few minutes.",
   },
 ];
 

@@ -190,7 +190,7 @@ export default function SpaVsMassageBlogPage() {
                 </div>
                 <div className="shrink-0 flex flex-col sm:flex-row md:flex-col gap-2.5">
                   <a
-                    href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Russian%20Spa%20packages%20and%20first%20visit%20offers."
+                    href="https://wa.me/919990193385?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Russian%20Spa%20packages%20and%20first%20visit%20offers."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white px-7 py-3 text-sm font-bold shadow-md transition-all duration-300 hover:-translate-y-0.5"
@@ -371,7 +371,7 @@ export default function SpaVsMassageBlogPage() {
                   </p>
                   <div className="mt-6 flex flex-wrap gap-4">
                     <a
-                      href="https://wa.me/918799716197?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Russian%20Spa%20session%20with%20attached%20shower%20in%20Delhi."
+                      href="https://wa.me/919990193385?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Russian%20Spa%20session%20with%20attached%20shower%20in%20Delhi."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-full bg-white px-7 py-3 font-bold text-[#9c5232] transition hover:bg-amber-50 shadow-md"
@@ -403,7 +403,7 @@ export default function SpaVsMassageBlogPage() {
                     Includes 60-min session &bull; Attached hot shower &bull; 100% Private suite &bull; Certified therapists
                   </p>
                   <a
-                    href="https://wa.me/918799716197?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20at%20Luxury%20Russian%20Spa."
+                    href="https://wa.me/919990193385?text=Hi%2C%20I%20want%20to%20claim%20the%201499%20first%20visit%20offer%20at%20Luxury%20Russian%20Spa."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full inline-flex items-center justify-center rounded-full bg-[#9c5232] hover:bg-[#834329] text-white py-3 text-sm font-bold shadow-md transition"
