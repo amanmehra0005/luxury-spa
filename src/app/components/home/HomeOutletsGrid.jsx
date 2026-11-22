@@ -35,14 +35,14 @@ const hotels = [
   {
     name: "IBIS New Delhi Aerocity",
     location: "Locations – Aerocity, New Delhi",
-    desc: "If you're flying in or out, the IBIS Aerocity Spa offers the perfect layover luxury. Experience a premium Russian Spa in Aerocity menu right beside the airport. Whether you choose a revitalizing Thai, B2B, sensual Nuru, or couple treatment, skilled international staff ensure relaxation. Spa bundles start at ₹15,999, and the first-visitor offer is a tempting ₹1,999.",
+    desc: "If you're flying in or out, the IBIS Aerocity Spa offers the perfect layover luxury. Experience a premium Russian Spa in Aerocity menu right beside the airport. Whether you choose a revitalizing Thai, B2B, sensual Nuru, or couple treatment, skilled international staff ensure relaxation. Spa bundles start at ₹12,999, and the first-visitor offer is a tempting ₹1,499.",
     image: "/images/ibis-new-delhi-aerocity.jpg",
     link: "/spa-in-aerocity",
   },
   {
     name: "The Park Connaught Place",
     location: "Locations – The Park Hotel, C.P",
-    desc: "Experience pure relaxation at The Park with our premium Russian Spa in Connaught Place. Enjoy a luxury spa session with Thai massage, Aroma therapy, and Couple massage delivered by certified Russian and Thai therapists. Our 5-star spa experience starts from ₹15999, and first-time guests can enjoy a special welcome offer at just ₹1999.",
+    desc: "Experience pure relaxation at The Park with our premium Russian Spa in Connaught Place. Enjoy a luxury spa session with Thai massage, Aroma therapy, and Couple massage delivered by certified Russian and Thai therapists. Our 5-star spa experience starts from ₹12,999, and first-time guests can enjoy a special welcome offer at just ₹1,499.",
     image: "/images/TheParkConnaughtPlace.webp",
     link: "/spa-in-connaught-place",
   },

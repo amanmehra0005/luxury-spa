@@ -21,74 +21,63 @@ import HomeHeading from "../components/HomeHeading";
 import WhatsappFloat from "../components/WhatsappFloat";
 import { PHONE_LABEL, PHONE_LINK, TELEGRAM_URL, WHATSAPP_URL } from "../components/siteContact";
 
-// One price list for every outlet. Change these three and the whole page (and the schema in ./page.js) follows.
+// One price list for every outlet. Change these two and the whole page (and the schema in ./page.js) follows.
 export const PRICES = {
-  outlet: { price: 1999, label: "₹1,999", time: "60 min" },
-  home: { price: 14999, label: "₹14,999", time: "90 min" },
-  fiveStar: { price: 19999, label: "₹19,999", time: "120 min" },
+  outlet: { price: 1499, label: "₹1,499", time: "60 min" },
+  fiveStar: { price: 12999, label: "₹12,999", time: "120 min" },
 };
 
 // Also used for the FAQPage schema in ./page.js, so the page and schema never drift apart.
 export const faqs = [
   {
-    question: "What is the spa price in Delhi at Luxury Russian Spa?",
+    question: "What is the Russian spa price in Delhi?",
     answer:
-      "A 60-minute massage at any of our outlets is ₹1,999. A 90-minute session at your home or hotel is ₹14,999, and our 120-minute 5-star hotel spa package is ₹19,999. Those are the full prices, with no extra charges added at the end.",
+      "Our authentic Russian spa outlet session starts at just ₹1,499 for 60 minutes. Our 5-star hotel suite / in-room package is ₹12,999 for a full 120-minute luxury session including B2B massage, organic oils, and attached private hot shower. There are zero hidden charges.",
+  },
+  {
+    question: "What is the Russian girl price / Russian therapist massage rate in Delhi?",
+    answer:
+      "Clients searching for 'Russian girl price' or 'Russian massage in Delhi' often encounter unverified classified scams. At Luxury Russian Spa, we offer professional, certified Russian and European female therapists. Our rates are 100% fixed: ₹1,499 for a 60-min outlet session and ₹12,999 for a 120-min 5-star hotel suite experience. You can preview verified therapist profiles on our Telegram channel before booking, and you pay only after meeting your therapist.",
   },
   {
     question: "How much does a full body massage cost in Delhi?",
     answer:
-      "A full body massage at our outlets costs ₹1,999 for 60 minutes. If you'd like it at home, a 90-minute full body massage at home in Delhi is ₹14,999.",
-  },
-  {
-    question: "How much does a 1-hour body massage cost in Delhi?",
-    answer:
-      "A 1-hour body massage at any of our outlets costs ₹1,999, whichever massage you pick. If you want longer, a 90-minute session at home or in your hotel is ₹14,999.",
-  },
-  {
-    question: "Is the price different in Mahipalpur, Lajpat Nagar or Uttam Nagar?",
-    answer:
-      "No. We keep the same rates at every outlet, whether you're in Mahipalpur, Lajpat Nagar, Uttam Nagar, Paharganj or anywhere else in Delhi NCR. The only things that change the price are the length of the session and where it happens.",
+      "A complete 60-minute full body massage (Swedish, Aromatherapy, or Deep Tissue) is ₹1,499 at our outlets. For in-room 5-star hotel visits, the 120-minute suite package is ₹12,999 with therapist room delivery in 15–20 minutes.",
   },
   {
     question: "What is the Thai massage price in Delhi?",
     answer:
-      "A 60-minute Thai massage at our outlets is ₹1,999, the same as our other massages. It's done on a mat in loose clothes, with no oil.",
+      "A 60-minute traditional Thai massage at our outlets is ₹1,499. It is performed on a comfortable floor mat with passive rhythmic stretching and acupressure in clean loose attire, without oil.",
+  },
+  {
+    question: "What is the B2B massage price in Delhi?",
+    answer:
+      "Our premium B2B body spa therapy in a private soundproof suite with attached hot rain shower is available at ₹1,499 for outlet sessions and ₹12,999 for a comprehensive 120-minute 5-star hotel suite package.",
   },
   {
     question: "What does a couple spa in Delhi cost?",
     answer:
-      "Couple massage prices depend on how long you'd like and whether it's at an outlet, your home or a hotel suite. Send us those details on WhatsApp and we'll give you the exact price before you book.",
+      "Couple massage sessions take place in an exclusive private suite with side-by-side tables, ambient lighting, and hot showers. Rates start from ₹2,999 for a 60-min outlet session. Message us on WhatsApp for custom anniversary and private suite packages.",
   },
   {
-    question: "Can I book a 90-minute session at an outlet?",
+    question: "Are there any hidden counter charges, tips, or extra taxes?",
     answer:
-      "Yes. Longer outlet sessions are available, and we'll confirm the price on WhatsApp when you book, since it depends on the massage and the outlet.",
+      "No, absolutely not. Unlike cheap street massage parlours that advertise ₹999 and demand ₹4,000 at the counter, what we quote on WhatsApp is exactly what you pay. Fresh linen, organic massage oils, disposable essentials, and attached hot showers are 100% included. Tips are never demanded.",
   },
   {
-    question: "What's included in the price?",
+    question: "Do I have to pay any advance deposit before booking?",
     answer:
-      "Your massage, a private room, fresh towels and linen, the oils, and a hot shower afterwards at the outlet. For home visits, the therapist brings towels and oils with them. Tips are never expected.",
+      "No. For all outlet bookings across Delhi NCR, we maintain a strict zero-advance-payment policy. You arrive at the spa, meet your therapist, and pay by UPI, Cash, or Card only after your session is completed.",
   },
   {
-    question: "Are you a cheap spa?",
+    question: "Is the price different in Mahipalpur, Aerocity, Connaught Place, or Lajpat Nagar?",
     answer:
-      "We're not the cheapest massage in Delhi, and we don't try to be. What you pay for is a private room, a trained therapist you choose yourself, and a price that doesn't change once you're on the table. If a place quotes much lower, it's worth asking what's left out.",
+      "No. We maintain unified transparent rates across all our Delhi NCR outlets. Whether you visit Aerocity, CP (The Park), Lajpat Nagar, Mahipalpur, or Karol Bagh, the outlet rate starts at ₹1,499.",
   },
   {
-    question: "Are there any offers or discounts?",
+    question: "How do 5-star hotel in-room visits work?",
     answer:
-      "We run offers from time to time, especially for first visits. Just ask for today's offer when you message us on WhatsApp.",
-  },
-  {
-    question: "Do I have to pay in advance?",
-    answer:
-      "Not for outlet bookings. You pay after your session, by UPI, cash or card. For home and hotel visits we'll explain the payment when we confirm your booking.",
-  },
-  {
-    question: "Why is the home or hotel price higher?",
-    answer:
-      "Because the session is longer, 90 minutes instead of 60, and the therapist travels to you with everything needed. You also skip the travel time and can go straight to bed afterwards.",
+      "If you are staying at any 5-star hotel in Delhi NCR (Novotel, Pullman, The Park, The LaLiT, Shangri-La, The Imperial, Radisson, etc.), simply WhatsApp us your hotel name and room number. Our certified therapist reaches your room within 15 to 20 minutes with fresh linens and organic oils.",
   },
 ];
 
@@ -99,12 +88,48 @@ const HERO_SRCSET = [640, 828, 1280].map((w) => `/images/price/hero-${w}.webp ${
 
 // In-page navigation ("On this page")
 const sections = [
-  { id: "price-tiers", label: "Price at a Glance" },
-  { id: "price-list", label: "Full Price List" },
+  { id: "price-tiers", label: "Core Rates" },
+  { id: "therapists", label: "Therapists" },
+  { id: "price-list", label: "Massage Price List" },
   { id: "included", label: "What's Included" },
   { id: "area-prices", label: "Prices by Area" },
-  { id: "get-price", label: "Get Your Price" },
   { id: "faq", label: "FAQs" },
+];
+
+const pricingPlans = [
+  {
+    title: "Spa Outlet",
+    price: "₹1499/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Shower 60 min",
+      "Consultation",
+    ],
+    popular: false,
+  },
+  {
+    title: "5 Star Hotel Outlet",
+    price: "₹12,999/-",
+    period: "Per Session",
+    features: [
+      "Oil Massage",
+      "Cream Massage",
+      "Private Suite",
+      "B2B Massage",
+      "120 min Session",
+    ],
+    popular: true,
+  },
+];
+
+const galleryTherapists = [
+  { id: 1, image: "/images/Russian-massage-girls.webp", alt: "Certified Russian Spa Therapist in Delhi" },
+  { id: 2, image: "/images/lajpat/therapist-2.webp", alt: "Russian Body Massage Expert Delhi NCR" },
+  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "European Spa Therapist at Luxury Delhi Spa" },
+  { id: 4, image: "/images/image2.webp", alt: "Professional Thai and Russian Therapist Hotel Visit" },
+  { id: 5, image: "/images/lajpat/therapist-5.webp", alt: "Luxury Russian Spa Expert Delhi" },
 ];
 
 const tiers = [
@@ -112,43 +137,96 @@ const tiers = [
     icon: Leaf,
     title: "Spa Outlet",
     ...PRICES.outlet,
-    description: "At any of our 24+ outlets in Delhi NCR",
-    features: ["Any massage on our menu", "Private room", "Hot shower after", "Pay after your session"],
-  },
-  {
-    icon: Home,
-    title: "Home or Hotel",
-    ...PRICES.home,
-    description: "The therapist comes to you",
-    features: ["Full body, Thai or deep tissue", "Therapist brings towels & oils", "Your home or hotel room", "No travel for you"],
-    popular: true,
+    description: "At any of our luxury outlets in Delhi NCR",
+    features: ["Any massage on our menu", "100% Private room", "Attached hot rain shower", "Pay after your session"],
   },
   {
     icon: Star,
-    title: "5 Star Hotel Spa",
+    title: "5 Star Hotel Outlet",
     ...PRICES.fiveStar,
-    description: "Our longest, most indulgent session",
-    features: ["International therapist", "5-star property", "Aromatherapy oils", "Two full hours"],
+    description: "Private suite or in-room hotel session",
+    features: ["Certified Russian / European therapist", "Private luxury suite", "B2B massage & aromatherapy", "Full 120-minute session"],
+    popular: true,
   },
 ];
 
 // Every massage, with a link to its own page and a WhatsApp link that already names the massage
 const WHATSAPP_NUMBER_URL = "https://wa.me/919990193385";
-const askPriceUrl = (massage) =>
-  `${WHATSAPP_NUMBER_URL}?text=${encodeURIComponent(`Hi! What's the price for a ${massage}? I'd like to book at an outlet / at home (please tell me both).`)}`;
+const askPriceUrl = (massage, price) =>
+  `${WHATSAPP_NUMBER_URL}?text=${encodeURIComponent(`Hi! What's the booking process for a ${massage} (${price})? I'd like to book at an outlet / at hotel.`)}`;
 
 const priceList = [
-  { name: "Full Body Massage", href: "/full-body-massage-in-delhi", emoji: "💆", note: "Head to toe with warm oil. Our most booked massage.", tag: "Most booked" },
-  { name: "Deep Tissue Massage", href: "/deep-tissue-massage-in-delhi", emoji: "💪", note: "Slow, firm pressure for a stiff neck, shoulders or back." },
-  { name: "Thai Massage", href: "/thai-massage-in-delhi", emoji: "🧘", note: "Stretching on a mat, in loose clothes. No oil." },
-  { name: "Swedish Massage", href: "/swedish-massage-in-delhi", emoji: "🌙", note: "Light, flowing strokes. Nice for a first massage." },
-  { name: "Aromatherapy Massage", href: "/aromatherapy-massage-in-delhi", emoji: "🌿", note: "Gentle pressure with essential oils you pick." },
-  { name: "B2B Massage", href: "/b2b-massage-in-delhi", emoji: "✨", note: "Our premium session in a fully private room." },
-  { name: "Sandwich Massage", href: "/sandwich-massage", emoji: "👐", note: "Two therapists working on you at the same time." },
-  { name: "Couple Massage", href: "/couple-massage", emoji: "💑", note: "Two therapists, one room, both of you together.", onRequest: true },
+  {
+    name: "Russian Full Body Massage",
+    href: "/full-body-massage-in-delhi",
+    emoji: "💆",
+    price: "₹2,499",
+    durations: ["60 min", "90 min"],
+    note: "Head to toe with warm aromatic oils. Our most booked Russian massage in Delhi.",
+    tag: "Most booked",
+  },
+  {
+    name: "Swedish Relaxing Massage",
+    href: "/swedish-massage-in-delhi",
+    emoji: "🌙",
+    price: "₹1,499",
+    durations: ["60 min", "90 min"],
+    note: "Light, flowing strokes with organic essential oils. Great for first-timers.",
+    tag: "Intro Offer",
+  },
+  {
+    name: "Traditional Thai Massage",
+    href: "/thai-massage-in-delhi",
+    emoji: "🧘",
+    price: "₹1,999",
+    durations: ["60 min", "90 min"],
+    note: "Passive stretching on a comfortable floor mat in loose clothes. No oil.",
+  },
+  {
+    name: "Aromatherapy Massage",
+    href: "/aromatherapy-massage-in-delhi",
+    emoji: "🌿",
+    price: "₹1,999",
+    durations: ["60 min", "90 min"],
+    note: "Gentle therapeutic massage with custom mood-enhancing essential oils.",
+  },
+  {
+    name: "Deep Tissue Therapy",
+    href: "/deep-tissue-massage-in-delhi",
+    emoji: "💪",
+    price: "₹2,499",
+    durations: ["60 min", "90 min"],
+    note: "Firm pressure targeting chronic knots in the neck, stiff shoulders, and back.",
+  },
+  {
+    name: "B2B Body Spa Massage",
+    href: "/b2b-massage-in-delhi",
+    emoji: "✨",
+    price: "₹2,999",
+    durations: ["60 min", "90 min"],
+    note: "Sensory body-to-body therapy in complete privacy with attached hot rain shower.",
+    tag: "Popular",
+  },
+  {
+    name: "Four-Hands Sandwich Massage",
+    href: "/sandwich-massage",
+    emoji: "👐",
+    price: "₹3,999",
+    durations: ["60 min", "90 min"],
+    note: "Two synchronized therapists working on you simultaneously for double relief.",
+  },
+  {
+    name: "Luxury Couple Massage",
+    href: "/couple-massage",
+    emoji: "💑",
+    price: "₹4,999",
+    durations: ["60 min", "90 min"],
+    note: "Side-by-side tables in a private suite, romantic lighting, and hot shower.",
+    tag: "VIP Suite",
+  },
 ];
 
-const durations = [PRICES.outlet, PRICES.home, PRICES.fiveStar];
+const durations = [PRICES.outlet, PRICES.fiveStar];
 
 const included = [
   { icon: ShieldCheck, title: "A private room", text: "Just you and your therapist. Cleaned after every guest, with fresh linen each time." },
@@ -292,14 +370,19 @@ export default function Pricpage() {
           </h1>
 
           <p className="mt-5 font-title text-lg sm:text-2xl text-white">
-            First Visit Offer From ₹1,499 · Regular Outlet From ₹1,999
+            Russian Spa Price <span className="text-secondary">·</span> Body Massage Price{" "}
+            <span className="text-secondary">·</span> 5-Star Hotel Suites From ₹1,499
           </p>
 
-          <p className="mt-5 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
-            Most people searching for spa rates in Delhi just want a straight, honest answer. New guests enjoy our
-            special First Visit Offer starting from just ₹1,499. Regular 60-minute sessions at any of our Delhi
-            outlets are ₹1,999, and at-home or hotel visits are ₹14,999 for 90 minutes. That&apos;s the full price,
-            with 100% transparent billing, attached hot shower, and zero hidden charges.
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-secondary/20 border border-secondary/40 px-4 py-1.5 text-xs font-semibold text-secondary">
+            <Sparkles className="size-3.5" /> 100% Fixed Rates · Attached Hot Rain Shower · Zero Advance Payment
+          </div>
+
+          <p className="mt-4 mx-auto max-w-2xl text-sm sm:text-base leading-relaxed text-white/85">
+            Looking for authentic Russian spa prices and body massage price in Delhi without hidden counter charges?
+            We keep our rates completely transparent: ₹1,499 for a 60-min spa outlet session and ₹12,999 for a 120-min
+            luxury 5-star hotel suite / in-room package. Every session includes certified Russian, European or Thai therapists,
+            clean sanitized private suites, fresh towels, organic oils, and attached hot rain showers. Pay only after your session.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -317,16 +400,28 @@ export default function Pricpage() {
 
       {/* Price strip, overlapping the hero */}
       <div className="relative z-10 -mt-20 md:-mt-24 px-4 md:px-8">
-        <dl className="max-w-5xl mx-auto grid grid-cols-3 gap-px overflow-hidden rounded-3xl bg-amber-100 shadow-[0_20px_50px_rgba(43,24,16,0.15)] ring-1 ring-amber-100">
-          {tiers.map((t) => (
-            <div key={t.title} className="bg-white p-4 md:p-7 text-center">
-              <dt className="text-xs sm:text-sm font-semibold text-amber-900">{t.title}</dt>
-              <dd>
-                <span className="mt-1 block font-title text-2xl md:text-4xl font-bold text-primary">{t.label}</span>
-                <span className="block text-xs text-bodycolor">{t.time}</span>
-              </dd>
-            </div>
-          ))}
+        <dl className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-px overflow-hidden rounded-3xl bg-amber-100 shadow-[0_20px_50px_rgba(43,24,16,0.15)] ring-1 ring-amber-100">
+          <div className="bg-white p-4 md:p-6 text-center">
+            <dt className="text-xs sm:text-sm font-semibold text-amber-900">Spa Outlet</dt>
+            <dd>
+              <span className="mt-1 block font-title text-2xl md:text-4xl font-bold text-primary">₹1,499</span>
+              <span className="block text-xs text-bodycolor">60 min session</span>
+            </dd>
+          </div>
+          <div className="bg-white p-4 md:p-6 text-center">
+            <dt className="text-xs sm:text-sm font-semibold text-amber-900">5-Star Hotel Outlet</dt>
+            <dd>
+              <span className="mt-1 block font-title text-2xl md:text-4xl font-bold text-primary">₹12,999</span>
+              <span className="block text-xs text-bodycolor">120 min suite session</span>
+            </dd>
+          </div>
+          <div className="col-span-2 sm:col-span-1 bg-white p-4 md:p-6 text-center">
+            <dt className="text-xs sm:text-sm font-semibold text-amber-900">Advance Deposit</dt>
+            <dd>
+              <span className="mt-1 block font-title text-2xl md:text-4xl font-bold text-emerald-700">₹0 Advance</span>
+              <span className="block text-xs text-bodycolor">Pay after meeting</span>
+            </dd>
+          </div>
         </dl>
       </div>
 
@@ -349,85 +444,124 @@ export default function Pricpage() {
         </div>
       </nav>
 
-      {/* 2. Price tiers */}
-      <section id="price-tiers" aria-labelledby="price-tiers-title" className="scroll-mt-24 bg-white py-16 md:py-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <HomeHeading
-            id="price-tiers-title"
-            eyebrow="Spa Charges in Delhi"
-            title="Transparent Rates."
-            highlight="No Hidden Extras."
-            text="The price depends on two things only: how long your session is, and where it happens. The massage you pick doesn't change it."
-          />
+      {/* 2. Core Price Tiers */}
+      <section id="price-tiers" aria-labelledby="price-tiers-title" className="scroll-mt-24 relative bg-[#2b1810] py-16 md:py-24 px-4 md:px-8 overflow-hidden text-white">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2b1810] via-[#24130d] to-[#1c0f09] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#9c5232]/15 rounded-full blur-[140px] pointer-events-none" />
 
-          {/* First Visit Special Offer Callout Banner */}
-          <div className="mb-10 rounded-3xl bg-gradient-to-r from-[#2b1810] via-[#5a2c16] to-[#2b1810] p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 ring-1 ring-amber-300/30">
-            <div>
-              <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#fdc28c] text-[#2b1810] mb-2">
-                Limited Time Welcome Offer
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-bold font-title text-white">
-                First Visit Offer: Russian Body Massage @ Just ₹1,499
-              </h3>
-              <p className="text-sm text-stone-200 mt-2 max-w-2xl leading-relaxed">
-                Visiting Luxury Russian Spa for the first time? Experience an authentic 45–60 min full body oil massage in a private sanitized suite with an attached hot rain shower. Pay after your session with 100% transparent rates.
-              </p>
-            </div>
-            <a
-              href="https://wa.me/919990193385?text=Hi!%20I%20want%20to%20claim%20the%20First%20Visit%20%E2%82%B91499%20Welcome%20Offer%20in%20Delhi.%20Please%20share%20today%27s%20open%20slots."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-[#15803d] hover:bg-[#166534] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-black/30 transition-all hover:-translate-y-0.5"
-            >
-              <FaWhatsapp className="text-lg" /> Claim ₹1,499 Offer
-            </a>
+        <div className="relative max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs uppercase tracking-[0.25em] font-semibold text-[#fdc28c]">
+              Clear & Transparent Rates
+            </span>
+            <h2 id="price-tiers-title" className="mt-3 font-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+              Delhi <span className="italic font-normal text-[#fdc28c]">Spa Prices</span>
+            </h2>
+            <p className="mt-3 max-w-xl mx-auto text-sm sm:text-base text-white/70">
+              No surprise charges at the reception. Our ₹1,499 spa outlet session and ₹12,999 5-star hotel outlet package come with everything included. What we confirm on WhatsApp is exactly what you pay.
+            </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3 md:items-stretch">
-            {tiers.map(({ icon: Icon, title, label, time, description, features, popular }) => (
+          <div className="max-w-3xl mx-auto grid gap-6 sm:gap-8 sm:grid-cols-2 items-stretch">
+            {pricingPlans.map(({ title, price, period, features, popular }) => (
               <div
                 key={title}
-                className={`relative flex flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${
+                className={`relative flex flex-col rounded-[26px] p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 ${
                   popular
-                    ? "bg-dark text-white shadow-[0_25px_60px_rgba(43,24,16,0.35)] md:-my-4 md:py-12"
-                    : "bg-amber-50 ring-1 ring-amber-100"
+                    ? "bg-white/[0.08] backdrop-blur-md border border-[#fdc28c]/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-[#fdc28c]/20"
+                    : "bg-white/[0.04] backdrop-blur-md border border-white/10 shadow-xl hover:border-white/20"
                 }`}
               >
                 {popular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-secondary px-4 py-1 text-[11px] font-bold uppercase tracking-wider text-dark">
-                    Most Popular
+                  <span className="absolute -top-3.5 right-6 rounded-full bg-[#fdc28c] px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#2b1810] shadow-md">
+                    Popular
                   </span>
                 )}
-                <span className={`flex size-12 items-center justify-center rounded-xl ${popular ? "bg-white/10 text-secondary" : "bg-white text-primary"}`}>
-                  <Icon className="size-6" />
-                </span>
-                <h3 className={`mt-5 font-title text-2xl font-bold ${popular ? "text-white" : "text-amber-900"}`}>{title}</h3>
-                <p className={`mt-1 text-sm ${popular ? "text-white/70" : "text-bodycolor"}`}>{description}</p>
-                <p className="mt-6 flex items-end gap-2">
-                  <span className={`font-title text-4xl font-bold ${popular ? "text-secondary" : "text-primary"}`}>{label}</span>
-                  <span className={`pb-1 text-sm ${popular ? "text-white/60" : "text-bodycolor"}`}>/ {time}</span>
-                </p>
-                <ul className="mt-6 flex-1 space-y-3">
+
+                <h3 className="font-title text-2xl sm:text-3xl font-bold text-white tracking-tight">{title}</h3>
+
+                <div className="mt-4">
+                  <p className={`font-title text-4xl sm:text-5xl font-bold tracking-tight ${popular ? "text-[#fdc28c]" : "text-white"}`}>
+                    {price}
+                  </p>
+                  <p className="mt-1 text-xs sm:text-sm text-white/75 font-medium">{period}</p>
+                </div>
+
+                <div className="my-6 h-px w-full bg-white/10" />
+
+                <ul className="flex-1 space-y-3.5">
                   {features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm">
-                      <Check className={`size-4 shrink-0 ${popular ? "text-secondary" : "text-primary"}`} strokeWidth={3} />
-                      <span className={popular ? "text-white/90" : "text-amber-900"}>{f}</span>
+                    <li key={f} className="flex items-center gap-3 text-sm font-medium text-white/95">
+                      <Check className={`size-4 shrink-0 ${popular ? "text-[#fdc28c]" : "text-white"}`} strokeWidth={3} />
+                      <span>{f}</span>
                     </li>
                   ))}
                 </ul>
+
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 inline-flex items-center justify-center gap-2 rounded-full py-3.5 text-sm font-semibold transition-colors duration-300 ${
-                    popular ? "bg-secondary text-dark hover:bg-white" : "bg-white text-primary ring-1 ring-amber-200 hover:bg-primary hover:text-white"
-                  }`}
+                  className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white py-3.5 px-6 text-sm font-bold text-[#2b1810] shadow-lg transition-all duration-200 hover:bg-[#fdc28c] hover:text-[#2b1810] active:scale-95"
                 >
-                  <FaWhatsapp className="size-4" /> Book Now
+                  <FaWhatsapp className="size-4 text-emerald-600" />
+                  Book Now
                 </a>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 2b. Therapists Gallery */}
+      <section id="therapists" aria-labelledby="price-therapists-title" className="scroll-mt-24 bg-white py-14 md:py-20 px-4 md:px-8 border-b border-amber-100">
+        <div className="max-w-6xl mx-auto text-center">
+          <span className="inline-block text-xs uppercase tracking-[0.2em] font-semibold text-amber-700">
+            Certified International Staff
+          </span>
+          <h2
+            id="price-therapists-title"
+            className="mt-2 font-title text-2xl sm:text-3xl lg:text-4xl font-bold text-[#c86d5e]"
+          >
+            Meet Our Therapists At Luxury Russian Spa Delhi
+          </h2>
+          <p className="mt-3 max-w-2xl mx-auto text-sm text-bodycolor">
+            Wondering about Russian girl price or therapist profiles in Delhi? At our spa, every therapist is certified, professional, and verified.
+            Preview real therapist photos and videos on our official Telegram channel before booking.
+          </p>
+
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 md:gap-5">
+            {galleryTherapists.map((t) => (
+              <div key={t.id} className="flex flex-col items-center">
+                <div className="relative aspect-[3/4.6] w-full overflow-hidden rounded-[20px] border-[3px] border-[#5a616c] shadow-md transition-transform duration-300 hover:scale-[1.02]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={t.image}
+                    alt={t.alt}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <a
+                  href={TELEGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-xl bg-[#0088cc] px-2.5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow transition-all duration-200 hover:bg-[#0077b5] active:scale-95"
+                >
+                  <FaTelegramPlane className="size-4 shrink-0" />
+                  <span className="truncate">View On Telegram</span>
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 text-xs sm:text-sm text-bodycolor">
+            Want to check live availability right now? Message us on{" "}
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-emerald-700 underline underline-offset-4 hover:text-emerald-800">
+              WhatsApp (+91 99901 93385)
+            </a>{" "}
+            and we will confirm your therapist profile and slot immediately.
+          </p>
         </div>
       </section>
 
@@ -439,19 +573,21 @@ export default function Pricpage() {
             eyebrow="Massage Rates in Delhi"
             title="Delhi Spa Price List"
             highlight="by Massage"
-            text="Every massage on our menu costs the same. What changes the price is how long you book and where. Tap 'Ask Price' and WhatsApp opens with your massage already typed in."
+            text="Transparent rates based on technique, therapist expertise, and session duration. Starting from ₹1,499 welcome rate up to customized VIP packages. Tap 'Ask Price' to get instant confirmation on WhatsApp."
           />
 
-          {/* The three rates, shown once instead of repeating them on every card */}
-          <div className="mx-auto mb-10 max-w-3xl rounded-2xl bg-white p-4 ring-1 ring-amber-100 shadow-[0_6px_20px_rgba(43,24,16,0.05)]">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.15em] text-amber-700">Same price for any massage</p>
-            <dl className="mt-3 grid grid-cols-3 gap-2">
-              {tiers.map((t) => (
-                <div key={t.title} className="rounded-xl bg-amber-50 px-2 py-3 text-center ring-1 ring-amber-200">
-                  <dt className="text-[11px] sm:text-xs text-bodycolor">{t.title} · {t.time}</dt>
-                  <dd className="font-title text-lg sm:text-2xl font-bold text-primary">{t.label}</dd>
-                </div>
-              ))}
+          {/* Quick Rates Overview */}
+          <div className="mx-auto mb-10 max-w-2xl rounded-2xl bg-white p-4 ring-1 ring-amber-100 shadow-[0_6px_20px_rgba(43,24,16,0.05)]">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.15em] text-amber-700">Transparent Rates Summary</p>
+            <dl className="mt-3 grid grid-cols-2 gap-3">
+              <div className="rounded-xl bg-amber-50 px-3 py-3 text-center ring-1 ring-amber-200">
+                <dt className="text-[11px] sm:text-xs text-bodycolor">Spa Outlet · Starting Rate</dt>
+                <dd className="font-title text-xl sm:text-2xl font-bold text-primary">From ₹1,499</dd>
+              </div>
+              <div className="rounded-xl bg-amber-50 px-3 py-3 text-center ring-1 ring-amber-200">
+                <dt className="text-[11px] sm:text-xs text-bodycolor">5-Star Hotel Suite · 120 min</dt>
+                <dd className="font-title text-xl sm:text-2xl font-bold text-primary">₹12,999</dd>
+              </div>
             </dl>
           </div>
 
@@ -477,23 +613,19 @@ export default function Pricpage() {
                 <p className={`mt-1 flex-1 text-xs sm:text-sm ${m.onRequest ? "text-white/75" : "text-bodycolor"}`}>{m.note}</p>
 
                 <div className="mt-4 sm:mt-5">
-                  {m.onRequest ? (
-                    <p className="font-title text-lg sm:text-2xl font-bold leading-tight text-secondary">Price on request</p>
-                  ) : (
-                    <p className="flex items-baseline gap-1.5">
-                      <span className="text-xs text-bodycolor">From</span>
-                      <span className="font-title text-2xl sm:text-3xl font-bold text-primary">{PRICES.outlet.label}</span>
-                    </p>
-                  )}
-                  <ul className="mt-3 hidden flex-wrap gap-1.5 sm:flex" aria-label="Session lengths">
-                    {durations.map((d) => (
+                  <p className="flex items-baseline gap-1.5">
+                    <span className="text-xs text-bodycolor">From</span>
+                    <span className="font-title text-2xl sm:text-3xl font-bold text-primary">{m.price}</span>
+                  </p>
+                  <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Session lengths">
+                    {m.durations.map((time) => (
                       <li
-                        key={d.time}
+                        key={time}
                         className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${
                           m.onRequest ? "bg-white/10 text-white/80" : "bg-amber-50 text-amber-800 ring-1 ring-amber-200"
                         }`}
                       >
-                        {d.time}
+                        {time}
                       </li>
                     ))}
                   </ul>
@@ -501,7 +633,7 @@ export default function Pricpage() {
 
                 <div className="mt-4 sm:mt-6 grid gap-2">
                   <a
-                    href={askPriceUrl(m.name)}
+                    href={askPriceUrl(m.name, m.price)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-[#15803d] px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold text-white transition-colors hover:bg-[#166534]"

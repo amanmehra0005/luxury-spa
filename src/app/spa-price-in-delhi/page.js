@@ -24,21 +24,18 @@ const breadcrumbSchema = {
   ],
 };
 
-// The price list as an offer catalog, built from the same PRICES the page shows.
-const massages = [
-  "Full Body Massage",
-  "Deep Tissue Massage",
-  "Thai Massage",
-  "Swedish Massage",
-  "Aromatherapy Massage",
-  "B2B Massage",
-  "Sandwich Massage",
+// The price list as an offer catalog, matching the actual realistic rates.
+const massageOffers = [
+  { name: "Swedish Relaxing Massage", outletPrice: "1499", hotelPrice: "12999" },
+  { name: "Traditional Thai Massage", outletPrice: "1999", hotelPrice: "12999" },
+  { name: "Aromatherapy Massage", outletPrice: "1999", hotelPrice: "12999" },
+  { name: "Russian Full Body Massage", outletPrice: "2499", hotelPrice: "12999" },
+  { name: "Deep Tissue Therapy", outletPrice: "2499", hotelPrice: "12999" },
+  { name: "B2B Body Spa Massage", outletPrice: "2999", hotelPrice: "12999" },
+  { name: "Four-Hands Sandwich Massage", outletPrice: "3999", hotelPrice: "14999" },
+  { name: "Luxury Couple Massage", outletPrice: "4999", hotelPrice: "16999" },
 ];
-const tierNames = [
-  ["outlet", "at outlet"],
-  ["home", "at home or hotel"],
-  ["fiveStar", "5 star hotel spa"],
-];
+
 const priceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -61,24 +58,36 @@ const priceSchema = {
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Delhi Spa Price List",
-    itemListElement: massages.flatMap((m) =>
-      tierNames.map(([key, where]) => ({
+    itemListElement: massageOffers.flatMap((m) => [
+      {
         "@type": "Offer",
-        name: `${m} ${where}, ${PRICES[key].time}`,
-        price: String(PRICES[key].price),
+        name: `${m.name} at spa outlet (60 min)`,
+        price: m.outletPrice,
         priceCurrency: "INR",
-        itemOffered: { "@type": "Service", name: m },
-      }))
-    ),
+        itemOffered: { "@type": "Service", name: m.name },
+      },
+      {
+        "@type": "Offer",
+        name: `${m.name} in 5-star hotel suite / in-room (120 min)`,
+        price: m.hotelPrice,
+        priceCurrency: "INR",
+        itemOffered: { "@type": "Service", name: m.name },
+      },
+    ]),
   },
 };
 
 export const metadata = {
-  title: "Spa Price in Delhi (2026): Massage Rates From ₹1499 | Menu",
+  title: "Spa Price in Delhi (2026): Russian Spa & Massage Rates From ₹1499",
   description:
-    "Check full 2026 spa price list in Delhi. First visit massage offer starting @ ₹1499, regular from ₹1999. Russian, B2B, Swedish & Sandwich therapy. 100% transparent rates, attached hot shower, pay after session. Book on WhatsApp!",
+    "Check complete 2026 spa price in Delhi. Russian spa price, full body massage, B2B & Thai massage rates from ₹1499 at outlet & ₹12,999 in 5-star hotel suite. Attached hot shower, zero advance payment. Book on WhatsApp!",
   keywords: [
     "spa price in delhi",
+    "russian spa price in delhi",
+    "russian price in delhi",
+    "russian girl price",
+    "russian massage price in delhi",
+    "russian girl massage price",
     "delhi spa price",
     "spa delhi price list",
     "delhi spa center price list",
@@ -91,40 +100,27 @@ export const metadata = {
     "full body massage price in delhi",
     "full body massage cost in delhi",
     "full body massage delhi price",
-    "full body massage at home in delhi price",
     "full body spa price in delhi",
     "body massage in delhi price",
     "body massage price delhi",
     "body massage rate in delhi",
     "body massage charges in delhi",
-    "body massage cost in delhi",
-    "body spa in delhi price",
-    "body spa in delhi with price",
-    "massage price delhi",
-    "delhi massage price",
-    "massage rate in delhi",
-    "massage charges in delhi",
-    "massage center in delhi with price",
-    "delhi massage center price",
-    "delhi massage spa price",
-    "spa massage delhi price",
-    "spa massage delhi rate",
+    "b2b massage price in delhi",
     "thai massage in delhi price",
     "couple spa in delhi price",
-    "couple spa in delhi with price",
+    "5 star hotel spa price in delhi",
     "mahipalpur spa price",
-    "spa in mahipalpur price",
     "lajpat nagar spa prices",
-    "spa in uttam nagar with price",
-    "full body massage centre paharganj delhi price",
+    "connaught place spa price",
+    "aerocity spa price",
   ],
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Spa Price in Delhi | One Clear Price List From ₹1999",
+    title: "Spa Price in Delhi (2026): Russian Spa & Massage Rates From ₹1499",
     description:
-      "₹1,999 for 60 minutes at any outlet, ₹14,999 at home or hotel, ₹19,999 for the 5-star package. Same rates in every part of Delhi NCR.",
+      "Check complete 2026 spa price in Delhi. Russian spa price, full body massage, B2B & Thai massage rates from ₹1499 at outlet & ₹12,999 in 5-star hotel suite. Attached hot shower, zero advance payment. Book on WhatsApp!",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 1280, height: 845, alt: "Spa price in Delhi at Luxury Russian Spa" }],
@@ -132,9 +128,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spa Price in Delhi | One Clear Price List From ₹1999",
+    title: "Spa Price in Delhi (2026): Russian Spa & Massage Rates From ₹1499",
     description:
-      "₹1,999 for 60 minutes at any outlet, ₹14,999 at home or hotel, ₹19,999 for the 5-star package. Same rates in every part of Delhi NCR.",
+      "Check complete 2026 spa price in Delhi. Russian spa price, full body massage, B2B & Thai massage rates from ₹1499 at outlet & ₹12,999 in 5-star hotel suite. Attached hot shower, zero advance payment. Book on WhatsApp!",
     images: [IMAGE_URL],
   },
 };
