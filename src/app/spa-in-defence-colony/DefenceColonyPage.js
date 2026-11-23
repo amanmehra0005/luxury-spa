@@ -350,18 +350,18 @@ export default function DefenceColonyPage() {
             <div className="relative lg:col-span-5">
               <div className="relative mx-auto max-w-md overflow-hidden rounded-3xl bg-amber-50 p-2 ring-1 ring-amber-200/80 shadow-2xl">
                 <Image
-                  src="/images/Delhi-Russian.webp"
-                  alt="Russian Spa in Defence Colony South Delhi"
+                  src="/images/defence/hero-therapist.jpg"
+                  alt="Russian Spa Therapist in Defence Colony South Delhi"
                   width={600}
-                  height={450}
+                  height={600}
                   priority
                   className="h-80 w-full rounded-2xl object-cover sm:h-96"
                 />
-                <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-black/75 p-4 text-white backdrop-blur-md">
+                {/* <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-black/75 p-4 text-white backdrop-blur-md">
                   <p className="text-xs font-bold uppercase tracking-wider text-[#fdc28c]">Elite South Delhi Spa</p>
                   <p className="font-title text-base font-bold">Near Def Col Market & Moolchand</p>
                   <p className="text-xs text-white/80">3 min from Moolchand Metro · Open 24/7</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

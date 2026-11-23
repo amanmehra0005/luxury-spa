@@ -392,11 +392,11 @@ export default function NewFriendsColonyPage() {
                   priority
                   className="h-80 w-full rounded-2xl object-cover sm:h-96"
                 />
-                <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-black/75 p-4 text-white backdrop-blur-md">
+                {/* <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-black/75 p-4 text-white backdrop-blur-md">
                   <p className="text-xs font-bold uppercase tracking-wider text-[#fdc28c]">Flagship South Delhi Location</p>
                   <p className="font-title text-base font-bold">Near The Suryaa Hotel & NFC Community Centre</p>
                   <p className="text-xs text-white/80">3 min from Sukhdev Vihar Metro · Open 24 Hours</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

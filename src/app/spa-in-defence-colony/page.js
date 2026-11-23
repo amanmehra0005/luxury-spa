@@ -1,7 +1,7 @@
 import DefenceColonyPage, { DEFENCE_ADDRESS, faqs } from "./DefenceColonyPage";
 
 const PAGE_URL = "https://www.luxuryrussianspa.com/spa-in-defence-colony";
-const IMAGE_URL = "https://www.luxuryrussianspa.com/images/Delhi-Russian.webp";
+const IMAGE_URL = "https://www.luxuryrussianspa.com/images/defence/hero-therapist.jpg";
 
 const faqSchema = {
   "@context": "https://schema.org",
