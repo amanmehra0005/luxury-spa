@@ -56,10 +56,19 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in New Friends Colony At Just ₹1499 | Open 24/7 Near The Suryaa",
+  title: "Russian Spa in NFC | Russian in NFC & Luxury Body Spa From ₹1499",
   description:
-    "Best Russian Spa in New Friends Colony near The Suryaa Hotel & NFC Community Centre. Certified Russian therapists, attached hot shower, in-room hotel visits & ₹1499 welcome offer. Open 24/7.",
+    "Looking for Russian in NFC, Russian girl massage or luxury body spa in NFC? Certified Russian therapists, B2B spa & Thai massage near The Suryaa Hotel. Zero advance, attached hot shower. Open 24/7!",
   keywords: [
+    "russian in nfc",
+    "russian girl in nfc",
+    "russian spa in nfc",
+    "body spa in nfc",
+    "massage spa in nfc",
+    "b2b spa in nfc",
+    "thai massage in nfc",
+    "body massage in nfc",
+    "b2b massage in nfc",
     "spa in new friends colony",
     "russian spa in new friends colony",
     "russian spa center in new friends colony",
@@ -75,6 +84,8 @@ export const metadata = {
     "spa near the suryaa new delhi",
     "the suryaa hotel spa",
     "russian girl price in new friends colony",
+    "russian girl price in nfc",
+    "massage parlours in nfc",
     "massage parlours in new friends colony",
     "spa in friends colony east",
     "spa in friends colony west",
@@ -87,19 +98,19 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Russian Spa in New Friends Colony At Just ₹1499 | Open 24/7 Near The Suryaa",
+    title: "Russian Spa in NFC | Russian in NFC & Luxury Body Spa From ₹1499",
     description:
-      "Best Russian Spa in New Friends Colony near The Suryaa Hotel & NFC Community Centre. Certified Russian therapists, attached hot shower, in-room hotel visits & ₹1499 welcome offer. Open 24/7.",
+      "Looking for Russian in NFC, Russian girl massage or luxury body spa in NFC? Certified Russian therapists, B2B spa & Thai massage near The Suryaa Hotel. Zero advance, attached hot shower. Open 24/7!",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
-    images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in New Friends Colony at Luxury Russian Spa" }],
+    images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in New Friends Colony NFC" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa in New Friends Colony At Just ₹1499 | Open 24/7 Near The Suryaa",
+    title: "Russian Spa in NFC | Russian in NFC & Luxury Body Spa From ₹1499",
     description:
-      "Best Russian Spa in New Friends Colony near The Suryaa Hotel & NFC Community Centre. Certified Russian therapists, attached hot shower, in-room hotel visits & ₹1499 welcome offer. Open 24/7.",
+      "Looking for Russian in NFC, Russian girl massage or luxury body spa in NFC? Certified Russian therapists, B2B spa & Thai massage near The Suryaa Hotel. Zero advance, attached hot shower. Open 24/7!",
     images: [IMAGE_URL],
   },
 };

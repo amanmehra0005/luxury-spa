@@ -37,6 +37,16 @@ export const faqs = [
       "Our luxury spa is located at the Community Centre in New Friends Colony (NFC), right opposite The Suryaa New Delhi hotel and minutes from Mathura Road. We are just 3 minutes from Sukhdev Vihar Metro Station (Magenta Line Gate 2) and 5 minutes from Ashram Metro Station. If you are staying at The Suryaa, Eros Hotel Nehru Place, or Crowne Plaza Okhla, our certified therapist can also visit your hotel room directly within 15–20 minutes.",
   },
   {
+    question: "Can I book an authentic Russian in NFC / Russian girl in NFC?",
+    answer:
+      "Yes, absolutely. If you are searching for an authentic Russian in NFC or certified European therapist, Luxury Russian Spa offers verified professional international staff. You can preview live therapist profiles on our Telegram channel (@luxuryrussianspa7), select your therapist, and meet her in person at our outlet or in your 5-star hotel suite. We maintain a strict zero-advance-deposit policy so you never deal with online broker scams.",
+  },
+  {
+    question: "What therapies are included in your body spa and B2B spa in NFC?",
+    answer:
+      "Our body spa in NFC includes full-body Swedish relaxation, deep tissue muscle recovery, infused aromatherapy oils, and authentic Thai stretching. For clients seeking sensory relaxation, our B2B spa in NFC offers deep body-to-body therapy in complete privacy within soundproof suites featuring attached hot rain showers and luxury bathrobes.",
+  },
+  {
     question: "What are your massage charges in New Friends Colony?",
     answer:
       "We follow 100% transparent pricing with zero hidden counter charges. Our basic Spa Outlet session starts at just ₹1,499 (includes full body oil/cream massage, 60-min session, attached hot shower, and therapist consultation). Our 5-Star Hotel Outlet package is ₹12,999 (includes private luxury suite, signature B2B massage, organic aromatherapy oils, and a full 120-minute session). What we confirm on WhatsApp is the exact amount you pay.",
@@ -44,7 +54,7 @@ export const faqs = [
   {
     question: "What is the Russian girl price / Russian therapist rate in New Friends Colony?",
     answer:
-      "When people search for 'Russian girl price in New Friends Colony', they often run into shady classified broker scams asking for advance UPI transfers. At Luxury Russian Spa, we offer genuine, certified Russian and European female therapists in a strictly hygienic, legal wellness spa environment. Our rates are completely fixed: ₹1,499 for outlet sessions and ₹12,999 for 5-star hotel suite experiences. You can preview verified therapist profiles on Telegram before booking, and you pay zero advance deposit.",
+      "When people search for 'Russian girl price in New Friends Colony' or 'Russian in NFC', they often run into shady classified broker scams asking for advance UPI transfers. At Luxury Russian Spa, we offer genuine, certified Russian and European female therapists in a strictly hygienic, legal wellness spa environment. Our rates are completely fixed: ₹1,499 for outlet sessions and ₹12,999 for 5-star hotel suite experiences. You can preview verified therapist profiles on Telegram before booking, and you pay zero advance deposit.",
   },
   {
     question: "Do you offer in-room visits at The Suryaa New Delhi and other South Delhi hotels?",
@@ -598,6 +608,121 @@ export default function NewFriendsColonyPage() {
             </a>
             .
           </p>
+        </div>
+      </section>
+
+      {/* 5B. In-Depth Guide: Russian in NFC, Body Spa & B2B Massage Insights */}
+      <section className="bg-white py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#9c5232]">
+              Local Wellness Guide · NFC Delhi
+            </span>
+            <h2 className="mt-3 font-title text-2xl sm:text-3xl md:text-4xl font-bold text-[#2b1810]">
+              Looking for a <span className="text-[#9c5232]">Russian in NFC</span> or Luxury Body Spa?
+            </h2>
+            <p className="mt-3 text-sm text-bodycolor">
+              Everything you need to know about genuine international therapies, verified staff, and transparent rates near The Suryaa Hotel &amp; NFC Community Centre.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* 1. Russian in NFC & Russian Girl Massage */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  Russian in NFC
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Authentic Russian &amp; European Therapists in NFC
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  When clients search for <strong>&ldquo;Russian in NFC&rdquo;</strong> or <strong>&ldquo;Russian girl in NFC&rdquo;</strong>, they often encounter shady classified broker ads asking for advance UPI transfers or baiting with fake photos. At Luxury Russian Spa, we eliminate these worries.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  We provide 100% verified, certified Russian and European female therapists in an upscale 5-star standard wellness environment. You can preview live therapist profiles on our Telegram channel before booking, and you pay <strong>zero advance deposit</strong>.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">Welcome Rate: From ₹1,499</span>
+                <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:underline">
+                  Preview on Telegram &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* 2. Body Spa in NFC & Massage Spa in NFC */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  Body Spa in NFC
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Full Body Massage &amp; Rejuvenating Body Spa
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Looking for the most relaxing <strong>body spa in NFC</strong> or a professional <strong>massage spa in NFC</strong> near Mathura Road? Our signature head-to-toe full body therapies use warm organic almond and olive oils to melt away chronic fatigue, neck stiffness, and corporate work stress.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Whether you prefer gentle Swedish strokes, firm deep tissue pressure, or detoxifying aromatherapy, every session takes place in an exclusive soundproof suite with fresh sanitized linen and attached hot rain shower.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">Session: 60 / 90 / 120 Min</span>
+                <a href={`${WHATSAPP_URL}?text=${encodeURIComponent("Hi! I want to book a Body Spa in NFC.")}`} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">
+                  Book Body Spa &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* 3. B2B Spa in NFC */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  B2B Spa in NFC
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Sensory B2B Spa in 100% Soundproof Private Suites
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Our <strong>B2B spa in NFC</strong> is one of our most requested luxury therapies. Performed by skilled Russian and European female therapists in complete confidentiality, this sensual body-to-body therapy uses warm aromatic oils for intense relaxation and full-body sensory release.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Every suite has an attached private hot rain shower, disposable bathrobes, and luxury toiletries so you don&apos;t leave feeling oily. Available at our outlet or as an in-room 5-star hotel visit at The Suryaa.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">From ₹2,999 (Outlet) · ₹12,999 (Hotel)</span>
+                <a href={`${WHATSAPP_URL}?text=${encodeURIComponent("Hi! I want to book a B2B Spa session in NFC.")}`} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">
+                  Inquire on WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* 4. Thai Massage in NFC */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  Thai Massage in NFC
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Traditional Dry Acupressure &amp; Passive Yoga Stretching
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Searching for authentic <strong>Thai massage in NFC</strong>? Traditional Thai bodywork is oil-free, performed on a comfortable padded floor mat while wearing clean, loose cotton attire.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Our certified therapists use rhythmic palm pressure, thumb acupressure along body energy lines (Sen), and gentle passive stretching. It is the ultimate antidote for stiff joints, lower back ache, and fatigue after long flights or highway travel.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">Starting from ₹1,999</span>
+                <a href={`${WHATSAPP_URL}?text=${encodeURIComponent("Hi! I want to book Thai Massage in NFC.")}`} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">
+                  Book Thai Massage &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
