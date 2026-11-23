@@ -347,11 +347,11 @@ export default function NewFriendsColonyPage() {
               </h1>
 
               <p className="mt-4 text-base leading-relaxed text-bodycolor sm:text-lg">
-                Experience authentic Russian wellness and deep muscle relief right near{" "}
+                Looking for an authentic <strong className="font-semibold text-dark">Russian in NFC</strong>, a relaxing <strong className="font-semibold text-dark">body spa in NFC</strong>, or a premium <strong className="font-semibold text-dark">massage spa in NFC</strong>? Luxury Russian Spa welcomes you right near{" "}
                 <strong className="font-semibold text-dark">The Suryaa Hotel</strong> and{" "}
-                <strong className="font-semibold text-dark">NFC Community Centre</strong>. Certified Russian, foreigner,
-                and Thai female therapists, 100% soundproof private suites with attached hot rain showers, and strict
-                zero-advance payment.
+                <strong className="font-semibold text-dark">NFC Community Centre</strong>. Enjoy soothing <strong className="font-semibold text-dark">body massage in NFC</strong> with certified Russian, foreigner,
+                and Thai female therapists. Every guest enjoys 100% soundproof private VIP suites with attached hot rain showers, clean sanitized linen, and a strict
+                zero-advance payment policy.
               </p>
 
               {/* Chips */}
@@ -442,7 +442,7 @@ export default function NewFriendsColonyPage() {
               New Friends Colony <span className="italic font-normal text-[#fdc28c]">Spa Prices</span>
             </h2>
             <p className="mt-3 max-w-xl mx-auto text-sm sm:text-base text-white/70">
-              Clear rates with zero surprise charges at the reception. What we quote on WhatsApp is exactly what you pay.
+              Clear rates with zero surprise charges. If you are comparing <span className="text-[#fdc28c]">Russian girl price in NFC</span> or booking a luxury body spa session, what we quote on WhatsApp is exactly what you pay.
             </p>
           </div>
 
@@ -564,7 +564,7 @@ export default function NewFriendsColonyPage() {
             eyebrow="Therapy Menu"
             title="Massage & Body Spa Services in"
             highlight="New Friends Colony"
-            text="Whether you need deep myofascial tension release after a tiring week, soothing aromatherapy, or sensory B2B relaxation, our therapies are tailored to your needs."
+            text="Explore our complete menu for body spa in NFC and rejuvenating body therapies. Whether you want to book an authentic Russian girl in NFC, deep tissue stress relief, a soothing B2B spa in NFC, or traditional Thai massage in NFC, our certified therapists ensure complete physical and mental relaxation."
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -637,10 +637,10 @@ export default function NewFriendsColonyPage() {
                   Authentic Russian &amp; Foreigner Therapists in NFC
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  When clients search for <strong>&ldquo;Russian in NFC&rdquo;</strong> or <strong>&ldquo;Russian girl in NFC&rdquo;</strong>, they often encounter shady classified broker ads asking for advance UPI transfers or baiting with fake photos. At Luxury Russian Spa, we eliminate these worries.
+                  When guests search online for a <strong>Russian in NFC</strong> or look for a <strong>Russian girl in NFC</strong>, their biggest worry is online fraud or fake profiles asking for advance money. At Luxury Russian Spa, we make booking safe, simple, and honest.
                 </p>
                 <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  We provide 100% verified, certified Russian and foreigner female therapists in an upscale 5-star standard wellness environment. You can preview live therapist profiles on our Telegram channel before booking, and you pay <strong>zero advance deposit</strong>.
+                  We have genuine Russian and foreigner female therapists who are professionally trained in classical wellness. You can check live real-time photos on Telegram before you book. You meet your therapist in person at our outlet or in your 5-star hotel room, and you pay <strong>zero advance deposit</strong>.
                 </p>
               </div>
               <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
@@ -661,10 +661,10 @@ export default function NewFriendsColonyPage() {
                   Full Body Massage &amp; Rejuvenating Body Spa
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Looking for the most relaxing <strong>body spa in NFC</strong> or a professional <strong>massage spa in NFC</strong> near Mathura Road? Our signature head-to-toe full body therapies use warm organic almond and olive oils to melt away chronic fatigue, neck stiffness, and corporate work stress.
+                  Need a clean, comfortable <strong>body spa in NFC</strong> or looking for a trusted <strong>massage spa in NFC</strong> near Mathura Road? Our head-to-toe treatments help relieve daily office fatigue, neck cramps, and body stress.
                 </p>
                 <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Whether you prefer gentle Swedish strokes, firm deep tissue pressure, or detoxifying aromatherapy, every session takes place in an exclusive soundproof suite with fresh sanitized linen and attached hot rain shower.
+                  Our therapists use warm natural oils to soothe your muscles. Whether you want a light Swedish touch, strong deep tissue work, or custom aromatherapy, each session is delivered inside a quiet private suite with an attached hot shower and fresh towels.
                 </p>
               </div>
               <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
@@ -682,13 +682,13 @@ export default function NewFriendsColonyPage() {
                   B2B Spa in NFC
                 </span>
                 <h3 className="font-title text-xl font-bold text-[#2b1810]">
-                  Sensory B2B Spa in 100% Soundproof Private Suites
+                  Private B2B Spa in 100% Soundproof VIP Suites
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Our <strong>B2B spa in NFC</strong> is one of our most requested luxury therapies. Performed by skilled Russian and foreigner female therapists in complete confidentiality, this sensual body-to-body therapy uses warm aromatic oils for intense relaxation and full-body sensory release.
+                  Our <strong>B2B spa in NFC</strong> is one of our most popular therapies for total physical and mental relief. Performed by skilled Russian and foreigner therapists with absolute discretion, this warm oil body-to-body therapy melts away all tension.
                 </p>
                 <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Every suite has an attached private hot rain shower, disposable bathrobes, and luxury toiletries so you don&apos;t leave feeling oily. Available at our outlet or as an in-room 5-star hotel visit at The Suryaa.
+                  You enjoy complete peace in a private room equipped with an attached hot rain shower, soft bathrobes, and quality toiletries. Available 24/7 at our NFC outlet or as an in-room visit at The Suryaa New Delhi.
                 </p>
               </div>
               <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
@@ -709,10 +709,10 @@ export default function NewFriendsColonyPage() {
                   Traditional Dry Acupressure &amp; Passive Yoga Stretching
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Searching for authentic <strong>Thai massage in NFC</strong>? Traditional Thai bodywork is oil-free, performed on a comfortable padded floor mat while wearing clean, loose cotton attire.
+                  Looking for authentic <strong>Thai massage in NFC</strong>? Traditional Thai bodywork is oil-free and done on a soft, supportive floor mat while wearing clean, loose cotton clothes.
                 </p>
                 <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Our certified therapists use rhythmic palm pressure, thumb acupressure along body energy lines (Sen), and gentle passive stretching. It is the ultimate antidote for stiff joints, lower back ache, and fatigue after long flights or highway travel.
+                  The therapist applies rhythmic pressure along your body&apos;s energy pathways and guides you through gentle yoga stretches. It is the best choice if you have tight leg muscles, lower back stiffness, or body aches after a long journey.
                 </p>
               </div>
               <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
@@ -737,7 +737,7 @@ export default function NewFriendsColonyPage() {
               5-Star Hotel Visits in <span className="text-[#9c5232]">NFC & South Delhi</span>
             </h2>
             <p className="mt-3 text-sm sm:text-base text-bodycolor">
-              Staying at The Suryaa or visiting business hubs around Nehru Place and Okhla? Our certified therapists deliver private in-room spa therapy directly to your 5-star hotel room or luxury apartment within 15–20 minutes.
+              Staying at The Suryaa or visiting business hubs around Nehru Place and Okhla? Enjoy a relaxing <strong className="font-semibold text-dark">body massage in NFC</strong> or request an authentic <strong className="font-semibold text-dark">Russian girl in NFC</strong> hotel visit directly to your private room within 15–20 minutes with fresh towels and therapeutic oils.
             </p>
           </div>
 
