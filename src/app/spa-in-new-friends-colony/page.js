@@ -56,9 +56,9 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in NFC | Russian in NFC & Luxury Body Spa From ₹1499",
+  title: "Russian Spa in New Friends Colony (NFC) | Luxury Spa At Just ₹1499",
   description:
-    "Looking for Russian in NFC, Russian girl massage or luxury body spa in NFC? Certified Russian therapists, B2B spa & Thai massage near The Suryaa Hotel. Zero advance, attached hot shower. Open 24/7!",
+    "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified European therapists, private suites & zero-advance booking near The Suryaa.",
   keywords: [
     "russian in nfc",
     "russian girl in nfc",
@@ -98,9 +98,9 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Russian Spa in NFC | Russian in NFC & Luxury Body Spa From ₹1499",
+    title: "Russian Spa in New Friends Colony (NFC) | Luxury Spa At Just ₹1499",
     description:
-      "Looking for Russian in NFC, Russian girl massage or luxury body spa in NFC? Certified Russian therapists, B2B spa & Thai massage near The Suryaa Hotel. Zero advance, attached hot shower. Open 24/7!",
+      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified European therapists, private suites & zero-advance booking near The Suryaa.",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in New Friends Colony NFC" }],
@@ -108,9 +108,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa in NFC | Russian in NFC & Luxury Body Spa From ₹1499",
+    title: "Russian Spa in New Friends Colony (NFC) | Luxury Spa At Just ₹1499",
     description:
-      "Looking for Russian in NFC, Russian girl massage or luxury body spa in NFC? Certified Russian therapists, B2B spa & Thai massage near The Suryaa Hotel. Zero advance, attached hot shower. Open 24/7!",
+      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified European therapists, private suites & zero-advance booking near The Suryaa.",
     images: [IMAGE_URL],
   },
 };
