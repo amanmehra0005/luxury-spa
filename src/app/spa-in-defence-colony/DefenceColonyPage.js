@@ -102,7 +102,7 @@ const hotels = [
   {
     name: "The Oberoi New Delhi",
     area: "Dr. Zakir Hussain Marg (7 mins)",
-    image: "/images/TheParkConnaughtPlace.webp",
+    image: "/images/TheOberoi_Lajpatnagar.webp",
     text: "World-class business travelers at The Oberoi enjoy discrete, professional Russian massage delivered straight to their hotel room.",
   },
   {
