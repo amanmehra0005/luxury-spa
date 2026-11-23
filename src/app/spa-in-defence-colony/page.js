@@ -53,9 +53,9 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Defence Colony (Def Col) | ₹1499 | Open 24/7",
+  title: "Russian Spa in Defence Colony | ₹1499 | Luxury Massage 24/7",
   description:
-    "Experience authentic Russian spa & luxury body massage in Defence Colony (Def Col). Certified Russian therapists, private VIP suites & zero-advance booking near Moolchand.",
+    "Authentic Russian spa in Defence Colony from ₹1499. Certified Russian therapists, 100% private soundproof suites & attached hot shower. Zero advance. Book 24/7!",
   keywords: [
     "russian in defence colony",
     "russian girl in defence colony",
@@ -83,9 +83,9 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Russian Spa in Defence Colony (Def Col) | ₹1499 | Open 24/7",
+    title: "Russian Spa in Defence Colony | ₹1499 | Luxury Massage 24/7",
     description:
-      "Experience authentic Russian spa & luxury body massage in Defence Colony (Def Col). Certified Russian therapists, private VIP suites & zero-advance booking near Moolchand.",
+      "Authentic Russian spa in Defence Colony from ₹1499. Certified Russian therapists, 100% private soundproof suites & attached hot shower. Zero advance. Book 24/7!",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in Defence Colony at Luxury Russian Spa" }],
@@ -93,9 +93,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa in Defence Colony (Def Col) | ₹1499 | Open 24/7",
+    title: "Russian Spa in Defence Colony | ₹1499 | Luxury Massage 24/7",
     description:
-      "Experience authentic Russian spa & luxury body massage in Defence Colony (Def Col). Certified Russian therapists, private VIP suites & zero-advance booking near Moolchand.",
+      "Authentic Russian spa in Defence Colony from ₹1499. Certified Russian therapists, 100% private soundproof suites & attached hot shower. Zero advance. Book 24/7!",
     images: [IMAGE_URL],
   },
 };
