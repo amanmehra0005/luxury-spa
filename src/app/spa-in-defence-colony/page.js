@@ -53,20 +53,28 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Defence Colony At Just ₹1499 | Open 24/7 Near Moolchand",
+  title: "Russian Spa in Defence Colony (Def Col) | ₹1499 | Open 24/7",
   description:
-    "Best Russian Spa in Defence Colony near Def Col Market & Moolchand Metro. Certified Russian therapists, attached hot shower, in-room hotel visits & ₹1499 welcome offer. Open 24/7.",
+    "Experience authentic Russian spa & luxury body massage in Defence Colony (Def Col). Certified Russian therapists, private VIP suites & zero-advance booking near Moolchand.",
   keywords: [
-    "spa in defence colony",
+    "russian in defence colony",
+    "russian girl in defence colony",
+    "russian in def col",
+    "russian girl in def col",
     "russian spa in defence colony",
-    "best spa in defence colony",
-    "body massage in defence colony",
     "body spa in defence colony",
-    "thai massage in defence colony",
+    "massage spa in defence colony",
+    "b2b spa in defence colony",
     "b2b massage in defence colony",
+    "thai massage in defence colony",
+    "body massage in defence colony",
+    "russian girl price in defence colony",
+    "massage in def col",
+    "spa in def col",
+    "spa in defence colony",
+    "best spa in defence colony",
     "couple spa in defence colony",
     "deep tissue massage in defence colony",
-    "russian girl price in defence colony",
     "massage in defence colony market",
     "spa near moolchand metro",
     "5 star hotel spa defence colony",
@@ -75,9 +83,9 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Russian Spa in Defence Colony At Just ₹1499 | Open 24/7 Near Moolchand",
+    title: "Russian Spa in Defence Colony (Def Col) | ₹1499 | Open 24/7",
     description:
-      "Best Russian Spa in Defence Colony near Def Col Market & Moolchand Metro. Certified Russian therapists, attached hot shower, in-room hotel visits & ₹1499 welcome offer. Open 24/7.",
+      "Experience authentic Russian spa & luxury body massage in Defence Colony (Def Col). Certified Russian therapists, private VIP suites & zero-advance booking near Moolchand.",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in Defence Colony at Luxury Russian Spa" }],
@@ -85,9 +93,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa in Defence Colony At Just ₹1499 | Open 24/7 Near Moolchand",
+    title: "Russian Spa in Defence Colony (Def Col) | ₹1499 | Open 24/7",
     description:
-      "Best Russian Spa in Defence Colony near Def Col Market & Moolchand Metro. Certified Russian therapists, attached hot shower, in-room hotel visits & ₹1499 welcome offer. Open 24/7.",
+      "Experience authentic Russian spa & luxury body massage in Defence Colony (Def Col). Certified Russian therapists, private VIP suites & zero-advance booking near Moolchand.",
     images: [IMAGE_URL],
   },
 };

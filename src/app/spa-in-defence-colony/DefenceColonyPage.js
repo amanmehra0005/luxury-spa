@@ -35,6 +35,16 @@ export const faqs = [
       "Our luxury spa is located right near Defence Colony Main Market and Ring Road, just 3 minutes from Moolchand Metro Station (Violet Line Gate 1) and 4 minutes from Lajpat Nagar Metro Interchange. If you live or are staying in Defence Colony (A, B, C Blocks), South Extension, or nearby hotels like The Lodhi, our certified therapists can also visit your private residence or hotel suite within 15–20 minutes.",
   },
   {
+    question: "Can I book an authentic Russian in Defence Colony / Russian girl in Defence Colony?",
+    answer:
+      "Yes, absolutely. If you are searching for an authentic Russian in Defence Colony or certified Russian / foreigner therapist, Luxury Russian Spa offers verified professional Russian and foreigner staff. You can preview live therapist profiles on our Telegram channel (@luxuryrussianspa7), select your therapist, and meet her in person at our outlet or in your 5-star hotel suite. We maintain a strict zero-advance-deposit policy so you never deal with online broker scams.",
+  },
+  {
+    question: "What therapies are included in your body spa and B2B spa in Defence Colony?",
+    answer:
+      "Our body spa in Defence Colony includes full-body Swedish relaxation, deep tissue muscle recovery, infused aromatherapy oils, and authentic Thai stretching. For clients seeking sensory relaxation, our B2B spa in Defence Colony offers deep body-to-body therapy in complete privacy within soundproof suites featuring attached hot rain showers and luxury bathrobes.",
+  },
+  {
     question: "What are the spa and massage prices in Defence Colony?",
     answer:
       "We maintain 100% transparent pricing without hidden counter charges. Our introductory Spa Outlet session starts at ₹1,499 for 60 minutes with full body oil/cream massage and private attached hot shower. Our 5-Star Hotel / Luxury In-Room Suite package is ₹12,999 for an extended 120-minute sensory session including B2B massage and premium aromatherapy oils.",
@@ -305,11 +315,7 @@ export default function DefenceColonyPage() {
               </h1>
 
               <p className="mt-4 text-base leading-relaxed text-bodycolor sm:text-lg">
-                Step into elite South Delhi relaxation right near{" "}
-                <strong className="font-semibold text-dark">Defence Colony Main Market</strong> and{" "}
-                <strong className="font-semibold text-dark">Moolchand Metro</strong>. Certified Russian, foreigner,
-                and Thai therapists, 100% soundproof private suites with attached hot rain showers, and a strict
-                zero-advance policy.
+                Looking for an authentic <strong className="font-semibold text-dark">Russian in Defence Colony</strong>, a relaxing <strong className="font-semibold text-dark">body spa in Defence Colony</strong>, or a premium <strong className="font-semibold text-dark">massage spa in Defence Colony</strong>? Luxury Russian Spa welcomes you near <strong className="font-semibold text-dark">Defence Colony Main Market</strong> and <strong className="font-semibold text-dark">Moolchand Metro</strong>. Enjoy soothing <strong className="font-semibold text-dark">body massage in Defence Colony</strong> with certified Russian, foreigner, and Thai female therapists. Every guest enjoys 100% soundproof private VIP suites with attached hot rain showers, clean sanitized linen, and a strict zero-advance payment policy.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2.5">
@@ -397,7 +403,7 @@ export default function DefenceColonyPage() {
               Defence Colony <span className="italic font-normal text-[#fdc28c]">Spa Prices</span>
             </h2>
             <p className="mt-3 max-w-xl mx-auto text-sm sm:text-base text-white/70">
-              Zero counter surprise charges. Clean, fixed prices confirmed on WhatsApp before arrival.
+              Clear rates with zero surprise charges. If you are comparing <span className="text-[#fdc28c]">Russian girl price in Defence Colony</span> or booking a luxury body spa session, what we quote on WhatsApp is exactly what you pay.
             </p>
           </div>
 
@@ -508,9 +514,9 @@ export default function DefenceColonyPage() {
           <HomeHeading
             id="services-heading"
             eyebrow="Spa & Massage Menu"
-            title="Massage Treatments in"
+            title="Massage & Body Spa Services in"
             highlight="Defence Colony"
-            text="From deep tissue relief to gentle Swedish and sensory B2B body massage, our therapies are designed for complete rejuvenation."
+            text="Explore our complete menu for body spa in Defence Colony and rejuvenating body therapies. Whether you want to book an authentic Russian girl in Defence Colony, deep tissue stress relief, a soothing B2B spa in Defence Colony, or traditional Thai massage in Defence Colony, our certified therapists ensure complete physical and mental relaxation."
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -546,6 +552,121 @@ export default function DefenceColonyPage() {
         </div>
       </section>
 
+      {/* 5B. In-Depth Guide: Russian in Defence Colony, Body Spa & B2B Massage Insights */}
+      <section className="bg-white py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#9c5232]">
+              Local Wellness Guide · South Delhi
+            </span>
+            <h2 className="mt-3 font-title text-2xl sm:text-3xl md:text-4xl font-bold text-[#2b1810]">
+              Looking for a <span className="text-[#9c5232]">Russian in Defence Colony</span> or Luxury Body Spa?
+            </h2>
+            <p className="mt-3 text-sm text-bodycolor">
+              Everything you need to know about genuine international therapies, verified staff, and transparent rates near Defence Colony Main Market &amp; Moolchand.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* 1. Russian in Defence Colony & Russian Girl Massage */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  Russian in Defence Colony
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Authentic Russian &amp; Foreigner Therapists in Def Col
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  When guests search online for a <strong>Russian in Defence Colony</strong> or look for a <strong>Russian girl in Defence Colony</strong>, their biggest worry is online fraud or fake profiles asking for advance money. At Luxury Russian Spa, we make booking safe, simple, and honest.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  We have genuine Russian and foreigner female therapists who are professionally trained in classical wellness. You can check live real-time photos on Telegram before you book. You meet your therapist in person at our outlet or in your 5-star hotel room, and you pay <strong>zero advance deposit</strong>.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">Welcome Rate: From ₹1,499</span>
+                <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:underline">
+                  Preview on Telegram &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* 2. Body Spa in Defence Colony & Massage Spa in Defence Colony */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  Body Spa in Defence Colony
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Full Body Massage &amp; Rejuvenating Body Spa
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Need a clean, comfortable <strong>body spa in Defence Colony</strong> or looking for a trusted <strong>massage spa in Defence Colony</strong> near Ring Road? Our head-to-toe treatments help relieve daily office fatigue, neck cramps, and body stress.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Our therapists use warm natural oils to soothe your muscles. Whether you want a light Swedish touch, strong deep tissue work, or custom aromatherapy, each session is delivered inside a quiet private suite with an attached hot shower and fresh towels.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">Session: 60 / 90 / 120 Min</span>
+                <a href={`${WHATSAPP_URL}?text=${encodeURIComponent("Hi! I want to book a Body Spa in Defence Colony.")}`} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">
+                  Book Body Spa &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* 3. B2B Spa in Defence Colony */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  B2B Spa in Defence Colony
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Private B2B Spa in 100% Soundproof VIP Suites
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Our <strong>B2B spa in Defence Colony</strong> is one of our most popular therapies for total physical and mental relief. Performed by skilled Russian and foreigner therapists with absolute discretion, this warm oil body-to-body therapy melts away all tension.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  You enjoy complete peace in a private room equipped with an attached hot rain shower, soft bathrobes, and quality toiletries. Available 24/7 at our outlet or as an in-room visit to luxury hotels in South Delhi.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">From ₹2,999 (Outlet) · ₹12,999 (Hotel)</span>
+                <a href={`${WHATSAPP_URL}?text=${encodeURIComponent("Hi! I want to book a B2B Spa session in Defence Colony.")}`} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">
+                  Inquire on WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* 4. Thai Massage in Defence Colony */}
+            <div className="rounded-3xl bg-amber-50/40 p-6 sm:p-8 ring-1 ring-amber-200/70 shadow-sm flex flex-col justify-between">
+              <div>
+                <span className="inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900 mb-3">
+                  Thai Massage in Defence Colony
+                </span>
+                <h3 className="font-title text-xl font-bold text-[#2b1810]">
+                  Traditional Dry Acupressure &amp; Passive Yoga Stretching
+                </h3>
+                <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  Looking for authentic <strong>Thai massage in Defence Colony</strong>? Traditional Thai bodywork is oil-free and done on a soft, supportive floor mat while wearing clean, loose cotton clothes.
+                </p>
+                <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
+                  The therapist applies rhythmic pressure along your body&apos;s energy pathways and guides you through gentle yoga stretches. It is the best choice if you have tight leg muscles, lower back stiffness, or body aches after a long journey.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
+                <span className="text-primary">Starting from ₹1,999</span>
+                <a href={`${WHATSAPP_URL}?text=${encodeURIComponent("Hi! I want to book Thai Massage in Defence Colony.")}`} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">
+                  Book Thai Massage &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 6. Hotel & Luxury Residence In-Room Visits */}
       <section className="bg-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
@@ -557,7 +678,7 @@ export default function DefenceColonyPage() {
               Hotel & Home Visits in <span className="text-[#9c5232]">Defence Colony</span>
             </h2>
             <p className="mt-3 text-sm sm:text-base text-bodycolor">
-              Enjoy private therapy delivered right to your luxury bungalow, service suite, or nearby 5-star hotel in 15–20 minutes.
+              Staying at The Lodhi, The Oberoi, or visiting Defence Colony? Enjoy a relaxing <strong className="font-semibold text-dark">body massage in Defence Colony</strong> or request an authentic <strong className="font-semibold text-dark">Russian girl in Defence Colony</strong> hotel visit directly to your private room within 15–20 minutes with fresh towels and therapeutic oils.
             </p>
           </div>
 
