@@ -102,7 +102,7 @@ export default function HomeWhyBestSpa() {
           <p className="mt-5 text-sm sm:text-[15px] md:text-base text-gray-600 leading-relaxed font-normal">
             When you need genuine relaxation and deep stress relief, choosing the right Russian spa in Delhi makes all the difference.
             At <strong className="font-semibold text-gray-900">Luxury Russian Spa</strong>, we have earned the trust of thousands of clients across{" "}
-            <Link href="/outlets" className="text-[#9c5232] hover:text-[#834329] font-medium underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
+            <Link href="/spa-in-defence-colony" className="text-[#9c5232] hover:text-[#834329] font-medium underline decoration-[#9c5232]/40 hover:decoration-[#834329] transition-colors">
               Spa in Defence Colony
             </Link>{" "}
             and Greater Delhi by combining authentic international massage traditions with world-class hospitality. Explore our 12+ convenient

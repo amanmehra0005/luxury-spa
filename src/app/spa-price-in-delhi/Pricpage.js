@@ -264,6 +264,8 @@ const areaZones = [
     zone: "South Delhi",
     emoji: "🌳",
     areas: [
+      { area: "New Friends Colony", href: "/spa-in-new-friends-colony", note: "Near The Suryaa Hotel" },
+      { area: "Defence Colony", href: "/spa-in-defence-colony", note: "Near Def Col Market" },
       { area: "Lajpat Nagar", href: "/spa-in-lajpat-nagar", note: "Near Central Market" },
       { area: "Saket", href: "/spa-in-saket" },
     ],

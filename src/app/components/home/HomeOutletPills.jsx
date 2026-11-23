@@ -1,6 +1,9 @@
 const pills = [
   { name: "Aerocity", href: "/spa-in-aerocity" },
   { name: "Connaught Place", href: "/spa-in-connaught-place" },
+  { name: "New Friends Colony", href: "/spa-in-new-friends-colony" },
+  { name: "Defence Colony", href: "/spa-in-defence-colony" },
+  { name: "Lajpat Nagar", href: "/spa-in-lajpat-nagar" },
   { name: "Karol Bagh", href: "/spa-in-karol-bagh" },
   { name: "Mahipalpur", href: "/spa-in-mahipalpur" },
   { name: "Gurgaon", href: "/spa-in-gurgaon" },

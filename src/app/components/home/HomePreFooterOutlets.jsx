@@ -1,5 +1,5 @@
 const preFooterOutlets = [
-  { name: "DEFENCE\nCOLONY", label: "DEFENCE COLONY", link: "/outlets" },
+  { name: "DEFENCE\nCOLONY", label: "DEFENCE COLONY", link: "/spa-in-defence-colony" },
   { name: "MAHIPALPUR", label: "MAHIPALPUR", link: "/spa-in-mahipalpur" },
   { name: "GURGAON", label: "GURGAON", link: "/spa-in-gurgaon" },
   { name: "NOIDA", label: "NOIDA", link: "/spa-in-noida" },

@@ -26,6 +26,8 @@ const servicesDropdown = [
 const outletDropdown = [
   { name: "Aerocity", href: "/spa-in-aerocity" },
   { name: "Connaught Place", href: "/spa-in-connaught-place" },
+  { name: "New Friends Colony", href: "/spa-in-new-friends-colony" },
+  { name: "Defence Colony", href: "/spa-in-defence-colony" },
   { name: "Lajpat Nagar", href: "/spa-in-lajpat-nagar" },
   { name: "Dwarka", href: "/spa-in-dwarka" },
   { name: "Mahipalpur", href: "/spa-in-mahipalpur" },

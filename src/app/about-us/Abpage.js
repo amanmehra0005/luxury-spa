@@ -111,7 +111,7 @@ const traditions = [
 
 const hotelOutlets = [
   { name: "The Park", area: "Connaught Place", image: "/images/TheParkConnaughtPlace.webp", href: "/spa-in-connaught-place", text: "Our outlet in the middle of the city, on Parliament Street." },
-  { name: "The Suryaa", area: "New Friends Colony", image: "/images/TheSuryaaNewDelhi(NFC).webp", href: "/outlets", text: "A calm hotel spa for South and South-East Delhi." },
+  { name: "The Suryaa", area: "New Friends Colony", image: "/images/TheSuryaaNewDelhi(NFC).webp", href: "/spa-in-new-friends-colony", text: "A calm hotel spa for South and South-East Delhi." },
   { name: "Novotel", area: "Aerocity", image: "/images/novotel-new-delhi-aerocity.webp", href: "/spa-in-aerocity", text: "Minutes from IGI Airport, and our main address." },
 ];
 

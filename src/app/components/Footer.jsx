@@ -9,11 +9,13 @@ const socials = [
 ];
 
 const locations = [
+  { name: "New Friends Colony", link: "/spa-in-new-friends-colony" },
+  { name: "Defence Colony", link: "/spa-in-defence-colony" },
+  { name: "Connaught Place", link: "/spa-in-connaught-place" },
+  { name: "Aerocity", link: "/spa-in-aerocity" },
+  { name: "Lajpat Nagar", link: "/spa-in-lajpat-nagar" },
   { name: "Gurgaon", link: "/spa-in-gurgaon" },
   { name: "Noida", link: "/spa-in-noida" },
-  { name: "Paharganj", link: "/spa-in-paharganj" },
-  { name: "Karol Bagh", link: "/spa-in-karol-bagh" },
-  { name: "Lajpat Nagar", link: "/spa-in-lajpat-nagar" },
 ];
 
 const quickLinks = [

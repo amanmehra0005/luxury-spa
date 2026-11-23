@@ -51,7 +51,7 @@ const hotels = [
     location: "Locations – New Friends Colony, South",
     desc: "The Suryaa New Delhi (NFC) offers a calm break for body and mind. The spa menu features real Russian therapies, with therapists ready to melt away tension expertly. Escape into this tranquil slice of luxury and let a day of stress fade. Relaxation and rejuvenation are what we do best at this luxury hotel spa in South Delhi.",
     image: "/images/TheSuryaaNewDelhi(NFC).webp",
-    link: "/spa-in-saket",
+    link: "/spa-in-new-friends-colony",
   },
   {
     name: "The Ashok (Chanakyapuri)",
