@@ -58,7 +58,7 @@ const spaSchema = {
 export const metadata = {
   title: "Russian Spa in New Friends Colony (NFC) | ₹1499 | Open 24/7",
   description:
-    "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified European therapists, private suites & zero-advance booking near The Suryaa.",
+    "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified Russian & foreigner therapists, private suites & zero-advance booking near The Suryaa.",
   keywords: [
     "russian in nfc",
     "russian girl in nfc",
@@ -100,7 +100,7 @@ export const metadata = {
   openGraph: {
     title: "Russian Spa in New Friends Colony (NFC) | ₹1499 | Open 24/7",
     description:
-      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified European therapists, private suites & zero-advance booking near The Suryaa.",
+      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified Russian & foreigner therapists, private suites & zero-advance booking near The Suryaa.",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in New Friends Colony NFC" }],
@@ -110,7 +110,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Russian Spa in New Friends Colony (NFC) | ₹1499 | Open 24/7",
     description:
-      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified European therapists, private suites & zero-advance booking near The Suryaa.",
+      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified Russian & foreigner therapists, private suites & zero-advance booking near The Suryaa.",
     images: [IMAGE_URL],
   },
 };

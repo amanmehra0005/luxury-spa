@@ -39,7 +39,7 @@ export const faqs = [
   {
     question: "Can I book an authentic Russian in NFC / Russian girl in NFC?",
     answer:
-      "Yes, absolutely. If you are searching for an authentic Russian in NFC or certified European therapist, Luxury Russian Spa offers verified professional international staff. You can preview live therapist profiles on our Telegram channel (@luxuryrussianspa7), select your therapist, and meet her in person at our outlet or in your 5-star hotel suite. We maintain a strict zero-advance-deposit policy so you never deal with online broker scams.",
+      "Yes, absolutely. If you are searching for an authentic Russian in NFC or certified Russian / foreigner therapist, Luxury Russian Spa offers verified professional Russian and foreigner staff. You can preview live therapist profiles on our Telegram channel (@luxuryrussianspa7), select your therapist, and meet her in person at our outlet or in your 5-star hotel suite. We maintain a strict zero-advance-deposit policy so you never deal with online broker scams.",
   },
   {
     question: "What therapies are included in your body spa and B2B spa in NFC?",
@@ -54,7 +54,7 @@ export const faqs = [
   {
     question: "What is the Russian girl price / Russian therapist rate in New Friends Colony?",
     answer:
-      "When people search for 'Russian girl price in New Friends Colony' or 'Russian in NFC', they often run into shady classified broker scams asking for advance UPI transfers. At Luxury Russian Spa, we offer genuine, certified Russian and European female therapists in a strictly hygienic, legal wellness spa environment. Our rates are completely fixed: ₹1,499 for outlet sessions and ₹12,999 for 5-star hotel suite experiences. You can preview verified therapist profiles on Telegram before booking, and you pay zero advance deposit.",
+      "When people search for 'Russian girl price in New Friends Colony' or 'Russian in NFC', they often run into shady classified broker scams asking for advance UPI transfers. At Luxury Russian Spa, we offer genuine, certified Russian and foreigner female therapists in a strictly hygienic, legal wellness spa environment. Our rates are completely fixed: ₹1,499 for outlet sessions and ₹12,999 for 5-star hotel suite experiences. You can preview verified therapist profiles on Telegram before booking, and you pay zero advance deposit.",
   },
   {
     question: "Do you offer in-room visits at The Suryaa New Delhi and other South Delhi hotels?",
@@ -69,7 +69,7 @@ export const faqs = [
   {
     question: "How is Luxury Russian Spa different from typical massage parlours in NFC?",
     answer:
-      "Typical massage parlours in South-East Delhi operate in crowded basements with curtained partitions, unhygienic towels, and sudden counter extortion. In contrast, Luxury Russian Spa offers 100% soundproof private VIP suites, attached hot rain showers, fresh sterilized linen, certified international therapists (Russian, European, Thai), and fixed pre-confirmed rates.",
+      "Typical massage parlours in South-East Delhi operate in crowded basements with curtained partitions, unhygienic towels, and sudden counter extortion. In contrast, Luxury Russian Spa offers 100% soundproof private VIP suites, attached hot rain showers, fresh sterilized linen, certified international therapists (Russian, Foreigner, Thai), and fixed pre-confirmed rates.",
   },
   {
     question: "Is your New Friends Colony spa open late at night?",
@@ -87,7 +87,7 @@ const linkClass = "font-semibold text-amber-700 underline decoration-amber-700/4
 
 const heroChips = [
   { icon: Hotel, label: "Near The Suryaa Hotel" },
-  { icon: Users, label: "Russian & European Staff" },
+  { icon: Users, label: "Russian & Foreigner Staff" },
   { icon: TrainFront, label: "3 Min Sukhdev Vihar Metro" },
   { icon: Clock, label: "Open 24/7 Day & Night" },
 ];
@@ -101,7 +101,7 @@ const quickFacts = [
 
 const therapists = [
   { name: "Russian", note: "Long, flowing classical strokes for deep sensory relaxation and tension release" },
-  { name: "European", note: "Gentle Swedish rhythm with organic lavender oils to eliminate mental fatigue" },
+  { name: "Foreigner", note: "Gentle Swedish rhythm with organic lavender oils to eliminate mental fatigue" },
   { name: "Thai", note: "Passive rhythmic yoga stretching and pressure-point therapy on a comfortable floor mat" },
   { name: "Indian", note: "Warm herbal oil therapy targeting stubborn muscle knots in the back and shoulders" },
 ];
@@ -144,7 +144,7 @@ const services = [
   },
   {
     title: "B2B Body Spa Massage",
-    text: "A premium, deeply relaxing body-to-body therapy in complete privacy. Performed by certified Russian and European therapists with warm oils and attached hot rain shower.",
+    text: "A premium, deeply relaxing body-to-body therapy in complete privacy. Performed by certified Russian and foreigner therapists with warm oils and attached hot rain shower.",
     time: "60–90 min",
     price: "From ₹2,999",
     href: "/b2b-massage-in-delhi",
@@ -198,7 +198,7 @@ const comparison = [
   { point: "Location & Hygiene", us: "Beside The Suryaa 5-star hotel; fresh sterilized linen every guest", them: "Cramped basements or market back-alleys" },
   { point: "Privacy & Facilities", us: "100% private soundproof suite with attached hot rain shower", them: "Curtained cabins or shared unhygienic toilets" },
   { point: "Pricing Transparency", us: "Fixed ₹1,499 & ₹12,999 confirmed on WhatsApp before arrival", them: "Bait ₹999 ads that jump to ₹5,000 at the counter" },
-  { point: "Therapist Quality", us: "Certified Russian, European, Thai & Indian female professionals", them: "Untrained local staff with zero massage skills" },
+  { point: "Therapist Quality", us: "Certified Russian, Foreigner, Thai & Indian female professionals", them: "Untrained local staff with zero massage skills" },
   { point: "Advance Payment", us: "Strict zero advance deposit policy. Pay after meeting therapist", them: "Demand online advance transfers that lead to scams" },
   { point: "Operating Hours", us: "Open 24/7 with dedicated late-night and morning slots", them: "Close early with hurried, 25-minute cut sessions" },
 ];
@@ -234,7 +234,7 @@ const pricingPlans = [
 const galleryTherapists = [
   { id: 1, image: "/images/nfc/therapist-1.jpg", alt: "Russian Spa Therapist in New Friends Colony Near The Suryaa" },
   { id: 2, image: "/images/nfc/therapist-2.jpg", alt: "Certified Russian Body Massage Therapist New Friends Colony" },
-  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "European Spa Therapist at New Friends Colony Luxury Spa" },
+  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "Russian Spa Therapist at New Friends Colony Luxury Spa" },
   { id: 4, image: "/images/image2.webp", alt: "Professional Thai and Russian Therapist NFC Hotel Visit" },
   { id: 5, image: "/images/nfc/therapist-5.jpg", alt: "Luxury Russian Spa Expert New Friends Colony Delhi" },
 ];
@@ -347,9 +347,9 @@ export default function NewFriendsColonyPage() {
               </h1>
 
               <p className="mt-4 text-base leading-relaxed text-bodycolor sm:text-lg">
-                Experience authentic European wellness and deep muscle relief right near{" "}
+                Experience authentic Russian wellness and deep muscle relief right near{" "}
                 <strong className="font-semibold text-dark">The Suryaa Hotel</strong> and{" "}
-                <strong className="font-semibold text-dark">NFC Community Centre</strong>. Certified Russian, European,
+                <strong className="font-semibold text-dark">NFC Community Centre</strong>. Certified Russian, foreigner,
                 and Thai female therapists, 100% soundproof private suites with attached hot rain showers, and strict
                 zero-advance payment.
               </p>
@@ -514,10 +514,10 @@ export default function NewFriendsColonyPage() {
               Verified International Staff
             </span>
             <h2 className="mt-3 font-title text-3xl sm:text-4xl md:text-5xl font-bold text-[#2b1810]">
-              Russian & European <span className="text-[#9c5232]">Therapists in NFC</span>
+              Russian & Foreigner <span className="text-[#9c5232]">Therapists in NFC</span>
             </h2>
             <p className="mt-3 text-sm sm:text-base text-bodycolor">
-              Our therapists are certified professionals trained in classical European therapy, sensory relaxation, and traditional Thai bodywork. Preview verified real-time photos and choose your preferred therapist before booking.
+              Our therapists are certified professionals trained in authentic Russian therapy, sensory relaxation, and traditional Thai bodywork. Preview verified real-time photos and choose your preferred therapist before booking.
             </p>
           </div>
 
@@ -634,13 +634,13 @@ export default function NewFriendsColonyPage() {
                   Russian in NFC
                 </span>
                 <h3 className="font-title text-xl font-bold text-[#2b1810]">
-                  Authentic Russian &amp; European Therapists in NFC
+                  Authentic Russian &amp; Foreigner Therapists in NFC
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
                   When clients search for <strong>&ldquo;Russian in NFC&rdquo;</strong> or <strong>&ldquo;Russian girl in NFC&rdquo;</strong>, they often encounter shady classified broker ads asking for advance UPI transfers or baiting with fake photos. At Luxury Russian Spa, we eliminate these worries.
                 </p>
                 <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  We provide 100% verified, certified Russian and European female therapists in an upscale 5-star standard wellness environment. You can preview live therapist profiles on our Telegram channel before booking, and you pay <strong>zero advance deposit</strong>.
+                  We provide 100% verified, certified Russian and foreigner female therapists in an upscale 5-star standard wellness environment. You can preview live therapist profiles on our Telegram channel before booking, and you pay <strong>zero advance deposit</strong>.
                 </p>
               </div>
               <div className="mt-5 pt-4 border-t border-amber-200/60 flex items-center justify-between text-xs font-semibold">
@@ -685,7 +685,7 @@ export default function NewFriendsColonyPage() {
                   Sensory B2B Spa in 100% Soundproof Private Suites
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-bodycolor leading-relaxed">
-                  Our <strong>B2B spa in NFC</strong> is one of our most requested luxury therapies. Performed by skilled Russian and European female therapists in complete confidentiality, this sensual body-to-body therapy uses warm aromatic oils for intense relaxation and full-body sensory release.
+                  Our <strong>B2B spa in NFC</strong> is one of our most requested luxury therapies. Performed by skilled Russian and foreigner female therapists in complete confidentiality, this sensual body-to-body therapy uses warm aromatic oils for intense relaxation and full-body sensory release.
                 </p>
                 <p className="mt-2 text-xs sm:text-sm text-bodycolor leading-relaxed">
                   Every suite has an attached private hot rain shower, disposable bathrobes, and luxury toiletries so you don&apos;t leave feeling oily. Available at our outlet or as an in-room 5-star hotel visit at The Suryaa.

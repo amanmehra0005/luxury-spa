@@ -42,7 +42,7 @@ export const faqs = [
   {
     question: "What is the Russian girl price / Russian therapist rate in Defence Colony?",
     answer:
-      "Searches for 'Russian girl price in Defence Colony' often lead to deceptive third-party broker ads asking for advance online deposits. At Luxury Russian Spa, we provide authentic, certified Russian and European female therapists in an upscale, 100% safe wellness setting. Our rates are strictly fixed: ₹1,499 for outlet sessions and ₹12,999 for 5-star hotel visits. You can preview verified therapist profiles on Telegram, and you pay zero advance deposit.",
+      "Searches for 'Russian girl price in Defence Colony' often lead to deceptive third-party broker ads asking for advance online deposits. At Luxury Russian Spa, we provide authentic, certified Russian and foreigner female therapists in an upscale, 100% safe wellness setting. Our rates are strictly fixed: ₹1,499 for outlet sessions and ₹12,999 for 5-star hotel visits. You can preview verified therapist profiles on Telegram, and you pay zero advance deposit.",
   },
   {
     question: "Do you offer in-room home and hotel visits in Defence Colony?",
@@ -70,7 +70,7 @@ const linkClass = "font-semibold text-amber-700 underline decoration-amber-700/4
 
 const heroChips = [
   { icon: MapPin, label: "Near Def Col Main Market" },
-  { icon: Users, label: "Russian & European Therapists" },
+  { icon: Users, label: "Russian & Foreigner Therapists" },
   { icon: TrainFront, label: "Near Moolchand Metro" },
   { icon: Clock, label: "Open 24/7 Day & Night" },
 ];
@@ -112,14 +112,14 @@ const hotels = [
 const services = [
   {
     title: "Russian Full Body Massage",
-    text: "Signature European techniques using warm aromatic oils to release muscular stiffness and calm mental anxiety. Our most requested therapy in Defence Colony.",
+    text: "Signature Russian techniques using warm aromatic oils to release muscular stiffness and calm mental anxiety. Our most requested therapy in Defence Colony.",
     time: "60–90 min",
     price: "From ₹2,499",
     href: "/full-body-massage-in-delhi",
   },
   {
     title: "B2B Body Spa Massage",
-    text: "Sensory, deeply relaxing body-to-body therapy in total privacy. Performed by certified European therapists with warm oils and attached hot shower.",
+    text: "Sensory, deeply relaxing body-to-body therapy in total privacy. Performed by certified Russian and foreigner therapists with warm oils and attached hot shower.",
     time: "60–90 min",
     price: "From ₹2,999",
     href: "/b2b-massage-in-delhi",
@@ -199,7 +199,7 @@ const pricingPlans = [
 const galleryTherapists = [
   { id: 1, image: "/images/defence/therapist-1.jpg", alt: "Russian Spa Therapist in Defence Colony Near Moolchand" },
   { id: 2, image: "/images/defence/therapist-2.jpg", alt: "Certified Russian Body Massage Therapist Defence Colony" },
-  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "European Spa Therapist Defence Colony Luxury Spa" },
+  { id: 3, image: "/images/lajpat/therapist-3.webp", alt: "Russian Spa Therapist Defence Colony Luxury Spa" },
   { id: 4, image: "/images/image2.webp", alt: "Professional Thai and Russian Therapist Defence Colony Hotel Visit" },
   { id: 5, image: "/images/defence/therapist-5.jpg", alt: "Luxury Russian Spa Expert Defence Colony Delhi" },
 ];
@@ -307,7 +307,7 @@ export default function DefenceColonyPage() {
               <p className="mt-4 text-base leading-relaxed text-bodycolor sm:text-lg">
                 Step into elite South Delhi relaxation right near{" "}
                 <strong className="font-semibold text-dark">Defence Colony Main Market</strong> and{" "}
-                <strong className="font-semibold text-dark">Moolchand Metro</strong>. Certified Russian, European,
+                <strong className="font-semibold text-dark">Moolchand Metro</strong>. Certified Russian, foreigner,
                 and Thai therapists, 100% soundproof private suites with attached hot rain showers, and a strict
                 zero-advance policy.
               </p>
@@ -460,10 +460,10 @@ export default function DefenceColonyPage() {
               Verified International Staff
             </span>
             <h2 className="mt-3 font-title text-3xl sm:text-4xl md:text-5xl font-bold text-[#2b1810]">
-              Russian & European <span className="text-[#9c5232]">Therapists in Defence Colony</span>
+              Russian & Foreigner <span className="text-[#9c5232]">Therapists in Defence Colony</span>
             </h2>
             <p className="mt-3 text-sm sm:text-base text-bodycolor">
-              Certified female therapists from Russia, Europe, Thailand, and India. Preview verified profiles on Telegram before booking.
+              Certified female therapists from Russia, foreign countries, Thailand, and India. Preview verified profiles on Telegram before booking.
             </p>
           </div>
 
