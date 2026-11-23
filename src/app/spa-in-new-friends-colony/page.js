@@ -56,9 +56,9 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in New Friends Colony (NFC) | ₹1499 | Open 24/7",
+  title: "Russian Spa in New Friends Colony (NFC) | At Just ₹1499 | Book Now",
   description:
-    "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified Russian & foreigner therapists, private suites & zero-advance booking near The Suryaa.",
+    "Enjoy a relaxing Russian massage in New Friends Colony (NFC) at just ₹1499. Certified Russian therapists, clean rooms with hot shower, and zero advance. Open 24/7!",
   keywords: [
     "russian in nfc",
     "russian girl in nfc",
@@ -98,9 +98,9 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Russian Spa in New Friends Colony (NFC) | ₹1499 | Open 24/7",
+    title: "Russian Spa in New Friends Colony (NFC) | At Just ₹1499 | Book Now",
     description:
-      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified Russian & foreigner therapists, private suites & zero-advance booking near The Suryaa.",
+      "Enjoy a relaxing Russian massage in New Friends Colony (NFC) at just ₹1499. Certified Russian therapists, clean rooms with hot shower, and zero advance. Open 24/7!",
     url: PAGE_URL,
     siteName: "Luxury Russian Spa",
     images: [{ url: IMAGE_URL, width: 800, height: 600, alt: "Russian Spa in New Friends Colony NFC" }],
@@ -108,9 +108,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa in New Friends Colony (NFC) | ₹1499 | Open 24/7",
+    title: "Russian Spa in New Friends Colony (NFC) | At Just ₹1499 | Book Now",
     description:
-      "Experience authentic Russian spa & luxury body massage in New Friends Colony (NFC). Certified Russian & foreigner therapists, private suites & zero-advance booking near The Suryaa.",
+      "Enjoy a relaxing Russian massage in New Friends Colony (NFC) at just ₹1499. Certified Russian therapists, clean rooms with hot shower, and zero advance. Open 24/7!",
     images: [IMAGE_URL],
   },
 };
