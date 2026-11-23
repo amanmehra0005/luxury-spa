@@ -53,7 +53,7 @@ const spaSchema = {
 };
 
 export const metadata = {
-  title: "Russian Spa in Defence Colony | ₹1499 | Luxury Massage 24/7",
+  title: "Russian Spa in Defence Colony | At Just ₹1499 | Book Now",
   description:
     "Authentic Russian spa in Defence Colony from ₹1499. Certified Russian therapists, 100% private soundproof suites & attached hot shower. Zero advance. Book 24/7!",
   keywords: [
@@ -83,7 +83,7 @@ export const metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Russian Spa in Defence Colony | ₹1499 | Luxury Massage 24/7",
+    title: "Russian Spa in Defence Colony | At Just ₹1499 | Book Now",
     description:
       "Authentic Russian spa in Defence Colony from ₹1499. Certified Russian therapists, 100% private soundproof suites & attached hot shower. Zero advance. Book 24/7!",
     url: PAGE_URL,
@@ -93,7 +93,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa in Defence Colony | ₹1499 | Luxury Massage 24/7",
+    title: "Russian Spa in Defence Colony | At Just ₹1499 | Book Now",
     description:
       "Authentic Russian spa in Defence Colony from ₹1499. Certified Russian therapists, 100% private soundproof suites & attached hot shower. Zero advance. Book 24/7!",
     images: [IMAGE_URL],
