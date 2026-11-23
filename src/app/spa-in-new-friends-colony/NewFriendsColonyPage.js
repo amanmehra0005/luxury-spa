@@ -385,10 +385,10 @@ export default function NewFriendsColonyPage() {
             <div className="relative lg:col-span-5">
               <div className="relative mx-auto max-w-md overflow-hidden rounded-3xl bg-amber-50 p-2 ring-1 ring-amber-200/80 shadow-2xl">
                 <Image
-                  src="/images/TheSuryaaNewDelhi(NFC).webp"
-                  alt="Russian Spa in New Friends Colony at The Suryaa New Delhi"
+                  src="/images/nfc/hero-therapist.jpg"
+                  alt="Russian Spa Therapist in New Friends Colony Near The Suryaa"
                   width={600}
-                  height={450}
+                  height={600}
                   priority
                   className="h-80 w-full rounded-2xl object-cover sm:h-96"
                 />

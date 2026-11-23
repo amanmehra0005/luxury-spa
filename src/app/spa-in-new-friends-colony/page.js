@@ -1,7 +1,7 @@
 import NewFriendsColonyPage, { NFC_ADDRESS, faqs } from "./NewFriendsColonyPage";
 
 const PAGE_URL = "https://www.luxuryrussianspa.com/spa-in-new-friends-colony";
-const IMAGE_URL = "https://www.luxuryrussianspa.com/images/TheSuryaaNewDelhi(NFC).webp";
+const IMAGE_URL = "https://www.luxuryrussianspa.com/images/nfc/hero-therapist.jpg";
 
 const faqSchema = {
   "@context": "https://schema.org",
